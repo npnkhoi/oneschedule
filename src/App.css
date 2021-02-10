@@ -1,13 +1,34 @@
+body {
+  /* background-color: #00196E; */
+}
+
 .App {
   text-align: center;
-  height: 100%;
   width: 100%;
+  color: #00196E;
+  font-family: halyard-display, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 .courses {
+  height: calc(85vh);
+  width: calc(35vw);
+  overflow-y: scroll;
 }
 
+.app-title {
+  font-family: garamond-premier-pro, serif;
+  font-size: 70px;
+  font-weight: bold;
+  font-stretch: expanded;
+}
 
-.calendar {
-  width: 700px;
+.list-group-item.active {
+  background-color: #CEEDF6;
+  color: #FFAD1D;
+}
+
+#root > div > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+  width: calc(90vw);
 }

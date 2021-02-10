@@ -1,4 +1,4 @@
-[
+const courses = [
   {
     "id": "ARTS101_Spring2021_S03",
     "name": "Introduction to Visual Studies (Nhung Walsh)",
@@ -549,3 +549,5 @@
     "location": "Classroom 4"
   }
 ]
+
+export default courses
