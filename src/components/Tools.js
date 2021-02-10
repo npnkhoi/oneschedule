@@ -2,7 +2,6 @@ const Tools = ({setChosenCourses, setFilter}) => {
   const clearAll = () => setChosenCourses([])
   const changeText = (event) => {
     const text = event.target.value;
-    console.log(text);
     setFilter(text);
   }
   return (
