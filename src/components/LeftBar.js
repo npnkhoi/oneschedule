@@ -6,7 +6,7 @@ const LeftBar = ({chosenCourses, setChosenCourses, filter, setFilter, courses, c
     <div className="left-bar d-flex flex-column align-items-center mr-4">
       <h1 className="app-title" >FulCourse</h1>
       <Tools setChosenCourses={setChosenCourses} setFilter={setFilter}/>
-      <div className="course-list list-group border rounded">
+      <div className="course-list list-group border rounded shadow">
         { 
           courses
           .filter((course) => course.name.toLowerCase().includes(filter.toLowerCase()))

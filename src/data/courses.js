@@ -54,15 +54,6 @@ const courses = [
     "location": "Classrooms 2&3"
   },
   {
-    "id": "CHI201b_Spring2021_S01",
-    "name": "Intermediate Chinese 2 (Yu Hsin Hung)",
-    "start_time": "",
-    "end_time": "",
-    "days": "",
-    "type": "Semester",
-    "location": ""
-  },
-  {
     "id": "CORE101_Spring2021_S05",
     "name": "Global Humanities and Social Change (Aaron Anderson)",
     "start_time": "16:30:00",
