@@ -2,8 +2,13 @@ import courses from './data/courses'
 import './App.css';
 import React, { useState, useEffect } from 'react'
 
-import Tools from './components/Tools'
 import Calendar from './components/Calendar'
+import LeftBar from './components/LeftBar'
+
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { faStar } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// library.add(faStar)
 
 function usePersistedState(key, defaultValue) {
   const [state, setState] = useState(
@@ -29,27 +34,16 @@ function App() {
 
   return (
     <div className="App d-flex container">
-      <div className="left-bar">
-        <h1 className="app-title" >FulCourse</h1>
-        <Tools setChosenCourses={setChosenCourses} setFilter={setFilter}/>
-
-        <div className="courses list-group mr-4">
-          { 
-            courses
-            .filter((course) => course.name.toLowerCase().includes(filter.toLowerCase()))
-            .map((course) => 
-              <button 
-                className={`list-group-item ${chosenCourses.includes(course.id) ? "active" : ""}`}
-                onClick={() => chooseCourse(course.id)}
-                key={course.id}
-              >
-                {course.name}
-              </button>
-            )
-          }
-        </div>
-      </div>
+      <LeftBar
+        chosenCourses={chosenCourses}
+        setChosenCourses={setChosenCourses}
+        filter={filter}
+        setFilter={setFilter}
+        courses={courses}
+        chooseCourse={chooseCourse}
+      />
       <Calendar chosenCourses={chosenCourses} courses={courses}/>
+      <div class="watermark">Made by UG19 - Nguyen Phung Nhat Khoi with ♥</div> 
     </div>
   );
 }

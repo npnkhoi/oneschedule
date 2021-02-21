@@ -1,0 +1,10 @@
+.course-list {
+  overflow-y: scroll;
+  min-height: 0px;
+  /* flex-shrink: 1; */
+}
+
+.left-bar {
+  width: 650px;
+  /* height: 700px; */
+}
