@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 
 import Calendar from './components/Calendar'
 import LeftBar from './components/LeftBar'
+import Footer from './components/Footer'
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { faStar } from '@fortawesome/free-solid-svg-icons'
@@ -43,7 +44,7 @@ function App() {
         chooseCourse={chooseCourse}
       />
       <Calendar chosenCourses={chosenCourses} courses={courses}/>
-      <div class="watermark">Made by UG19 - Nguyen Phung Nhat Khoi with ♥</div> 
+      <Footer/>
     </div>
   );
 }
