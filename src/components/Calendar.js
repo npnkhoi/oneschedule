@@ -40,8 +40,8 @@ const Calendar = ({selectedCourses, courses}) => {
         end: ""
       })
     }
-    eventColor = "#00196E"
-    eventTextColor = "#FFAD1D"
+    eventColor = "#264653"
+    eventTextColor = "#E9C46A"
   />
   )
 }
