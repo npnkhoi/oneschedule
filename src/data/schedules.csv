@@ -1,62 +1,58 @@
-id,name,start_time,end_time,days,type,location
-ARTS101_Spring2021_S03,Introduction to Visual Studies (Nhung Walsh),13:15:00,16:15:00,"Thursday,",Semester,Classrooms 2&3
-ARTS102_Spring2021_S02,Introduction to Art History and Theory (Pamela Corey),9:00:00,12:00:00,"Monday,",Semester,Classrooms 2&3
-ARTS201_Spring2021_S01,Movements in Post-1945 International Cinema (Aaron Anderson),16:30:00,19:30:00,"Tuesday,",Semester,Classrooms 2&3
-ARTS202_Spring2021_S01,Arts of Southeast Asia (Pamela Corey),9:00:00,12:00:00,"Wednesday,",Semester,Classrooms 2&3
-ARTS203_Spring2021_S01,Introduction to Modern Art (Pamela Corey),13:15:00,16:15:00,"Wednesday,",Semester,Classrooms 2&3
-ARTS205_Spring2021_S01,Art for Social Change: The Curator's Roles in Non-Institutional Exhibition Making (Nhung Walsh),16:30:00,19:30:00,"Thursday,",Semester,Classrooms 2&3
-CHI201b_Spring2021_S01,Intermediate Chinese 2 (Yu Hsin Hung),,,,Semester,
-CORE101_Spring2021_S05,Global Humanities and Social Change (Aaron Anderson),16:30:00,19:30:00,"Wednesday,",Semester,Classrooms 2&3
-CORE101_Spring2021_S07,Global Humanities and Social Change (Andrew Bellisari),13:15:00,14:45:00,"Tuesday, Thursday,",Semester,Classroom 4
-CORE101_Spring2021_S09,Global Humanities and Social Change (Pamela Stacey),13:15:00,16:15:00,"Monday,",Semester,Classroom 4
-CORE102_Spring2021_S02,Modern Vietnamese Culture and Society (Nguyen Nam - Vu Minh Hoang - TAs),9:00:00,12:00:00,"Thursday,",Semester,Ting Foundation Space
-CORE102_Spring2021_S03,Modern Vietnamese Culture and Society (Nguyen Nam - Vu Minh Hoang - TAs),9:00:00,12:00:00,"Friday,",Semester,Ting Foundation Space
-CORE103_Spring2021_S02,Quantitative Reasoning for a Digital Age (Sebastian Dziallas),9:00:00,12:00:00,"Friday,",Semester,Classrooms 6&7
-CORE103_Spring2021_S04,Quantitative Reasoning for a Digital Age (Linh Tran),9:00:00,12:00:00,"Wednesday,",Semester,Classrooms 6&7
-CORE103_Spring2021_S06,Quantitative Reasoning for a Digital Age (Graeme Walker),9:00:00,12:00:00,"Monday,",Semester,Classrooms 6&7
-CORE104_Spring2021_S02,Scientific Inquiry (Kinho Chan),13:15:00,14:45:00,"Monday, Wednesday,",Semester,Classroom 5
-CORE104_Spring2021_S08,Scientific Inquiry (Jill Siri),9:00:00,12:00:00,"Thursday,",Semester,Art Studio
-CORE104_Spring2021_S09,Scientific Inquiry (Samhitha Raj),9:00:00,12:00:00,"Monday,",Semester,Art Studio
-CORE104_Spring2021_S10,Scientific Inquiry (Samhitha Raj),9:00:00,12:00:00,"Friday,",Semester,Maker Space
-CORE105_Spring2021_S04,Design and Systems Thinking (Minh Nguyen),13:15:00,16:15:00,"Monday,",Semester,Maker Space
-CORE105_Spring2021_S06,Design and Systems Thinking (Kien Truong),9:00:00,12:00:00,"Thursday,",Semester,Maker Space
-CORE105_Spring2021_S07,Design and Systems Thinking (Minh Nguyen),13:15:00,16:15:00,"Friday,",Semester,Maker Space
-CS201_Spring2021_S01,Computer Science II: Data Structures (Sebastian Dziallas),13:15:00,16:15:00,"Tuesday,",Semester,Classroom 5
-CS203_Spring2021_S01,Computer Organiztion (Kien Truong),9:00:00,12:00:00,"Tuesday,",Semester,Classroom 8 & 9
-CS302_Spring2021_S01,Theory of Computing (Hung Son Nguyen),18:30:00,20:00:00,"Wednesday, Thursday,",Quarter 3,Online
-CS302_Spring2021_S01,Theory of Computing (Hung Son Nguyen),16:30:00,19:30:00,"Tuesday,",Quarter 3,Online
-CS303_Spring2021_S01,Human-Computer Interaction (Sebastian Dziallas),13:15:00,16:15:00,"Thursday,",Semester,Classroom 5
-ECON101_Spring2021_S01,Principles of Economics 1 (Graeme Walker),9:00:00,12:00:00,"Thursday,",Semester,Classroom 4
-ECON103_Spring2021_S01,Principles of Economics 2 (Hieu Nguyen),13:15:00,16:15:00,"Monday,",Semester,Classroom 1
-ECON201_Spring2021_S01,Microeconomic Analysis (Graeme Walker),15:00:00,16:30:00,"Tuesday, Thursday,",Semester,Classroom 1
-ECON203_Spring2021_S01,Macroeconomic Analysis (Ben Bingham),9:45:00,11:15:00,"Tuesday, Thursday,",Semester,Classrooms 2&3
-ECON301_Spring2021_S01,Economic Development in Sub-Saharan Africa (John Sender),9:00:00,12:00:00,"Monday, Friday,",Quarter 4,Classroom 4
-EL101_Spring2021_S01,Experiential Learning (Vincent Pham),,,,Semester,
-ENG203_Spring2021_S01,Modern Textiles (David Bruce),8:00:00,11:00:00,"Wednesday,",Semester,Online
-ENG205_Spring2021_S01,Integrated Engineering Project (Minh Nguyen),9:00:00,12:00:00,"Wednesday,",Semester,Classroom 5
-ENG206_Spring2021_S01,Introduction to Modelling and Simulation (Kien Truong),,,,Semester,
-FRE101a_Spring2021_S01,French Beginner 1 (Stephane Thierry),13:15:00,14:45:00,"Tuesday, Thursday,",Semester,Classrooms 8&9
-HIS101_Spring2021_S01,Fulbright History Lab & History Dialogues Project (Andrew Bellisari & Jeremy Adelman & TA - Antoine Le),13:15:00,16:15:00,"Wednesday,",Semester,Classroom 4
-HIS106_Spring2021_S01,Modern Europe (Andrew Bellisari),13:15:00,16:15:00,"Friday,",Semester,Classroom 4
-HIS108_Spring2021_S01,United States and the World (Vu Minh Hoang),16:45:00,18:15:00,"Wednesday, Friday,",Semester,Classroom 5
-HIS204_Spring2021_S01,A History of ASEAN (Vu Minh Hoang),13:15:00,14:45:00,"Tuesday, Thursday,",Semester,Classrooms 2&3
-HIS205_Spring2021_S01,From Black Face to Facebook: History of American Popular Culture (Geoffrey Stewart),,,,Semester,
-IS101_Spring2021_S01,Introductory Biology (Samhitha Raj),13:15:00,16:15:00,"Wednesday,",Semester,Art Studio
-IS202_Spring2021_S01,Matter (Phan Vu Xuan Hung),8:00:00,11:00:00,"Tuesday,",Semester,Art Studio
-IS203_Spring2021_S01,Principles of Neuroscience (Kinho Chan),9:45:00,11:15:00,"Monday, Wednesday,",Semester,Classrooms 8&9
-IS205_Spring2021_S01,Organic Chemistry (Phan Vu Xuan Hung),8:00:00,11:00:00,"Friday,",Semester,Art Studio
-LIT103_Spring2021_S01,Critical Methods in Literary Studies (Kevin Hart),9:00:00,12:00:00,"Monday,",Semester,Classroom 5
-LIT201_Spring2021_S01,"Text, Body, Technology: Individuals in Science Fiction (Kevin Hart)",9:00:00,12:00:00,"Wednesday,",Semester,Classroom 4
-LIT202_Spring2021_S01,Creative Writing Workshop (Pamela Stacey),15:00:00,16:30:00,"Wednesday, Friday,",Semester,Classrooms 8&9
-LIT203_Spring2021_S01,"The Laboratory of the Mind: Thought Experiements in Physics, Philosophy, and Literature (Michael Reid)",18:30:00,20:00:00,"Tuesday, Thursday,",Semester,Online
-LIT204_Spring2021_S01,"Identity, Community, and Memory in Vietnamese Diasporic Literature and Film (Isadora Wagner)",13:15:00,16:15:00,"Monday,",Semester,Classrooms 8&9
-LIT206_Spring2021_S01,Women and Gender Studies: Representations of Women in Vietnam War Literature and Film (Isadora Wagner),9:00:00,12:00:00,"Friday,",Semester,Classrooms 2&3
-MATH205_Spring2021_S01,Probability and Statistics (Tran Vinh Linh),13:15:00,14:45:00,"Wednesday, Friday,",Semester,Online
-PSY101_Spring2021_S01,Introductory Psychology (Jill Siri),13:15:00,16:15:00,"Tuesday,",Semester,Art Studio
-PSY101_Spring2021_S02,Introductory Psychology (An Nguyen),13:15:00,16:15:00,"Tuesday,",Semester,TBD
-PSY202_Spring2021_S01,Developmental Psychology (Jill Siri),13:15:00,16:15:00,"Friday,",Semester,Classroom 5
-PSY205_Spring2021_S01,Abnormal Psychology (Chris Rebholz),9:00:00,12:00:00,"Tuesday,",Semester,Online
-SOCI105_Spring2021_S01,Research Methods in Social & Behavioral Science (Co-design) (Kinho Chan),9:45:00,11:15:00,"Tuesday, Thursday,",Semester,Classrooms 8&9
-SOCI202_Spring2021_S01,Digital Anthropology (Ian Kalman),9:45:00,11:15:00,"Monday, Wednesday,",Semester,Classrooms 8&9
-SOCI205_Spring2021_S01,"Language, Culture and Thought (Ian Kalman)",16:45:00,18:15:00,"Monday, Wednesday,",Semester,Classroom 4
-VS201_Spring2021_S01,Going Hand in Hand: Politics and Economic Development in Contemporary Vietnam (Nguyen Thanh Trung),9:00:00,12:00:00,"Tuesday,",Semester,Classroom 4
+id,course_name,instructor_name,start_time,end_time,days,type,location
+ARTS101_Spring2021_S03,Introduction to Visual Studies ,Nhung Walsh,13:15:00,16:15:00,"Thursday,",Semester,Classrooms 2&3
+ARTS102_Spring2021_S02,Introduction to Art History and Theory ,Pamela Corey,9:00:00,12:00:00,"Monday,",Semester,Classrooms 2&3
+ARTS201_Spring2021_S01,Movements in Post-1945 International Cinema ,Aaron Anderson,16:30:00,19:30:00,"Tuesday,",Semester,Classrooms 2&3
+ARTS202_Spring2021_S01,Arts of Southeast Asia ,Pamela Corey,9:00:00,12:00:00,"Wednesday,",Semester,Classrooms 2&3
+ARTS203_Spring2021_S01,Introduction to Modern Art ,Pamela Corey,13:15:00,16:15:00,"Wednesday,",Semester,Classrooms 2&3
+ARTS205_Spring2021_S01,Art for Social Change: The Curator's Roles in Non-Institutional Exhibition Making ,Nhung Walsh,16:30:00,19:30:00,"Thursday,",Semester,Classrooms 2&3
+CORE101_Spring2021_S05,Global Humanities and Social Change ,Aaron Anderson,16:30:00,19:30:00,"Wednesday,",Semester,Classrooms 2&3
+CORE101_Spring2021_S07,Global Humanities and Social Change ,Andrew Bellisari,13:15:00,14:45:00,"Tuesday, Thursday,",Semester,Classroom 4
+CORE101_Spring2021_S09,Global Humanities and Social Change ,Pamela Stacey,13:15:00,16:15:00,"Monday,",Semester,Classroom 4
+CORE102_Spring2021_S02,Modern Vietnamese Culture and Society ,Nguyen Nam - Vu Minh Hoang - TAs,9:00:00,12:00:00,"Thursday,",Semester,Ting Foundation Space
+CORE102_Spring2021_S03,Modern Vietnamese Culture and Society ,Nguyen Nam - Vu Minh Hoang - TAs,9:00:00,12:00:00,"Friday,",Semester,Ting Foundation Space
+CORE103_Spring2021_S02,Quantitative Reasoning for a Digital Age ,Sebastian Dziallas,9:00:00,12:00:00,"Friday,",Semester,Classrooms 6&7
+CORE103_Spring2021_S04,Quantitative Reasoning for a Digital Age ,Linh Tran,9:00:00,12:00:00,"Wednesday,",Semester,Classrooms 6&7
+CORE103_Spring2021_S06,Quantitative Reasoning for a Digital Age ,Graeme Walker,9:00:00,12:00:00,"Monday,",Semester,Classrooms 6&7
+CORE104_Spring2021_S02,Scientific Inquiry ,Kinho Chan,13:15:00,14:45:00,"Monday, Wednesday,",Semester,Classroom 5
+CORE104_Spring2021_S08,Scientific Inquiry ,Jill Siri,9:00:00,12:00:00,"Thursday,",Semester,Art Studio
+CORE104_Spring2021_S09,Scientific Inquiry ,Samhitha Raj,9:00:00,12:00:00,"Monday,",Semester,Art Studio
+CORE104_Spring2021_S10,Scientific Inquiry ,Samhitha Raj,9:00:00,12:00:00,"Friday,",Semester,Maker Space
+CORE105_Spring2021_S04,Design and Systems Thinking ,Minh Nguyen,13:15:00,16:15:00,"Monday,",Semester,Maker Space
+CORE105_Spring2021_S06,Design and Systems Thinking ,Kien Truong,9:00:00,12:00:00,"Thursday,",Semester,Maker Space
+CORE105_Spring2021_S07,Design and Systems Thinking ,Minh Nguyen,13:15:00,16:15:00,"Friday,",Semester,Maker Space
+CS201_Spring2021_S01,Computer Science II: Data Structures ,Sebastian Dziallas,13:15:00,16:15:00,"Tuesday,",Semester,Classroom 5
+CS203_Spring2021_S01,Computer Organiztion ,Kien Truong,9:00:00,12:00:00,"Tuesday,",Semester,Classroom 8 & 9
+CS302_Spring2021_S01,Theory of Computing ,Hung Son Nguyen,18:30:00,20:00:00,"Wednesday, Thursday,",Quarter 3,Online
+CS302_Spring2021_S01,Theory of Computing ,Hung Son Nguyen,16:30:00,19:30:00,"Tuesday,",Quarter 3,Online
+CS303_Spring2021_S01,Human-Computer Interaction ,Sebastian Dziallas,13:15:00,16:15:00,"Thursday,",Semester,Classroom 5
+ECON101_Spring2021_S01,Principles of Economics 1 ,Graeme Walker,9:00:00,12:00:00,"Thursday,",Semester,Classroom 4
+ECON103_Spring2021_S01,Principles of Economics 2 ,Hieu Nguyen,13:15:00,16:15:00,"Monday,",Semester,Classroom 1
+ECON201_Spring2021_S01,Microeconomic Analysis ,Graeme Walker,15:00:00,16:30:00,"Tuesday, Thursday,",Semester,Classroom 1
+ECON203_Spring2021_S01,Macroeconomic Analysis ,Ben Bingham,9:45:00,11:15:00,"Tuesday, Thursday,",Semester,Classrooms 2&3
+ECON301_Spring2021_S01,Economic Development in Sub-Saharan Africa ,John Sender,9:00:00,12:00:00,"Monday, Friday,",Quarter 4,Classroom 4
+ENG203_Spring2021_S01,Modern Textiles ,David Bruce,8:00:00,11:00:00,"Wednesday,",Semester,Online
+ENG205_Spring2021_S01,Integrated Engineering Project ,Minh Nguyen,9:00:00,12:00:00,"Wednesday,",Semester,Classroom 5
+FRE101a_Spring2021_S01,French Beginner 1 ,Stephane Thierry,13:15:00,14:45:00,"Tuesday, Thursday,",Semester,Classrooms 8&9
+HIS101_Spring2021_S01,Fulbright History Lab & History Dialogues Project ,Andrew Bellisari & Jeremy Adelman & TA - Antoine Le,13:15:00,16:15:00,"Wednesday,",Semester,Classroom 4
+HIS106_Spring2021_S01,Modern Europe ,Andrew Bellisari,13:15:00,16:15:00,"Friday,",Semester,Classroom 4
+HIS108_Spring2021_S01,United States and the World ,Vu Minh Hoang,16:45:00,18:15:00,"Wednesday, Friday,",Semester,Classroom 5
+HIS204_Spring2021_S01,A History of ASEAN ,Vu Minh Hoang,13:15:00,14:45:00,"Tuesday, Thursday,",Semester,Classrooms 2&3
+IS101_Spring2021_S01,Introductory Biology ,Samhitha Raj,13:15:00,16:15:00,"Wednesday,",Semester,Art Studio
+IS202_Spring2021_S01,Matter ,Phan Vu Xuan Hung,8:00:00,11:00:00,"Tuesday,",Semester,Art Studio
+IS203_Spring2021_S01,Principles of Neuroscience ,Kinho Chan,9:45:00,11:15:00,"Monday, Wednesday,",Semester,Classrooms 8&9
+IS205_Spring2021_S01,Organic Chemistry ,Phan Vu Xuan Hung,8:00:00,11:00:00,"Friday,",Semester,Art Studio
+LIT103_Spring2021_S01,Critical Methods in Literary Studies ,Kevin Hart,9:00:00,12:00:00,"Monday,",Semester,Classroom 5
+LIT201_Spring2021_S01,"Text, Body, Technology: Individuals in Science Fiction ",Kevin Hart,9:00:00,12:00:00,"Wednesday,",Semester,Classroom 4
+LIT202_Spring2021_S01,Creative Writing Workshop ,Pamela Stacey,15:00:00,16:30:00,"Wednesday, Friday,",Semester,Classrooms 8&9
+LIT203_Spring2021_S01,"The Laboratory of the Mind: Thought Experiements in Physics, Philosophy, and Literature ",Michael Reid,18:30:00,20:00:00,"Tuesday, Thursday,",Semester,Online
+LIT204_Spring2021_S01,"Identity, Community, and Memory in Vietnamese Diasporic Literature and Film ",Isadora Wagner,13:15:00,16:15:00,"Monday,",Semester,Classrooms 8&9
+LIT206_Spring2021_S01,Women and Gender Studies: Representations of Women in Vietnam War Literature and Film ,Isadora Wagner,9:00:00,12:00:00,"Friday,",Semester,Classrooms 2&3
+MATH205_Spring2021_S01,Probability and Statistics ,Tran Vinh Linh,13:15:00,14:45:00,"Wednesday, Friday,",Semester,Online
+PSY101_Spring2021_S01,Introductory Psychology ,Jill Siri,13:15:00,16:15:00,"Tuesday,",Semester,Art Studio
+PSY101_Spring2021_S02,Introductory Psychology ,An Nguyen,13:15:00,16:15:00,"Tuesday,",Semester,TBD
+PSY202_Spring2021_S01,Developmental Psychology ,Jill Siri,13:15:00,16:15:00,"Friday,",Semester,Classroom 5
+PSY205_Spring2021_S01,Abnormal Psychology ,Chris Rebholz,9:00:00,12:00:00,"Tuesday,",Semester,Online
+SOCI105_Spring2021_S01,Research Methods in Social & Behavioral Science ,Co-design,9:45:00,11:15:00,"Tuesday, Thursday,",Semester,Classrooms 8&9
+SOCI202_Spring2021_S01,Digital Anthropology ,Ian Kalman,9:45:00,11:15:00,"Monday, Wednesday,",Semester,Classrooms 8&9
+SOCI205_Spring2021_S01,"Language, Culture and Thought ",Ian Kalman,16:45:00,18:15:00,"Monday, Wednesday,",Semester,Classroom 4
+VS201_Spring2021_S01,Going Hand in Hand: Politics and Economic Development in Contemporary Vietnam ,Nguyen Thanh Trung,9:00:00,12:00:00,"Tuesday,",Semester,Classroom 4

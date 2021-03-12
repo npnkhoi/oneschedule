@@ -2,33 +2,76 @@
   text-align: center;
   height: 95vh;
   margin-bottom: 10px;
-  color: #00196E;
-  font-family: halyard-display, sans-serif;
-  font-style: normal;
-  font-weight: 100;
+  color: gray;
+  font-family: 'B612', sans-serif;
+}
+
+.header {
+  height: fit-content;
+  background-color: #264653;
 }
 
 .app-title {
-  font-family: garamond-premier-pro, serif;
-  font-size: 70px;
-  font-weight: bold;
-  font-stretch: expanded;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 36px;
+  width: fit-content;
+  color: #E9C46A;
+}
+
+.right-bar {
+  flex-grow: 1;
+  margin-left: 50px;
 }
 
 .list-group-item.active {
-  background-color: #CEEDF6;
-  color: #FFAD1D;
+  background-color: white;
+  color: #E76F51;
 }
 
-.watermark {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+.selecting {
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.selected{
+  padding-bottom: 12px;
+  padding-top: 10px;
+  margin-top: 2px;
+  border-bottom: 1px solid #dee2e6;
+  border-left: 5px solid #264653;
+}
+
+.toggle-btns {
+  width: fit-content;
+}
+
+.toggle-btns > button > i {
+  color: #264653;
+}
+
+.instructor-name {
+  width: 20%;
+  font-size: 13px;
+  color: gray;
 }
 
 /* calendar */
-#root > div > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
-  width: 900px;
+#root > div > div:nth-child(2) > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+  width: 50%;
+  height: 85vh;
+  color: #264653;
+}
+
+/* calendar header */
+#root > div > div.d-flex.flex-row.justify-content-between > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard > div.fc-header-toolbar.fc-toolbar {
+  display: none;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 28px;
+  color: #E76F51;
+  margin-bottom: 20px;
 }
 
 .fc-event-title {
@@ -39,6 +82,7 @@
   padding: 5px;
 }
 
+/* TODO: make this more real */
 .shadow {
   -moz-box-shadow:    3px 3px 2px 3px #ccc;
   -webkit-box-shadow: 3px 3px 2px 3px #ccc;

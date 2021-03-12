@@ -1,7 +1,7 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
 
-const Calendar = ({chosenCourses, courses}) => {
+const Calendar = ({selectedCourses, courses}) => {
   const dayId = {
     'Sunday': 0,
     'Monday': 1,
@@ -13,7 +13,7 @@ const Calendar = ({chosenCourses, courses}) => {
   }
 
   const events = courses
-  .filter(course => chosenCourses.includes(course.id))
+  .filter(course => selectedCourses.filter((selected) => selected.id === course.id).length > 0)
   .map(course => ({
     title: course.id,
     startTime: course.start_time,
