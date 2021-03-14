@@ -1,5 +1,4 @@
 const SelectedCourses = ({courses, isSelected, isVisible, toggleVisibility, toggleSelection}) => {
-  console.log("Starting SelectedCourses, courses = ", courses);
   return (
   <div className="mt-4 chosen-courses d-flex flex-column">
     {

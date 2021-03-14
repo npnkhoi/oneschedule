@@ -2,6 +2,7 @@ import courses from './data/courses_v2'
 import './App.css';
 import React, { useState, useEffect } from 'react'
 import Calendar from './components/Calendar'
+import Searcher from './components/Searcher'
 import SelectedCourses from './components/SelectedCourses'
 
 function usePersistedState(key, defaultValue) {
@@ -35,46 +36,6 @@ function App() {
     ))
 }
   const [ filter, setFilter ] = useState('')
-  const changeText = (event) => {
-    const text = event.target.value;
-    setFilter(text);
-  }
-
-  const CourseInfo = (course) => {
-    return (
-      <div className="d-flex flex-row justify-content-between align-items-center">
-        <div className="w-75 px-1">{course.course_name}</div>
-        <div className="instructor-name w-25 px-1 border-left">{course.instructor_name}</div>
-      </div>
-    )
-  }
-
-  let courseList = (null)
-  if (filter !== "") {
-    const matchedCourses = courses
-    .filter((course) => (course.course_name + "|" + course.instructor_name).toLowerCase().includes(filter.toLowerCase()))
-
-
-    if (matchedCourses.length === 0) {
-      courseList = (<button className="list-group-item">No courses matched.</button>)
-    } else {
-      courseList = matchedCourses
-        .map((course) => 
-          <button 
-            className={`
-              px-0
-              list-group-item ${isSelected(course.id) ? "active" : ""}
-            `}
-            onClick={() => toggleSelection(course.id)}
-            key={course.id}
-            data-bs-toggle="tooltip" data-bs-placement="right" 
-            title={`[${course.id}] From ${course.start_time} to ${course.end_time} on ${course.days}`}
-          >
-            {CourseInfo(course)}
-          </button>
-        )
-    }
-  }
 
   return (
     <div className="App d-flex flex-column container">
@@ -90,31 +51,20 @@ function App() {
         <div className="right-bar w-50">
           <div className="heading">Spring, 2021</div>
 
-          <input 
-            className="form-control py-4" 
-            id="search-input"
-            onChange={changeText} 
-            placeholder="Add course to timetable"
-            onKeyDown={(event) => {
-              if ( event.key === 'Escape' ) {
-                setFilter("")
-                document.getElementById('search-input').value = ""
-              }
-            }}
+          <Searcher 
+            isSelected={isSelected}
+            toggleSelection={toggleSelection}
+            filter={filter}
+            setFilter={setFilter}
           />
 
-          <div className="info w-100">
-            <div className="selecting course-list list-group border rounded shadow">
-              {courseList}
-            </div>
-            <SelectedCourses 
-              courses={courses} 
-              isSelected={isSelected}
-              isVisible={isVisible}
-              toggleVisibility={toggleVisibility}
-              toggleSelection={toggleSelection}
-            />
-          </div>
+          <SelectedCourses 
+            courses={courses} 
+            isSelected={isSelected}
+            isVisible={isVisible}
+            toggleVisibility={toggleVisibility}
+            toggleSelection={toggleSelection}
+          />
         </div>
       </div>
 
