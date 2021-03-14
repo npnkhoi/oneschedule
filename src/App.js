@@ -1,8 +1,8 @@
 import courses from './data/courses_v2'
 import './App.css';
 import React, { useState, useEffect } from 'react'
-
 import Calendar from './components/Calendar'
+import SelectedCourses from './components/SelectedCourses'
 
 function usePersistedState(key, defaultValue) {
   const [state, setState] = useState(
@@ -16,14 +16,12 @@ function usePersistedState(key, defaultValue) {
 
 function App() {
   const [ selectedCourses, setSelectedCourses ] = usePersistedState('selectedCourses', [])
-  const [ filter, setFilter ] = useState('')
-
+  
   const isSelected = (courseId) => (selectedCourses.filter((course) => course.id === courseId).length > 0);
   const isVisible = (courseId) => {
     const val = selectedCourses.filter((course) => course.id === courseId)
     return (val.length > 0 && val[0].visible)
   }
-
   const toggleSelection = (id) => {
     if (isSelected(id)) {
       setSelectedCourses(selectedCourses.filter(course => course.id !== id));
@@ -31,13 +29,12 @@ function App() {
       setSelectedCourses([...selectedCourses, {id: id, visible: true}]);
     }
   }
-
   const toggleVisibility = (id) => {
     setSelectedCourses(selectedCourses.map(
       course => (course.id === id ? {...course, visible: !course.visible} : course)
     ))
-  }
-
+}
+  const [ filter, setFilter ] = useState('')
   const changeText = (event) => {
     const text = event.target.value;
     setFilter(text);
@@ -79,7 +76,6 @@ function App() {
     }
   }
 
-
   return (
     <div className="App d-flex flex-column container">
       
@@ -89,8 +85,11 @@ function App() {
 
       <div className="main mt-4 d-flex flex-row justify-content-between">
         <Calendar selectedCourses={selectedCourses.filter(course => course.visible)} courses={courses}/>
+        
+        
         <div className="right-bar w-50">
           <div className="heading">Spring, 2021</div>
+
           <input 
             className="form-control py-4" 
             id="search-input"
@@ -108,34 +107,13 @@ function App() {
             <div className="selecting course-list list-group border rounded shadow">
               {courseList}
             </div>
-            <div className="mt-4 chosen-courses d-flex flex-column">
-              {
-                courses
-                .filter((course) => isSelected(course.id))
-                .map((course) => (
-                  <div className="selected d-flex flex-row justify-content-between align-items-center" key={course.id}> 
-                    <div className="flex-grow-1 px-2">{course.course_name}</div>
-
-                    <div className="toggle-btns d-flex flew-row">
-                      <button 
-                        className="btn"
-                        onClick={() => toggleVisibility(course.id)}
-                      >
-                        {isVisible(course.id) ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
-                        
-                      </button>
-
-                      <button 
-                        className="btn"
-                        onClick={() => toggleSelection(course.id)}
-                      >
-                        <i className="fas fa-trash"></i>
-                      </button>
-                    </div>
-                  </div>
-                ))
-              }
-            </div>
+            <SelectedCourses 
+              courses={courses} 
+              isSelected={isSelected}
+              isVisible={isVisible}
+              toggleVisibility={toggleVisibility}
+              toggleSelection={toggleSelection}
+            />
           </div>
         </div>
       </div>
@@ -143,5 +121,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
