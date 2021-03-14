@@ -45,9 +45,11 @@ function App() {
       </div>
 
       <div className="main mt-4 d-flex flex-row justify-content-between">
-        <Calendar selectedCourses={selectedCourses.filter(course => course.visible)} courses={courses}/>
-        
-        
+        <Calendar 
+          selectedCourses={selectedCourses.filter(course => course.visible)} 
+          courses={courses}
+        />
+      
         <div className="right-bar w-50">
           <div className="heading">Spring, 2021</div>
 
