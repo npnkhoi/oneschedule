@@ -48,10 +48,7 @@ const Help = () => {
             <div class="modal-body">
               <p>Momo: 0928714623 </p>
               <p>ACB: 7132717</p>
-              <p>Your support means a lot to me.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn" data-dismiss="modal">Close</button>
+              <p>If you are sending me a gift, don't forget to tell me who you are. Your support means a lot to me.</p>
             </div>
           </div>
         </div>
