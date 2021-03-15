@@ -1,0 +1,35 @@
+.burger:hover {
+  background-color: #2A9D8F;
+}
+
+.help {
+  width: 300px;
+  height: 100%;
+  border-left: #264653 solid 1px;
+}
+
+.avatar {
+  border-radius: 12px;
+}
+
+.donate-cta {
+  background-color: #264653;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #E76F51;
+}
+
+.donate-cta:hover {
+  background-color: #2A9D8F;
+}
+
+.help-heading {
+  font-weight: 600;
+  color: #E76F51;
+  margin-bottom: 5px;
+}
+
+.modal-footer > button {
+  background-color: #264653;
+}

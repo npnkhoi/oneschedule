@@ -3,7 +3,9 @@ import './App.css';
 import React, { useState, useEffect } from 'react'
 import Calendar from './components/Calendar'
 import Searcher from './components/Searcher'
+import Help from './components/Help'
 import SelectedCourses from './components/SelectedCourses'
+import { CSSTransitionGroup } from 'react-transition-group'
 
 function usePersistedState(key, defaultValue) {
   const [state, setState] = useState(
@@ -34,42 +36,59 @@ function App() {
     setSelectedCourses(selectedCourses.map(
       course => (course.id === id ? {...course, visible: !course.visible} : course)
     ))
-}
+  }
   const [ filter, setFilter ] = useState('')
+  const [showHelp, setShowHelp] = useState(false)
+  const toggleHelp = () => {setShowHelp(!showHelp)}
 
   return (
-    <div className="App d-flex flex-column container">
+    <div className="App d-flex flex-column">
       
-      <div className="header w-100 flex-row"> 
-        <h1 className="app-title ml-4" >FulCourse</h1>
+      {/* Header */}
+      <div className="header w-100 d-flex flex-row justify-content-between pl-4"> 
+        <h1 className="app-title" >OneSchedule</h1>
+        <button class="btn burger" onClick={toggleHelp}>
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
 
-      <div className="main mt-4 d-flex flex-row justify-content-between">
-        <Calendar 
-          selectedCourses={selectedCourses.filter(course => course.visible)} 
-          courses={courses}
-        />
-      
-        <div className="right-bar w-50">
-          <div className="heading">Spring, 2021</div>
+      {/* Main */}
+      <div className="main mt-4 mx-4 d-flex flex-row justify-content-between">
 
-          <Searcher 
-            isSelected={isSelected}
-            toggleSelection={toggleSelection}
-            filter={filter}
-            setFilter={setFilter}
+        <div className="d-flex flex-row flex-grow-1">
+          <Calendar 
+            selectedCourses={selectedCourses.filter(course => course.visible)} 
+            courses={courses}
           />
+        
+          <div className="right-bar w-50">
+            <div className="heading">Spring, 2021</div>
 
-          <SelectedCourses 
-            courses={courses} 
-            isSelected={isSelected}
-            isVisible={isVisible}
-            toggleVisibility={toggleVisibility}
-            toggleSelection={toggleSelection}
-          />
+            <Searcher 
+              isSelected={isSelected}
+              toggleSelection={toggleSelection}
+              filter={filter}
+              setFilter={setFilter}
+            />
+
+            <SelectedCourses 
+              courses={courses} 
+              isSelected={isSelected}
+              isVisible={isVisible}
+              toggleVisibility={toggleVisibility}
+              toggleSelection={toggleSelection}
+            />
+          </div>
         </div>
-      </div>
 
+        <CSSTransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}
+        >
+          {showHelp ? <Help key="x"/> : <></>}
+        </CSSTransitionGroup>
+      </div>
     </div>
   );
 }

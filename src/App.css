@@ -9,18 +9,14 @@
 .header {
   height: fit-content;
   background-color: #264653;
-}
-
-.app-title {
   font-family: 'Paytone One', sans-serif;
   font-size: 36px;
-  width: fit-content;
   color: #E9C46A;
 }
 
 .right-bar {
   flex-grow: 1;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .list-group-item.active {
@@ -56,14 +52,14 @@
 }
 
 /* calendar */
-#root > div > div:nth-child(2) > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+#root > div > div.main.mt-4.d-flex.flex-row.justify-content-between > div.d-flex.flex-row.flex-grow-1 > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
   width: 50%;
   height: 85vh;
   color: #264653;
 }
 
 /* calendar header */
-#root > div > div.d-flex.flex-row.justify-content-between > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard > div.fc-header-toolbar.fc-toolbar {
+#root > div > div.main.mt-4.d-flex.flex-row.justify-content-between > div.d-flex.flex-row.flex-grow-1 > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard > div.fc-header-toolbar.fc-toolbar {
   display: none;
 }
 
@@ -87,4 +83,31 @@
   -moz-box-shadow:    3px 3px 2px 3px #ccc;
   -webkit-box-shadow: 3px 3px 2px 3px #ccc;
   box-shadow:         3px 3px 2px 3px #ccc;
+}
+
+.burger {
+  color: #E9C46A;
+  font-size: 30px;
+}
+
+CSSTransitionGroup {
+  width: fit-content;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 150ms ease-in;
 }
