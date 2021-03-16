@@ -37,7 +37,6 @@ function App() {
       course => (course.id === id ? {...course, visible: !course.visible} : course)
     ))
   }
-  const [ filter, setFilter ] = useState('')
   const [showHelp, setShowHelp] = useState(false)
   const toggleHelp = () => {setShowHelp(!showHelp)}
 
@@ -67,8 +66,6 @@ function App() {
             <Searcher 
               isSelected={isSelected}
               toggleSelection={toggleSelection}
-              filter={filter}
-              setFilter={setFilter}
             />
 
             <SelectedCourses 

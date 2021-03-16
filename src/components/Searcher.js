@@ -1,6 +1,18 @@
 import courses from '../data/courses_v2'
+import {useEffect, useState} from 'react'
 
-const Searcher = ({isSelected, toggleSelection, setFilter, filter}) => {
+const Searcher = ({isSelected, toggleSelection}) => {
+  const [ filter, setFilter ] = useState('')
+
+  useEffect(() => {
+    window.addEventListener('keydown', (event) => {
+      if ( event.key === 'Escape' ) {
+        setFilter("")
+        document.getElementById('search-input').value = ""
+      }
+    })
+  })
+
   const changeText = (event) => {
     const text = event.target.value;
     setFilter(text);
@@ -49,12 +61,6 @@ const Searcher = ({isSelected, toggleSelection, setFilter, filter}) => {
         id="search-input"
         onChange={changeText} 
         placeholder="Add course to timetable"
-        onKeyDown={(event) => {
-          if ( event.key === 'Escape' ) {
-            setFilter("")
-            document.getElementById('search-input').value = ""
-          }
-        }}
       />
       <div className="selecting course-list list-group border rounded shadow">
         {courseList}
