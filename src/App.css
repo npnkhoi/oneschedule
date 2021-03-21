@@ -19,17 +19,16 @@
   margin-left: 30px;
 }
 
-.list-group-item.active {
-  background-color: white;
+.list-group-item.selected {
   color: #E76F51;
 }
 
-.selecting {
+/* .selecting {
   max-height: 250px;
   overflow-y: scroll;
-}
+} */
 
-.selected{
+.selected-course{
   padding-bottom: 12px;
   padding-top: 10px;
   margin-top: 2px;
@@ -111,3 +110,8 @@ CSSTransitionGroup {
   opacity: 0.01;
   transition: opacity 150ms ease-in;
 }
+
+.list-group-item.focus {
+  background-color: #ccc;
+}
+

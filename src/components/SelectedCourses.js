@@ -5,7 +5,7 @@ const SelectedCourses = ({courses, isSelected, isVisible, toggleVisibility, togg
       courses
       .filter((course) => isSelected(course.id))
       .map((course) => (
-        <div className="selected d-flex flex-row justify-content-between align-items-center" key={course.id}> 
+        <div className="selected-course d-flex flex-row justify-content-between align-items-center" key={course.id}> 
           <div className="flex-grow-1 px-2">{course.course_name}</div>
 
           <div className="toggle-btns d-flex flew-row">

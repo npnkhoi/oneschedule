@@ -5,7 +5,7 @@ import './Help.css'
 const Help = () => {
   return (
     <div 
-      className="help ml-4 pl-4 d-flex flex-column justify-content-between"
+      className="help ml-4 pl-4 mb-4 d-flex flex-column justify-content-between"
     >
       <img alt="Khoi avatar" src={avatar} className="avatar mb-2"></img>
 
