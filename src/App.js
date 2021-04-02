@@ -60,7 +60,7 @@ function App() {
             courses={courses}
           />
         
-          <div className="right-bar w-50">
+          <div className="right-bar">
             <div className="heading">Spring, 2021</div>
 
             <Searcher 
