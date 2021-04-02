@@ -10,12 +10,10 @@ const Searcher = ({isSelected, toggleSelection}) => {
 
   const handleArrowDown = () => {
     setFocusItem((focusItem + 1) % nVisibleCourses)
-    console.log('down', nVisibleCourses, focusItem)
   }
 
   const handleArrowUp = () => {
     setFocusItem((focusItem + nVisibleCourses - 1) % nVisibleCourses)
-    console.log('up', nVisibleCourses, focusItem)
   }
 
   useEffect(() => {
@@ -50,8 +48,6 @@ const Searcher = ({isSelected, toggleSelection}) => {
       .toLowerCase().includes(filter.toLowerCase())
     )
 
-    console.log('matched courses:', matchedCourses);
-
     if (matchedCourses.length === 0) {
       return (<button className="list-group-item">No courses matched.</button>)
     } else {
@@ -76,7 +72,6 @@ const Searcher = ({isSelected, toggleSelection}) => {
     }
   }
 
-  console.log('matched courses before focus: ', matchedCourses);
   const isFocused = (id) => (matchedCourses[focusItem].id === id)
 
   return (
