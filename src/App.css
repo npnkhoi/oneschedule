@@ -17,6 +17,7 @@
 .right-bar {
   margin-left: 30px;
   flex-grow: 1;
+  width: 40%;
 }
 
 .list-group-item.selected {
@@ -34,6 +35,15 @@
   margin-top: 2px;
   border-bottom: 1px solid #dee2e6;
   border-left: 5px solid #264653;
+}
+
+.selected-info {
+  text-align: left;
+}
+
+.selected-instructor {
+  font-size: small;
+  font-style: italic;
 }
 
 .toggle-btns {
