@@ -21,13 +21,8 @@
 }
 
 .donate-cta:hover {
-  background-color: #2A9D8F;
-}
-
-.help-heading {
-  font-weight: 600;
-  color: var(--orange);
-  margin-bottom: 5px;
+  background-color: var(--bright-green);
+  color: var(--yellow);
 }
 
 .modal-footer > button {

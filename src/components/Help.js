@@ -11,7 +11,7 @@ const Help = () => {
 
       <div className="help-text text-left">
         <p>OneSchedule is a quick and simple tool that visualizes your course schedule. Works best with Google Chrome. Made by Nguyen Phung Nhat Khoi (Co23)</p>
-        <p className="help-heading">How to use OneSchedule?</p>
+        <p className="heading-2">How to use OneSchedule?</p>
         <ul>
           <li> Search for your course </li>
           <li> Add course to timetable </li>
@@ -23,13 +23,13 @@ const Help = () => {
           <button className="btn">Report an issue</button>
         </div>
         
-        <p className="help-heading">OneSchedule is free!</p>
+        <p className="heading-2">OneSchedule is free!</p>
         <p>I believe every student has the right to look at their schedule at the best visualization, FOR FREE.</p>
 
       </div>
 
       <button 
-        className="donate-cta py-2 mt-2 d-flex flex-row justify-content-center align-items-center"
+        className="donate-cta py-2 mb-4 d-flex flex-row justify-content-center align-items-center"
         data-toggle="modal" data-target="#exampleModalCenter"
       >
         <span>Buy me a coffee</span>
@@ -40,7 +40,7 @@ const Help = () => {
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title help-heading" id="exampleModalLongTitle">Buy me a coffee</h5>
+              <h5 class="modal-title heading-2" id="exampleModalLongTitle">Buy me a coffee</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>

@@ -16,11 +16,15 @@ const Searcher = ({isSelected, toggleSelection}) => {
     setFocusItem((focusItem + nVisibleCourses - 1) % nVisibleCourses)
   }
 
+  const collapseSuggestions = () => {
+    setFilter("")
+    document.getElementById('search-input').value = ""
+  }
+
   useEffect(() => {
     window.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
-        setFilter("")
-        document.getElementById('search-input').value = ""
+        collapseSuggestions()
       }
     })
   })
@@ -58,7 +62,7 @@ const Searcher = ({isSelected, toggleSelection}) => {
           <button 
             className={`
               px-0 list-group-item 
-              ${isSelected(course.id) ? "selected" : ""}
+              ${isSelected(course.id) ? "heading-2" : ""}
               ${isFocused(course.id) ? "focus" : ""}
             `}
             onClick={() => toggleSelection(course.id)}
@@ -79,6 +83,7 @@ const Searcher = ({isSelected, toggleSelection}) => {
       <input 
         className="form-control py-4" 
         id="search-input"
+        autoComplete="off"
         onChange={changeText} 
         placeholder="Add course to timetable"
         onKeyDown={(event) => {
@@ -91,6 +96,7 @@ const Searcher = ({isSelected, toggleSelection}) => {
               return 
             }
             toggleSelection(matchedCourses[focusItem].id)
+            collapseSuggestions()
           }
         }}
       />

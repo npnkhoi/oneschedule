@@ -9,7 +9,7 @@
 
 .App {
   text-align: center;
-  height: 95vh;
+  height: full;
   margin-bottom: 10px;
   color: gray;
   font-family: 'B612', sans-serif;
@@ -29,14 +29,18 @@
   width: 40%;
 }
 
-.list-group-item.selected {
+.heading-1 {
+  font-weight: 700;
+  font-size: 28px;
   color: var(--orange);
+  margin-bottom: 20px;
 }
 
-/* .selecting {
-  max-height: 250px;
-  overflow-y: scroll;
-} */
+.heading-2 {
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 2px;
+}
 
 .selected-course{
   padding-bottom: 12px;
@@ -79,13 +83,6 @@
 /* calendar header */
 #root > div > div.main.mt-4.d-flex.flex-row.justify-content-between > div.d-flex.flex-row.flex-grow-1 > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard > div.fc-header-toolbar.fc-toolbar {
   display: none;
-}
-
-.heading {
-  font-weight: 700;
-  font-size: 28px;
-  color: var(--orange);
-  margin-bottom: 20px;
 }
 
 .fc-event-title {

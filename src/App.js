@@ -61,7 +61,7 @@ function App() {
           />
         
           <div className="right-bar">
-            <div className="heading">Spring, 2021</div>
+            <div className="heading-1">Spring, 2021</div>
 
             <Searcher 
               isSelected={isSelected}
