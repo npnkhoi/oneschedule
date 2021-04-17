@@ -1,6 +1,6 @@
-import avatar from './ConNgon.jpg'
+import avatar from '../assets/ConNgon.jpg'
 import './Help.css'
-
+import MomoQR from '../assets/momo-qr.jpg'
 
 const Help = () => {
   return (
@@ -46,8 +46,9 @@ const Help = () => {
               </button>
             </div>
             <div class="modal-body">
+              <p>ACB: 7132717 (NGUYEN PHUNG NHAT KHOI) </p>
               <p>Momo: 0928714623 </p>
-              <p>ACB: 7132717</p>
+              <img src={MomoQR} alt="Momo QR Code" class="w-75"></img>
               <p>If you are sending me a gift, don't forget to tell me who you are. Your support means a lot to me.</p>
             </div>
           </div>
