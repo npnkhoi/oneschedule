@@ -1,11 +1,11 @@
 .burger:hover {
-  background-color: #2A9D8F;
+  background-color: var(--bright-green);
 }
 
 .help {
   width: 300px;
   height: 100%;
-  border-left: #264653 solid 1px;
+  border-left: var(--dark-green) solid 1px;
 }
 
 .avatar {
@@ -13,11 +13,11 @@
 }
 
 .donate-cta {
-  background-color: #264653;
+  background-color: var(--dark-green);
   border-radius: 30px;
   font-size: 20px;
   font-weight: 600;
-  color: #E76F51;
+  color: var(--orange);
 }
 
 .donate-cta:hover {
@@ -26,10 +26,10 @@
 
 .help-heading {
   font-weight: 600;
-  color: #E76F51;
+  color: var(--orange);
   margin-bottom: 5px;
 }
 
 .modal-footer > button {
-  background-color: #264653;
+  background-color: var(--dark-green);
 }
