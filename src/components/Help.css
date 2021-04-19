@@ -28,3 +28,8 @@
 .modal-footer > button {
   background-color: var(--dark-green);
 }
+
+.feedback {
+  color: var(--dark-green);
+  font-weight: bold;
+}

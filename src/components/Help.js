@@ -18,9 +18,15 @@ const Help = () => {
           <li> Remove/hide courses (if needed) </li>
           <li> See your timetable with bare eyes! </li>
         </ul>
-        <div>
-          <button className="btn">Feedback</button> |
-          <button className="btn">Report an issue</button>
+        <div class="mb-3">
+          <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScIRIBsSk_ciXC_peeanPJXyeh7MB56eaGhOvNWWoznSaM_6g/viewform?usp=sf_link"
+            class="feedback"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Feedback or Report an issue
+          </a>
         </div>
         
         <p className="heading-2">OneSchedule is free!</p>
