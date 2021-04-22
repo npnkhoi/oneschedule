@@ -18,10 +18,10 @@ const Help = () => {
           <li> Remove/hide courses (if needed) </li>
           <li> See your timetable with bare eyes! </li>
         </ul>
-        <div class="mb-3">
+        <div className="mb-3">
           <a 
             href="https://docs.google.com/forms/d/e/1FAIpQLScIRIBsSk_ciXC_peeanPJXyeh7MB56eaGhOvNWWoznSaM_6g/viewform?usp=sf_link"
-            class="feedback"
+            className="feedback"
             target="_blank"
             rel="noreferrer"
           >
@@ -42,19 +42,19 @@ const Help = () => {
         <i className="fas fa-coffee ml-2 text-white"></i>
       </button>
 
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title heading-2" id="exampleModalLongTitle">Buy me a coffee</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div className="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title heading-2" id="exampleModalLongTitle">Buy me a coffee</h5>
+              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <p>ACB: 7132717 (NGUYEN PHUNG NHAT KHOI) </p>
               <p>Momo: 0928714623 </p>
-              <img src={MomoQR} alt="Momo QR Code" class="w-75"></img>
+              <img src={MomoQR} alt="Momo QR Code" className="w-75"></img>
               <p>If you are sending me a gift, don't forget to tell me who you are. Your support means a lot to me.</p>
             </div>
           </div>

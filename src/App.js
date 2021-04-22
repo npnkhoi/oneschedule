@@ -46,8 +46,8 @@ function App() {
       {/* Header */}
       <div className="header w-100 d-flex flex-row justify-content-between pl-4"> 
         <h1 className="app-title" >OneSchedule</h1>
-        <button class="btn burger" onClick={toggleHelp}>
-          <i class="fas fa-bars"></i>
+        <button className="btn burger" onClick={toggleHelp}>
+          <i className="fas fa-bars"></i>
         </button>
       </div>
 

@@ -17,7 +17,7 @@ const Searcher = ({isSelected, toggleSelection}) => {
   }
 
   const collapseSuggestions = () => {
-    setFilter("")
+    changeText("")
     document.getElementById('search-input').value = ""
   }
 
@@ -29,13 +29,20 @@ const Searcher = ({isSelected, toggleSelection}) => {
     })
   })
 
-  const changeText = (event) => {
-    const text = event.target.value;
+  const changeText = (text) => {
     setFilter(text);
+    setFocusItem(0);
   }
 
-  // const fieldRef = useRef<HTMLInputElement>(null);
-  // const fieldRef2 = useRef<HTMLInputElement>(null);
+  const onInputChanged = (event) => {
+    const text = event.target.value;
+    changeText(text);
+  }
+
+  const onCourseToggle = (id) => {
+    toggleSelection(id);
+    collapseSuggestions()
+  }
 
   const CourseInfo = (course) => {
     return (
@@ -61,11 +68,11 @@ const Searcher = ({isSelected, toggleSelection}) => {
         .map((course) => 
           <button 
             className={`
-              px-0 list-group-item 
+              px-0 list-group-item
               ${isSelected(course.id) ? "heading-2" : ""}
               ${isFocused(course.id) ? "focus" : ""}
             `}
-            onClick={() => toggleSelection(course.id)}
+            onClick={() => onCourseToggle(course.id)}
             key={course.id}
             data-bs-toggle="tooltip" data-bs-placement="right" 
             title={`[${course.id}] From ${course.start_time} to ${course.end_time} on ${course.days}`}
@@ -79,14 +86,15 @@ const Searcher = ({isSelected, toggleSelection}) => {
   const isFocused = (id) => (matchedCourses[focusItem].id === id)
 
   return (
-    <div class="filter">
+    <div className="filter">
       <input 
         className="form-control py-4" 
         id="search-input"
-        autoComplete="off"
-        onChange={changeText} 
         placeholder="Add course to timetable"
+        autoComplete="off"
+        onChange={onInputChanged} 
         onKeyDown={(event) => {
+          // TODO: refactor
           if (event.key === 'ArrowUp') {
             handleArrowUp()
           } else if (event.key === 'ArrowDown') {
@@ -95,8 +103,7 @@ const Searcher = ({isSelected, toggleSelection}) => {
             if (matchedCourses.length === 0) {
               return 
             }
-            toggleSelection(matchedCourses[focusItem].id)
-            collapseSuggestions()
+            onCourseToggle(matchedCourses[focusItem].id)
           }
         }}
       />

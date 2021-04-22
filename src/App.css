@@ -127,7 +127,10 @@ CSSTransitionGroup {
   transition: opacity 150ms ease-in;
 }
 
-.list-group-item.focus {
+.selecting > .list-group-item.focus {
   background-color: #ccc;
 }
 
+.selecting > .list-group-item:hover {
+  background-color: #ccc;
+}

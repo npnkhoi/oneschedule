@@ -7,8 +7,8 @@ const SelectedCourses = ({courses, isSelected, isVisible, toggleVisibility, togg
       .map((course) => (
         <div className="selected-course d-flex flex-row justify-content-between align-items-center" key={course.id}> 
           <div className="selected-info flex-grow-1 pl-3 pr-2 d-flex flex-column">
-            <div class="heading-2">{course.course_name}</div>
-            <div class="selected-instructor mt-2">{course.instructor_name} ({course.id})</div>
+            <div className="heading-2">{course.course_name}</div>
+            <div className="selected-instructor mt-2">{course.instructor_name} ({course.id})</div>
           </div>
 
           <div className="toggle-btns d-flex flew-row">
