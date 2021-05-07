@@ -52,8 +52,9 @@ const Help = () => {
               </button>
             </div>
             <div className="modal-body">
-              <p>ACB: 7132717 (NGUYEN PHUNG NHAT KHOI) </p>
-              <p>Momo: 0928714623 </p>
+              <p>NGUYEN PHUNG NHAT KHOI </p>
+              <p>ACB: 7132717</p>
+              <p>Momo: 0343059217 </p>
               <img src={MomoQR} alt="Momo QR Code" className="w-75"></img>
               <p>If you are sending me a gift, don't forget to tell me who you are. Your support means a lot to me.</p>
             </div>
