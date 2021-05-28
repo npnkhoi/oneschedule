@@ -8,6 +8,7 @@
 }
 
 .App {
+  font-size: 14px;
   text-align: center;
   height: full;
   margin-bottom: 10px;
@@ -19,7 +20,7 @@
   height: fit-content;
   background-color: var(--dark-green);
   font-family: 'Paytone One', sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   color: var(--yellow);
 }
 
@@ -31,7 +32,7 @@
 
 .heading-1 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 20px;
   color: var(--orange);
   margin-bottom: 20px;
 }
@@ -80,7 +81,6 @@
   color: var(--dark-green);
 }
 
-/* calendar header */
 #root > div > div.main.mt-4.d-flex.flex-row.justify-content-between > div.d-flex.flex-row.flex-grow-1 > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard > div.fc-header-toolbar.fc-toolbar {
   display: none;
 }
@@ -93,6 +93,8 @@
   padding: 5px;
 }
 
+/* end of calendar */
+
 /* TODO: make this more real */
 .shadow {
   -moz-box-shadow:    3px 3px 2px 3px #ccc;
@@ -102,7 +104,7 @@
 
 .burger {
   color: var(--yellow);
-  font-size: 30px;
+  font-size: 20px;
 }
 
 CSSTransitionGroup {

@@ -109,7 +109,7 @@ const Searcher = ({isSelected, toggleSelection}) => {
       />
       {
         filter !== "" ?
-          <div className="selecting list-group border rounded shadow">
+          <div className="selecting list-group shadow">
             <CourseList/>
             {/* <p className="list-group-item"> {matchedCourses.length} courses matched. </p> */}
           </div>

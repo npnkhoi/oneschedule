@@ -1,7 +1,8 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
+import { toast } from 'react-toastify';
 
-const Calendar = ({selectedCourses, courses}) => {
+const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap}) => {
   const dayId = {
     'Sunday': 0,
     'Monday': 1,
@@ -20,6 +21,50 @@ const Calendar = ({selectedCourses, courses}) => {
     endTime: course.end_time,
     daysOfWeek: course.days.split(/[ ,]+/).map(day => dayId[day])
   }))
+
+  const getSeconds = (stringTime) => {
+    const nums = stringTime.split(/[:]+/)
+    return (nums[0] * 24 + nums[1]) * 60 + nums[2]
+  }
+
+  const overlap = (courseA, courseB) => {
+    let daysOverlap = false
+    courseA.daysOfWeek.forEach((day1) => {
+      courseB.daysOfWeek.forEach((day2) => {
+        if (day1 && day2 && day1 === day2) {
+          daysOverlap = true
+        }
+      })
+    })
+    if (!daysOverlap) {
+      return false
+    }
+    const startA = getSeconds(courseA.startTime)
+    const endA = getSeconds(courseA.endTime)
+    const startB = getSeconds(courseB.startTime)
+    const endB = getSeconds(courseB.endTime)
+
+    return !((endA <= startB) || (endB <= startA))
+  }
+  let overlapDeteced = false;
+  
+  events.forEach((course1) => {
+    events.forEach((course2) => {
+      if (course1.title !== course2.title && overlap(course1, course2)) {
+        console.log('overlap here', course1.title, course2.title);
+        overlapDeteced = true
+      }
+    })
+  })
+  if (scheduleOverlap !== overlapDeteced) {
+    if (overlapDeteced) {
+      toast.warn("There are some schedule conflicts!", {
+        toastId: 1
+      })
+      console.log('Toast called when overlapDetected is', overlapDeteced);
+    }
+    setScheduleOverlap(overlapDeteced)
+  }
 
   return (
   <FullCalendar

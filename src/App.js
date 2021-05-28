@@ -6,6 +6,8 @@ import Searcher from './components/Searcher'
 import Help from './components/Help'
 import SelectedCourses from './components/SelectedCourses'
 import { CSSTransitionGroup } from 'react-transition-group'
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function usePersistedState(key, defaultValue) {
   const [state, setState] = useState(
@@ -19,6 +21,8 @@ function usePersistedState(key, defaultValue) {
 
 function App() {
   const [ selectedCourses, setSelectedCourses ] = usePersistedState('selectedCourses', [])
+  const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
+  const [showHelp, setShowHelp] = useState(false)
   
   const isSelected = (courseId) => (selectedCourses.filter((course) => course.id === courseId).length > 0);
   const isVisible = (courseId) => {
@@ -37,15 +41,14 @@ function App() {
       course => (course.id === id ? {...course, visible: !course.visible} : course)
     ))
   }
-  const [showHelp, setShowHelp] = useState(false)
   const toggleHelp = () => {setShowHelp(!showHelp)}
 
   return (
     <div className="App d-flex flex-column">
       
       {/* Header */}
-      <div className="header w-100 d-flex flex-row justify-content-between pl-4"> 
-        <h1 className="app-title" >OneSchedule</h1>
+      <div className="header w-100 d-flex flex-row align-items-center justify-content-between pl-4"> 
+        <div className="app-title" >OneSchedule</div>
         <button className="btn burger" onClick={toggleHelp}>
           <i className="fas fa-bars"></i>
         </button>
@@ -58,6 +61,8 @@ function App() {
           <Calendar 
             selectedCourses={selectedCourses.filter(course => course.visible)} 
             courses={courses}
+            scheduleOverlap={scheduleOverlap}
+            setScheduleOverlap={setScheduleOverlap}
           />
         
           <div className="right-bar">
@@ -85,6 +90,7 @@ function App() {
         >
           {showHelp ? <Help key="x"/> : <></>}
         </CSSTransitionGroup>
+        <ToastContainer autoClose={3000} position={"bottom-left"} hideProgressBar={true}/>
       </div>
     </div>
   );
