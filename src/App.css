@@ -140,7 +140,7 @@ CSSTransitionGroup {
 .help-container {
   right: 0px;
   top: 45px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.87);
   height: calc(100% - 45px);
   overflow-y: scroll;
 }
