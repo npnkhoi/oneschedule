@@ -51,7 +51,6 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
   events.forEach((course1) => {
     events.forEach((course2) => {
       if (course1.title !== course2.title && overlap(course1, course2)) {
-        console.log('overlap here', course1.title, course2.title);
         overlapDeteced = true
       }
     })

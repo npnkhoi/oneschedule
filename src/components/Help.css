@@ -4,8 +4,8 @@
 
 .help {
   width: 300px;
-  height: 100%;
-  border-left: var(--dark-green) solid 1px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .avatar {
@@ -13,16 +13,17 @@
 }
 
 .donate-cta {
-  background-color: var(--dark-green);
+  background-color: var(--bright-green);
   border-radius: 30px;
   font-size: 20px;
   font-weight: 600;
-  color: var(--orange);
+  color: var(--dark-green);
+  border: 0px;
 }
 
 .donate-cta:hover {
-  background-color: var(--bright-green);
-  color: var(--yellow);
+  background-color: var(--light-orange);
+  /* color: var(--orange); */
 }
 
 .modal-footer > button {
@@ -30,6 +31,7 @@
 }
 
 .feedback {
-  color: var(--dark-green);
+  color: var(--bright-green);
   font-weight: bold;
+  text-decoration: underline;
 }

@@ -17,7 +17,7 @@
 }
 
 .header {
-  height: fit-content;
+  height: 45px;
   background-color: var(--dark-green);
   font-family: 'Paytone One', sans-serif;
   font-size: 30px;
@@ -135,4 +135,12 @@ CSSTransitionGroup {
 
 .selecting > .list-group-item:hover {
   background-color: #ccc;
+}
+
+.help-container {
+  right: 0px;
+  top: 45px;
+  background: rgba(0, 0, 0, 0.8);
+  height: calc(100% - 45px);
+  overflow-y: scroll;
 }

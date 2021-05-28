@@ -6,7 +6,7 @@ import Searcher from './components/Searcher'
 import Help from './components/Help'
 import SelectedCourses from './components/SelectedCourses'
 import { CSSTransitionGroup } from 'react-transition-group'
-import { ToastContainer} from 'react-toastify';
+import { toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function usePersistedState(key, defaultValue) {
@@ -23,6 +23,7 @@ function App() {
   const [ selectedCourses, setSelectedCourses ] = usePersistedState('selectedCourses', [])
   const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
   const [showHelp, setShowHelp] = useState(false)
+  const [toggleCount, setToggleCount] = usePersistedState('toggleCount', 0)
   
   const isSelected = (courseId) => (selectedCourses.filter((course) => course.id === courseId).length > 0);
   const isVisible = (courseId) => {
@@ -35,13 +36,21 @@ function App() {
     } else {
       setSelectedCourses([...selectedCourses, {id: id, visible: true}]);
     }
+    if (toggleCount > 0 && toggleCount % 4 === 0) {
+      toast.info(`Wowww, you have interacted ${toggleCount} times with OneSchedule. Wanna support me? Click the burger button at the top-right corner and "buy me a coffee"`, {
+        autoClose: false
+      })
+    }
+    setToggleCount(toggleCount + 1)
   }
   const toggleVisibility = (id) => {
     setSelectedCourses(selectedCourses.map(
       course => (course.id === id ? {...course, visible: !course.visible} : course)
     ))
   }
-  const toggleHelp = () => {setShowHelp(!showHelp)}
+  const toggleHelp = () => {
+    setShowHelp(!showHelp)
+  }
 
   return (
     <div className="App d-flex flex-column">
@@ -87,6 +96,7 @@ function App() {
           transitionName="example"
           transitionEnterTimeout={500}
           transitionLeaveTimeout={300}
+          className="help-container position-absolute"
         >
           {showHelp ? <Help key="x"/> : <></>}
         </CSSTransitionGroup>

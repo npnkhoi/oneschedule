@@ -5,9 +5,17 @@ import MomoQR from '../assets/momo-qr.jpg'
 const Help = () => {
   return (
     <div 
-      className="help ml-4 pl-4 mb-4 d-flex flex-column justify-content-between"
+      className="help pt-4 pb-0 d-flex flex-column justify-content-between"
     >
       <img alt="Khoi avatar" src={avatar} className="avatar mb-2"></img>
+      
+      <button 
+        className="donate-cta py-2 my-3 d-flex flex-row justify-content-center align-items-center"
+        data-toggle="modal" data-target="#exampleModalCenter"
+      >
+        <span>Buy me a coffee</span>
+        <i className="fas fa-coffee ml-2 text-white"></i>
+      </button>
 
       <div className="help-text text-left">
         <p>OneSchedule is a quick and simple tool that visualizes your course schedule. Works best with Google Chrome. Made by Nguyen Phung Nhat Khoi (Co23)</p>
@@ -34,15 +42,7 @@ const Help = () => {
 
       </div>
 
-      <button 
-        className="donate-cta py-2 mb-4 d-flex flex-row justify-content-center align-items-center"
-        data-toggle="modal" data-target="#exampleModalCenter"
-      >
-        <span>Buy me a coffee</span>
-        <i className="fas fa-coffee ml-2 text-white"></i>
-      </button>
-
-      <div className="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
