@@ -1,7 +1,8 @@
 {
-  "name": "fulcourse",
+  "name": "oneschedule",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://npnkhoi.github.io/oneschedule",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -14,6 +15,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "fullcalendar": "^5.5.1",
+    "gh-pages": "^3.2.3",
     "install": "^0.13.0",
     "npm": "^7.5.4",
     "react": "^17.0.1",
@@ -28,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
