@@ -10,6 +10,7 @@
 
 .avatar {
   border-radius: 12px;
+  width: 100%;
 }
 
 .donate-cta {

@@ -36,7 +36,8 @@ function App() {
     } else {
       setSelectedCourses([...selectedCourses, {id: id, visible: true}]);
     }
-    if (toggleCount > 0 && toggleCount % 4 === 0) {
+    // TODO: reconsider the interval
+    if (toggleCount > 0 && toggleCount % 10 === 0) {
       toast.info(`Wowww, you have interacted ${toggleCount} times with OneSchedule. Wanna support me? Click the burger button at the top-right corner and "buy me a coffee"`, {
         autoClose: false
       })
