@@ -1,32 +1,11 @@
 import './App.css';
+import './Calendar.css';
 import React  from 'react'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Timetable from './components/Timetable';
+import {BrowserRouter as Router } from 'react-router-dom'
 import NavBar from './components/NavBar';
-import Courses from './components/Courses';
-
-const Main = () => (
-  <Switch>
-    <Route path='/about'>
-      <div>about</div>
-    </Route>
-    <Route path='/contribute'>
-      <div>contribute</div>
-    </Route>
-    <Route path='/help'>
-      <div>help</div>
-    </Route>
-    <Route path='/courses'>
-      <Courses />
-    </Route>
-    <Route path='/'>
-      <Timetable />
-    </Route>
-    
-  </Switch>
-)
+import Main from './components/Main';
 
 function App() {
   return (

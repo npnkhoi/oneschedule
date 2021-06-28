@@ -16,7 +16,7 @@ const Logo = () => (
 
 const NavBar = () => {
   return (
-    <div className='wrapper d-flex flex-column align-items-center text-center'>
+    <div className='wrapper d-flex flex-column align-items-center text-center sticky-top'>
       <Logo />
       <NavBtn label='Timetable' path='/' icon='far fa-calendar'/>
       <NavBtn label='Courses' path='/courses' icon='far fa-list-alt'/>
