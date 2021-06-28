@@ -14,7 +14,7 @@ const Help = () => {
         data-toggle="modal" data-target="#exampleModalCenter"
       >
         <span>Buy me a coffee</span>
-        <i className="fas fa-coffee ml-2 text-white"></i>
+        <i className="fas fa-coffee ms-2 text-white"></i>
       </button>
 
       <div className="help-text text-left">

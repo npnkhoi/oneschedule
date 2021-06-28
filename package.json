@@ -21,9 +21,11 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-toastify": "^7.0.4",
     "react-transition-group": "1.x",
+    "styled-components": "^5.3.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
