@@ -5,14 +5,16 @@
   --orange: #E76F51;
   --light-orange: #F4A261;
   --bright-gray: #dee2e6;
+  --light-gray: #F2F2F2;
 }
 
 .App {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin-bottom: 10px;
   color: gray;
-  font-family: 'B612', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 .header {

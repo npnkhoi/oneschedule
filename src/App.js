@@ -31,7 +31,7 @@ const Main = () => (
 function App() {
   return (
     <Router>
-      <div className="d-flex flex-row">
+      <div className="App d-flex flex-row">
         <NavBar />
         <Main/>
       </div>
