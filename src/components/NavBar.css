@@ -8,7 +8,7 @@
   color: var(--dark-green);
 }
 
-.navbar-btn:hover {
+.navbar-btn:hover, .current {
   color: var(--orange);
   font-weight: 900;
 }
