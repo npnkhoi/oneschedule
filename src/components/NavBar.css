@@ -4,6 +4,11 @@
   background-color: var(--light-gray);
 }
 
-.nav-btn :hover {
+.navbar-btn {
   color: var(--dark-green);
+}
+
+.navbar-btn:hover {
+  color: var(--orange);
+  font-weight: 900;
 }

@@ -88,7 +88,7 @@ const Searcher = ({isSelected, toggleSelection}) => {
   return (
     <div className="filter">
       <input 
-        className="form-control py-4" 
+        className="form-control py-2" 
         id="search-input"
         placeholder="Add course to timetable"
         autoComplete="off"
