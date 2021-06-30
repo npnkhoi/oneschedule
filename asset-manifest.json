@@ -1,27 +1,26 @@
 {
   "files": {
-    "main.css": "/oneschedule/static/css/main.c23bb387.chunk.css",
-    "main.js": "/oneschedule/static/js/main.5bfad3dc.chunk.js",
-    "main.js.map": "/oneschedule/static/js/main.5bfad3dc.chunk.js.map",
-    "runtime-main.js": "/oneschedule/static/js/runtime-main.bb69f259.js",
-    "runtime-main.js.map": "/oneschedule/static/js/runtime-main.bb69f259.js.map",
-    "static/css/2.f40bdfce.chunk.css": "/oneschedule/static/css/2.f40bdfce.chunk.css",
-    "static/js/2.f6abf37d.chunk.js": "/oneschedule/static/js/2.f6abf37d.chunk.js",
-    "static/js/2.f6abf37d.chunk.js.map": "/oneschedule/static/js/2.f6abf37d.chunk.js.map",
-    "static/js/3.455e2c0a.chunk.js": "/oneschedule/static/js/3.455e2c0a.chunk.js",
-    "static/js/3.455e2c0a.chunk.js.map": "/oneschedule/static/js/3.455e2c0a.chunk.js.map",
+    "main.css": "/oneschedule/static/css/main.135b4d4d.chunk.css",
+    "main.js": "/oneschedule/static/js/main.9558c964.chunk.js",
+    "main.js.map": "/oneschedule/static/js/main.9558c964.chunk.js.map",
+    "runtime-main.js": "/oneschedule/static/js/runtime-main.4ab4070e.js",
+    "runtime-main.js.map": "/oneschedule/static/js/runtime-main.4ab4070e.js.map",
+    "static/css/2.f94215ef.chunk.css": "/oneschedule/static/css/2.f94215ef.chunk.css",
+    "static/js/2.c9f81cd8.chunk.js": "/oneschedule/static/js/2.c9f81cd8.chunk.js",
+    "static/js/2.c9f81cd8.chunk.js.map": "/oneschedule/static/js/2.c9f81cd8.chunk.js.map",
+    "static/js/3.5066bb02.chunk.js": "/oneschedule/static/js/3.5066bb02.chunk.js",
+    "static/js/3.5066bb02.chunk.js.map": "/oneschedule/static/js/3.5066bb02.chunk.js.map",
     "index.html": "/oneschedule/index.html",
-    "static/css/2.f40bdfce.chunk.css.map": "/oneschedule/static/css/2.f40bdfce.chunk.css.map",
-    "static/css/main.c23bb387.chunk.css.map": "/oneschedule/static/css/main.c23bb387.chunk.css.map",
-    "static/js/2.f6abf37d.chunk.js.LICENSE.txt": "/oneschedule/static/js/2.f6abf37d.chunk.js.LICENSE.txt",
-    "static/media/ConNgon.1900437b.jpg": "/oneschedule/static/media/ConNgon.1900437b.jpg",
-    "static/media/momo-qr.8dcc319d.jpg": "/oneschedule/static/media/momo-qr.8dcc319d.jpg"
+    "static/css/2.f94215ef.chunk.css.map": "/oneschedule/static/css/2.f94215ef.chunk.css.map",
+    "static/css/main.135b4d4d.chunk.css.map": "/oneschedule/static/css/main.135b4d4d.chunk.css.map",
+    "static/js/2.c9f81cd8.chunk.js.LICENSE.txt": "/oneschedule/static/js/2.c9f81cd8.chunk.js.LICENSE.txt",
+    "static/media/Logo.126cd675.svg": "/oneschedule/static/media/Logo.126cd675.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb69f259.js",
-    "static/css/2.f40bdfce.chunk.css",
-    "static/js/2.f6abf37d.chunk.js",
-    "static/css/main.c23bb387.chunk.css",
-    "static/js/main.5bfad3dc.chunk.js"
+    "static/js/runtime-main.4ab4070e.js",
+    "static/css/2.f94215ef.chunk.css",
+    "static/js/2.c9f81cd8.chunk.js",
+    "static/css/main.135b4d4d.chunk.css",
+    "static/js/main.9558c964.chunk.js"
   ]
 }
