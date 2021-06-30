@@ -4,11 +4,6 @@ import './NavBar.css'
 import logoSVG from '../assets/Logo.svg'
 
 const NavBtn = ({label, path, icon, currentView, setCurrentView}) => {
-  // const handleClick = () => {
-  //   setCurrentView(label)
-  //   console.log('setting currentView to', label);
-  // }
-  
   return (
     <Link to={path} 
       className={`navbar-btn text-decoration-none align-self-stretch d-flex flex-column align-items-center p-2
@@ -30,13 +25,12 @@ const Logo = () => (
 
 const NavBar = () => {
   const [currentView, setCurrentView] = useState('Schedule')
-  // console.log('currentView:', currentView);
   
   return (
     <div className='wrapper d-flex flex-column align-items-center text-center sticky-top'>
       <Logo />
       <NavBtn label='Schedule' path='/' icon='far fa-calendar' setCurrentView={setCurrentView} currentView={currentView}/>
-      <NavBtn label='Courses' path='/courses' icon='far fa-list-alt' setCurrentView={setCurrentView} currentView={currentView}/>
+      <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt' setCurrentView={setCurrentView} currentView={currentView}/>
       <NavBtn label='Contribute' path='/contribute' icon='far fa-star' setCurrentView={setCurrentView} currentView={currentView}/>
       <NavBtn label='Help' path='/help' icon='fas fa-question' setCurrentView={setCurrentView} currentView={currentView}/>
       <NavBtn label='About' path='/about' icon='fas fa-info' setCurrentView={setCurrentView} currentView={currentView}/>
