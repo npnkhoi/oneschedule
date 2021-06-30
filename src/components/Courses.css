@@ -1,7 +1,7 @@
 .course-card {
   background-color: var(--light-gray);
-  height: 150px;
-  width: 500px;
+  height: 200px;
+  width: 400px;
   border-radius: 16px;
   text-decoration: none;
   color: inherit
@@ -14,7 +14,7 @@
 }
 
 .thumbnail {
-  width: 150px;
+  width: 120px;
   background-color: var(--dark-green);
 }
 
