@@ -1,8 +1,16 @@
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, useRouteMatch } from 'react-router-dom'
 import Timetable from './Timetable';
 import Courses from './Courses';
+import OneCourse from './OneCourse';
+import courses from '../data/courses.json'
 
-const Main = () => (
+const Main = () => {
+  const match = useRouteMatch('/courses/:id')
+  const course = match
+    ? courses.find(course => course.id === match.params.id)
+    : null
+
+  return (
   <div className='p-4 h-100 flex-grow-1'>
     <Switch>
       <Route path='/about'>
@@ -14,6 +22,9 @@ const Main = () => (
       <Route path='/help'>
         <div>help</div>
       </Route>
+      <Route path='/courses/:id'>
+        <OneCourse course={course}/>
+      </Route>
       <Route path='/courses'>
         <Courses />
       </Route>
@@ -23,6 +34,6 @@ const Main = () => (
       
     </Switch>
   </div>
-)
+)}
 
 export default Main
