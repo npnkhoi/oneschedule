@@ -1,0 +1,17 @@
+.o-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+.o-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+}
+
+.o-dark-primary {
+  color: var(--dark-green);
+}
+
+.o-bright-primary {
+  color: var(--orange);
+}
