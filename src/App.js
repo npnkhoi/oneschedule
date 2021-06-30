@@ -10,7 +10,7 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/oneschedule'>
       <div className="App d-flex flex-row">
         <NavBar />
         <Main/>
