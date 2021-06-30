@@ -1,6 +1,6 @@
 # Welcome to FulCourse - a course schedule visualizer for Fulbright students
 
-This project is initiated by Nguyen Phung Nhat Khoi - Class Of 2023
+Website: https://npnkhoi.github.io/oneschedule
 
 More description is coming.
 
