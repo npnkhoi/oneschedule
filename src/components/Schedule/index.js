@@ -31,9 +31,8 @@ const Timetable = () => {
     } else {
       setSelectedCourses([...selectedCourses, {id: id, visible: true}]);
     }
-    // TODO: reconsider the interval
-    if (toggleCount > 0 && toggleCount % 10 === 0) {
-      toast.info(`Wowww, you have interacted ${toggleCount} times with OneSchedule. Wanna support me? Click the burger button at the top-right corner and "buy me a coffee"`, {
+    if (toggleCount > 0 && toggleCount % 50 === 0) {
+      toast.info(`Hi! You have interacted ${toggleCount} times with OneSchedule. Let's contribute to us in the Contribute tab`, {
         autoClose: false
       })
     }
@@ -57,7 +56,7 @@ const Timetable = () => {
       <div className="right-bar">
         <div className="heading-1">Spring, 2021</div>
 
-        <Searcher 
+        <Searcher
           isSelected={isSelected}
           toggleSelection={toggleSelection}
         />

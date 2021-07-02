@@ -1,4 +1,4 @@
-import courses from '../../data/courses_v2'
+import courses from '../../data/courses.json'
 import {useEffect, useState} from 'react'
 
 const Searcher = ({isSelected, toggleSelection}) => {
@@ -47,15 +47,15 @@ const Searcher = ({isSelected, toggleSelection}) => {
   const CourseInfo = (course) => {
     return (
       <div className="d-flex flex-row justify-content-between align-items-center">
-        <div className="w-75 px-1">{course.course_name}</div>
-        <div className="instructor-name w-25 px-1 border-left">{course.instructor_name}</div>
+        <div className="w-75 px-1">{course.title}</div>
+        <div className="instructor-name w-25 px-1 border-left">{course.instructor}</div>
       </div>
     )
   }
 
   const CourseList = () => {
     matchedCourses = courses.filter((course) => 
-      (course.course_name + "|" + course.instructor_name)
+      (course.title + "|" + course.instructor)
       .toLowerCase().includes(filter.toLowerCase())
     )
 
@@ -74,8 +74,6 @@ const Searcher = ({isSelected, toggleSelection}) => {
             `}
             onClick={() => onCourseToggle(course.id)}
             key={course.id}
-            data-bs-toggle="tooltip" data-bs-placement="right" 
-            title={`[${course.id}] From ${course.start_time} to ${course.end_time} on ${course.days}`}
           >
             {CourseInfo(course)}
           </button>
