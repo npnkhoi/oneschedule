@@ -1,6 +1,6 @@
 .course-card {
   background-color: var(--light-gray);
-  height: 200px;
+  height: 150px;
   width: 400px;
   border-radius: 16px;
   text-decoration: none;
@@ -14,11 +14,11 @@
 }
 
 .thumbnail {
-  width: 120px;
+  width: 75px;
   background-color: var(--dark-green);
 }
 
 .thumbnail-text {
   color: var(--yellow);
-  font-size: 48px;;
+  font-size: 20px;
 }

@@ -27,7 +27,7 @@ const OneCourse = ({course}) => {
       <div className='o-title border-bottom o-dark-primary mb-4'>{course.title}</div>
       
       <div className='d-flex flex-row'>
-        <div className='w-50 flex-shrink-0 multiple-lines'>{course.description}</div>
+        <div className='w-50 flex-shrink-0 multiple-lines o-big-body'>{course.description}</div>
         <div className='flex-grow-1 ms-5'>
           <table className='table table-hover table-bordered'>
             <tbody>

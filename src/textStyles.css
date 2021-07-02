@@ -15,3 +15,11 @@
 .o-bright-primary {
   color: var(--orange);
 }
+
+.o-formal-font {
+  font-family: 'Oswald', sans-serif;
+}
+
+.o-big-body {
+  font-size: 20px;
+}
