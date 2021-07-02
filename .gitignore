@@ -25,4 +25,5 @@ yarn-error.log*
 .eslintcache
 .eslintcache
 
-/.vscode/
+.vscode/
+.vscode/settings.json

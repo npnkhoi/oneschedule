@@ -1,6 +1,7 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
 import { toast } from 'react-toastify';
+import './Calendar.css'
 
 const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap}) => {
   const dayId = {

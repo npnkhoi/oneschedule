@@ -1,4 +1,4 @@
-import courses from '../data/courses_v2'
+import courses from '../../data/courses_v2'
 import {useEffect, useState} from 'react'
 
 const Searcher = ({isSelected, toggleSelection}) => {

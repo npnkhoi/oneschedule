@@ -1,4 +1,4 @@
-import courses from '../data/courses_v2'
+import courses from '../../data/courses_v2'
 import React, { useState, useEffect } from 'react'
 import Calendar from './Calendar'
 import SelectedCourses from './SelectedCourses'

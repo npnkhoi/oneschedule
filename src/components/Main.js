@@ -1,5 +1,5 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
-import Timetable from './Timetable';
+import Timetable from './Schedule';
 import Courses from './Courses';
 import OneCourse from './OneCourse';
 import courses from '../data/courses.json'

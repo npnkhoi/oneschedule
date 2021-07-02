@@ -1,6 +1,5 @@
 import './App.css';
 import './textStyles.css';
-import './components/Calendar.css';
 import React  from 'react'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
