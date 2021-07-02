@@ -7,13 +7,17 @@ import 'react-toastify/dist/ReactToastify.css';
 import {HashRouter as Router } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
-      <div className="App d-flex flex-row">
+      <div className="App d-flex flex-row w-100">
         <NavBar />
-        <Main/>
+        <div className='d-flex flex-column w-100'>
+          <Main/>
+          <Footer />
+        </div>
       </div>
       <ToastContainer autoClose={3000} position={"bottom-left"} hideProgressBar={true}/>
     </Router>
