@@ -6,6 +6,7 @@
 .o-title {
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
+  color: var(--dark-green);
 }
 
 .o-dark-primary {

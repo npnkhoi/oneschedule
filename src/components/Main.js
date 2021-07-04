@@ -1,8 +1,10 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
+import courses from '../data/courses.json'
 import Timetable from './Schedule';
 import Courses from './Courses';
 import OneCourse from './OneCourse';
-import courses from '../data/courses.json'
+import About from './About';
+import './Main.css'
 
 const Main = () => {
   const match = useRouteMatch('/courses/:id')
@@ -11,10 +13,10 @@ const Main = () => {
     : null
 
   return (
-  <div className='p-4 h-100 flex-grow-1'>
+  <div className='main p-4 h-100 flex-grow-1'>
     <Switch>
       <Route path='/about'>
-        <div>about</div>
+        <About />
       </Route>
       <Route path='/contribute'>
         <div>contribute</div>
@@ -26,7 +28,7 @@ const Main = () => {
         <OneCourse course={course}/>
       </Route>
       <Route path='/courses'>
-        <Courses />
+        <Courses courses={courses}/>
       </Route>
       <Route path='/'>
         <Timetable />

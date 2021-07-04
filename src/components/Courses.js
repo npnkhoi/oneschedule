@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import courses from '../data/courses.json'
 import './Courses.css'
 
 const CourseCard = ({course}) => {
@@ -23,9 +22,9 @@ const CourseCard = ({course}) => {
   </Link>
 }
 
-const Courses = () => {
+const Courses = ({courses}) => {
   return (
-    <div className='d-flex flex-row flex-wrap'>
+    <div className='d-flex flex-row flex-wrap justify-content-center'>
       {courses.map(course => (
         <CourseCard course={course} key={course.id}/>
       ))}
