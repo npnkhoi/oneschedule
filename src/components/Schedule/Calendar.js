@@ -1,5 +1,6 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
+import moment from 'moment';
 import { toast } from 'react-toastify';
 import './Calendar.css'
 
@@ -14,14 +15,23 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
     'Saturday': 6
   }
 
+  const transformTime = (time) => {
+    const timeObject = moment(time, 'h:mm A')
+    return timeObject.format('HH:mm:ss')
+  }
+
+  const getTimeblocks = (course) => (
+    course.schedule.reduce((blocks, block) => blocks.concat({
+      title: course.title,
+      daysOfWeek: [dayId[block.day]],
+      startTime: transformTime(block.start_time),
+      endTime: transformTime(block.end_time),
+    }), [])
+  )
+
   const events = courses
   .filter(course => selectedCourses.filter((selected) => selected.id === course.id).length > 0)
-  .map(course => ({
-    title: course.id,
-    startTime: course.start_time,
-    endTime: course.end_time,
-    daysOfWeek: course.days.split(/[ ,]+/).map(day => dayId[day])
-  }))
+  .reduce((events, course) => events.concat(getTimeblocks(course)), [])
 
   const getSeconds = (stringTime) => {
     const nums = stringTime.split(/[:]+/)
@@ -68,7 +78,6 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
 
   return (
   <FullCalendar
-    className="calendar"
     plugins={[ timeGridPlugin ]}
     initialView="timeGridWeek"
     events = {events}

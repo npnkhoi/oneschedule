@@ -1,19 +1,10 @@
-import courses from '../../data/courses_v2'
-import React, { useState, useEffect } from 'react'
+import courses from '../../data/courses.json'
+import React, { useState } from 'react'
 import Calendar from './Calendar'
 import SelectedCourses from './SelectedCourses'
 import Searcher from './Searcher'
 import {toast} from 'react-toastify'
-
-function usePersistedState(key, defaultValue) {
-  const [state, setState] = useState(
-    () => JSON.parse(localStorage.getItem(key)) || defaultValue
-  );
-  useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(state));
-  }, [key, state]);
-  return [state, setState];
-}
+import { usePersistedState } from '../../hooks'
 
 const Timetable = () => {
   const [ selectedCourses, setSelectedCourses ] = usePersistedState('selectedCourses', [])
