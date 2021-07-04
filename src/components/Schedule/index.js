@@ -48,6 +48,7 @@ const Timetable = () => {
         <div className="heading-1">Spring, 2021</div>
 
         <Searcher
+          courses={courses}
           isSelected={isSelected}
           toggleSelection={toggleSelection}
         />

@@ -1,7 +1,6 @@
-import courses from '../../data/courses.json'
 import {useEffect, useState} from 'react'
 
-const Searcher = ({isSelected, toggleSelection}) => {
+const Searcher = ({courses, isSelected, toggleSelection}) => {
   const [ filter, setFilter ] = useState('')
   const [ focusItem, setFocusItem ] = useState(0)
 
@@ -21,12 +20,18 @@ const Searcher = ({isSelected, toggleSelection}) => {
     document.getElementById('search-input').value = ""
   }
 
+  const handleShortcuts = (event) => {
+    if (event.key === 'Escape') {
+      collapseSuggestions()
+    }
+  }
+
   useEffect(() => {
-    window.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
-        collapseSuggestions()
-      }
-    })
+    window.addEventListener('keydown', handleShortcuts)
+
+    return () => {
+      window.removeEventListener('keydown', handleShortcuts)
+    }
   })
 
   const changeText = (text) => {
