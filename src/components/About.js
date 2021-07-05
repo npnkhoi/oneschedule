@@ -18,6 +18,9 @@ const About = () => {
             <a href='https://www.linkedin.com/in/npnkhoi/' target='_blank' rel="noreferrer">
               <i className='fab fa-linkedin-in 2x o-dark-primary ms-2'/>
             </a>
+            <a href='mailto: khoi.nguyen.190037@student.fulbright.edu.vn' target='_blank' rel="noreferrer">
+              <i className='far fa-envelope 2x o-dark-primary ms-2'/>
+            </a>
           </div>
         </div>
         

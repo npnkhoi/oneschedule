@@ -4,6 +4,7 @@ import Timetable from './Schedule';
 import Courses from './Courses';
 import OneCourse from './OneCourse';
 import About from './About';
+import Contribute from './Contribute';
 import './Main.css'
 
 const Main = () => {
@@ -19,7 +20,7 @@ const Main = () => {
         <About />
       </Route>
       <Route path='/contribute'>
-        <div>contribute</div>
+       <Contribute />
       </Route>
       <Route path='/help'>
         <div>help</div>

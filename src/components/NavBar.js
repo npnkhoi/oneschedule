@@ -31,9 +31,9 @@ const NavBar = () => {
       <Logo />
       <NavBtn label='Schedule' path='/' icon='far fa-calendar'/>
       <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt'/>
+      <NavBtn label='Contribute' path='/contribute' icon='far fa-star'/>
       <NavBtn label='About' path='/about' icon='fas fa-info'/>
-      {/* <NavBtn label='Contribute' path='/contribute' icon='far fa-star'/>
-      <NavBtn label='Help' path='/help' icon='fas fa-question'/> */}
+      {/* <NavBtn label='Help' path='/help' icon='fas fa-question'/> */}
     </div>
   )
 }
