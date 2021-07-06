@@ -27,7 +27,7 @@ const Contribute = () => {
         <p>Things can be more beautiful, especially when you help to make it. Send us your design ideas to khoi.nguyen.190037@student.fulbright.edu.vn. </p>
         <p>Examples are: interface analysis, new design proposal (big or small), or simply feedback.</p>
 
-        <p className='o-heading'>3. Donate</p>
+        <p className='o-heading'>4. Donate</p>
         <p>We are having lots of things to do: hosting public web domain (fuv-schedule.com), add Fulbright classroom map, course review, etc.</p>
         <p>With limited resources, we currently cannot deliver those features. We need your help! Every dollar we receive will be used to develop OneSchedule.</p>
         <p>Donate to OneSchedule via 2 following channels:</p>

@@ -93,7 +93,7 @@ const Searcher = ({courses, isSelected, toggleSelection}) => {
       <input 
         className="form-control py-2" 
         id="search-input"
-        placeholder="Add course to timetable"
+        placeholder="Add courses to schedule"
         autoComplete="off"
         onChange={onInputChanged} 
         onKeyDown={(event) => {

@@ -1,6 +1,7 @@
 .o-heading {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
+  color: var(--dark-green);
 }
 
 .o-title {

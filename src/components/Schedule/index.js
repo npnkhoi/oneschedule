@@ -45,7 +45,7 @@ const Timetable = () => {
       />
     
       <div className="right-bar">
-        <div className="heading-1">Spring, 2021</div>
+        <p className="o-heading">Spring, 2021</p>
 
         <Searcher
           courses={courses}
