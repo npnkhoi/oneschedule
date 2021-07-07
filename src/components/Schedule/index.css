@@ -47,3 +47,15 @@
 .selecting > .list-group-item:hover {
   background-color: #ccc;
 }
+
+.color-btn {
+  width: 16px;
+  height: 16px;
+  border-color: white;
+  cursor: pointer;
+}
+
+.color-picker {
+  top: 28px;
+  left: -13px;
+}
