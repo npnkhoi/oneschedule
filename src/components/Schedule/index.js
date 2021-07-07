@@ -5,6 +5,7 @@ import SelectedCourses from './SelectedCourses'
 import Searcher from './Searcher'
 import {toast} from 'react-toastify'
 import { usePersistedState } from '../../hooks'
+import './index.css'
 
 const Timetable = () => {
   const [ selectedCourses, setSelectedCourses ] = usePersistedState('selectedCourses', [])

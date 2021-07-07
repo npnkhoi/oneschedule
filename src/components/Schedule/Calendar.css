@@ -16,6 +16,15 @@
   padding: 5px;
 }
 
+.fc-v-event {
+  border-color: white;
+  border-radius: 6px;
+}
+
+.fc-event-title {
+  font-weight: 600;
+}
+
 .fc-col-header-cell-cushion {
   color: var(--dark-green);
   text-decoration: none;

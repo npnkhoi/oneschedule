@@ -2,6 +2,7 @@ import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
 import moment from 'moment';
 import { toast } from 'react-toastify';
+import { getColor } from '../../utils/colors';
 import './Calendar.css'
 
 const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap}) => {
@@ -26,6 +27,8 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
       daysOfWeek: [dayId[block.day]],
       startTime: transformTime(block.start_time),
       endTime: transformTime(block.end_time),
+      backgroundColor: getColor(course.id).background,
+      textColor: getColor(course.id).text,
     }), [])
   )
 
@@ -94,8 +97,7 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
         end: ""
       })
     }
-    eventColor = "#264653"
-    eventTextColor = "#E9C46A"
+    eventTextColor = "black"
   />
   )
 }
