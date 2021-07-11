@@ -1,6 +1,6 @@
 [
     {
-        "id": "ARTS101_Spring2021_S03",
+        "id": "ARTS101_S03",
         "type": "Semester",
         "title": "Introduction to Visual Studies",
         "credits": 4,
@@ -19,7 +19,7 @@
         ]
     },
     {
-        "id": "ARTS102_Spring2021_S02",
+        "id": "ARTS102_S02",
         "type": "Semester",
         "title": "Introduction to Art History and Theory",
         "credits": 4,
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "id": "ARTS201_Spring2021_S01",
+        "id": "ARTS201_S01",
         "type": "Semester",
         "title": "Movements in Post-1945 International Cinema",
         "credits": 4,
@@ -57,7 +57,7 @@
         ]
     },
     {
-        "id": "ARTS202_Spring2021_S01",
+        "id": "ARTS202_S01",
         "type": "Semester",
         "title": "Arts of Southeast Asia",
         "credits": 4,
@@ -76,7 +76,7 @@
         ]
     },
     {
-        "id": "ARTS203_Spring2021_S01",
+        "id": "ARTS203_S01",
         "type": "Semester",
         "title": "Introduction to Modern Art",
         "credits": 4,
@@ -95,7 +95,7 @@
         ]
     },
     {
-        "id": "ARTS205_Spring2021_S01",
+        "id": "ARTS205_S01",
         "type": "Semester",
         "title": "Art for Social Change: The Curator's Roles in Non-Institutional Exhibition Making",
         "credits": 4,
@@ -114,7 +114,7 @@
         ]
     },
     {
-        "id": "CORE101_Spring2021_S05",
+        "id": "CORE101_S05",
         "type": "Semester",
         "title": "Global Humanities and Social Change",
         "credits": 4,
@@ -133,7 +133,7 @@
         ]
     },
     {
-        "id": "CORE101_Spring2021_S07",
+        "id": "CORE101_S07",
         "type": "Semester",
         "title": "Global Humanities and Social Change",
         "credits": 4,
@@ -157,7 +157,7 @@
         ]
     },
     {
-        "id": "CORE101_Spring2021_S09",
+        "id": "CORE101_S09",
         "type": "Semester",
         "title": "Global Humanities and Social Change",
         "credits": 4,
@@ -176,7 +176,7 @@
         ]
     },
     {
-        "id": "CORE102_Spring2021_S02",
+        "id": "CORE102_S02",
         "type": "Semester",
         "title": "Modern Vietnamese Culture and Society",
         "credits": 4,
@@ -195,7 +195,7 @@
         ]
     },
     {
-        "id": "CORE102_Spring2021_S03",
+        "id": "CORE102_S03",
         "type": "Semester",
         "title": "Modern Vietnamese Culture and Society",
         "credits": 4,
@@ -214,7 +214,7 @@
         ]
     },
     {
-        "id": "CORE103_Spring2021_S02",
+        "id": "CORE103_S02",
         "type": "Semester",
         "title": "Quantitative Reasoning for a Digital Age",
         "credits": 4,
@@ -233,7 +233,7 @@
         ]
     },
     {
-        "id": "CORE103_Spring2021_S04",
+        "id": "CORE103_S04",
         "type": "Semester",
         "title": "Quantitative Reasoning for a Digital Age",
         "credits": 4,
@@ -252,7 +252,7 @@
         ]
     },
     {
-        "id": "CORE103_Spring2021_S06",
+        "id": "CORE103_S06",
         "type": "Semester",
         "title": "Quantitative Reasoning for a Digital Age",
         "credits": 4,
@@ -271,7 +271,7 @@
         ]
     },
     {
-        "id": "CORE104_Spring2021_S02",
+        "id": "CORE104_S02",
         "type": "Semester",
         "title": "Scientific Inquiry",
         "credits": 4,
@@ -295,7 +295,7 @@
         ]
     },
     {
-        "id": "CORE104_Spring2021_S08",
+        "id": "CORE104_S08",
         "type": "Semester",
         "title": "Scientific Inquiry",
         "credits": 4,
@@ -314,7 +314,7 @@
         ]
     },
     {
-        "id": "CORE104_Spring2021_S09",
+        "id": "CORE104_S09",
         "type": "Semester",
         "title": "Scientific Inquiry",
         "credits": 4,
@@ -333,7 +333,7 @@
         ]
     },
     {
-        "id": "CORE104_Spring2021_S10",
+        "id": "CORE104_S10",
         "type": "Semester",
         "title": "Scientific Inquiry",
         "credits": 4,
@@ -352,7 +352,7 @@
         ]
     },
     {
-        "id": "CORE105_Spring2021_S04",
+        "id": "CORE105_S04",
         "type": "Semester",
         "title": "Design and Systems Thinking",
         "credits": 4,
@@ -371,7 +371,7 @@
         ]
     },
     {
-        "id": "CORE105_Spring2021_S06",
+        "id": "CORE105_S06",
         "type": "Semester",
         "title": "Design and Systems Thinking",
         "credits": 4,
@@ -390,7 +390,7 @@
         ]
     },
     {
-        "id": "CORE105_Spring2021_S07",
+        "id": "CORE105_S07",
         "type": "Semester",
         "title": "Design and Systems Thinking",
         "credits": 4,
@@ -409,7 +409,7 @@
         ]
     },
     {
-        "id": "CS201_Spring2021_S01",
+        "id": "CS201_S01",
         "type": "Semester",
         "title": "Computer Science II: Data Structures",
         "credits": 4,
@@ -428,7 +428,7 @@
         ]
     },
     {
-        "id": "CS203_Spring2021_S01",
+        "id": "CS203_S01",
         "type": "Semester",
         "title": "Computer Organiztion",
         "credits": 4,
@@ -447,7 +447,7 @@
         ]
     },
     {
-        "id": "CS302_Spring2021_S01",
+        "id": "CS302_S01",
         "type": "Quarter 3",
         "title": "Theory of Computing",
         "credits": 4,
@@ -476,7 +476,7 @@
         ]
     },
     {
-        "id": "CS303_Spring2021_S01",
+        "id": "CS303_S01",
         "type": "Semester",
         "title": "Human-Computer Interaction",
         "credits": 4,
@@ -495,7 +495,7 @@
         ]
     },
     {
-        "id": "ECON101_Spring2021_S01",
+        "id": "ECON101_S01",
         "type": "Semester",
         "title": "Principles of Economics 1",
         "credits": 4,
@@ -514,7 +514,7 @@
         ]
     },
     {
-        "id": "ECON103_Spring2021_S01",
+        "id": "ECON103_S01",
         "type": "Semester",
         "title": "Principles of Economics 2",
         "credits": 4,
@@ -538,7 +538,7 @@
         ]
     },
     {
-        "id": "ECON201_Spring2021_S01",
+        "id": "ECON201_S01",
         "type": "Semester",
         "title": "Microeconomic Analysis",
         "credits": 4,
@@ -562,7 +562,7 @@
         ]
     },
     {
-        "id": "ECON203_Spring2021_S01",
+        "id": "ECON203_S01",
         "type": "Semester",
         "title": "Macroeconomic Analysis",
         "credits": 4,
@@ -586,7 +586,7 @@
         ]
     },
     {
-        "id": "ENG203_Spring2021_S01",
+        "id": "ENG203_S01",
         "type": "Semester",
         "title": "Modern Textiles",
         "credits": 4,
@@ -605,7 +605,7 @@
         ]
     },
     {
-        "id": "ENG205_Spring2021_S01",
+        "id": "ENG205_S01",
         "type": "Semester",
         "title": "Integrated Engineering Project",
         "credits": 4,
@@ -624,7 +624,7 @@
         ]
     },
     {
-        "id": "FRE101a_Spring2021_S01",
+        "id": "FRE101a_S01",
         "type": "Semester",
         "title": "French Beginner 1",
         "credits": 4,
@@ -648,7 +648,7 @@
         ]
     },
     {
-        "id": "HIS101_Spring2021_S01",
+        "id": "HIS101_S01",
         "type": "Semester",
         "title": "Fulbright History Lab & History Dialogues Project",
         "credits": 4,
@@ -667,7 +667,7 @@
         ]
     },
     {
-        "id": "HIS106_Spring2021_S01",
+        "id": "HIS106_S01",
         "type": "Semester",
         "title": "Modern Europe",
         "credits": 4,
@@ -686,7 +686,7 @@
         ]
     },
     {
-        "id": "HIS108_Spring2021_S01",
+        "id": "HIS108_S01",
         "type": "Semester",
         "title": "United States and the World",
         "credits": 4,
@@ -710,7 +710,7 @@
         ]
     },
     {
-        "id": "HIS204_Spring2021_S01",
+        "id": "HIS204_S01",
         "type": "Semester",
         "title": "A History of ASEAN",
         "credits": 4,
@@ -734,7 +734,7 @@
         ]
     },
     {
-        "id": "IS101_Spring2021_S01",
+        "id": "IS101_S01",
         "type": "Semester",
         "title": "Introductory Biology",
         "credits": 4,
@@ -753,7 +753,7 @@
         ]
     },
     {
-        "id": "IS202_Spring2021_S01",
+        "id": "IS202_S01",
         "type": "Semester",
         "title": "Matter",
         "credits": 4,
@@ -772,7 +772,7 @@
         ]
     },
     {
-        "id": "IS203_Spring2021_S01",
+        "id": "IS203_S01",
         "type": "Semester",
         "title": "Principles of Neuroscience",
         "credits": 4,
@@ -796,7 +796,7 @@
         ]
     },
     {
-        "id": "IS205_Spring2021_S01",
+        "id": "IS205_S01",
         "type": "Semester",
         "title": "Organic Chemistry",
         "credits": 4,
@@ -815,7 +815,7 @@
         ]
     },
     {
-        "id": "LIT103_Spring2021_S01",
+        "id": "LIT103_S01",
         "type": "Semester",
         "title": "Critical Methods in Literary Studies",
         "credits": 4,
@@ -834,7 +834,7 @@
         ]
     },
     {
-        "id": "LIT201_Spring2021_S01",
+        "id": "LIT201_S01",
         "type": "Semester",
         "title": "Text, Body, Technology: Individuals in Science Fiction",
         "credits": 4,
@@ -853,7 +853,7 @@
         ]
     },
     {
-        "id": "LIT202_Spring2021_S01",
+        "id": "LIT202_S01",
         "type": "Semester",
         "title": "Creative Writing Workshop",
         "credits": 4,
@@ -877,7 +877,7 @@
         ]
     },
     {
-        "id": "LIT203_Spring2021_S01",
+        "id": "LIT203_S01",
         "type": "Semester",
         "title": "The Laboratory of the Mind: Thought Experiements in Physics, Philosophy, and Literature",
         "credits": 4,
@@ -901,7 +901,7 @@
         ]
     },
     {
-        "id": "LIT204_Spring2021_S01",
+        "id": "LIT204_S01",
         "type": "Semester",
         "title": "Identity, Community, and Memory in Vietnamese Diasporic Literature and Film",
         "credits": 4,
@@ -920,7 +920,7 @@
         ]
     },
     {
-        "id": "LIT206_Spring2021_S01",
+        "id": "LIT206_S01",
         "type": "Semester",
         "title": "Women and Gender Studies: Representations of Women in Vietnam War Literature and Film",
         "credits": 4,
@@ -939,7 +939,7 @@
         ]
     },
     {
-        "id": "MATH205_Spring2021_S01",
+        "id": "MATH205_S01",
         "type": "Semester",
         "title": "Probability and Statistics",
         "credits": 4,
@@ -963,7 +963,7 @@
         ]
     },
     {
-        "id": "PSY101_Spring2021_S01",
+        "id": "PSY101_S01",
         "type": "Semester",
         "title": "Introductory Psychology",
         "credits": 4,
@@ -982,7 +982,7 @@
         ]
     },
     {
-        "id": "PSY101_Spring2021_S02",
+        "id": "PSY101_S02",
         "type": "Semester",
         "title": "Introductory Psychology",
         "credits": 4,
@@ -1001,7 +1001,7 @@
         ]
     },
     {
-        "id": "PSY202_Spring2021_S01",
+        "id": "PSY202_S01",
         "type": "Semester",
         "title": "Developmental Psychology",
         "credits": 4,
@@ -1020,7 +1020,7 @@
         ]
     },
     {
-        "id": "PSY205_Spring2021_S01",
+        "id": "PSY205_S01",
         "type": "Semester",
         "title": "Abnormal Psychology",
         "credits": 4,
@@ -1039,7 +1039,7 @@
         ]
     },
     {
-        "id": "SOCI105_Spring2021_S01",
+        "id": "SOCI105_S01",
         "type": "Semester",
         "title": "Research Methods in Social & Behavioral Science (Co-design)",
         "credits": 4,
@@ -1063,7 +1063,7 @@
         ]
     },
     {
-        "id": "SOCI202_Spring2021_S01",
+        "id": "SOCI202_S01",
         "type": "Semester",
         "title": "Digital Anthropology",
         "credits": 4,
@@ -1087,7 +1087,7 @@
         ]
     },
     {
-        "id": "SOCI205_Spring2021_S01",
+        "id": "SOCI205_S01",
         "type": "Semester",
         "title": "Language, Culture and Thought",
         "credits": 4,
@@ -1111,7 +1111,7 @@
         ]
     },
     {
-        "id": "VS201_Spring2021_S01",
+        "id": "VS201_S01",
         "type": "Semester",
         "title": "Going Hand in Hand: Politics and Economic Development in Contemporary Vietnam",
         "credits": 4,

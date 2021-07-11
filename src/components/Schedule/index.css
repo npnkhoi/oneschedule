@@ -11,14 +11,13 @@
 
 .selected-instructor {
   font-size: small;
-  font-style: italic;
 }
 
 .toggle-btns {
   width: fit-content;
 }
 
-.toggle-btns > button > i {
+.toggle-btns > div > i {
   color: var(--dark-green);
 }
 
@@ -38,6 +37,7 @@
   font-weight: 600;
   color: var(--orange);
   margin-bottom: 2px;
+  font-size: 14px;
 }
 
 .selecting > .list-group-item.focus {
