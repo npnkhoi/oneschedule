@@ -3,6 +3,7 @@ import COLORS from '../../data/colors.json'
 import { useState } from "react"
 import { setColor } from "../../store/colorMapSlice"
 import { useDispatch, useSelector } from "react-redux"
+import { Link } from "react-router-dom"
 
 const ColorPicker = ({courseId}) => {
   const [changing, setChanging] = useState(false)
@@ -16,20 +17,21 @@ const ColorPicker = ({courseId}) => {
   }
 
   return (
-    <div className='color-btn rounded flex-shrink-0 me-2'
-      onClick={() => {
-        if (!changing) {
+    <div className='modifier me-2'>
+      <div className='color-btn modifier rounded'
+        onClick={() => {
           setChanging(!changing)
-        }
-      }}
-      style={({backgroundColor: color})}
-    >
-      <div className='color-picker position-relative'>
+        }}
+        style={({backgroundColor: color})}
+      >
+      </div>
+      <div className='color-picker  position-relative'>
         {changing 
         ? 
           <TwitterPicker
             colors={COLORS}
             onChangeComplete={changeColor}
+            width="204px"
           />
         : <div></div>
         }
@@ -44,25 +46,31 @@ const SelectedCourses = ({courses, isSelected, isVisible, toggleVisibility, togg
     {
       courses
       .filter((course) => isSelected(course.id))
+      .sort((a, b) => a.title.localeCompare(b.title))
       .map((course) => (
         <div className="selected-course d-flex flex-row justify-content-between align-items-start" key={course.id}> 
           <div className="selected-info flex-grow-1 d-flex flex-column">
-            <div className="heading-2">{course.id} | {course.title}</div>
-            <div className='d-flex flex-row align-items-start mt-2'>
+            <Link className="heading-2 text-decoration-none"
+              to={`/courses/${course.id}`}
+            >
+              {course.title}
+            </Link>
+            <div className='d-flex flex-row align-items-center mt-2'>
               <ColorPicker courseId={course.id}/>
-              <div className="selected-instructor">{course.instructor}</div>
+              <div className='d-flex flex-column'>
+                <div className="selected-instructor"> {course.id} | {course.instructor} </div>
+              </div>
             </div>
           </div>
-
-          <div className="toggle-btns d-flex flex-row">
+          <div className="toggle-btns d-flex flex-column">
             <div 
-              className="btn"
+              className="modifier"
               onClick={() => toggleVisibility(course.id)}
             >
               {isVisible(course.id) ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
             </div>
             <div 
-              className="btn"
+              className="modifier"
               onClick={() => toggleSelection(course.id)}
             >
               <i className="fas fa-trash"></i>

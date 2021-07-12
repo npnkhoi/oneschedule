@@ -27,7 +27,7 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
   const getTimeblocks = (course) => {
     const backgroundColor = color[course.id]
     return course.schedule.reduce((blocks, block) => blocks.concat({
-      title: course.title,
+      title: `${course.title} (${course.instructor})`,
       daysOfWeek: [dayId[block.day]],
       startTime: transformTime(block.start_time),
       endTime: transformTime(block.end_time),

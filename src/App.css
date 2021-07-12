@@ -15,3 +15,11 @@
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
+
+a:hover {
+  color: var(--orange)
+}
+
+a {
+  color: var(--dark-green)
+}
