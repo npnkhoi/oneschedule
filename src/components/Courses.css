@@ -1,7 +1,7 @@
 .course-card {
   background-color: var(--light-gray);
-  height: 150px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   border-radius: 16px;
   text-decoration: none;
   color: inherit
@@ -10,7 +10,9 @@
 .course-card:hover {
   /* color: var(--orange) !important; */
   box-shadow: 8px 8px 4px 0px #00000040 !important;
-  color: inherit
+  color: inherit;
+  min-height: 200px;
+  height: fit-content;
 }
 
 .thumbnail {
@@ -21,4 +23,9 @@
 .thumbnail-text {
   color: var(--yellow);
   font-size: 20px;
+}
+
+.right-bar {
+  height: fit-content;
+  width: 250px !important;
 }
