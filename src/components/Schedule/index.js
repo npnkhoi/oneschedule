@@ -23,11 +23,6 @@ const Timetable = () => {
     } else {
       setSelectedCourses([...selectedCourses, {id: id, visible: true}]);
     }
-    if (toggleCount > 0 && toggleCount % 50 === 0) {
-      toast.info(`Hi! You have interacted ${toggleCount} times with OneSchedule. Let's contribute to us in the Contribute tab`, {
-        autoClose: false
-      })
-    }
     setToggleCount(toggleCount + 1)
   }
   const toggleVisibility = (id) => {

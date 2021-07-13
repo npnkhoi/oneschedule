@@ -18,7 +18,7 @@ function App() {
           <Footer />
         </div>
       </div>
-      <ToastContainer autoClose={3000} position={"bottom-left"} hideProgressBar={true}/>
+      <ToastContainer autoClose={7000} position={"bottom-left"} hideProgressBar={true}/>
     </Router>
   );
 }

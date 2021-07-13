@@ -23,8 +23,17 @@ const OneCourse = ({course}) => {
   return (
     <div className='text-start m-4'>
       
-      <div className='o-heading'>{course.id}</div>
-      <div className='o-title border-bottom o-dark-primary mb-4'>{course.title}</div>
+      <div className="d-flex flex-row border-bottom mb-4 align-items-start">
+        <div>
+          <div className='o-heading'>{course.id}</div>
+          <div className='o-title  o-dark-primary'>{course.title}</div>
+        </div>
+        {/* <div>
+          <div className='add-btn cta flex-shrink-0'> 
+            Add to Schedule
+          </div>
+        </div> */}
+      </div>
       
       <div className='d-flex flex-row'>
         <div className='w-50 flex-shrink-0 multiple-lines o-big-body'>{course.description}</div>

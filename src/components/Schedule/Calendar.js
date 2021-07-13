@@ -75,7 +75,7 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
   })
   if (scheduleOverlap !== overlapDeteced) {
     if (overlapDeteced) {
-      toast.warn("There are some schedule conflicts!", {
+      toast.error("There are some schedule conflicts!", {
         toastId: 1
       })
     }

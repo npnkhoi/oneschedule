@@ -24,10 +24,13 @@ const CourseCard = ({course}) => {
 
 const Courses = ({courses}) => {
   return (
-    <div className='d-flex flex-row flex-wrap justify-content-center'>
-      {courses.map(course => (
-        <CourseCard course={course} key={course.id}/>
-      ))}
+    <div>
+      <p className='o-title'>Course Offerings</p>
+      <div className='d-flex flex-row flex-wrap justify-content-center'>
+        {courses.map(course => (
+          <CourseCard course={course} key={course.id}/>
+        ))}
+      </div>
     </div>
   )
 }

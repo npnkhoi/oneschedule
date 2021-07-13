@@ -42,7 +42,7 @@ const ColorPicker = ({courseId}) => {
 
 const SelectedCourses = ({courses, isSelected, isVisible, toggleVisibility, toggleSelection}) => {
   return (
-  <div className="mt-4 chosen-courses d-flex flex-column">
+  <div className="mt-4 d-flex flex-column">
     {
       courses
       .filter((course) => isSelected(course.id))
