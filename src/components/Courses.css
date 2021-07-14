@@ -29,3 +29,13 @@
   height: fit-content;
   width: 250px !important;
 }
+
+.form-check-input {
+  height: 28px;
+  width: 48px !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+}

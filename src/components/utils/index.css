@@ -9,6 +9,5 @@
 }
 
 .cta:hover {
-  background-color: var(--bright-green);
-  color: var(--dark-green);
+  background-color: var(--orange);
 }
