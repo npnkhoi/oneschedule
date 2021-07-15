@@ -8,13 +8,12 @@ import { useSelector } from 'react-redux'
 const Timetable = () => {
   const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
   const courses = useSelector(state => state.course.value)
-
-  console.log(courses);
+  const selectedCourses = courses.filter(course => course.selected && course.visible)
 
   return (
     <div className="d-flex flex-row flex-grow-1">
       <Calendar 
-        selectedCourses={courses.filter(course => course.selected && course.visible)} 
+        selectedCourses={selectedCourses} 
         scheduleOverlap={scheduleOverlap}
         setScheduleOverlap={setScheduleOverlap}
       />

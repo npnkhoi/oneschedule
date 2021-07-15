@@ -1,9 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
+import COURSES from '../data/courses.json'
+import { getRandomColor } from "../utils/colors";
+
 
 const colorMapSlice = createSlice({
   name: 'colorMap',
   initialState: {
-    value: {}
+    value: COURSES.reduce(
+      (all, course) => ({
+        ...all,
+        [course.id]: getRandomColor()
+      })
+    , {})
   },
   reducers: {
     setColor: (state, action) => {
