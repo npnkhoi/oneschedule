@@ -18,7 +18,7 @@ const Timetable = () => {
         setScheduleOverlap={setScheduleOverlap}
       />
     
-      <div className="right-bar">
+      <div className="info-bar">
         <p className="o-heading">Spring, 2021</p>
 
         <Searcher

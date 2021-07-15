@@ -124,7 +124,7 @@ const Courses = ({courses}) => {
             {compact ? <TableView /> : <GalleryView />}
         </div>
 
-        <div className='right-bar flex-shrink-0 flex-grow-0 sticky-top'>
+        <div className='right-bar flex-shrink-0 flex-grow-0 sticky-top ms-4'>
           <div className='bg-light p-3 border rounded mb-3'>
             <div className="form-check form-switch d-flex flex-row align-items-center">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
