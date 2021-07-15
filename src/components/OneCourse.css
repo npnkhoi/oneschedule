@@ -5,3 +5,11 @@
 .add-btn {
   width: 200px !important;
 }
+
+.back-btn:hover {
+  background-color: var(--light-gray);
+}
+
+.back-btn {
+  top: 0px;
+}

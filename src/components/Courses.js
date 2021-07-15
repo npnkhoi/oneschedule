@@ -135,7 +135,7 @@ const Courses = ({courses}) => {
           </div>
 
           <div className='bg-light p-3 border rounded'>
-            <p className='o-heading border-bottom'>Filters</p>
+            <p className='o-heading border-bottom pb-1'>Filters</p>
 
             <div className='mt-3 mb-1'>Majors</div>
             <Select options={MAJORS} isMulti 
@@ -151,6 +151,8 @@ const Courses = ({courses}) => {
             <Select options={LEVELS} isMulti
               onChange={setLevelFilter}
             />
+
+            <div className='mt-3 pt-2 border-top fw-bold'> {getFilteredCourses().length} courses found. </div>
           </div>
         </div>
       </div>

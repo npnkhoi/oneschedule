@@ -6,7 +6,8 @@ const About = () => {
   return (
     <div className='about d-flex flex-column align-items-center 
       text-start m-auto o-big-body'>
-       <p className='o-title'>Hi there!</p>
+      <p className='o-title'>Hi there!</p>
+
       <div className='d-flex flex-row align-items-center justify-content-between w-100'>
         <div className='w-25 d-flex flex-column align-items-center flex-shrink-0'>
           <img src={avatar} className='w-100' alt='avatar of Khoi'/>
@@ -32,6 +33,7 @@ const About = () => {
           </p>
         </div>
       </div>
+
       <div className='mt-5'>
         <p className='o-heading o-dark-primary'>Special thanks to:</p>
         
@@ -42,6 +44,8 @@ const About = () => {
           <li>The kind reviewers -- Nguyen Thu Huyen, Phan Nguyen Tuong Minh, Le Ngoc Ky Duyen, Pham Nguyen Dan Tam, Vu Nhat Huy, Le Anh Vu, and more -- for showing me how to improve.</li>
         </ul>
       </div>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KKc_RMln5UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   )
 }

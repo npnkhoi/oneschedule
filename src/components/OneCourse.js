@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import './OneCourse.css'
 
 const Row = ({header, content}) => {
@@ -19,20 +20,30 @@ const OneCourse = ({course}) => {
     .split('\u2022')
     .filter(line => line !== ' ')
     .join('♦ ')
+  
+  const history = useHistory()
 
   return (
     <div className='text-start m-4'>
       
-      <div className="d-flex flex-row border-bottom mb-4 align-items-start">
-        <div>
-          <div className='o-heading'>{course.id}</div>
-          <div className='o-title  o-dark-primary'>{course.title}</div>
-        </div>
-        {/* <div>
+      <div className="d-flex flex-column border-bottom mb-4 align-items-start">
+        <div className='d-flex flex-row align-items-end w-100'>
+          <div className='o-heading flex-grow-1'>
+            {course.id}  
+          </div>
+
+          <div className='cta flex-shrink-0 me-2'
+            onClick={() => history.goBack()}
+          > 
+            <i className='fas fa-arrow-left me-2'/>
+            Back to Offerings
+          </div>
           <div className='add-btn cta flex-shrink-0'> 
             Add to Schedule
           </div>
-        </div> */}
+        </div>
+
+        <div className='o-title  o-dark-primary'>{course.title}</div>
       </div>
       
       <div className='d-flex flex-row'>
