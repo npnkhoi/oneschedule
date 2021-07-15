@@ -1,14 +1,15 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
-import courses from '../data/courses.json'
 import Timetable from './Schedule';
 import Courses from './Courses';
 import OneCourse from './OneCourse';
 import About from './About';
 import Contribute from './Contribute';
 import './Main.css'
+import { useSelector } from 'react-redux';
 
 const Main = () => {
   const match = useRouteMatch('/courses/:id')
+  const courses = useSelector(state => state.course.value)
   const course = match
     ? courses.find(course => course.id === match.params.id)
     : null

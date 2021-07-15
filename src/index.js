@@ -17,7 +17,6 @@ ReactDOM.render(
 
 // convert object to string and store in localStorage
 function saveToLocalStorage(state) {
-  console.log('subscriber sees something');
   try {
     const serialisedState = JSON.stringify(state);
     localStorage.setItem("persistantState", serialisedState);

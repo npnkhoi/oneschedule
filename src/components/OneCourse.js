@@ -1,5 +1,8 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+// import { useHistory } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { toggleSelection } from '../store/courseSlice'
 import './OneCourse.css'
 
 const Row = ({header, content}) => {
@@ -21,7 +24,16 @@ const OneCourse = ({course}) => {
     .filter(line => line !== ' ')
     .join('♦ ')
   
-  const history = useHistory()
+  // const history = useHistory()
+  const dispatch = useDispatch()
+
+  const onToggleSelection = () => {
+    const preStatus = course.selected
+    dispatch(toggleSelection({id: course.id}))
+    toast.success(preStatus ? 'Course removed!' : 'Course added!', {
+      autoClose: 2000
+    })
+  }
 
   return (
     <div className='text-start m-4'>
@@ -32,15 +44,18 @@ const OneCourse = ({course}) => {
             {course.id}  
           </div>
 
-          <div className='cta flex-shrink-0 me-2'
+          <div className='add-btn cta flex-shrink-0'
+            onClick={onToggleSelection}
+          > 
+            { course.selected ? 'Remove from Schedule' : 'Add to Schedule' }
+          </div>
+
+          {/* <div className='cta flex-shrink-0 ms-2'
             onClick={() => history.goBack()}
           > 
             <i className='fas fa-arrow-left me-2'/>
             Back to Offerings
-          </div>
-          <div className='add-btn cta flex-shrink-0'> 
-            Add to Schedule
-          </div>
+          </div> */}
         </div>
 
         <div className='o-title  o-dark-primary'>{course.title}</div>

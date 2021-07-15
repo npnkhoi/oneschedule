@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
 import './Calendar.css'
 
-const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap, getColor}) => {
+const Calendar = ({selectedCourses, setScheduleOverlap, scheduleOverlap}) => {
   const color = useSelector(state => state.colorMap.value)
   
   const dayId = {
@@ -26,6 +26,7 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
 
   const getTimeblocks = (course) => {
     const backgroundColor = color[course.id]
+
     return course.schedule.reduce((blocks, block) => blocks.concat({
       title: `${course.title} (${course.instructor})`,
       daysOfWeek: [dayId[block.day]],
@@ -36,8 +37,7 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
     }), [])
   }
 
-  const events = courses
-  .filter(course => selectedCourses.filter((selected) => selected.id === course.id).length > 0)
+  const events = selectedCourses
   .reduce((events, course) => events.concat(getTimeblocks(course)), [])
 
   const getSeconds = (stringTime) => {

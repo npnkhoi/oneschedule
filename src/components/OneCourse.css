@@ -2,10 +2,6 @@
   white-space: pre-line;
 }
 
-.add-btn {
-  width: 200px !important;
-}
-
 .back-btn:hover {
   background-color: var(--light-gray);
 }

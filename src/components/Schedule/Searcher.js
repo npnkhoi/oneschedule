@@ -1,10 +1,11 @@
 import {useEffect, useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setColor } from '../../store/colorMapSlice'
+import { toggleSelection } from '../../store/courseSlice'
 import COLORS from '../../data/colors.json'
 
 
-const Searcher = ({courses, isSelected, toggleSelection}) => {
+const Searcher = ({courses}) => {
   const [ filter, setFilter ] = useState('')
   const [ focusItem, setFocusItem ] = useState(0)
   const color = useSelector(state => state.colorMap.value)
@@ -51,7 +52,7 @@ const Searcher = ({courses, isSelected, toggleSelection}) => {
   }
 
   const onCourseToggle = (id) => {
-    toggleSelection(id);
+    dispatch(toggleSelection({id}))
     if (!color.id) {
       const colorId = Math.floor(Math.random() * COLORS.length)
       const newColor = COLORS[colorId]
@@ -88,7 +89,7 @@ const Searcher = ({courses, isSelected, toggleSelection}) => {
           <button 
             className={`
               px-0 list-group-item
-              ${isSelected(course.id) ? "heading-2" : ""}
+              ${course.selected ? "heading-2" : ""}
               ${isFocused(course.id) ? "focus" : ""}
             `}
             onClick={() => onCourseToggle(course.id)}

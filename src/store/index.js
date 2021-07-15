@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
-// import counterReducer from './counterSlice'
 import colorMapReducer from './colorMapSlice'
+import courseReducer from './courseSlice'
 
 // load string from localStarage and convert into an Object
 // invalid output must be undefined
@@ -17,8 +17,8 @@ function loadFromLocalStorage() {
 
 export default configureStore({
   reducer: {
-    // counter: counterReducer,
-    colorMap: colorMapReducer
+    colorMap: colorMapReducer,
+    course: courseReducer,
   },
   preloadedState: loadFromLocalStorage()
 })

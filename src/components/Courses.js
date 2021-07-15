@@ -126,7 +126,7 @@ const Courses = ({courses}) => {
 
         <div className='right-bar flex-shrink-0 flex-grow-0 sticky-top'>
           <div className='bg-light p-3 border rounded mb-3'>
-            <div class="form-check form-switch d-flex flex-row align-items-center">
+            <div className="form-check form-switch d-flex flex-row align-items-center">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
                 onClick={() => setCompact(!compact)}
               />
