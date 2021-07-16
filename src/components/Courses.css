@@ -1,0 +1,39 @@
+.course-card {
+  background-color: var(--light-gray);
+  height: 200px;
+  width: 200px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit
+}
+
+.course-card:hover {
+  box-shadow: 8px 8px 4px 0px #00000040 !important;
+  min-height: 200px;
+  height: fit-content;
+}
+
+.thumbnail {
+  width: 75px;
+  background-color: var(--dark-green);
+}
+
+.thumbnail-text {
+  color: var(--yellow);
+  font-size: 20px;
+}
+
+.right-bar {
+  height: fit-content;
+  width: 250px !important;
+}
+
+.form-check-input {
+  height: 28px;
+  width: 48px !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+}

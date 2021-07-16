@@ -1,109 +1,24 @@
-import courses from './data/courses_v2'
 import './App.css';
-import React, { useState, useEffect } from 'react'
-import Calendar from './components/Calendar'
-import Searcher from './components/Searcher'
-import Help from './components/Help'
-import SelectedCourses from './components/SelectedCourses'
-import { CSSTransitionGroup } from 'react-transition-group'
-import { toast, ToastContainer} from 'react-toastify';
+import React  from 'react'
+import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-function usePersistedState(key, defaultValue) {
-  const [state, setState] = useState(
-    () => JSON.parse(localStorage.getItem(key)) || defaultValue
-  );
-  useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(state));
-  }, [key, state]);
-  return [state, setState];
-}
+import {HashRouter as Router } from 'react-router-dom'
+import NavBar from './components/NavBar';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
-  const [ selectedCourses, setSelectedCourses ] = usePersistedState('selectedCourses', [])
-  const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
-  const [showHelp, setShowHelp] = useState(false)
-  const [toggleCount, setToggleCount] = usePersistedState('toggleCount', 0)
-  
-  const isSelected = (courseId) => (selectedCourses.filter((course) => course.id === courseId).length > 0);
-  const isVisible = (courseId) => {
-    const val = selectedCourses.filter((course) => course.id === courseId)
-    return (val.length > 0 && val[0].visible)
-  }
-  const toggleSelection = (id) => {
-    if (isSelected(id)) {
-      setSelectedCourses(selectedCourses.filter(course => course.id !== id));
-    } else {
-      setSelectedCourses([...selectedCourses, {id: id, visible: true}]);
-    }
-    // TODO: reconsider the interval
-    if (toggleCount > 0 && toggleCount % 10 === 0) {
-      toast.info(`Wowww, you have interacted ${toggleCount} times with OneSchedule. Wanna support me? Click the burger button at the top-right corner and "buy me a coffee"`, {
-        autoClose: false
-      })
-    }
-    setToggleCount(toggleCount + 1)
-  }
-  const toggleVisibility = (id) => {
-    setSelectedCourses(selectedCourses.map(
-      course => (course.id === id ? {...course, visible: !course.visible} : course)
-    ))
-  }
-  const toggleHelp = () => {
-    setShowHelp(!showHelp)
-  }
-
   return (
-    <div className="App d-flex flex-column">
-      
-      {/* Header */}
-      <div className="header w-100 d-flex flex-row align-items-center justify-content-between pl-4"> 
-        <div className="app-title" >OneSchedule</div>
-        <button className="btn burger" onClick={toggleHelp}>
-          <i className="fas fa-bars"></i>
-        </button>
-      </div>
-
-      {/* Main */}
-      <div className="main mt-4 mx-4 d-flex flex-row justify-content-between">
-
-        <div className="d-flex flex-row flex-grow-1">
-          <Calendar 
-            selectedCourses={selectedCourses.filter(course => course.visible)} 
-            courses={courses}
-            scheduleOverlap={scheduleOverlap}
-            setScheduleOverlap={setScheduleOverlap}
-          />
-        
-          <div className="right-bar">
-            <div className="heading-1">Spring, 2021</div>
-
-            <Searcher 
-              isSelected={isSelected}
-              toggleSelection={toggleSelection}
-            />
-
-            <SelectedCourses 
-              courses={courses} 
-              isSelected={isSelected}
-              isVisible={isVisible}
-              toggleVisibility={toggleVisibility}
-              toggleSelection={toggleSelection}
-            />
-          </div>
+    <Router>
+      <div className="App d-flex flex-row w-100">
+        <NavBar />
+        <div className='d-flex flex-column w-100'>
+          <Main/>
+          <Footer />
         </div>
-
-        <CSSTransitionGroup
-          transitionName="example"
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={300}
-          className="help-container position-absolute"
-        >
-          {showHelp ? <Help key="x"/> : <></>}
-        </CSSTransitionGroup>
-        <ToastContainer autoClose={3000} position={"bottom-left"} hideProgressBar={true}/>
       </div>
-    </div>
+      <ToastContainer autoClose={7000} position={"bottom-left"} hideProgressBar={true}/>
+    </Router>
   );
 }
 export default App;

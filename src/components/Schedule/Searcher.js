@@ -1,9 +1,12 @@
-import courses from '../data/courses_v2'
 import {useEffect, useState} from 'react'
+import { useDispatch } from 'react-redux'
+import { toggleSelection } from '../../store/courseSlice'
 
-const Searcher = ({isSelected, toggleSelection}) => {
+
+const Searcher = ({courses}) => {
   const [ filter, setFilter ] = useState('')
   const [ focusItem, setFocusItem ] = useState(0)
+  const dispatch = useDispatch()
 
   let matchedCourses = []
   let nVisibleCourses = 0
@@ -21,12 +24,18 @@ const Searcher = ({isSelected, toggleSelection}) => {
     document.getElementById('search-input').value = ""
   }
 
+  const handleShortcuts = (event) => {
+    if (event.key === 'Escape') {
+      collapseSuggestions()
+    }
+  }
+
   useEffect(() => {
-    window.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
-        collapseSuggestions()
-      }
-    })
+    window.addEventListener('keydown', handleShortcuts)
+
+    return () => {
+      window.removeEventListener('keydown', handleShortcuts)
+    }
   })
 
   const changeText = (text) => {
@@ -40,22 +49,22 @@ const Searcher = ({isSelected, toggleSelection}) => {
   }
 
   const onCourseToggle = (id) => {
-    toggleSelection(id);
+    dispatch(toggleSelection({id}))
     collapseSuggestions()
   }
 
   const CourseInfo = (course) => {
     return (
       <div className="d-flex flex-row justify-content-between align-items-center">
-        <div className="w-75 px-1">{course.course_name}</div>
-        <div className="instructor-name w-25 px-1 border-left">{course.instructor_name}</div>
+        <div className="w-75 px-1">{course.title}</div>
+        <div className="instructor-name w-25 px-1 border-left">{course.instructor}</div>
       </div>
     )
   }
 
   const CourseList = () => {
     matchedCourses = courses.filter((course) => 
-      (course.course_name + "|" + course.instructor_name)
+      (course.title + "|" + course.instructor)
       .toLowerCase().includes(filter.toLowerCase())
     )
 
@@ -69,13 +78,11 @@ const Searcher = ({isSelected, toggleSelection}) => {
           <button 
             className={`
               px-0 list-group-item
-              ${isSelected(course.id) ? "heading-2" : ""}
+              ${course.selected ? "heading-2" : ""}
               ${isFocused(course.id) ? "focus" : ""}
             `}
             onClick={() => onCourseToggle(course.id)}
             key={course.id}
-            data-bs-toggle="tooltip" data-bs-placement="right" 
-            title={`[${course.id}] From ${course.start_time} to ${course.end_time} on ${course.days}`}
           >
             {CourseInfo(course)}
           </button>
@@ -88,9 +95,9 @@ const Searcher = ({isSelected, toggleSelection}) => {
   return (
     <div className="filter">
       <input 
-        className="form-control py-4" 
+        className="form-control py-2" 
         id="search-input"
-        placeholder="Add course to timetable"
+        placeholder="Add courses to schedule"
         autoComplete="off"
         onChange={onInputChanged} 
         onKeyDown={(event) => {

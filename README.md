@@ -1,7 +1,30 @@
-# Welcome to FulCourse - a course schedule visualizer for Fulbright students
+# OneSchedule
 
-Website: https://npnkhoi.github.io/oneschedule
+[OneSchedule](https://npnkhoi.github.io/oneschedule) is a course-schedule visualizer for Fulbright Univesrity Vietnam. Its main features are:
+- Visualizing course schedules (with color theme)
+- Presenting course offerings (with filters and table/gallery views)
 
-More description is coming.
+Our goal is to reduce time spent for course selection at the beginning of each semester to 30 minutes per student.
 
-Contact: khoi.nguyen.190037@student.fulbright.edu.vn
+## Getting started
+
+Install [NodeJS](https://nodejs.org/en/) and [Yarn](https://classic.yarnpkg.com/en/docs/install), then run the following command to install all dependencies:
+```
+yarn
+```
+Then, host the app in your machine by running:
+```
+yarn start
+```
+
+## Technical design
+### Technologies
+We use React (JavaScript), Redux and Bootstrap 5.
+### Project structure (WIP)
+* Components
+* Hooks
+* Sore
+* Utils
+* Data
+* Assets
+* Scripts (Python)
