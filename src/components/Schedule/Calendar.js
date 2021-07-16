@@ -1,8 +1,14 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
+import moment from 'moment';
+import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
+import { getTextColor } from '../../utils/colors';
+import './Calendar.css'
 
-const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap}) => {
+const Calendar = ({selectedCourses, setScheduleOverlap, scheduleOverlap}) => {
+  const color = useSelector(state => state.colorMap.value)
+  
   const dayId = {
     'Sunday': 0,
     'Monday': 1,
@@ -13,14 +19,26 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
     'Saturday': 6
   }
 
-  const events = courses
-  .filter(course => selectedCourses.filter((selected) => selected.id === course.id).length > 0)
-  .map(course => ({
-    title: course.id,
-    startTime: course.start_time,
-    endTime: course.end_time,
-    daysOfWeek: course.days.split(/[ ,]+/).map(day => dayId[day])
-  }))
+  const transformTime = (time) => {
+    const timeObject = moment(time, 'h:mm A')
+    return timeObject.format('HH:mm:ss')
+  }
+
+  const getTimeblocks = (course) => {
+    const backgroundColor = color[course.id]
+
+    return course.schedule.reduce((blocks, block) => blocks.concat({
+      title: `${course.title} (${course.instructor})`,
+      daysOfWeek: [dayId[block.day]],
+      startTime: transformTime(block.start_time),
+      endTime: transformTime(block.end_time),
+      backgroundColor: backgroundColor,
+      textColor: getTextColor(backgroundColor),
+    }), [])
+  }
+
+  const events = selectedCourses
+  .reduce((events, course) => events.concat(getTimeblocks(course)), [])
 
   const getSeconds = (stringTime) => {
     const nums = stringTime.split(/[:]+/)
@@ -57,17 +75,15 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
   })
   if (scheduleOverlap !== overlapDeteced) {
     if (overlapDeteced) {
-      toast.warn("There are some schedule conflicts!", {
+      toast.error("There are some schedule conflicts!", {
         toastId: 1
       })
-      console.log('Toast called when overlapDetected is', overlapDeteced);
     }
     setScheduleOverlap(overlapDeteced)
   }
 
   return (
   <FullCalendar
-    className="calendar"
     plugins={[ timeGridPlugin ]}
     initialView="timeGridWeek"
     events = {events}
@@ -84,8 +100,7 @@ const Calendar = ({selectedCourses, courses, setScheduleOverlap, scheduleOverlap
         end: ""
       })
     }
-    eventColor = "#264653"
-    eventTextColor = "#E9C46A"
+    eventTextColor = "black"
   />
   )
 }

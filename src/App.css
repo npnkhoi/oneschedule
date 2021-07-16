@@ -5,142 +5,21 @@
   --orange: #E76F51;
   --light-orange: #F4A261;
   --bright-gray: #dee2e6;
+  --light-gray: #F2F2F2;
 }
 
 .App {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  height: full;
-  margin-bottom: 10px;
-  color: gray;
-  font-family: 'B612', sans-serif;
+  color: #444444;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
-.header {
-  height: 45px;
-  background-color: var(--dark-green);
-  font-family: 'Paytone One', sans-serif;
-  font-size: 30px;
-  color: var(--yellow);
+a:hover {
+  color: var(--orange)
 }
 
-.right-bar {
-  margin-left: 30px;
-  flex-grow: 1;
-  width: 40%;
-}
-
-.heading-1 {
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--orange);
-  margin-bottom: 20px;
-}
-
-.heading-2 {
-  font-weight: 600;
-  color: var(--orange);
-  margin-bottom: 2px;
-}
-
-.selected-course{
-  padding-bottom: 12px;
-  padding-top: 10px;
-  margin-top: 2px;
-  border-bottom: 1px solid var(--bright-gray);
-  border-left: 5px solid var(--dark-green);
-}
-
-.selected-info {
-  text-align: left;
-}
-
-.selected-instructor {
-  font-size: small;
-  font-style: italic;
-}
-
-.toggle-btns {
-  width: fit-content;
-}
-
-.toggle-btns > button > i {
-  color: var(--dark-green);
-}
-
-.instructor-name {
-  width: 20%;
-  font-size: 13px;
-  color: gray;
-}
-
-/* calendar */
-#root > div > div.main.mt-4.d-flex.flex-row.justify-content-between > div.d-flex.flex-row.flex-grow-1 > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
-  width: 100%;
-  height: 85vh;
-  color: var(--dark-green);
-}
-
-#root > div > div.main.mt-4.d-flex.flex-row.justify-content-between > div.d-flex.flex-row.flex-grow-1 > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard > div.fc-header-toolbar.fc-toolbar {
-  display: none;
-}
-
-.fc-event-title {
-  word-wrap: break-word;
-}
-
-.fc-event-main-frame {
-  padding: 5px;
-}
-
-/* end of calendar */
-
-/* TODO: make this more real */
-.shadow {
-  -moz-box-shadow:    3px 3px 2px 3px #ccc;
-  -webkit-box-shadow: 3px 3px 2px 3px #ccc;
-  box-shadow:         3px 3px 2px 3px #ccc;
-}
-
-.burger {
-  color: var(--yellow);
-  font-size: 20px;
-}
-
-CSSTransitionGroup {
-  width: fit-content;
-}
-
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 200ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 150ms ease-in;
-}
-
-.selecting > .list-group-item.focus {
-  background-color: #ccc;
-}
-
-.selecting > .list-group-item:hover {
-  background-color: #ccc;
-}
-
-.help-container {
-  right: 0px;
-  top: 45px;
-  background: rgba(0, 0, 0, 0.87);
-  height: calc(100% - 45px);
-  overflow-y: scroll;
+a {
+  color: var(--dark-green)
 }

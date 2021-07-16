@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100px;
+  height: 100vh;
+  background-color: var(--light-gray);
+}
+
+.navbar-btn {
+  color: var(--dark-green);
+}
+
+.navbar-btn:hover, .current {
+  color: var(--orange);
+  font-weight: 900;
+}

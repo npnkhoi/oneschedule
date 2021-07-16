@@ -1,0 +1,31 @@
+.fc {
+  flex-grow: 1;
+  height: 95vh;
+  color: var(--dark-green);
+}
+
+.fc-header-toolbar {
+  display: none !important;
+}
+
+.fc-event-title {
+  word-wrap: break-word;
+}
+
+.fc-event-main-frame {
+  padding: 5px;
+}
+
+.fc-v-event {
+  border-color: white;
+  border-radius: 6px;
+}
+
+.fc-event-title {
+  font-weight: 600;
+}
+
+.fc-col-header-cell-cushion {
+  color: var(--dark-green);
+  text-decoration: none;
+}

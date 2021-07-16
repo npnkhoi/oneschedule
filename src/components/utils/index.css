@@ -1,0 +1,14 @@
+.cta {
+  background-color: var(--dark-green);
+  border-radius: 8px;
+  color: white;
+  width: fit-content;
+  padding: 10px 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.cta:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
