@@ -6,7 +6,7 @@ import CTA from './utils/CTA'
 const Contribute = () => {
   return (
     <div className='about m-auto'>
-      <p className='o-title'>4 ways to contribute to OneSchedule</p>
+      <p className='o-title'>3 ways to contribute to OneSchedule</p>
       <div className='text-start'>
         <p className='o-heading'>1. Give feedback</p>
         <p>If you find a bug in the app, or simpy want to let us know your thoughts, we would love to here it. That is really the best and easiest way to support this app.</p>
@@ -27,7 +27,7 @@ const Contribute = () => {
         <p>Things can be more beautiful, especially when you help to make it. Send us your design ideas via khoi.nguyen.190037@student.fulbright.edu.vn. </p>
         <p>Examples are: interface analysis, new design proposal (big or small), or simply feedback.</p>
 
-        <p className='o-heading'>4. Donate</p>
+        {/* <p className='o-heading'>4. Donate</p>
         <p>We are having lots of things to do: hosting public web domain (fuv-schedule.com), add Fulbright classroom map, course review, etc. With limited resources, we currently cannot deliver those features. We need your help! Every dollar we receive will be used to develop OneSchedule.</p>
         <p>You can donate to OneSchedule via 2 following channels:</p>
         <ol>
@@ -47,7 +47,7 @@ const Contribute = () => {
               <li>Message: "OneSchedule"</li>
             </ul>
           </li>
-        </ol>
+        </ol> */}
 
       </div>
     </div>
