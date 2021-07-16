@@ -40,8 +40,8 @@ const About = () => {
         <ul>
           <li>Le Thuc Minh Chau for being the first person to support this idea.</li>
           <li>Fulbright's Registrar Office for generously providing the data of the courses.</li>
-          <li>FullStackOpen course from University of Helsinki for teaching me everything about fullstack web development.</li>
-          <li>The kind reviewers -- Nguyen Thu Huyen, Phan Nguyen Tuong Minh, Le Ngoc Ky Duyen, Pham Nguyen Dan Tam, Vu Nhat Huy, Le Anh Vu, and more -- for showing me how to improve.</li>
+          <li> <a href='https://fullstackopen.com/en/'>Full Stack open course</a> from University of Helsinki for teaching me everything about fullstack web development.</li>
+          <li>The kind reviewers -- Huyen Nguyen, Tuong Minh, Binh Giang, chi Duyen (Ann), Dan Tam & Huy Vu, anh Vu Le, and more -- for showing me how to improve.</li>
         </ul>
       </div>
       

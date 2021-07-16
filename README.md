@@ -1,8 +1,8 @@
 # OneSchedule
 
-OneSchedule is a course-schedule visualizer for Fulbright Univesrity Vietnam. Its main features are:
+[OneSchedule](https://npnkhoi.github.io/oneschedule) is a course-schedule visualizer for Fulbright Univesrity Vietnam. Its main features are:
 - Visualizing course schedules (with color theme)
-- Presenting course offerings (with filters and tabular/gallery views)
+- Presenting course offerings (with filters and table/gallery views)
 
 Our goal is to reduce time spent for course selection at the beginning of each semester to 30 minutes per student.
 
