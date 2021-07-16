@@ -1,5 +1,7 @@
 import COLORS from '../data/colors.json'
 
+// Return an appropriate text color (black/white)
+// based on background color
 export const getTextColor = (bg) => {
   const backgroundColor = (bg ? bg : '#000000')
 

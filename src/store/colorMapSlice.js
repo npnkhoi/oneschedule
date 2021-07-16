@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import COURSES from '../data/courses.json'
 import { getRandomColor } from "../utils/colors";
 
-
+// This slice maintains the course-to-color mapping
 const colorMapSlice = createSlice({
   name: 'colorMap',
   initialState: {

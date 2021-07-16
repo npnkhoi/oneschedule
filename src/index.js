@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store'
 import {Provider} from 'react-redux'
+import { saveToLocalStorage } from './utils/localStorage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,17 +14,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
-// convert object to string and store in localStorage
-function saveToLocalStorage(state) {
-  try {
-    const serialisedState = JSON.stringify(state);
-    localStorage.setItem("persistantState", serialisedState);
-  } catch (e) {
-    console.warn(e);
-  }
-}
 
 store.subscribe(() => saveToLocalStorage(store.getState()));
 

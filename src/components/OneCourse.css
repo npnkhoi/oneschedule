@@ -1,11 +1,3 @@
 .multiple-lines {
   white-space: pre-line;
 }
-
-.back-btn:hover {
-  background-color: var(--light-gray);
-}
-
-.back-btn {
-  top: 0px;
-}

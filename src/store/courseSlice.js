@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 import COURSES from '../data/courses.json'
 
+// This slice maintain the true data of courses 
+// and their visibility status in the app
 const courseSlice = createSlice({
   name: 'course',
   initialState: {

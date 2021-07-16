@@ -1,3 +1,5 @@
+// This code is currently not used anywhere
+
 import {useState, useEffect} from 'react'
 
 function usePersistedState(key, defaultValue) {

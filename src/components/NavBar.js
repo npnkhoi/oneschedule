@@ -5,6 +5,8 @@ import logoSVG from '../assets/Logo.svg'
 
 const NavBtn = ({label, path, icon}) => {
   const location = useLocation()
+  
+  // Detect current view for highlighting
   const currentView = location.pathname.split('/')[1]
 
   return (
@@ -21,7 +23,7 @@ const NavBtn = ({label, path, icon}) => {
 
 const Logo = () => (
   <Link to='/'>
-    <img src={logoSVG} alt='bookmark with OneSchedule text on it' />
+    <img src={logoSVG} alt='Bookmark with OneSchedule text on it' />
   </Link>
 )
 
@@ -33,7 +35,6 @@ const NavBar = () => {
       <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt'/>
       <NavBtn label='Contribute' path='/contribute' icon='far fa-star'/>
       <NavBtn label='About' path='/about' icon='fas fa-info'/>
-      {/* <NavBtn label='Help' path='/help' icon='fas fa-question'/> */}
     </div>
   )
 }

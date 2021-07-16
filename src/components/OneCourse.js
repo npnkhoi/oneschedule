@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-// import { useHistory } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { toggleSelection } from '../store/courseSlice'
+import { getDates, getNotes, getSchedule } from '../utils/course'
 import './OneCourse.css'
 
 const Row = ({header, content}) => {
@@ -15,16 +15,6 @@ const Row = ({header, content}) => {
 }
 
 const OneCourse = ({course}) => {
-  const dates = `${course.start_date} - ${course.end_date}`
-  const schedule = course.schedule
-  .map(({day, start_time, end_time}) => `${day} ${start_time} - ${end_time}`)
-  .join('\n')
-  const notes = course.notes
-    .split('\u2022')
-    .filter(line => line !== ' ')
-    .join('♦ ')
-  
-  // const history = useHistory()
   const dispatch = useDispatch()
 
   const onToggleSelection = () => {
@@ -50,12 +40,6 @@ const OneCourse = ({course}) => {
             { course.selected ? 'Remove from Schedule' : 'Add to Schedule' }
           </div>
 
-          {/* <div className='cta flex-shrink-0 ms-2'
-            onClick={() => history.goBack()}
-          > 
-            <i className='fas fa-arrow-left me-2'/>
-            Back to Offerings
-          </div> */}
         </div>
 
         <div className='o-title  o-dark-primary'>{course.title}</div>
@@ -67,12 +51,12 @@ const OneCourse = ({course}) => {
           <table className='table table-hover table-bordered'>
             <tbody>
               <Row header='Instructor' content={course.instructor} />
-              <Row header='Schedule' content={schedule} />
-              <Row header='Dates' content={dates} />
+              <Row header='Schedule' content={getSchedule(course)} />
+              <Row header='Dates' content={getDates(course)} />
               <Row header='Capacity' content={course.capacity} />
               <Row header='Credits' content={course.credits} />
               <Row header='Type' content={course.type} />
-              <Row header='Further notes' content={notes} />
+              <Row header='Further notes' content={getNotes(course)} />
             </tbody>
           </table>
         </div>

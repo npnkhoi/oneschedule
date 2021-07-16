@@ -2,18 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Courses.css'
 import Select from 'react-select'
-
-const getMajor = (id) => {
-  const head = id.slice(0, id.indexOf('_'))
-  const split = head.search(/\d/g)
-  return head.slice(0, split)
-}
-
-const getLevel = (id) => {
-  const head = id.slice(0, id.indexOf('_'))
-  const split = head.search(/\d/g)
-  return head[split] + '00'
-}
+import { getLevel, getMajor, LEVELS, MAJORS } from '../utils/course'
 
 const CourseCard = ({course}) => {
   return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden'
@@ -35,51 +24,32 @@ const Courses = ({courses}) => {
   const [instructorFilter, setInstructorFilter] = useState([])
   const [levelFilter, setLevelFilter] = useState([])
 
-  const MAJORS = [
-    {value: 'ARTS', label: 'Arts and Media'},
-    {value: 'CORE', label: 'Core'},
-    {value: 'CS', label: 'Computer Science'},
-    {value: 'ECON', label: 'Economics'},
-    {value: 'ENG', label: 'Engineering'},
-    {value: 'FRE', label: 'French'},
-    {value: 'HIS', label: 'History'},
-    {value: 'IS', label: 'Integrated Science'},
-    {value: 'LIT', label: 'Literature'},
-    {value: 'MATH', label: 'Mathematics'},
-    {value: 'PSY', label: 'Psychology'},
-    {value: 'SOCI', label: 'Social Sciences'},
-    {value: 'VS', label: 'Vietnamese Studies'},
-  ]
-
+  // Instructor options for filter
+  // NOTE: Majors and levels are saved as constants
   const instructors = courses
     .map(course => course.instructor)
     .filter((value, index, self) => self.indexOf(value) === index)
     .map(name => ({value: name, label: name}))
-  
-  const LEVELS = ['100', '200', '300'].map(
-    level => ({label: level, value: level})
-  )
+
+  const oneFilter = (filterList, courses, getDetail) => {
+    if (filterList.length !== 0) {
+      return courses.filter(course => filterList
+        .map(obj => obj.value)
+        .includes(getDetail(course))
+      )
+    } else {
+      return courses
+    }
+  }
 
   const getFilteredCourses = () => {
     let ret = courses
-    if (instructorFilter.length !== 0) {
-      ret = ret.filter(course => instructorFilter
-        .map(obj => obj.value)
-        .includes(course.instructor)
-      )
-    }
-    if (majorFilter.length !== 0) {
-      ret = ret.filter(course => majorFilter
-        .map(obj => obj.value)
-        .includes(getMajor(course.id))
-      )
-    }
-    if (levelFilter.length !== 0) {
-      ret = ret.filter(course => levelFilter
-        .map(obj => obj.value)
-        .includes(getLevel(course.id))
-      )
-    }
+
+    // Filter the course list over 3 filters
+    ret = oneFilter(instructorFilter, ret, (course) => course.instructor)
+    ret = oneFilter(majorFilter, ret, (course) => getMajor(course.id))
+    ret = oneFilter(levelFilter, ret, (course) => getLevel(course.id))
+
     return ret
   }
 

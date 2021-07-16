@@ -10,6 +10,8 @@ import { useSelector } from 'react-redux';
 const Main = () => {
   const match = useRouteMatch('/courses/:id')
   const courses = useSelector(state => state.course.value)
+  
+  // If viewing one course, get the info of current course
   const course = match
     ? courses.find(course => course.id === match.params.id)
     : null

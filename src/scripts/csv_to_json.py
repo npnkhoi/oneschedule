@@ -1,3 +1,5 @@
+"""Script to transform course data from csv to appropriate json format"""
+
 # I feel like this script should not be in the same place with the frontend code
 # This is for data of Spring Semester, 2021
 

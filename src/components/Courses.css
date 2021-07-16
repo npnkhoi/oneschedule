@@ -8,9 +8,7 @@
 }
 
 .course-card:hover {
-  /* color: var(--orange) !important; */
   box-shadow: 8px 8px 4px 0px #00000040 !important;
-  color: inherit;
   min-height: 200px;
   height: fit-content;
 }
