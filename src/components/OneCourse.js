@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
 import { toggleSelection } from '../store/courseSlice'
-import { getDates, getNotes, getSchedule } from '../utils/course'
+import { getDates, getDescription, getNotes, getSchedule } from '../utils/course'
 import './OneCourse.css'
 
 const Row = ({header, content}) => {
@@ -46,17 +46,17 @@ const OneCourse = ({course}) => {
       </div>
       
       <div className='d-flex flex-row'>
-        <div className='w-50 flex-shrink-0 multiple-lines o-big-body'>{course.description}</div>
+        <div className='w-50 flex-shrink-0 multiple-lines o-big-body'>{getDescription(course)}</div>
         <div className='flex-grow-1 ms-5'>
           <table className='table table-hover table-bordered'>
             <tbody>
               <Row header='Instructor' content={course.instructor} />
               <Row header='Schedule' content={getSchedule(course)} />
-              <Row header='Dates' content={getDates(course)} />
-              <Row header='Capacity' content={course.capacity} />
-              <Row header='Credits' content={course.credits} />
-              <Row header='Type' content={course.type} />
-              <Row header='Further notes' content={getNotes(course)} />
+              {/* <Row header='Dates' content={getDates(course)} /> */}
+              {/* <Row header='Capacity' content={course.capacity} /> */}
+              {/* <Row header='Credits' content={course.credits} /> */}
+              {/* <Row header='Type' content={course.type} /> */}
+              {/* <Row header='Further notes' content={getNotes(course)} /> */}
             </tbody>
           </table>
         </div>

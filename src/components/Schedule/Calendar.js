@@ -16,7 +16,7 @@ const Calendar = ({selectedCourses, setScheduleOverlap, scheduleOverlap}) => {
     'Wednesday': 3,
     'Thursday': 4, 
     'Friday': 5,
-    'Saturday': 6
+    'Saturday': 6,
   }
 
   const transformTime = (time) => {

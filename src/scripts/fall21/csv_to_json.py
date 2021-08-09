@@ -34,7 +34,15 @@ def find_occurence(id: str) -> int or None:
 
 def get_schedule(classtime: str) -> List:
   DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  # FULL_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+  FULL_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+  def full_day(day: str) -> str:
+    if len(day) == 3:
+      for i in range(7):
+        if DAYS[i] == day:
+          return FULL_DAYS[i]
+    
+    return day
 
   ret = []
   splitter = classtime.find(' ')
@@ -54,7 +62,7 @@ def get_schedule(classtime: str) -> List:
   # CAVEAT: Do days need to be in full form?
   for day in days:
     ret.append({
-      'day': day.strip(),
+      'day': full_day(day.strip()),
       'start_time': hours[0].strip(),
       'end_time': hours[1].strip(),
     })

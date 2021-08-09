@@ -1,11 +1,12 @@
 import React from 'react'
+import config from '../utils/config'
 import './Footer.css'
 
 const Footer = () => (
   <div className='footer text-white'>
-    Designed and built with love by UG19 - Nguyen Phung Nhat Khoi (and maybe you?)
+    Designed and built with love by OneSchedule Team.
     <br></br>
-    Copyright © 2020 - Present, OneSchedule. Version 0.3 (July 16, 2021)
+    Copyright © 2020 - Present, OneSchedule. Version {config.version} ({config.last_updated})
   </div>
 )
 
