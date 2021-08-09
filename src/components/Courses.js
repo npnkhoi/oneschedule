@@ -61,7 +61,7 @@ const Courses = ({courses}) => {
           <th>ID</th>
           <th>Title</th>
           <th>Instructor</th>
-          <th>Action</th>
+          <th style={{width: '25%'}}>Action</th>
         </tr>
       </thead>
       <tbody>
