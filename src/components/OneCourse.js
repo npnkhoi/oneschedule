@@ -1,8 +1,6 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
-import { toast } from 'react-toastify'
-import { toggleSelection } from '../store/courseSlice'
 import { getDates, getDescription, getNotes, getSchedule } from '../utils/course'
+import AddDropBtn from './AddDropBtn'
 import './OneCourse.css'
 
 const Row = ({header, content}) => {
@@ -15,16 +13,6 @@ const Row = ({header, content}) => {
 }
 
 const OneCourse = ({course}) => {
-  const dispatch = useDispatch()
-
-  const onToggleSelection = () => {
-    const preStatus = course.selected
-    dispatch(toggleSelection({id: course.id}))
-    toast.success(preStatus ? 'Course removed!' : 'Course added!', {
-      autoClose: 2000
-    })
-  }
-
   return (
     <div className='text-start m-4'>
       
@@ -33,18 +21,15 @@ const OneCourse = ({course}) => {
           <div className='o-heading flex-grow-1'>
             {course.id}  
           </div>
-
-          <div className='add-btn cta flex-shrink-0'
-            onClick={onToggleSelection}
-          > 
-            { course.selected ? 'Remove from Schedule' : 'Add to Schedule' }
-          </div>
-
+          <AddDropBtn course={course} />
         </div>
 
         <div className='o-title  o-dark-primary'>{course.title}</div>
       </div>
       
+      <div class="alert alert-primary" role="alert">
+        Notice: The detail of all courses are incomplete. We are asking Registrar for help.
+      </div>
       <div className='d-flex flex-row'>
         <div className='w-50 flex-shrink-0 multiple-lines o-big-body'>{getDescription(course)}</div>
         <div className='flex-grow-1 ms-5'>

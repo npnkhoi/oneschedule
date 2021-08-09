@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Courses.css'
 import Select from 'react-select'
 import { getLevel, getMajor, LEVELS, MAJORS } from '../utils/course'
+import AddDropBtn from './AddDropBtn'
 
 const CourseCard = ({course}) => {
   return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden'
@@ -60,6 +61,7 @@ const Courses = ({courses}) => {
           <th>ID</th>
           <th>Title</th>
           <th>Instructor</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -72,6 +74,7 @@ const Courses = ({courses}) => {
                 </Link>
               </td>
               <td>{course.instructor}</td>
+              <td> <AddDropBtn course={course} /> </td>
           </tr>
         ))}
       </tbody>
@@ -92,7 +95,7 @@ const Courses = ({courses}) => {
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
           <div class="alert alert-primary" role="alert">
-            Notice: The detail of each course is incomplete. We are asking Registrar for help.
+            Tip: You should view a course in a new tab to avoid losing filters.
           </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>
