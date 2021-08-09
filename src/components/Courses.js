@@ -91,6 +91,9 @@ const Courses = ({courses}) => {
       <div className='d-flex flex-row justify-content-between'>
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
+          <div class="alert alert-primary" role="alert">
+            Notice: The detail of each course is incomplete. We are asking Registrar for help.
+          </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>
 
