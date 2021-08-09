@@ -19,7 +19,7 @@ const Timetable = () => {
       />
     
       <div className="info-bar">
-        <p className="o-heading">Spring, 2021</p>
+        <p className="o-heading">Fall, 2021</p>
 
         <Searcher
           courses={courses}
