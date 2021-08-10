@@ -121,7 +121,7 @@ const Courses = ({courses}) => {
             <div className='mt-3 mb-1'>Instructors</div>
             <Select options={instructors} isMulti
               onChange={setInstructorFilter}
-              />
+            />
 
             <div className='mt-3 mb-1'>Levels</div>
             <Select options={LEVELS} isMulti
