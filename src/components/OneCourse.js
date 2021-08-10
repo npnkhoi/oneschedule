@@ -27,11 +27,13 @@ const OneCourse = ({course}) => {
         <div className='o-title  o-dark-primary'>{course.title}</div>
       </div>
       
-      <div class="alert alert-primary" role="alert">
+      {/* <div class="alert alert-primary" role="alert">
         Notice: The detail of all courses are incomplete. We are asking Registrar for help.
-      </div>
+      </div> */}
       <div className='d-flex flex-row'>
-        <div className='w-50 flex-shrink-0 multiple-lines o-big-body'>{getDescription(course)}</div>
+        <div className='w-50 flex-shrink-0 multiple-lines'>
+          {getDescription(course).split('\n').map(paragraph => <p>{paragraph}</p>)}
+        </div>
         <div className='flex-grow-1 ms-5'>
           <table className='table table-hover table-bordered'>
             <tbody>
@@ -39,9 +41,9 @@ const OneCourse = ({course}) => {
               <Row header='Schedule' content={getSchedule(course)} />
               {/* <Row header='Dates' content={getDates(course)} /> */}
               {/* <Row header='Capacity' content={course.capacity} /> */}
-              {/* <Row header='Credits' content={course.credits} /> */}
+              <Row header='Credits' content={course.credits} />
               {/* <Row header='Type' content={course.type} /> */}
-              {/* <Row header='Further notes' content={getNotes(course)} /> */}
+              <Row header='Further notes' content={getNotes(course)} />
             </tbody>
           </table>
         </div>

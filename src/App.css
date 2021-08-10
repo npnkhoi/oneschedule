@@ -29,7 +29,7 @@
 
 .o-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   color: var(--dark-green);
 }
 
@@ -47,6 +47,11 @@
 
 .o-big-body {
   font-size: 20px;
+}
+
+.o-bg-yellow {
+  background-color: var(--yellow) !important;
+  color: black !important;
 }
 
 

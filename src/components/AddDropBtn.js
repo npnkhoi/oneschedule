@@ -13,10 +13,10 @@ const AddDropBtn = ({course}) => {
     })
   }
 
-  return (<div className='add-btn cta flex-shrink-0'
+  return (<div className={`cta ${course.selected ? 'o-bg-yellow' : ''} flex-shrink-0`}
     onClick={onToggleSelection}
   > 
-    { course.selected ? 'Remove from Schedule' : 'Add to Schedule' }
+    { course.selected ? 'Remove' : 'Add to schedule' }
   </div>)
 }
 
