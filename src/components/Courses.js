@@ -94,7 +94,7 @@ const Courses = ({courses}) => {
       <div className='d-flex flex-row justify-content-between'>
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
-          <div class="alert alert-primary" role="alert">
+          <div className="alert alert-primary" role="alert">
             Tip: You should view a course in a new tab to avoid losing filters.
           </div>
             {compact ? <TableView /> : <GalleryView />}
@@ -106,7 +106,7 @@ const Courses = ({courses}) => {
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
                 onClick={() => setCompact(!compact)}
               />
-              <label className="form-check-label ms-4" for="flexSwitchCheckDefault">Gallery view</label>
+              <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery view</label>
             </div>
           </div>
 

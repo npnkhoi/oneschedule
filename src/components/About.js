@@ -26,7 +26,7 @@ const About = () => {
         </div>
         
         <div className='ms-4'>
-          <p>My name is Khoi. I am a Fulbright student and I program for fun. I don't like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, I built OneSchedule to visualize course schedules. This app is inspried by <a href='https://nusmods.com/' target="_blank" rel="noreferrer">NUSMods</a>.</p>
+          <p>My name is Khoi. I am a Fulbright student and I program for fun. I don&apos;t like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, I built OneSchedule to visualize course schedules. This app is inspried by <a href='https://nusmods.com/' target="_blank" rel="noreferrer">NUSMods</a>.</p>
           <p>OneSchedule is free and open-source (
             <a href='https://github.com/npnkhoi/oneschedule' target='_blank' rel="noreferrer">Github</a>
             ).
@@ -39,13 +39,13 @@ const About = () => {
         
         <ul>
           <li>Le Thuc Minh Chau for being the first person to support this idea.</li>
-          <li>Fulbright's Registrar Office for generously providing the data of the courses.</li>
+          <li>Fulbright Registrar Office for generously providing the data of the courses.</li>
           <li> <a href='https://fullstackopen.com/en/'>Full Stack open course</a> from University of Helsinki for teaching me everything about fullstack web development.</li>
           <li>The kind reviewers -- Huyen Nguyen, Tuong Minh, Binh Giang, chi Duyen (Ann), Dan Tam & Huy Vu, anh Vu Le, and more -- for showing me how to improve.</li>
         </ul>
       </div>
       
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KKc_RMln5UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KKc_RMln5UY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
   )
 }

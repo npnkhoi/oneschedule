@@ -1,5 +1,6 @@
+/* eslint-disable react/jsx-key */
 import React from 'react'
-import { getDates, getDescription, getNotes, getSchedule } from '../utils/course'
+import { getDescription, getNotes, getSchedule } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
 import './OneCourse.css'
 
@@ -27,9 +28,6 @@ const OneCourse = ({course}) => {
         <div className='o-title  o-dark-primary'>{course.title}</div>
       </div>
       
-      {/* <div class="alert alert-primary" role="alert">
-        Notice: The detail of all courses are incomplete. We are asking Registrar for help.
-      </div> */}
       <div className='d-flex flex-row'>
         <div className='w-50 flex-shrink-0 multiple-lines'>
           {getDescription(course).split('\n').map(paragraph => <p>{paragraph}</p>)}
@@ -39,11 +37,11 @@ const OneCourse = ({course}) => {
             <tbody>
               <Row header='Instructor' content={course.instructor} />
               <Row header='Schedule' content={getSchedule(course)} />
+              <Row header='Credits' content={course.credits} />
+              <Row header='Further notes' content={getNotes(course)} />
               {/* <Row header='Dates' content={getDates(course)} /> */}
               {/* <Row header='Capacity' content={course.capacity} /> */}
-              <Row header='Credits' content={course.credits} />
               {/* <Row header='Type' content={course.type} /> */}
-              <Row header='Further notes' content={getNotes(course)} />
             </tbody>
           </table>
         </div>
