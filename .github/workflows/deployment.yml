@@ -18,7 +18,8 @@ jobs:
         uses: |
         yarn
       - name: Lint
-        run: yarn lint
+        run: |
+        yarn lint
       - name: Deploy
         if: ${{ github.event_name == 'push' }}
         uses: |
