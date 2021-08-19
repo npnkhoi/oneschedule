@@ -69,7 +69,7 @@ const Courses = ({courses}) => {
           <tr key={course.id}>
               <td>{course.id}</td>
               <td>
-                <Link to={`/courses/${course.id}`} className='text-decoration-none fw-bold'>
+                <Link to={`/courses/${course.id}`} className='text-decoration-none fw-bold' target='_blank'>
                   {course.title}
                 </Link>
               </td>
