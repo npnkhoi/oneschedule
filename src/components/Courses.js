@@ -6,7 +6,7 @@ import { getLevel, getMajor, LEVELS, MAJORS } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
 
 const CourseCard = ({course}) => {
-  return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden'
+  return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden' target='_blank'
     to={`/courses/${course.id}`}
   >
     <div className='thumbnail p-2 w-100 flex-shrink-0 d-flex justify-content-center align-items-center'>
