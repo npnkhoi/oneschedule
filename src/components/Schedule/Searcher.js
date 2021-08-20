@@ -52,22 +52,19 @@ const Searcher = ({courses}) => {
     dispatch(toggleSelection({id}))
     collapseSuggestions()
   }
-  
-  // search appearances
+
   const CourseInfo = (course) => {
     return (
       <div className="d-flex flex-row justify-content-between align-items-center">
-        <div className="course-id">{course.id.split("_")[0]}</div>
-        <div className="px-1 course-title">{course.title}</div>
-        <div className="instructor-name px-1 border-left">{course.instructor}</div>
+        <div className="w-75 px-1">{course.title}</div>
+        <div className="instructor-name w-25 px-1 border-left">{course.instructor}</div>
       </div>
     )
   }
-  
-  // compare input to course data
+
   const CourseList = () => {
     matchedCourses = courses.filter((course) => 
-      (course.title + "|" + course.instructor + "|" + course.id) //course.id.split("_")[0]) to exclude _Fall2021_... part
+      (course.title + "|" + course.instructor)
       .toLowerCase().includes(filter.toLowerCase())
     )
 
