@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './NavBar.css'
 import logoSVG from '../assets/Logo.svg'
@@ -22,11 +22,17 @@ const NavBtn = ({label, path, icon}) => {
 }
 
 const ExternalNavBtn = ({label, url, icon}) => {
+  const externalIcon = 'fas fa-external-link-alt'
+  const [currentIcon, setCurrentIcon] = useState(icon)
+
   return (
     <a href={url} target='_blank' rel="noreferrer"
+      onMouseEnter={() => setCurrentIcon(externalIcon)}
+      onMouseLeave={() => setCurrentIcon(icon)}
       className="navbar-btn text-decoration-none align-self-stretch d-flex flex-column align-items-center p-2"
+
     >
-      <i className={`${icon} fa-2x mb-1`}/>
+      <i className={`${currentIcon} fa-2x mb-1`}/>
       <p >{label}</p>
     </a>
   )
