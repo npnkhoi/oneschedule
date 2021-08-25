@@ -16,7 +16,7 @@ const Contributor = ({contributor}) => {
       >
         {contributor.login}
       </a >
-      <div>{contributor.contributions} contributions</div>
+      <div>{contributor.contributions} commmits</div>
     </div>
   )
 }
@@ -35,7 +35,9 @@ const Contributors = () => {
   if (contributors) {
     return (
     <div className='d-flex flex-row flex-wrap'>
-      {contributors.map((contributor) => (
+      {contributors
+      .filter(contributor => contributor.login !== 'pazabol')
+      .map((contributor) => (
         <Contributor contributor={contributor} key={contributor.login} />
       ))} 
             
