@@ -95,7 +95,7 @@ const Courses = ({courses}) => {
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
           <div className="alert alert-primary" role="alert">
-            See what the developer team is doing <a href='https://npnkhoi.notion.site/OneSchedule-Updates-c3ce635ee748488a9fa33ecb925e3bdb' target='_blank' rel="noreferrer">here</a>.
+            When in doubt, please double-check on OneStop and let us know any mistakes (via email/feedback form).
           </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>
