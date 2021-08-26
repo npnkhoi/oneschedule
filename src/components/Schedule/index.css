@@ -34,12 +34,6 @@
   max-width: 350px;
 }
 
-.heading-2 {
-  font-weight: 600;
-  margin-top: 2px;
-  font-size: 14px;
-}
-
 .selecting > .list-group-item.focus {
   background-color: #ccc;
 }
@@ -52,6 +46,10 @@
   border-color: white;
   cursor: pointer;
 }
+
+.heading-2 {
+  font-weight: 600;
+  margin-top: 2px;
 
 .color-picker {
   top: 14px;
