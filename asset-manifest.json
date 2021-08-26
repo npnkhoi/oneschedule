@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/oneschedule/static/css/main.1694cd5b.chunk.css",
-    "main.js": "/oneschedule/static/js/main.4b95dabc.chunk.js",
-    "main.js.map": "/oneschedule/static/js/main.4b95dabc.chunk.js.map",
+    "main.js": "/oneschedule/static/js/main.c30d6c3f.chunk.js",
+    "main.js.map": "/oneschedule/static/js/main.c30d6c3f.chunk.js.map",
     "runtime-main.js": "/oneschedule/static/js/runtime-main.7ff8bba7.js",
     "runtime-main.js.map": "/oneschedule/static/js/runtime-main.7ff8bba7.js.map",
     "static/css/2.f94215ef.chunk.css": "/oneschedule/static/css/2.f94215ef.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.f94215ef.chunk.css",
     "static/js/2.d6106e68.chunk.js",
     "static/css/main.1694cd5b.chunk.css",
-    "static/js/main.4b95dabc.chunk.js"
+    "static/js/main.c30d6c3f.chunk.js"
   ]
 }
