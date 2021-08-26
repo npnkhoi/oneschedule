@@ -120,26 +120,6 @@
         ]
     },
     {
-        "id": "ARTS204_Fall2021_S01",
-        "title": "Video and Film Production",
-        "credits": 4,
-        "instructor": "Tuan Andrew Nguyen",
-        "description": "This video and film production course will introduce students to the basic elements of recording and combining image and sound using various kinds of digital equipment. We will also explore important technical and theoretical concepts associated with the moving image, such as editing, dialectic, representation, and protest. We will cover basic narrative structure and script writing, but will go beyond traditional understandings of moving image-based production to explore more experimental modes of storytelling and filmic practice. The course will emphasize practical engagement with ideas and theories through process and presentation, so hands-on production and formal presentation of work will be prioritized. Course assessments will consist of two key projects: one based on found footage and the other using original shot footage. A core component of these assessments will be presentation and engagement on critique days.\nLearning Objectives: \n- Demonstrate a basic understanding of the video making process.\n- Develop comprehension of non-linear editing concepts and practical competency in the usage of non-linear video-editing software. \n- Develop skills in basic script writing format and an understanding of filmic narrative structure.\n- Demonstrate competency in oral presentation and studio critique.\n- Acquire introductory knowledge of seminal video artworks and experimental films.",
-        "notes": "Visiting Faculty: Tuan Andrew Nguyen Level: Intermediate\nCredits: 04 credits\nPre-requisite or Co-requisite: ARTS 101 \u2013 Introduction to Visual Studies\nFormat: On-campus\n",
-        "schedule": [
-            {
-                "day": "Tuesday",
-                "start_time": "9:45 AM",
-                "end_time": "11:15 AM"
-            },
-            {
-                "day": "Thursday",
-                "start_time": "9:45 AM",
-                "end_time": "11:15 AM"
-            }
-        ]
-    },
-    {
         "id": "CS302_Fall2021_S01",
         "title": "Database Systems",
         "credits": 4,
@@ -256,26 +236,6 @@
                 "day": "Friday",
                 "start_time": "9:45 AM",
                 "end_time": "11:15 AM"
-            }
-        ]
-    },
-    {
-        "id": "ARTS206_Fall2021_S01",
-        "title": "Dance and Performance Production",
-        "credits": 4,
-        "instructor": "Alexander Tu Nguyen",
-        "description": "This course will introduce students to both the theoretical and practical fundamentals of dance, and the ways in which dance performances are produced. In addition, we will study selected topics in the history of dance, both in its local and international aspects, and the impact of dance within Vietnam and beyond in the 21st century. We will explore the theoretical concepts of movement and apply them through practice to build students\u2019 foundations in movement, and learn how to develop a sense of rhythm, timing, rhythmical expression, and musicality as key to the creative process of dance. Health and safety components are essential in the development of a performer; therefore, students will obtain fundamental knowledge of the mechanics of the body. This course will also offer an opportunity to explore the intricate process and progress of a performance. Students will learn about the different elements of a production, including routine development, staging, formations, and presentation, and critically examine and analyze movement and dance from different styles of commercial dance. Throughout the course, students will work on incremental activities in preparation for a final production and execution of a performance.\nLearning Objectives:\n- Analyze the basic components of a dance performance/routine\n- Develop fundamental skills in movement [e.g., technique, execution, coordination]\n- Demonstrate the key elements of dance [e.g., rhythm, musicality]\n- Acquire the necessary practical knowledge and skills to create and showcase a dance performance",
-        "notes": "Visiting Faculty : Alexander Tu Nguyen \nLevel: Intermediate\nCredits: 04 credits\nPre-requisite: No\nFormat: On-campus\n",
-        "schedule": [
-            {
-                "day": "Wednesday",
-                "start_time": "1:15 PM",
-                "end_time": "2:45 PM"
-            },
-            {
-                "day": "Friday",
-                "start_time": "1:15 PM",
-                "end_time": "2:45 PM"
             }
         ]
     },
