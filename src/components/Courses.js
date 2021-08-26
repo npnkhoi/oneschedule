@@ -95,7 +95,7 @@ const Courses = ({courses}) => {
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
           <div className="alert alert-primary" role="alert">
-            When in doubt, please double-check on OneStop and let us know any mistakes (via email/feedback form).
+            When in doubt, please double-check on OneStop and let us know if any mistakes (via email/feedback form).
           </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>
