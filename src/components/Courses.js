@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import './Courses.css'
 import Select from 'react-select'
 import { getLevel, getMajor, LEVELS, MAJORS } from '../utils/course'
+import AddDropBtn from './AddDropBtn'
 
 const CourseCard = ({course}) => {
-  return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden'
+  return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden' target='_blank'
     to={`/courses/${course.id}`}
   >
     <div className='thumbnail p-2 w-100 flex-shrink-0 d-flex justify-content-center align-items-center'>
@@ -60,6 +61,7 @@ const Courses = ({courses}) => {
           <th>ID</th>
           <th>Title</th>
           <th>Instructor</th>
+          <th style={{width: '25%'}}>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -67,11 +69,12 @@ const Courses = ({courses}) => {
           <tr key={course.id}>
               <td>{course.id}</td>
               <td>
-                <Link to={`/courses/${course.id}`} className='text-decoration-none fw-bold'>
+                <Link to={`/courses/${course.id}`} className='text-decoration-none fw-bold' target='_blank'>
                   {course.title}
                 </Link>
               </td>
               <td>{course.instructor}</td>
+              <td> <AddDropBtn course={course} /> </td>
           </tr>
         ))}
       </tbody>
@@ -91,6 +94,9 @@ const Courses = ({courses}) => {
       <div className='d-flex flex-row justify-content-between'>
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
+          <div className="alert alert-primary" role="alert">
+            When in doubt, please double-check on OneStop and let us know if any mistakes (via email/feedback form).
+          </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>
 
@@ -100,7 +106,7 @@ const Courses = ({courses}) => {
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
                 onClick={() => setCompact(!compact)}
               />
-              <label className="form-check-label ms-4" for="flexSwitchCheckDefault">Gallery view</label>
+              <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery view</label>
             </div>
           </div>
 
@@ -115,7 +121,7 @@ const Courses = ({courses}) => {
             <div className='mt-3 mb-1'>Instructors</div>
             <Select options={instructors} isMulti
               onChange={setInstructorFilter}
-              />
+            />
 
             <div className='mt-3 mb-1'>Levels</div>
             <Select options={LEVELS} isMulti

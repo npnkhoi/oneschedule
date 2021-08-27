@@ -120,6 +120,26 @@
         ]
     },
     {
+        "id": "ARTS204_Fall2021_S01",
+        "title": "Video and Film Production",
+        "credits": 4,
+        "instructor": "Tuan Andrew Nguyen",
+        "description": "This video and film production course will introduce students to the basic elements of recording and combining image and sound using various kinds of digital equipment. We will also explore important technical and theoretical concepts associated with the moving image, such as editing, dialectic, representation, and protest. We will cover basic narrative structure and script writing, but will go beyond traditional understandings of moving image-based production to explore more experimental modes of storytelling and filmic practice. The course will emphasize practical engagement with ideas and theories through process and presentation, so hands-on production and formal presentation of work will be prioritized. Course assessments will consist of two key projects: one based on found footage and the other using original shot footage. A core component of these assessments will be presentation and engagement on critique days.\nLearning Objectives: \n- Demonstrate a basic understanding of the video making process.\n- Develop comprehension of non-linear editing concepts and practical competency in the usage of non-linear video-editing software. \n- Develop skills in basic script writing format and an understanding of filmic narrative structure.\n- Demonstrate competency in oral presentation and studio critique.\n- Acquire introductory knowledge of seminal video artworks and experimental films.",
+        "notes": "Visiting Faculty: Tuan Andrew Nguyen Level: Intermediate\nCredits: 04 credits\nPre-requisite or Co-requisite: ARTS 101 \u2013 Introduction to Visual Studies\nFormat: On-campus\n",
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45 AM",
+                "end_time": "11:15 AM"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45 AM",
+                "end_time": "11:15 AM"
+            }
+        ]
+    },
+    {
         "id": "CS302_Fall2021_S01",
         "title": "Database Systems",
         "credits": 4,
@@ -129,13 +149,28 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "6:30PM",
-                "end_time": "8:00PM"
+                "start_time": "3:00PM",
+                "end_time": "4:30PM"
             },
             {
                 "day": "Thursday",
-                "start_time": "6:30PM",
-                "end_time": "8:00PM"
+                "start_time": "3:00PM",
+                "end_time": "4:30PM"
+            }
+        ]
+    },
+    {
+        "id": "CS304_Fall2021_S01",
+        "title": "Independent Study: Computational Linguistics",
+        "credits": 2,
+        "instructor": "Nanette Veilleux\u200b\u200b\u200b",
+        "description": "This course allows students to engage in an authentic Computational Linguistics research project: students will create a pilot Automatic Speech Recognition (ASR) application that recognizes spoken Vietnamese and transcribes it to written Vietnamese.  The students will work in teams with well-defined roles to collect training speech (initially Vietnamese digits) and apply the Kaldi framework (https://kaldi-asr.org) to train and implement Vietnamese ASR. Finally, the students will evaluate their application, write a report and present their findings. Although the students are supervised by the instructor, both initiative and independent work is emphasized.\nAs an independent study, this course will be offered Pass/Fail. \nLearning Objectives: Students will:\n- Understand the steps needed to train an ASR\n- Understand the phonetic components of a language\n- Learn to collaborate in a team project \n- Learn to fulfill their role within a team\n- Experience large, non-commercial software packages (VM and Kaldi)\n- Learn to iteratively evaluate a research project and make adjustments \n- Gain experience in the research project and documentation\n- Gain experience in presenting findings",
+        "notes": "Visiting Faculty: Nanette Veilleux\u200b\u200b\u200b - E: ...\nLevel: Advanced\nCredits: 02 credits\nPre-requisite: CS 101 \u2013 Computer Science 1, for Junior students. Contact Instructor to discuss individual circumstances. \nFormat: On-campus\n",
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "3:00PM",
+                "end_time": "4:30PM"
             }
         ]
     },
@@ -240,6 +275,35 @@
         ]
     },
     {
+        "id": "ARTS206_Fall2021_S01",
+        "title": "Dance and Performance Production",
+        "credits": 4,
+        "instructor": "Alexander Tu Nguyen",
+        "description": "This course will introduce students to both the theoretical and practical fundamentals of dance, and the ways in which dance performances are produced. In addition, we will study selected topics in the history of dance, both in its local and international aspects, and the impact of dance within Vietnam and beyond in the 21st century. We will explore the theoretical concepts of movement and apply them through practice to build students\u2019 foundations in movement, and learn how to develop a sense of rhythm, timing, rhythmical expression, and musicality as key to the creative process of dance. Health and safety components are essential in the development of a performer; therefore, students will obtain fundamental knowledge of the mechanics of the body. This course will also offer an opportunity to explore the intricate process and progress of a performance. Students will learn about the different elements of a production, including routine development, staging, formations, and presentation, and critically examine and analyze movement and dance from different styles of commercial dance. Throughout the course, students will work on incremental activities in preparation for a final production and execution of a performance.\nLearning Objectives:\n- Analyze the basic components of a dance performance/routine\n- Develop fundamental skills in movement [e.g., technique, execution, coordination]\n- Demonstrate the key elements of dance [e.g., rhythm, musicality]\n- Acquire the necessary practical knowledge and skills to create and showcase a dance performance",
+        "notes": "Visiting Faculty : Alexander Tu Nguyen \nLevel: Intermediate\nCredits: 04 credits\nPre-requisite: No\nFormat: On-campus\n",
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "1:15 PM",
+                "end_time": "2:45 PM"
+            },
+            {
+                "day": "Friday",
+                "start_time": "1:15 PM",
+                "end_time": "2:45 PM"
+            }
+        ]
+    },
+    {
+        "id": "VS202_Fall2021_S01",
+        "title": "Vietnamese Cinema from Its Beginning to Present: Tendencies, Operating Mechanisms, and Prospects (from Oral History Perspectives)",
+        "credits": 4,
+        "instructor": "Phan Dang Di",
+        "description": "The course will go into depth in analyzing the operation of cinema through each period, in different historical contexts; filmmaking tendencies with political institutions and economic life; challenges and prospects of Vietnamese cinema in the current globalization era. The course combines the traditional teaching methods and teaching methods through \"oral history\"; whereby the guests are considered \"historical subjects,\" who play an essential role in the development stages of Vietnamese cinema, will share with students stories, personal experiences, and perspectives. Through their sharing, students can find suggestions and possibilities for their career path, especially those who plan to have work in the film industry. \nSchedule Details: 8:00am \u2013 11:15am\n\u2022\tNovember (once/week) on Monday Nov.22 \n\u2022\tDecember (twice/week) on Tuesdays Nov.1,8,15,22,29 and Fridays Nov.3,10,17,31\n\u2022\tJanuary (once/week) on Tuesdays Jan.4,11 and Fridays Jan.7,14",
+        "notes": "Visiting Faculty : Phan Dang Di\nLevel: Foundation\nCredits: 04 credits\nPre-requisite: No Freshmen accepted\nReading/Writing: Intensive\nFormat: On-campus\nCross-listed: Vietnamese Studies (VS), Arts (ARTS)\n",
+        "schedule": []
+    },
+    {
         "id": "VS203_Fall2021_S01",
         "title": "The Challenge of Change: Civil Society and Social Movements in Vietnam\u00a0",
         "credits": 4,
@@ -268,9 +332,9 @@
         "notes": "Coordinator: Vincent Pham\u200b\u200b\u200b \u2013 E: vincent.pham@fulbright.edu.vn\nLevel: Experiential Learning\nCredits: 04 credits\nPre-requisite: No. \nFormat: On-campus\n",
         "schedule": [
             {
-                "day": "Tuesday",
-                "start_time": "8:00 AM",
-                "end_time": "9:30 AM"
+                "day": "Monday",
+                "start_time": "4:45 PM",
+                "end_time": "6:15 PM"
             }
         ]
     },
@@ -355,6 +419,26 @@
         ]
     },
     {
+        "id": "CORE102_Fall2021_S01",
+        "title": "Modern Vietnamese Culture and Society (A)",
+        "credits": 4,
+        "instructor": "Core Teaching Team",
+        "description": "This course exposes students to a wide array of issues encountered in modern Vietnam, ranging from socio-cultural, politico-economic aspects to questions of nationalism, international relations, and globalization when examining the country in its regional and global contexts. Throughout the course, students are introduced to basic concepts in social sciences and humanities that will allow them a better understanding of their social environments as well as urge them to assess others\u2019 interpretations with an open but critical mind. The course helps to raise students\u2019 socio-political awareness and cultural identity, encouraging them to grow up as responsible national and global citizens.\nLearning Objectives: After finishing the course, the students should be able to\n- Form a multidimensional view of contemporary Vietnam built upon the interdisciplinary foundation of Vietnamese Studies\n- Understand (Vietnamese) culture and society with an open but critical mind: identify problems critically from any given discourses, come up with a strong argument based on substantial evidence, and solve the identified problems logically;\n- Conduct an appropriate research project independently or with a team;\n- Present the results of the research project convincingly and creatively in various formats;\n- Recognize and respect the diversities of communities and cultures with open-mindedness; and\n- Strengthen students\u2019 civic identity by demonstrating themselves as both Vietnamese and global citizens.",
+        "notes": "Faculty: Core Teaching Team\nLevel: Core\nCredits: 04 credits\nPre-requisite: Required courses in the first two years\nReading/Writing: Intensive\nFormat: On-campus\n",
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45 AM",
+                "end_time": "11:15 AM"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45 AM",
+                "end_time": "11:15 AM"
+            }
+        ]
+    },
+    {
         "id": "CORE103_Fall2021_S01",
         "title": "Quantitative Reasoning for a Digital Age (A)",
         "credits": 4,
@@ -395,8 +479,8 @@
         ]
     },
     {
-        "id": "CORE105_Fall2021_S02",
-        "title": "Design and Systems Thinking (B)",
+        "id": "CORE105_Fall2021_S01",
+        "title": "Design and Systems Thinking (A)",
         "credits": 4,
         "instructor": "Core Teaching Team",
         "description": "We learn across the Fulbright Core how transformations have happened in human history \u2013 transformations in thought, in social structures, and in individual lives. We also see how transformations happen in nature and how human intervention transforms the natural world. But what about transformation that humans create through intentional design? This might be a new mask that filters air in a superior manner, a drone that can deliver medicines to remote parts of the country faster than any vehicle, or an app that allows you to create new music depending on your mood. In this course, we showcase how innovation is linked to rigorous scientific, mathematical, and engineering methods, with an emphasis on teamwork and hands-on experience. Students may take this as an entry point into the deeper study of design and engineering, or they may apply what they learn in this introductory course to their understanding of social and economic systems, to creative fabrication in the fine arts, or to the design and development of a start-up company in collaboration with Fulbright\u2019s Center for Entrepreneurship and Innovation. This course embraces both the art and science of creation, instilling the confidence to experiment, sometimes to fail, but ultimately to prevail in designing and building a better future.\nDesigning and Systems Thinking (D&ST) course introduces the principles, processes, and tools of systems thinking and design thinking that are used to identify and generate solutions to frictions in our society. The building blocks to understand systems and to approach the designing process include: how ethnographic observation can be used to frame and observe real world challenges from the consumer\u2019s perspective; an introduction to systems thinking to understand how challenges exist in a broader context; design thinking, enabling a structured approach to developing solutions and concepts; prototyping of physical products and designs; and key engineering concepts that enable concepts to become reality. This course employs project-based learning among teams of students to identify problems, specify client, consumer, or societal needs, and design a system answering those needs. This process includes defining the product\u2019s features and specifications, decomposing it into components, integrating it into an environment, building it, and then validating and verifying its results. For example, teams may create elements of a smart home like automatic lighting and watering, or an Internet of Things (IoT) system for drought monitoring and early warning, or an automatic hand sanitizer. They will use modules, materials, tools, and facilities available in the market or in the Fulbright Maker Space to prototype these systems. In the process, they will develop a basic command of agile methods used in project management, learn basic modern fabrication skills, and practice critical thinking, including an understanding of constraints, negotiating between options, and examining social and environmental impact.\nLearning Objectives: After completing the course, students will be able to\n- Understand and practice the tools and principles of systems thinking and design thinking.\n- Define the requirements of potential solutions and the quantitative and qualitative specifications of a system, with consideration for potentially related factors.\n- Decompose a system into deterministic components and functions, explain how they interact with each other and behave when integrated as a whole system, and explain how the system works within its environment.\n- Build a working prototype and verify whether this prototype meets defined requirements and specifications.\n- Improve communication skills through oral and written presentations, sharpen teamwork skills by working with other students on term projects, as well as critical thinking while giving comments to others.",
@@ -406,17 +490,7 @@
                 "day": "Tuesday",
                 "start_time": "3:00PM",
                 "end_time": "4:30PM"
-            }
-        ]
-    },
-    {
-        "id": "CORE105_Fall2021_S03",
-        "title": "Design and Systems Thinking (C)",
-        "credits": 4,
-        "instructor": "Core Teaching Team",
-        "description": "We learn across the Fulbright Core how transformations have happened in human history \u2013 transformations in thought, in social structures, and in individual lives. We also see how transformations happen in nature and how human intervention transforms the natural world. But what about transformation that humans create through intentional design? This might be a new mask that filters air in a superior manner, a drone that can deliver medicines to remote parts of the country faster than any vehicle, or an app that allows you to create new music depending on your mood. In this course, we showcase how innovation is linked to rigorous scientific, mathematical, and engineering methods, with an emphasis on teamwork and hands-on experience. Students may take this as an entry point into the deeper study of design and engineering, or they may apply what they learn in this introductory course to their understanding of social and economic systems, to creative fabrication in the fine arts, or to the design and development of a start-up company in collaboration with Fulbright\u2019s Center for Entrepreneurship and Innovation. This course embraces both the art and science of creation, instilling the confidence to experiment, sometimes to fail, but ultimately to prevail in designing and building a better future.\nDesigning and Systems Thinking (D&ST) course introduces the principles, processes, and tools of systems thinking and design thinking that are used to identify and generate solutions to frictions in our society. The building blocks to understand systems and to approach the designing process include: how ethnographic observation can be used to frame and observe real world challenges from the consumer\u2019s perspective; an introduction to systems thinking to understand how challenges exist in a broader context; design thinking, enabling a structured approach to developing solutions and concepts; prototyping of physical products and designs; and key engineering concepts that enable concepts to become reality. This course employs project-based learning among teams of students to identify problems, specify client, consumer, or societal needs, and design a system answering those needs. This process includes defining the product\u2019s features and specifications, decomposing it into components, integrating it into an environment, building it, and then validating and verifying its results. For example, teams may create elements of a smart home like automatic lighting and watering, or an Internet of Things (IoT) system for drought monitoring and early warning, or an automatic hand sanitizer. They will use modules, materials, tools, and facilities available in the market or in the Fulbright Maker Space to prototype these systems. In the process, they will develop a basic command of agile methods used in project management, learn basic modern fabrication skills, and practice critical thinking, including an understanding of constraints, negotiating between options, and examining social and environmental impact.\nLearning Objectives: After completing the course, students will be able to\n- Understand and practice the tools and principles of systems thinking and design thinking.\n- Define the requirements of potential solutions and the quantitative and qualitative specifications of a system, with consideration for potentially related factors.\n- Decompose a system into deterministic components and functions, explain how they interact with each other and behave when integrated as a whole system, and explain how the system works within its environment.\n- Build a working prototype and verify whether this prototype meets defined requirements and specifications.\n- Improve communication skills through oral and written presentations, sharpen teamwork skills by working with other students on term projects, as well as critical thinking while giving comments to others.",
-        "notes": "Faculty: Core teaching team\nLevel: Core\nCredits: 04 credits\nPre-requisite: No\nFormat: On-campus\n",
-        "schedule": [
+            },
             {
                 "day": "Thursday",
                 "start_time": "3:00PM",
@@ -473,14 +547,14 @@
         "notes": "Faculty: Ian Scott Kalman \u2013 E: ian.kalman@fulbright.edu.vn\nLevel: Intermediate\nCredits: 04 credits\nPre-requisite: No\nFormat: On-campus\n",
         "schedule": [
             {
-                "day": "Tuesday",
-                "start_time": "9:45PM",
-                "end_time": "11:15PM"
+                "day": "Monday",
+                "start_time": "3:00PM",
+                "end_time": "4:30PM"
             },
             {
-                "day": "Thursday",
-                "start_time": "9:45PM",
-                "end_time": "11:15PM"
+                "day": "Wednesday",
+                "start_time": "3:00PM",
+                "end_time": "4:30PM"
             }
         ]
     },
@@ -705,6 +779,21 @@
         ]
     },
     {
+        "id": "ECON208_Fall2021_S01",
+        "title": "Introduction to Venture Investing & Impact Investing",
+        "credits": 2,
+        "instructor": "Shuyin Tang",
+        "description": "Venture capital investing is all the rage in Vietnam right now. A successful investment and fund management strategy, however, takes much more than what we see on Shark Tank. It requires crafting an investment thesis, gaining access to the best deal-flow, conducting due diligence, structuring transactions, and managing portfolio investments right up until exit. Along the way, investors need to navigate the often sensitive and complex interpersonal dynamics between themselves and their entrepreneurs, co-investors, and Limited Partners (LPs), just to name a few.\nAt the same time, ESG and impact investing is gaining momentum, with some of the world's leading fund managers incorporating social, environmental and governance factors into their investment decisions. What does it mean to pursue social and environmental outcomes when investing? Is there a trade-off between social impact and financial returns? We will begin to unpack some of these issues as well.\nThis course is aimed at students seeking to understand the 'nuts and bolts' of early-stage investing and impact investing. It will be taught in a highly experiential manner by a current practitioner of early-stage investing in Vietnam. Students will learn the basic terminology, processes and strategies of early-stage investing and will apply them to practical case examples. Students will also hear from a number of guest speakers, including leading investors, entrepreneurs and other experts in the ecosystem, to gain a varied perspective.\nLearning Objectives: At the end of this course, students should be able to:  \n\u2022\tUnderstand the basic terminology, actors, processes and strategies of the venture capital industry across its different stages, from investment thesis formulation to due diligence to exit \n\u2022\tApply this knowledge to real examples, considering the situation from both the investors' as well as the entrepreneurs' point of view \n\u2022\tArticulate investment recommendations through clear and concise investment memorandums \n\u2022\tExplain the rise of impact investing and ESG investing and its potential implications for the investment industry more broadly",
+        "notes": "Visiting Faculty: Shuyin Tang\nLevel: Foundation\nCredits: 02 credits\nPre-requisite: Students should have completed all of their core courses.\nFormat: On-campus\n",
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "5:00PM",
+                "end_time": "8:00PM"
+            }
+        ]
+    },
+    {
         "id": "SOCI208_Fall2021_S01",
         "title": "Culture and the Economy in Developing Asia",
         "credits": 4,
@@ -745,8 +834,8 @@
         ]
     },
     {
-        "id": "CORE105_Fall2021_S01",
-        "title": "Design and Systems Thinking (A)",
+        "id": "CORE105_Fall2021_S02",
+        "title": "Design and Systems Thinking (B)",
         "credits": 4,
         "instructor": "Core Teaching Team",
         "description": "We learn across the Fulbright Core how transformations have happened in human history \u2013 transformations in thought, in social structures, and in individual lives. We also see how transformations happen in nature and how human intervention transforms the natural world. But what about transformation that humans create through intentional design? This might be a new mask that filters air in a superior manner, a drone that can deliver medicines to remote parts of the country faster than any vehicle, or an app that allows you to create new music depending on your mood. In this course, we showcase how innovation is linked to rigorous scientific, mathematical, and engineering methods, with an emphasis on teamwork and hands-on experience. Students may take this as an entry point into the deeper study of design and engineering, or they may apply what they learn in this introductory course to their understanding of social and economic systems, to creative fabrication in the fine arts, or to the design and development of a start-up company in collaboration with Fulbright\u2019s Center for Entrepreneurship and Innovation. This course embraces both the art and science of creation, instilling the confidence to experiment, sometimes to fail, but ultimately to prevail in designing and building a better future.\nDesigning and Systems Thinking (D&ST) course introduces the principles, processes, and tools of systems thinking and design thinking that are used to identify and generate solutions to frictions in our society. The building blocks to understand systems and to approach the designing process include: how ethnographic observation can be used to frame and observe real world challenges from the consumer\u2019s perspective; an introduction to systems thinking to understand how challenges exist in a broader context; design thinking, enabling a structured approach to developing solutions and concepts; prototyping of physical products and designs; and key engineering concepts that enable concepts to become reality. This course employs project-based learning among teams of students to identify problems, specify client, consumer, or societal needs, and design a system answering those needs. This process includes defining the product\u2019s features and specifications, decomposing it into components, integrating it into an environment, building it, and then validating and verifying its results. For example, teams may create elements of a smart home like automatic lighting and watering, or an Internet of Things (IoT) system for drought monitoring and early warning, or an automatic hand sanitizer. They will use modules, materials, tools, and facilities available in the market or in the Fulbright Maker Space to prototype these systems. In the process, they will develop a basic command of agile methods used in project management, learn basic modern fabrication skills, and practice critical thinking, including an understanding of constraints, negotiating between options, and examining social and environmental impact.\nLearning Objectives: After completing the course, students will be able to\n- Understand and practice the tools and principles of systems thinking and design thinking.\n- Define the requirements of potential solutions and the quantitative and qualitative specifications of a system, with consideration for potentially related factors.\n- Decompose a system into deterministic components and functions, explain how they interact with each other and behave when integrated as a whole system, and explain how the system works within its environment.\n- Build a working prototype and verify whether this prototype meets defined requirements and specifications.\n- Improve communication skills through oral and written presentations, sharpen teamwork skills by working with other students on term projects, as well as critical thinking while giving comments to others.",
@@ -754,6 +843,11 @@
         "schedule": [
             {
                 "day": "Monday",
+                "start_time": "9:45 AM",
+                "end_time": "11:15 AM"
+            },
+            {
+                "day": "Wednesday",
                 "start_time": "9:45 AM",
                 "end_time": "11:15 AM"
             }
@@ -780,69 +874,20 @@
         ]
     },
     {
-        "id": "CS203_Fall2021_S01",
-        "title": "Computer Organization",
-        "credits": 4,
-        "instructor": "Truong Trung Kien",
-        "description": "Computing systems, such as mobile phones, laptops or personal computers, have been important parts of human beings’ everyday life. How are computing systems are designed and implemented? In principle, computing systems often involve many layers of abstraction, from gates and circuits through machine and assembly code to software libraries and applications. This course introduces students to the abstract design and implementation of computer systems from the digital level in the hardware upwards to the interface between the hardware and the software. In particular, the course starts by revisiting the concept of bits and introducing arithmetic and logical operations on bits. Next, it takes the students from the building of logic gates based on the transistor as a switch, gated latches to more complex logic structures. The knowledge is then applied to implement memory and a finite state machine. From there, students study the instruction cycle that the central processing unit (CPU) of a computer follows. As an example, students study a particular computer that is able to capture the important structures of a modern computer, while simple enough to facilitate complete understanding and hands-on programming experiences. Students also explore decisions and tradeoffs involved in the design and implementation. Applied projects and/or lab assignments might include the design and simulation of a CPU, and the tools used to program low-level systems.",
-        "notes": "Faculty: Truong Trung Kien - E: kien.truong@fulbright.edu.vn\n        Level: Intermediate\n        \n        Credits: 04 credits\n        \n        Pre-requisite: CS 101 – Computer Science 1, or equivalent programming experience\n        \n        Format: Online\n        \n        Cross-listed: Computer Science (CS), Engineering (ENG)",
-        "schedule": [
-            {
-                "day": "Wednesday",
-                "start_time": "3:00 PM",
-                "end_time": "4:30 PM"
-            },
-            {
-                "day": "Friday",
-                "start_time": "3:00 PM",
-                "end_time": "4:30 PM"
-            }
-        ]
-    },
-    {
-        "id": "CORE101_Fall2021_S04",
-        "title": "Global Humanities and Social Change (C)",
+        "id": "CORE102_Fall2021_S02",
+        "title": "Modern Vietnamese Culture and Society (B)",
         "credits": 4,
         "instructor": "Core Teaching Team",
-        "description": "This course examines key moments in the global history of thought through the lens of textual analysis.  Over the course of the semester, students will develop their written rhetorical, reading, and critical thinking skills.  \nSummary\nIn order to change the world, it is worthwhile to look at \u201cchange,\u201d both as a historical fact and a concept that has consumed thought for generations.  This course looks at key texts in five core periods and epistemic traditions: (1) classical epistemologies and origin myths; (2) major transitions of the post-classical era; (3) Renaissance, Enlightenment, Revolution and transitions to modernity; (4) Modern Era; and (5) (Post) Colonialism.  We ask, what exactly is change - be it creation, enlightenment, conversion, metamorphosis, revolution, or evolution?  And we ask how have our ideas about \u201cchange\u201d changed over time?\nLearning Objectives:\n- Students will be able to compose responses to texts related to literature, philosophy, religion, arts, in the forms of argumentative and comparative essays.\n- Students will be able to explain the evolution of ideas and how those ideas influence social policy and shape perception in the contemporary world.\n- Students will be able to critique each other\u2019s perspectives in the context of group discussions.\n- Students will be able to analyze texts in ways that are applicable not only in the classroom but also in the professional world beyond the classroom.",
-        "notes": "Faculty: Core Teaching team\nLevel: Core\nCredits: 04 credits\nPre-requisite: No\nReading/Writing: Intensive\nFormat: On-campus\n",
+        "description": "This course exposes students to a wide array of issues encountered in modern Vietnam, ranging from socio-cultural, politico-economic aspects to questions of nationalism, international relations, and globalization when examining the country in its regional and global contexts. Throughout the course, students are introduced to basic concepts in social sciences and humanities that will allow them a better understanding of their social environments as well as urge them to assess others\u2019 interpretations with an open but critical mind. The course helps to raise students\u2019 socio-political awareness and cultural identity, encouraging them to grow up as responsible national and global citizens.\nLearning Objectives: After finishing the course, the students should be able to\n- Form a multidimensional view of contemporary Vietnam built upon the interdisciplinary foundation of Vietnamese Studies\n- Understand (Vietnamese) culture and society with an open but critical mind: identify problems critically from any given discourses, come up with a strong argument based on substantial evidence, and solve the identified problems logically;\n- Conduct an appropriate research project independently or with a team;\n- Present the results of the research project convincingly and creatively in various formats;\n- Recognize and respect the diversities of communities and cultures with open-mindedness; and\n- Strengthen students\u2019 civic identity by demonstrating themselves as both Vietnamese and global citizens.",
+        "notes": "Faculty: Core Teaching Team\nLevel: Core\nCredits: 04 credits\nPre-requisite: Required courses in the first two years\nReading/Writing: Intensive\nFormat: On-campus\n",
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "3:00 PM",
-                "end_time": "4:30 PM"
-            },
-            {
-                "day": "Wednesday",
-                "start_time": "3:00 PM",
-                "end_time": "4:30 PM"
-            }
-        ]
-    },
-    {
-        "id": "VS101",
-        "title": "Introduction to Vietnam Studies",
-        "credits": "N/A",
-        "instructor": "N/A",
-        "description": "N/A",
-        "notes": "N/A",
-        "schedule": []
-    },
-    {
-        "id": "VS107_Fall2021_S01",
-        "title": "Ethics in Practice: Philosophical Buddhist Ethics",
-        "credits": 4,
-        "instructor": "Nguyen Nam",
-        "description": "Nowadays, quite a few concepts, such as mindfulness, loving kindness, or even Vipassana meditation, have become part of a daily vocabulary in global contemporary society. Originated from Buddhism but now practiced out of their Buddhist philosophical/ontological contexts, they seem to establish certain living styles habitually described as “positive,” or “conscious,” but at the same time, are running the risk of going against what the Buddha taught. Thus, to better understand those concepts and put them back into practice more effectively, one cannot but return to their root which is Buddhism. Buddhist ethics (“ethics” here can be simply defined as a system of moral principles) undoubtedly plays a crucial role in Vietnamese moral life.\n        In Vietnam as well as elsewhere, one of the causes that create generation gaps between parents and children is the fact that they are living with/practicing not the same ethical values. A common ethical ground must be first founded to bridge the gaps, to ensure mutual understanding between the individual and her/his ever-expanded communal networks, starting with the family (as the core of society), to community (such as hamlet or village), nation, and finally to the world (natural world included). With the whole-person education framework, the Fulbright University Viet Nam aims to develop its graduates not only as young promising professionals in their fields, but also as moral citizens who can significantly contribute to society in contemporary Vietnamese and global contexts. Such a goal surely cannot be achieved in the absence of moral principles (or ethics).\n        \n        Through reading assignments, guest lectures given by Vietnamese and international scholars as well as religious practitioners, and field study trips, students of this course will be exposed to various Buddhist traditions performed in Vietnam, East- and Southeast Asian regions. Films, literature, and newspapers will serve as the main sources for case studies and reference. Service learning is also required as an integral part of the course.",
-        "notes": "Faculty: Nguyen Nam - E: nam.nguyen@fulbright.edu.vn\n        Level: Foundation\n        \n        Credits: 04 credits\n        \n        Pre-requisite: CORE102 Modern Vietnamese Culture and Society. No Freshmen accepted.\n        \n        Course Format: Online\n        \n        Note: This course is also counted as CORE course for “Ethics and Moral Philosophy” course, applied to the Cohort students of CO2023, CO2024",
-        "schedule": [
-            {
-                "day": "Tuesday",
                 "start_time": "9:45 AM",
                 "end_time": "11:15 AM"
             },
             {
-                "day": "Thursday",
+                "day": "Wednesday",
                 "start_time": "9:45 AM",
                 "end_time": "11:15 AM"
             }

@@ -40,3 +40,5 @@ export const getNotes = (course) => course.notes
   .split('\u2022')
   .filter(line => line !== ' ')
   .join('♦ ')
+
+export const getDescription = (course) => (course.description ? course.description : 'N/A')
