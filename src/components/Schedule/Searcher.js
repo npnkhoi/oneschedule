@@ -95,6 +95,21 @@ const Searcher = ({courses}) => {
 
   const isFocused = (id) => (matchedCourses[focusItem].id === id)
 
+  // When the user clicks anywhere outside of the search box, close it
+  if (document.getElementById("search-input") !== null){
+    let searchBox = document.getElementById('search-list')
+    let searchInput = document.getElementById('search-input')
+
+    window.onclick = function(event) {
+      if (event.target.id !== searchBox) {
+        searchBox.style.display = "none"
+      } 
+      if (event.target == searchInput){
+        searchBox.style.display = "flex"
+      }
+    }
+  }
+
   return (
     <div className="filter">
       <input 
@@ -119,14 +134,16 @@ const Searcher = ({courses}) => {
       />
       {
         filter !== "" ?
-          <div className="selecting list-group shadow">
+          <div className="selecting list-group shadow" id="search-list">
             <CourseList/>
             {/* <p className="list-group-item"> {matchedCourses.length} courses matched. </p> */}
           </div>
         : <></>
       }
     </div>
+    
   )
+  
 }
 
 export default Searcher
