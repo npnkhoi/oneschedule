@@ -474,13 +474,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "9:45PM",
-                "end_time": "11:15PM"
+                "start_time": "9:45 AM",
+                "end_time": "11:15 AM"
             },
             {
                 "day": "Thursday",
-                "start_time": "9:45PM",
-                "end_time": "11:15PM"
+                "start_time": "9:45 AM",
+                "end_time": "11:15 AM"
             }
         ]
     },
