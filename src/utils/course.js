@@ -1,3 +1,5 @@
+import COURSES from '../data/courses.json'
+
 export const MAJORS = [
   {value: 'ARTS', label: 'Arts and Media'},
   {value: 'CORE', label: 'Core'},
@@ -17,6 +19,15 @@ export const MAJORS = [
 export const LEVELS = ['100', '200', '300'].map(
   level => ({label: level, value: level})
 )
+
+export const getCourseInfo = (id) => {
+  const matches = COURSES.filter(course => course.id === id)
+  if (matches.length > 0) {
+    return matches[0]
+  } else {
+    return null
+  }
+}
 
 export const getMajor = (id) => {
   const head = id.slice(0, id.indexOf('_'))

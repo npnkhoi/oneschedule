@@ -4,9 +4,11 @@ import config from '../utils/config'
 import { loadFromLocalStorage } from '../utils/localStorage'
 import colorMapReducer from './colorMapSlice'
 import courseReducer from './courseSlice'
+import selectedCoursesReducer from './selectedCoursesSlice'
 
 const currentVersion = localStorage.getItem('version')
 
+// FIXME
 if (currentVersion !== config.version) {
   console.log('Deleting');
   const oldData = localStorage.getItem('persistantState')
@@ -20,6 +22,7 @@ export default configureStore({
   reducer: {
     colorMap: colorMapReducer,
     course: courseReducer,
+    selectedCourses: selectedCoursesReducer
   },
   preloadedState: loadFromLocalStorage()
 })

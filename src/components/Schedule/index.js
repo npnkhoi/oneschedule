@@ -1,32 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Calendar from './Calendar'
 import SelectedCourses from './SelectedCourses'
 import Searcher from './Searcher'
 import './index.css'
 import { useSelector } from 'react-redux'
+import COURSES from '../../data/courses.json'
 
 const Timetable = () => {
-  const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
-  const courses = useSelector(state => state.course.value)
-  const selectedCourses = courses.filter(course => course.selected && course.visible)
+  const selectedCourses = useSelector(state => state.selectedCourses.value)
 
   return (
     <div className="d-flex flex-row flex-grow-1">
       <Calendar 
         selectedCourses={selectedCourses} 
-        scheduleOverlap={scheduleOverlap}
-        setScheduleOverlap={setScheduleOverlap}
       />
     
       <div className="info-bar">
         <p className="o-title">Fall, 2021</p>
 
         <Searcher
-          courses={courses}
+          courses={COURSES}
         />
 
         <SelectedCourses 
-          courses={courses} 
+          selectedCourses={selectedCourses}
         />
       </div>
     </div>

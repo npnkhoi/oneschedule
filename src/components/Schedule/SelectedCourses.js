@@ -4,7 +4,9 @@ import { useState } from "react"
 import { setColor } from "../../store/colorMapSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-import { toggleSelection, toggleVisibility } from "../../store/courseSlice"
+import { toggleSelection } from "../../store/selectedCoursesSlice"
+import { getCourseInfo } from "../../utils/course"
+
 
 const ColorPicker = ({courseId}) => {
   const [changing, setChanging] = useState(false)
@@ -41,14 +43,17 @@ const ColorPicker = ({courseId}) => {
   )
 }
 
-const SelectedCourses = ({courses}) => {
+const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
 
   return (
   <div className="mt-4 d-flex flex-column">
     {
-      courses
-      .filter((course) => course.selected)
+      selectedCourses
+      .map(course => {
+        const info = getCourseInfo(course.id)
+        return {...course, title: info.title, instructor: info.instructor}
+      })
       .sort((a, b) => a.title.localeCompare(b.title))
       .map((course) => (
         <div className="selected-course d-flex flex-row justify-content-between align-items-start" key={course.id}> 
@@ -66,12 +71,12 @@ const SelectedCourses = ({courses}) => {
             </div>
           </div>
           <div className="toggle-btns d-flex flex-column">
-            <div 
+            {/* <div 
               className="modifier"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
               {course.visible ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
-            </div>
+            </div> */}
             <div 
               className="modifier"
               onClick={() => dispatch(toggleSelection({id: course.id}))}

@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import { useDispatch } from 'react-redux'
-import { toggleSelection } from '../../store/courseSlice'
+import { toggleSelection } from '../../store/selectedCoursesSlice'
 
 
 const Searcher = ({courses}) => {
