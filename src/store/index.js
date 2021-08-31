@@ -2,8 +2,6 @@ import { configureStore } from '@reduxjs/toolkit'
 import moment from 'moment'
 import config from '../utils/config'
 import { loadFromLocalStorage } from '../utils/localStorage'
-import colorMapReducer from './colorMapSlice'
-import courseReducer from './courseSlice'
 import selectedCoursesReducer from './selectedCoursesSlice'
 
 const currentVersion = localStorage.getItem('version')
@@ -20,8 +18,6 @@ if (currentVersion !== config.version) {
 
 export default configureStore({
   reducer: {
-    colorMap: colorMapReducer,
-    course: courseReducer,
     selectedCourses: selectedCoursesReducer
   },
   preloadedState: loadFromLocalStorage()

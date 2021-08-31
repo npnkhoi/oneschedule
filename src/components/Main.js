@@ -1,6 +1,6 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
 import Timetable from './Schedule';
-import Courses from './Courses';
+import Offerings from './Offerings';
 import OneCourse from './OneCourse';
 import About from './About';
 import Contribute from './Contribute';
@@ -31,7 +31,7 @@ const Main = () => {
         <OneCourse course={course}/>
       </Route>
       <Route path='/courses'>
-        <Courses courses={COURSES}/>
+        <Offerings courses={COURSES}/>
       </Route>
       <Route path='/'>
         <Timetable />

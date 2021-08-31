@@ -20,3 +20,18 @@ export const getRandomColor = () => {
   const colorId = Math.floor(Math.random() * COLORS.length)
   return COLORS[colorId]
 }
+
+export const getRarestColor = (courses) => {
+  const freq = {}
+  COLORS.forEach(color => {
+    freq[color] = courses.filter(course => course.color === color).length
+  })
+
+  let ret = null
+  COLORS.forEach((color) => {
+    if (!ret || freq[color] < freq[ret]) {
+      ret = color
+    }
+  })
+  return ret
+}

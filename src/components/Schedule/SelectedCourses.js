@@ -1,21 +1,20 @@
 import { TwitterPicker } from "react-color"
 import COLORS from '../../data/colors.json'
 import { useState } from "react"
-import { setColor } from "../../store/colorMapSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-import { toggleSelection } from "../../store/selectedCoursesSlice"
+import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
 import { getCourseInfo } from "../../utils/course"
 
 
 const ColorPicker = ({courseId}) => {
   const [changing, setChanging] = useState(false)
-  const color = useSelector(state => state.colorMap.value[courseId])
+  const color = useSelector(state => state.selectedCourses.value
+    .filter(course => course.id === courseId)[0].color)
   const dispatch = useDispatch()
 
   const changeColor = (color) => {
-    // console.log('changing color', color);
-    dispatch(setColor({courseId, color: color.hex}))   
+    dispatch(setColor({id: courseId, color: color.hex}))   
     setChanging(false)
   }
 
@@ -71,12 +70,12 @@ const SelectedCourses = ({selectedCourses}) => {
             </div>
           </div>
           <div className="toggle-btns d-flex flex-column">
-            {/* <div 
+            <div 
               className="modifier"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
               {course.visible ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
-            </div> */}
+            </div>
             <div 
               className="modifier"
               onClick={() => dispatch(toggleSelection({id: course.id}))}

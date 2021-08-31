@@ -2,14 +2,12 @@ import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
 import moment from 'moment';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
 import { getCourseInfo } from '../../utils/course';
 import './Calendar.css'
 
 const Calendar = ({selectedCourses}) => {
-  const color = useSelector(state => state.colorMap.value)
   const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
   
   const dayId = {
@@ -28,22 +26,25 @@ const Calendar = ({selectedCourses}) => {
   }
 
   const getTimeblocks = (course) => {
-    const backgroundColor = color[course.id]
 
     return course.schedule.reduce((blocks, block) => blocks.concat({
       title: `${course.title} (${course.instructor})`,
       daysOfWeek: [dayId[block.day]],
       startTime: transformTime(block.start_time),
       endTime: transformTime(block.end_time),
-      backgroundColor: backgroundColor,
-      textColor: getTextColor(backgroundColor),
+      backgroundColor: course.color,
+      textColor: getTextColor(course.color),
     }), [])
   }
+
   const visibleCourses = selectedCourses
     .filter(course => course.visible)
-    .map(course => getCourseInfo(course.id))
-
-const events = visibleCourses
+    .map(course => {
+      const info = getCourseInfo(course.id)
+      return {...info, color: course.color}
+    })
+  
+  const events = visibleCourses
     .reduce((events, course) => events.concat(getTimeblocks(course)), [])
 
   const getSeconds = (stringTime) => {

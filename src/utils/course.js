@@ -53,3 +53,5 @@ export const getNotes = (course) => course.notes
   .join('♦ ')
 
 export const getDescription = (course) => (course.description ? course.description : 'N/A')
+
+export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
