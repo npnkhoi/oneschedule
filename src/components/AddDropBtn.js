@@ -1,22 +1,21 @@
 import { useDispatch } from "react-redux"
 import { toast } from "react-toastify"
-import { toggleSelection } from '../store/courseSlice'
+import { toggleSelection } from "../store/selectedCoursesSlice"
 
-const AddDropBtn = ({course}) => {
+const AddDropBtn = ({course, preStatus}) => {
   const dispatch = useDispatch()
 
   const onToggleSelection = () => {
-    const preStatus = course.selected
     dispatch(toggleSelection({id: course.id}))
     toast.success(preStatus ? 'Course removed!' : 'Course added!', {
       autoClose: 2000
     })
   }
 
-  return (<div className={`cta ${course.selected ? 'o-bg-yellow' : ''} flex-shrink-0`}
+  return (<div className={`cta ${preStatus ? 'o-bg-yellow' : ''} flex-shrink-0`}
     onClick={onToggleSelection}
   > 
-    { course.selected ? 'Remove' : 'Add to schedule' }
+    { preStatus ? 'Remove' : 'Add to schedule' }
   </div>)
 }
 

@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React from 'react'
-import { getDescription, getNotes, getSchedule } from '../utils/course'
+import { useSelector } from 'react-redux'
+import { getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
 import './OneCourse.css'
 
@@ -14,6 +15,9 @@ const Row = ({header, content}) => {
 }
 
 const OneCourse = ({course}) => {
+  const selectedCourses = useSelector(state => state.selectedCourses.value)
+  const selected = isSelected(selectedCourses, course.id)
+
   return (
     <div className='text-start m-4'>
       
@@ -22,7 +26,7 @@ const OneCourse = ({course}) => {
           <div className='o-heading flex-grow-1'>
             {course.id}  
           </div>
-          <AddDropBtn course={course} />
+          <AddDropBtn course={course} preStatus={selected} />
         </div>
 
         <div className='o-title  o-dark-primary'>{course.title}</div>

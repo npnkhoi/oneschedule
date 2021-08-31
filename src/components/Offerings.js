@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './Courses.css'
+import './Offerings.css'
 import Select from 'react-select'
-import { getLevel, getMajor, LEVELS, MAJORS } from '../utils/course'
+import { getLevel, getMajor, isSelected, LEVELS, MAJORS } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
+import { useSelector } from 'react-redux'
 
 const CourseCard = ({course}) => {
   return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden' target='_blank'
@@ -24,6 +25,8 @@ const Courses = ({courses}) => {
   const [majorFilter, setMajorFilter] = useState([])
   const [instructorFilter, setInstructorFilter] = useState([])
   const [levelFilter, setLevelFilter] = useState([])
+  const selectedCourses = useSelector(state => state.selectedCourses.value)
+  
 
   // Instructor options for filter
   // NOTE: Majors and levels are saved as constants
@@ -74,7 +77,7 @@ const Courses = ({courses}) => {
                 </Link>
               </td>
               <td>{course.instructor}</td>
-              <td> <AddDropBtn course={course} /> </td>
+              <td> <AddDropBtn course={course} preStatus={isSelected(selectedCourses, course.id)} /> </td>
           </tr>
         ))}
       </tbody>
