@@ -100,7 +100,7 @@ const Courses = ({courses}) => {
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
           <div className="alert alert-primary" role="alert">
-              Last updated on {moment(config.last_updated).format('MMMM Do YYYY, h:mm a')}. If you find an issue, report to us.
+              Last update: {moment(config.last_updated).format('h:mm A, D MMMM, YYYY')}.
           </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>

@@ -47,11 +47,13 @@ export const getSchedule = (course) => course.schedule
   .map(({day, start_time, end_time}) => `${day} ${start_time} - ${end_time}`)
   .join('\n')
 
-export const getNotes = (course) => course.notes
-  .split('\u2022')
-  .filter(line => line !== ' ')
-  .join('♦ ')
+export const getNotes = (course) => course.description.split('---')[0]
 
-export const getDescription = (course) => (course.description ? course.description : 'N/A')
+
+export const getDescription = (course) => {
+  const des = course.description
+  const split = des.indexOf('---')
+  return des.slice(split + 4)
+}
 
 export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
