@@ -17,7 +17,7 @@ const selectedCourses = createSlice({
           'id': id,
           'selected': true,
           'visible': true,
-          'color': getRarestColor(state.value)
+          'color': getRarestColor(state.value.map(course => course.color))
         })
       } else {
         console.log('removing');
