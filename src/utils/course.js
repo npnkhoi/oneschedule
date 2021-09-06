@@ -41,14 +41,13 @@ export const getLevel = (id) => {
   return head[split] + '00'
 }
 
-export const getDates = (course) => `${course.start_date} - ${course.end_date}`
+// export const getDates = (course) => `${course.start_date} - ${course.end_date}`
 
 export const getSchedule = (course) => course.schedule
   .map(({day, start_time, end_time}) => `${day} ${start_time} - ${end_time}`)
   .join('\n')
 
 export const getNotes = (course) => course.description.split('---')[0]
-
 
 export const getDescription = (course) => {
   const des = course.description

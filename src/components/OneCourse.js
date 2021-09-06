@@ -34,7 +34,7 @@ const OneCourse = ({course}) => {
       
       <div className='d-flex flex-row justify-content-around'>
         <div className='description flex-shrink-0 multiple-lines'>
-          {getDescription(course).split('\n').map(paragraph => <p>{paragraph}</p>)}
+          {getDescription(course).split('\n').map(paragraph => <p key={paragraph}>{paragraph}</p>)}
         </div>
         <div className='flex-grow-1 ms-5'>
           <table className='table table-hover table-bordered'>

@@ -1,3 +1,4 @@
+import React from "react"
 import { useDispatch } from "react-redux"
 import { toast } from "react-toastify"
 import { toggleSelection } from "../store/selectedCoursesSlice"

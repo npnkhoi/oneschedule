@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 jobs:
-  lint:
+  lint_test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -19,3 +19,6 @@ jobs:
 
       - name: Build
         run: yarn run build
+      
+      - name: Test
+        run: yarn test
