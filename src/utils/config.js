@@ -1,6 +1,6 @@
 const config =  {
-    version: '1.3',
-    last_updated: 'August 26, 2021'
+    version: '1.6',
+    last_updated: '2021-09-03 11:30+07',
 }
 
 export default config

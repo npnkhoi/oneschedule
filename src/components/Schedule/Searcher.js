@@ -1,12 +1,14 @@
 import {useEffect, useState} from 'react'
-import { useDispatch } from 'react-redux'
-import { toggleSelection } from '../../store/courseSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleSelection } from '../../store/selectedCoursesSlice'
+import { isSelected } from '../../utils/course'
 
 
 const Searcher = ({courses}) => {
   const [ filter, setFilter ] = useState('')
   const [ focusItem, setFocusItem ] = useState(0)
   const dispatch = useDispatch()
+  const selectedCourses = useSelector(state => state.selectedCourses.value)
 
   let matchedCourses = []
   let nVisibleCourses = 0
@@ -81,7 +83,7 @@ const Searcher = ({courses}) => {
           <button 
             className={`
               px-0 list-group-item
-              ${course.selected ? "heading-2" : ""}
+              ${isSelected(selectedCourses, course.id) ? "heading-2" : ""}
               ${isFocused(course.id) ? "focus" : ""}
             `}
             onClick={() => onCourseToggle(course.id)}
@@ -94,7 +96,7 @@ const Searcher = ({courses}) => {
   }
 
   const isFocused = (id) => (matchedCourses[focusItem].id === id)
-
+  
   return (
     <div className="filter">
       <input 

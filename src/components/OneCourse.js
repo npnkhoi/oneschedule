@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React from 'react'
-import { getDescription, getNotes, getSchedule } from '../utils/course'
+import { useSelector } from 'react-redux'
+import { getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
 import './OneCourse.css'
 
@@ -14,6 +15,9 @@ const Row = ({header, content}) => {
 }
 
 const OneCourse = ({course}) => {
+  const selectedCourses = useSelector(state => state.selectedCourses.value)
+  const selected = isSelected(selectedCourses, course.id)
+
   return (
     <div className='text-start m-4'>
       
@@ -22,14 +26,14 @@ const OneCourse = ({course}) => {
           <div className='o-heading flex-grow-1'>
             {course.id}  
           </div>
-          <AddDropBtn course={course} />
+          <AddDropBtn course={course} preStatus={selected} />
         </div>
 
         <div className='o-title  o-dark-primary'>{course.title}</div>
       </div>
       
-      <div className='d-flex flex-row'>
-        <div className='w-50 flex-shrink-0 multiple-lines'>
+      <div className='d-flex flex-row justify-content-around'>
+        <div className='description flex-shrink-0 multiple-lines'>
           {getDescription(course).split('\n').map(paragraph => <p>{paragraph}</p>)}
         </div>
         <div className='flex-grow-1 ms-5'>
@@ -39,9 +43,9 @@ const OneCourse = ({course}) => {
               <Row header='Schedule' content={getSchedule(course)} />
               <Row header='Credits' content={course.credits} />
               <Row header='Further notes' content={getNotes(course)} />
-              {/* <Row header='Dates' content={getDates(course)} /> */}
-              {/* <Row header='Capacity' content={course.capacity} /> */}
-              {/* <Row header='Type' content={course.type} /> */}
+              {/* <Row header='Dates' content={getDates(course)} />
+              <Row header='Capacity' content={course.capacity} />
+              <Row header='Type' content={course.type} /> */}
             </tbody>
           </table>
         </div>
