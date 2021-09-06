@@ -8,7 +8,6 @@ import './Calendar.css'
 
 const Calendar = ({selectedCourses, setScheduleOverlap, scheduleOverlap}) => {
   const color = useSelector(state => state.colorMap.value)
-  
   const dayId = {
     'Sunday': 0,
     'Monday': 1,

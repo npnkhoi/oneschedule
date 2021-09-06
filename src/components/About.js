@@ -72,11 +72,7 @@ const About = () => {
         </div>
         
         <div className='ms-4'>
-<<<<<<< HEAD
-          <p>My name is Khoi. I am a Fulbright student and I program for fun. I don't like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, I built OneSchedule to visualize course schedules. This app is inspired by <a href='https://nusmods.com/' target="_blank" rel="noreferrer">NUSMods</a>.</p>
-=======
           <p>My name is Khoi. I am a Fulbright student and I program for fun. I don&apos;t like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, I built OneSchedule to visualize course schedules. This app is inspired by <a href='https://nusmods.com/' target="_blank" rel="noreferrer">NUSMods</a>.</p>
->>>>>>> upstream/master
           <p>OneSchedule is free and open-source (
             <a href='https://github.com/npnkhoi/oneschedule' target='_blank' rel="noreferrer">Github</a>
             ).
