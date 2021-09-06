@@ -1,19 +1,18 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
 import Timetable from './Schedule';
-import Courses from './Courses';
+import Offerings from './Offerings';
 import OneCourse from './OneCourse';
 import About from './About';
 import Contribute from './Contribute';
 import './Main.css'
-import { useSelector } from 'react-redux';
+import COURSES from '../data/courses.json'
 
 const Main = () => {
   const match = useRouteMatch('/courses/:id')
-  const courses = useSelector(state => state.course.value)
   
   // If viewing one course, get the info of current course
   const course = match
-    ? courses.find(course => course.id === match.params.id)
+    ? COURSES.find(course => course.id === match.params.id)
     : null
 
   return (
@@ -32,7 +31,7 @@ const Main = () => {
         <OneCourse course={course}/>
       </Route>
       <Route path='/courses'>
-        <Courses courses={courses}/>
+        <Offerings courses={COURSES}/>
       </Route>
       <Route path='/'>
         <Timetable />

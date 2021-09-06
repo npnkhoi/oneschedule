@@ -1,13 +1,15 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
-import moment from 'moment';
-import { useSelector } from 'react-redux';
+// import moment from 'moment';
+import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
+import { getCourseInfo } from '../../utils/course';
 import './Calendar.css'
 
-const Calendar = ({selectedCourses, setScheduleOverlap, scheduleOverlap}) => {
-  const color = useSelector(state => state.colorMap.value)
+const Calendar = ({selectedCourses}) => {
+  const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
+  
   const dayId = {
     'Sunday': 0,
     'Monday': 1,
@@ -18,26 +20,33 @@ const Calendar = ({selectedCourses, setScheduleOverlap, scheduleOverlap}) => {
     'Saturday': 6,
   }
 
-  const transformTime = (time) => {
-    const timeObject = moment(time, 'h:mm A')
-    return timeObject.format('HH:mm:ss')
-  }
+  // const transformTime = (time) => {
+  //   const timeObject = moment(time, 'h:mm A')
+  //   console.log(time, timeObject);
+  //   return timeObject.format('HH:mm:ss')
+  // }
 
   const getTimeblocks = (course) => {
-    const backgroundColor = color[course.id]
 
     return course.schedule.reduce((blocks, block) => blocks.concat({
       title: `${course.title} (${course.instructor})`,
       daysOfWeek: [dayId[block.day]],
-      startTime: transformTime(block.start_time),
-      endTime: transformTime(block.end_time),
-      backgroundColor: backgroundColor,
-      textColor: getTextColor(backgroundColor),
+      startTime: block.start_time,
+      endTime: block.end_time,
+      backgroundColor: course.color,
+      textColor: getTextColor(course.color),
     }), [])
   }
 
-  const events = selectedCourses
-  .reduce((events, course) => events.concat(getTimeblocks(course)), [])
+  const visibleCourses = selectedCourses
+    .filter(course => course.visible)
+    .map(course => {
+      const info = getCourseInfo(course.id)
+      return {...info, color: course.color}
+    })
+  
+  const events = visibleCourses
+    .reduce((events, course) => events.concat(getTimeblocks(course)), [])
 
   const getSeconds = (stringTime) => {
     const nums = stringTime.split(/[:]+/)

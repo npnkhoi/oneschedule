@@ -1,19 +1,20 @@
 import { TwitterPicker } from "react-color"
 import COLORS from '../../data/colors.json'
 import { useState } from "react"
-import { setColor } from "../../store/colorMapSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-import { toggleSelection, toggleVisibility } from "../../store/courseSlice"
+import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
+import { getCourseInfo } from "../../utils/course"
+
 
 const ColorPicker = ({courseId}) => {
   const [changing, setChanging] = useState(false)
-  const color = useSelector(state => state.colorMap.value[courseId])
+  const color = useSelector(state => state.selectedCourses.value
+    .filter(course => course.id === courseId)[0].color)
   const dispatch = useDispatch()
 
   const changeColor = (color) => {
-    // console.log('changing color', color);
-    dispatch(setColor({courseId, color: color.hex}))   
+    dispatch(setColor({id: courseId, color: color.hex}))   
     setChanging(false)
   }
 
@@ -41,14 +42,17 @@ const ColorPicker = ({courseId}) => {
   )
 }
 
-const SelectedCourses = ({courses}) => {
+const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
 
   return (
   <div className="mt-4 d-flex flex-column">
     {
-      courses
-      .filter((course) => course.selected)
+      selectedCourses
+      .map(course => {
+        const info = getCourseInfo(course.id)
+        return {...course, title: info.title, instructor: info.instructor}
+      })
       .sort((a, b) => a.title.localeCompare(b.title))
       .map((course) => (
         <div className="selected-course d-flex flex-row justify-content-between align-items-start" key={course.id}> 
