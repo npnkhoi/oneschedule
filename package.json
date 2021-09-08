@@ -41,7 +41,9 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
-    "lint": "yarn run eslint ."
+    "lint": "yarn run eslint .",
+    "cypress:open": "cypress open",
+    "test:e2e": "cypress run"
   },
   "eslintConfig": {
     "extends": [
@@ -65,7 +67,9 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
+    "cypress": "^8.3.1",
     "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-react": "^7.24.0",
     "identity-obj-proxy": "^3.0.0",
     "react-test-renderer": "^17.0.2"
