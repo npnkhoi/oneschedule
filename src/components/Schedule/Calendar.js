@@ -37,7 +37,7 @@ const Calendar = ({selectedCourses}) => {
       textColor: getTextColor(course.color),
     }), [])
   }
-
+  console.log(selectedCourses)
   const visibleCourses = selectedCourses
     .filter(course => course.visible)
     .map(course => {

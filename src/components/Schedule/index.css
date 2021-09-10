@@ -44,6 +44,12 @@
   width: 60%;
 }
 
+/*Calendar, preven scroll, which affect pdf. Change this value manually if further expand time */
+.fc {
+    height: 120vh;
+}
+/*End of calendar */
+
 /*hanlde overflow*/
 .instructor-name, .course-title{ 
   display: -webkit-box;
