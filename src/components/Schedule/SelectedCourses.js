@@ -47,7 +47,7 @@ const CreditCount = ({selectedCourses}) =>{
     let credits = 0
     for (let course of selectedCourses){
       if (course.visible){
-        credits += getCourseInfo(course.id).credits
+        credits += parseInt(getCourseInfo(course.id).credits)
       }
     }
     
