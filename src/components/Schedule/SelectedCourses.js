@@ -27,7 +27,7 @@ const ColorPicker = ({courseId}) => {
         style={({backgroundColor: color})}
       >
       </div>
-      <div className='color-picker  position-relative'>
+      <div className='color-picker position-relative'>
         {changing 
         ? 
           <TwitterPicker
@@ -42,11 +42,28 @@ const ColorPicker = ({courseId}) => {
   )
 }
 
+const CreditCount = ({selectedCourses}) =>{
+  function creditCount(selectedCourses){
+    let credits = 0
+    for (let course of selectedCourses){
+      if (course.visible){
+        credits += getCourseInfo(course.id).credits
+      }
+    }
+    
+    return credits
+  }
+ 
+  return (
+    <div id="credit-count">Credits count - <span>{creditCount(selectedCourses)}</span></div>
+  )
+}
+
 const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
-
+  
   return (
-  <div className="mt-4 d-flex flex-column">
+  <div id="selected-courses" className="mt-4 d-flex flex-column">
     {
       selectedCourses
       .map(course => {
@@ -84,10 +101,10 @@ const SelectedCourses = ({selectedCourses}) => {
             </div>
           </div>
         </div>
-      ))
-    }
+      ))   
+    }    
   </div>
   )
 }
 
-export default SelectedCourses
+export {SelectedCourses, CreditCount}

@@ -1,6 +1,6 @@
 import React from 'react'
 import Calendar from './Calendar'
-import SelectedCourses from './SelectedCourses'
+import {SelectedCourses,CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 import './index.css'
 import { useSelector } from 'react-redux'
@@ -23,6 +23,10 @@ const Timetable = () => {
         />
 
         <SelectedCourses 
+          selectedCourses={selectedCourses}
+        />
+
+        <CreditCount 
           selectedCourses={selectedCourses}
         />
       </div>
