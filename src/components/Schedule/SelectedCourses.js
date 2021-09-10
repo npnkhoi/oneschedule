@@ -61,9 +61,9 @@ const CreditCount = ({selectedCourses}) =>{
 
 const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
-  
+
   return (
-  <div id="selected-courses" className="mt-4 d-flex flex-column">
+  <div id="selected-courses" className="d-flex flex-column">
     {
       selectedCourses
       .map(course => {

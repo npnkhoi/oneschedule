@@ -1,4 +1,22 @@
 /* SelectedCourse.js */
+#selected-courses{
+  margin-top: 16px;
+  max-height: 560px;
+  overflow-y: scroll;
+  overflow: overlay;
+}
+#selected-courses::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+#selected-courses::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+  border-radius: 3px;
+}
+.info-bar:hover #selected-courses::-webkit-scrollbar{
+  display: block;
+}
+
 .selected-course{
   padding-bottom: 12px;
   padding-top: 10px;
@@ -16,6 +34,7 @@
 
 .toggle-btns {
   width: fit-content;
+  margin-right: 10px;
 }
 
 .toggle-btns > div > i {
