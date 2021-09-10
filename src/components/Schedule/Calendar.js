@@ -1,6 +1,6 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
-import moment from 'moment';
+// import moment from 'moment';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
@@ -20,18 +20,19 @@ const Calendar = ({selectedCourses}) => {
     'Saturday': 6,
   }
 
-  const transformTime = (time) => {
-    const timeObject = moment(time, 'h:mm A')
-    return timeObject.format('HH:mm:ss')
-  }
+  // const transformTime = (time) => {
+  //   const timeObject = moment(time, 'h:mm A')
+  //   console.log(time, timeObject);
+  //   return timeObject.format('HH:mm:ss')
+  // }
 
   const getTimeblocks = (course) => {
 
     return course.schedule.reduce((blocks, block) => blocks.concat({
       title: `${course.title} (${course.instructor})`,
       daysOfWeek: [dayId[block.day]],
-      startTime: transformTime(block.start_time),
-      endTime: transformTime(block.end_time),
+      startTime: block.start_time,
+      endTime: block.end_time,
       backgroundColor: course.color,
       textColor: getTextColor(course.color),
     }), [])

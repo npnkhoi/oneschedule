@@ -5,6 +5,8 @@ import Select from 'react-select'
 import { getLevel, getMajor, isSelected, LEVELS, MAJORS } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
 import { useSelector } from 'react-redux'
+import moment from 'moment'
+import config from '../utils/config'
 
 const CourseCard = ({course}) => {
   return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden' target='_blank'
@@ -98,7 +100,7 @@ const Courses = ({courses}) => {
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
           <div className="alert alert-primary" role="alert">
-            When in doubt, please double-check on OneStop and let us know if any mistakes (via email/feedback form).
+              Last update: {moment(config.last_updated).format('h:mm A, D MMMM, YYYY')}.
           </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>
