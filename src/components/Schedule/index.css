@@ -44,10 +44,22 @@
   width: 60%;
 }
 
-/*Calendar, preven scroll, which affect pdf. Change this value manually if further expand time */
+/*Calendar, prevent scroll, which affect pdf. */
+/* Change this value manually if further expand the time */
 .fc {
     height: 120vh;
+    width: 57.5vw;
 }
+.fc .fc-timegrid-col.fc-day-today {
+    background-color: white;
+}
+/*debug some printing style*/
+
+.fc .fc-scrollgrid {
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
 /*End of calendar */
 
 /*hanlde overflow*/

@@ -97,7 +97,6 @@ const Calendar = ({selectedCourses}) => {
     events = {events}
     slotMinTime = "08:00"
     slotMaxTime = "21:00"
-    scrollTime = "09:00"
     weekends = {false}
     expandRows = {true}
     allDaySlot = {false}
@@ -109,6 +108,7 @@ const Calendar = ({selectedCourses}) => {
       })
     }
     eventTextColor = "black"
+    dayHeaderFormat = { {weekday: 'short' }}
   />
   )
 }
