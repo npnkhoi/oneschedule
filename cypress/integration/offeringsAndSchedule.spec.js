@@ -1,0 +1,32 @@
+const { getRandomCourses } = require("../../src/utils/course")
+
+describe('Link between Offerings and Schedule', function() {
+  it('Add from Schedule, delete from Offerings', function() {
+    cy.visit('')
+    const course = getRandomCourses(1)[0]
+  
+    cy.get('#search-input')
+      .type(course.id + '{enter}')
+    cy.contains(course.id)
+      .should('exist')
+    cy.get('.navbar-btn')
+      .contains('Offerings')
+      .click()
+    cy.contains(course.id)
+      .parent()
+      .parent()
+      .get('.cta')
+      .contains('Remove')
+      .click()
+    cy.contains(course.id)
+      .parent()
+      .parent()
+      .get('.cta')
+      .contains('Add')
+    cy.get('.navbar-btn')
+      .contains('Schedule')
+      .click()
+    cy.contains(course.id)
+      .should('not.exist')
+  })
+})
