@@ -1,18 +1,4 @@
-import COURSES from '../../src/data/courses'
-
-const getRandomCourses = (n) => {
-  const total = COURSES.length
-  if (n > total) {
-    throw new RangeError("Requesting more elements than available.")
-  }
-  const chosen = []
-  while (n--) {
-    const available = COURSES.filter(course => !chosen.includes(course.id))
-    const id = Math.floor(Math.random() * available.length)
-    chosen.push(COURSES[id])
-  }
-  return chosen
-}
+import { getRandomCourses } from '../../src/utils/course'
 
 describe('Schedule', function() {
   const searchAndChoose = (course, numTimeBlocks) => {
@@ -39,7 +25,7 @@ describe('Schedule', function() {
   
 
   beforeEach(function() {
-    cy.visit('http://localhost:3000/oneschedule#/')
+    cy.visit('')
   })
 
   it('add one course', function() {  
