@@ -1,4 +1,4 @@
-import COLORS from '../data/colors.json'
+import {COLORS} from '../data/'
 
 // Return an appropriate text color (black/white)
 // based on background color

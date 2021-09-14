@@ -1,5 +1,5 @@
 import { TwitterPicker } from "react-color"
-import COLORS from '../../data/colors.json'
+import {COLORS} from '../../data/'
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"

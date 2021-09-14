@@ -37,13 +37,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --verbose",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
     "lint": "yarn run eslint .",
-    "cypress:open": "cypress open",
-    "test:e2e": "cypress run"
+    "jest": "jest --verbose",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

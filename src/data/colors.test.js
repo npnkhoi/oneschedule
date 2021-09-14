@@ -1,4 +1,4 @@
-import COLORS from './colors.json'
+import {COLORS} from './'
 
 describe('Color data', () => {
   

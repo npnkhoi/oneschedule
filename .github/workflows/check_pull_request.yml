@@ -17,10 +17,10 @@ jobs:
       - name: Lint
         run: yarn lint
       
-      - name: Test
-        run: yarn test
+      - name: Jest (unit test)
+        run: yarn jest
 
-      - name: Cypress run
+      - name: Cypress (integration test)
         uses: cypress-io/github-action@v2
         with:
           build: yarn build

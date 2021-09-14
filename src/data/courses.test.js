@@ -1,4 +1,4 @@
-import COURSES from './courses.json'
+import {COURSES} from './'
 
 describe('Course data', () => {
   it('is a list', () => {
