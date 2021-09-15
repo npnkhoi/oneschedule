@@ -84,10 +84,6 @@
   text-overflow: ellipsis;
 }
 
-#search-appearances{
-  position: absolute;
-}
-
 .selecting > .list-group-item{
   max-height: 100px;
   z-index: 100;
@@ -112,7 +108,6 @@
 
 .heading-2 {
   font-weight: 600;
-  margin-top: 2px;
 }
 
 .modifier {

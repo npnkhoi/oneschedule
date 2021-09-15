@@ -60,8 +60,8 @@ const Searcher = ({courses}) => {
     return (
       <div className="d-flex flex-row justify-content-between align-items-center">
         <div className="course-id">{course.id.split("_")[0]}</div>
-        <div className="px-1 course-title">{course.title}</div>
-        <div className="instructor-name px-1 border-left">{course.instructor}</div>
+        <div className="mx-1 course-title">{course.title}</div>
+        <div className="instructor-name mx-1 border-left">{course.instructor}</div>
       </div>
     )
   }
@@ -98,7 +98,7 @@ const Searcher = ({courses}) => {
   const isFocused = (id) => (matchedCourses[focusItem].id === id)
   
   return (
-    <div className="filter">
+    <div className="filter position-relative">
       <input 
         className="form-control py-2" 
         id="search-input"
@@ -121,7 +121,7 @@ const Searcher = ({courses}) => {
       />
       {
         filter !== "" ?
-          <div className="selecting list-group shadow" id='search-appearances'>
+          <div className="selecting list-group shadow position-absolute">
             <CourseList/>
             {/* <p className="list-group-item"> {matchedCourses.length} courses matched. </p> */}
           </div>
