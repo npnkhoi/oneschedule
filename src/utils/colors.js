@@ -1,4 +1,4 @@
-import COLORS from '../data/colors.json'
+import {COLORS} from '../data/'
 
 // Return an appropriate text color (black/white)
 // based on background color
@@ -16,15 +16,15 @@ export const getTextColor = (bg) => {
   return (brightness > 125) ? 'black' : 'white'
 }
 
-export const getRandomColor = () => {
-  const colorId = Math.floor(Math.random() * COLORS.length)
-  return COLORS[colorId]
-}
+// export const getRandomColor = () => {
+//   const colorId = Math.floor(Math.random() * COLORS.length)
+//   return COLORS[colorId]
+// }
 
-export const getRarestColor = (courses) => {
+export const getRarestColor = (colors) => {
   const freq = {}
   COLORS.forEach(color => {
-    freq[color] = courses.filter(course => course.color === color).length
+    freq[color] = colors.filter(_color => _color === color).length
   })
 
   let ret = null
