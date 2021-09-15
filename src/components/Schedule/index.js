@@ -4,12 +4,8 @@ import SelectedCourses from './SelectedCourses'
 import Searcher from './Searcher'
 import './index.css'
 import { useSelector } from 'react-redux'
-<<<<<<< HEAD
 import COURSES from '../../data/courses.json'
 import ExternalExporter from './ExternalExporter'
-=======
-import {COURSES} from '../../data/'
->>>>>>> 431eac6c159e5e7f363b110c22a9eddc636dd0e1
 
 const Timetable = () => {
   const selectedCourses = useSelector(state => state.selectedCourses.value)
