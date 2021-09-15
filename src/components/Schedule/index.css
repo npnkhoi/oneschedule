@@ -84,8 +84,13 @@
   text-overflow: ellipsis;
 }
 
+#search-appearances{
+  position: absolute;
+}
+
 .selecting > .list-group-item{
   max-height: 100px;
+  z-index: 100;
 }
 
 .selecting > .list-group-item.focus {
