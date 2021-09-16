@@ -121,7 +121,7 @@ const Searcher = ({courses}) => {
       />
       {
         filter !== "" ?
-          <div className="selecting list-group shadow position-absolute">
+          <div className="selecting list-group shadow position-absolute w-100">
             <CourseList/>
             {/* <p className="list-group-item"> {matchedCourses.length} courses matched. </p> */}
           </div>
