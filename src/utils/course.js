@@ -1,4 +1,4 @@
-import COURSES from '../data/courses.json'
+import {COURSES} from '../data/'
 
 export const MAJORS = [
   {value: 'ARTS', label: 'Arts and Media'},
@@ -56,3 +56,17 @@ export const getDescription = (course) => {
 }
 
 export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
+
+export const getRandomCourses = (n) => {
+  const total = COURSES.length
+  if (n > total) {
+    throw new RangeError("Requesting more elements than available.")
+  }
+  const chosen = []
+  while (n--) {
+    const available = COURSES.filter(course => !chosen.includes(course.id))
+    const id = Math.floor(Math.random() * available.length)
+    chosen.push(COURSES[id])
+  }
+  return chosen
+}
