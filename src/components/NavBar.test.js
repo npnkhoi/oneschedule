@@ -4,7 +4,7 @@ import NavBar from "./NavBar"
 import { HashRouter } from "react-router-dom"
 
 describe('Navigation bar', () => {
-  test('nav bar render Schedule text', () => {
+  it('nav bar render Schedule text', () => {
     const component = render(
       <HashRouter>
         <NavBar />

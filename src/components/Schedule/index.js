@@ -4,7 +4,7 @@ import {SelectedCourses,CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 import './index.css'
 import { useSelector } from 'react-redux'
-import COURSES from '../../data/courses.json'
+import {COURSES} from '../../data/'
 
 const Timetable = () => {
   const selectedCourses = useSelector(state => state.selectedCourses.value)

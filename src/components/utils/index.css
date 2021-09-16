@@ -9,6 +9,6 @@
 }
 
 .cta:hover {
-  background-color: var(--orange);
+  background-color: var(--orange) !important;
   cursor: pointer;
 }

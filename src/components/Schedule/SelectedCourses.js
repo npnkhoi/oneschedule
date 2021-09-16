@@ -1,5 +1,5 @@
 import { TwitterPicker } from "react-color"
-import COLORS from '../../data/colors.json'
+import {COLORS} from '../../data/'
 import { useState, useEffect, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
@@ -111,13 +111,13 @@ const SelectedCourses = ({selectedCourses}) => {
           </div>
           <div className="toggle-btns d-flex flex-column">
             <div 
-              className="modifier"
+              className="modifier eye"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
               {course.visible ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
             </div>
             <div 
-              className="modifier"
+              className="modifier trash"
               onClick={() => dispatch(toggleSelection({id: course.id}))}
             >
               <i className="fas fa-trash"></i>

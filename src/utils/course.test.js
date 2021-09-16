@@ -9,19 +9,19 @@ describe('course utils', () => {
     {id: 'ENG201_Fall9999_S02', major: 'ENG', level: '200'},
   ]
 
-  test('get major', () => {
+  it('get major', () => {
     COURSES.forEach((course) => {
       expect(getMajor(course.id) === course.major)
     })
   })
 
-  test('get level', () => {
+  it('get level', () => {
     COURSES.forEach((course) => {
       expect(getLevel(course.id) === course.level)
     })  
   })
 
-  test('get schedule', () => {
+  it('get schedule', () => {
     const course = {
       schedule: [
         {
