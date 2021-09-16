@@ -1,14 +1,38 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState, useRef} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleSelection } from '../../store/selectedCoursesSlice'
 import { isSelected } from '../../utils/course'
 
+let useClickOutside = (handler) => {
+  let domNode = useRef();
+  
+  useEffect(() => {
+    let clickHandler = (event) => {
+      if (domNode.current && !domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+
+    document.addEventListener("mousedown", clickHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", clickHandler);
+    };
+  });
+
+  return domNode;
+};
 
 const Searcher = ({courses}) => {
-  const [ filter, setFilter ] = useState('')
-  const [ focusItem, setFocusItem ] = useState(0)
+  const [filter, setFilter] = useState('')
+  const [isOpen, setIsOpen] = useState(true)
+  const [focusItem, setFocusItem] = useState(0)
   const dispatch = useDispatch()
   const selectedCourses = useSelector(state => state.selectedCourses.value)
+
+  let domNode = useClickOutside(() => {
+    setIsOpen(false);
+  });
 
   let matchedCourses = []
   let nVisibleCourses = 0
@@ -98,13 +122,16 @@ const Searcher = ({courses}) => {
   const isFocused = (id) => (matchedCourses[focusItem].id === id)
   
   return (
-    <div className="filter position-relative">
+    <div ref={domNode} className="filter position-relative">
       <input 
         className="form-control py-2" 
         id="search-input"
         placeholder="Add courses to schedule"
         autoComplete="off"
-        onChange={onInputChanged} 
+        onChange={onInputChanged}
+        onClick={() => {
+          setIsOpen(true)
+        }}
         onKeyDown={(event) => {
           // TODO: refactor
           if (event.key === 'ArrowUp') {
@@ -120,7 +147,7 @@ const Searcher = ({courses}) => {
         }}
       />
       {
-        filter !== "" ?
+        (filter !== "") && isOpen ?
           <div className="selecting list-group shadow position-absolute w-100">
             <CourseList/>
             {/* <p className="list-group-item"> {matchedCourses.length} courses matched. </p> */}
