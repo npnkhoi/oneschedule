@@ -1,34 +1,57 @@
 import { TwitterPicker } from "react-color"
 import COLORS from '../../data/colors.json'
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
 import { getCourseInfo } from "../../utils/course"
 
+let useClickOutside = (handler) => {
+  let domNode = useRef();
+  
+  useEffect(() => {
+    let clickHandler = (event) => {
+      if (domNode.current && !domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+
+    document.addEventListener("mousedown", clickHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", clickHandler);
+    };
+  });
+
+  return domNode;
+};
 
 const ColorPicker = ({courseId}) => {
-  const [changing, setChanging] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const color = useSelector(state => state.selectedCourses.value
     .filter(course => course.id === courseId)[0].color)
   const dispatch = useDispatch()
 
   const changeColor = (color) => {
     dispatch(setColor({id: courseId, color: color.hex}))   
-    setChanging(false)
+    setIsOpen(false)
   }
 
+  let domNode = useClickOutside(() => {
+    setIsOpen(false);
+  });
+    
   return (
-    <div className='modifier me-2'>
+    <div ref={domNode} className='modifier me-2'>
       <div className='color-btn modifier rounded'
         onClick={() => {
-          setChanging(!changing)
+          setIsOpen(!isOpen)
         }}
         style={({backgroundColor: color})}
       >
       </div>
       <div className='color-picker position-relative'>
-        {changing 
+        {isOpen 
         ? 
           <TwitterPicker
             colors={COLORS}
