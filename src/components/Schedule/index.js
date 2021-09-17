@@ -1,6 +1,6 @@
 import React from 'react'
 import Calendar from './Calendar'
-import {SelectedCourses,CreditCount} from './SelectedCourses'
+import {SelectedCourses, CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 import './index.css'
 import { useSelector } from 'react-redux'

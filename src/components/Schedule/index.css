@@ -51,7 +51,7 @@
   left: -6px;
 }
 
-#credit-count{
+.credit-count{
   font-size: 1.2em;
   font-weight: 600;
   color: var(--dark-green);
@@ -60,7 +60,7 @@
   bottom: 0;
 }
 
-#credit-count > span {
+.credit-count > span {
   font-size: 1.1em;
 }
 /* END SeclectedCourse */
