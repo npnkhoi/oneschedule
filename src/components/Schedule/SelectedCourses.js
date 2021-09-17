@@ -50,7 +50,9 @@ const CreditCount = ({selectedCourses}) =>{
   )
 
   return (
-    <div className="credit-count">Credits count - <span>{credits}</span></div>
+    <div className="credit-count o-large o-dark-primary">
+      Current credits: <span className="o-larger">{credits}</span>
+    </div>
   )
 }
 

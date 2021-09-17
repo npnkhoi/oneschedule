@@ -33,6 +33,15 @@
   color: var(--dark-green);
 }
 
+.o-large {
+  font-size: 20px; 
+  font-weight: 600;
+}
+
+.o-larger {
+  font-size: 1.2em;
+}
+
 .o-dark-primary {
   color: var(--dark-green);
 }
