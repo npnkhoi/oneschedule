@@ -88,13 +88,14 @@ const SelectedCourses = ({selectedCourses}) => {
               className="modifier"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
-              {course.visible ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
+              {course.visible ? 
+              <i className="fas fa-eye o-dark-primary"></i> : <i className="fas fa-eye-slash o-dark-primary"></i>}
             </div>
             <div 
               className="modifier"
               onClick={() => dispatch(toggleSelection({id: course.id}))}
             >
-              <i className="fas fa-trash"></i>
+              <i className="fas fa-trash o-dark-primary"></i>
             </div>
           </div>
         </div>

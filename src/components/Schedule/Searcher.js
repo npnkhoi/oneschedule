@@ -59,9 +59,9 @@ const Searcher = ({courses}) => {
   const CourseInfo = (course) => {
     return (
       <div className="d-flex flex-row justify-content-between align-items-center">
-        <div className="course-id">{course.id.split("_")[0]}</div>
+        <div className="course-id o-smaller">{course.id.split("_")[0]}</div>
         <div className="mx-1 course-title">{course.title}</div>
-        <div className="instructor-name mx-1 border-left">{course.instructor}</div>
+        <div className="instructor-name o-smaller mx-1 border-left">{course.instructor}</div>
       </div>
     )
   }

@@ -42,6 +42,10 @@
   font-size: 1.2em;
 }
 
+.o-smaller {
+  font-size: 0.8em;
+}
+
 .o-dark-primary {
   color: var(--dark-green);
 }

@@ -37,10 +37,6 @@
   margin-right: 10px;
 }
 
-.toggle-btns > div > i {
-  color: var(--dark-green);
-}
-
 .color-btn {
   border-color: white;
   cursor: pointer;
@@ -62,7 +58,6 @@
 /* Searcher.js */
 .course-id, .instructor-name{
   width: 20%;
-  font-size: 0.8em;
   color: gray;
 }
 
