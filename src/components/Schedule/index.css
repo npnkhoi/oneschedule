@@ -1,19 +1,19 @@
 /* SelectedCourse.js */
-#selected-courses{
+.selected-courses{
   margin-top: 16px;
   max-height: calc(100vh - 230px);
   overflow-y: scroll;
   overflow: overlay;
 }
-#selected-courses::-webkit-scrollbar {
+.selected-courses::-webkit-scrollbar {
   width: 10px;
   display: none;
 }
-#selected-courses::-webkit-scrollbar-thumb {
+.selected-courses::-webkit-scrollbar-thumb {
   background: #b6b6b6;
   border-radius: 3px;
 }
-#selected-courses:hover::-webkit-scrollbar{
+.selected-courses:hover::-webkit-scrollbar{
   display: block;
 }
 
