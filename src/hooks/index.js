@@ -1,6 +1,4 @@
-// This code is currently not used anywhere
-
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 
 function usePersistedState(key, defaultValue) {
   const [state, setState] = useState(
@@ -12,6 +10,27 @@ function usePersistedState(key, defaultValue) {
   return [state, setState];
 }
 
+function useClickOutside(handler) {
+  let domNode = useRef();
+  
+  useEffect(() => {
+    let clickHandler = (event) => {
+      if (domNode.current && !domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+
+    document.addEventListener("mousedown", clickHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", clickHandler);
+    };
+  });
+
+  return domNode;
+}
+
 export {
-  usePersistedState
+  usePersistedState,
+  useClickOutside
 }

@@ -1,27 +1,8 @@
-import {useEffect, useState, useRef} from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleSelection } from '../../store/selectedCoursesSlice'
 import { isSelected } from '../../utils/course'
-
-let useClickOutside = (handler) => {
-  let domNode = useRef();
-  
-  useEffect(() => {
-    let clickHandler = (event) => {
-      if (domNode.current && !domNode.current.contains(event.target)) {
-        handler();
-      }
-    };
-
-    document.addEventListener("mousedown", clickHandler);
-
-    return () => {
-      document.removeEventListener("mousedown", clickHandler);
-    };
-  });
-
-  return domNode;
-};
+import { useClickOutside } from '../../hooks'
 
 const Searcher = ({courses}) => {
   const [filter, setFilter] = useState('')

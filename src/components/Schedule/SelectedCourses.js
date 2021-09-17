@@ -1,30 +1,11 @@
 import { TwitterPicker } from "react-color"
 import {COLORS} from '../../data/'
-import { useState, useEffect, useRef } from "react"
+import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
 import { getCourseInfo } from "../../utils/course"
-
-let useClickOutside = (handler) => {
-  let domNode = useRef();
-  
-  useEffect(() => {
-    let clickHandler = (event) => {
-      if (domNode.current && !domNode.current.contains(event.target)) {
-        handler();
-      }
-    };
-
-    document.addEventListener("mousedown", clickHandler);
-
-    return () => {
-      document.removeEventListener("mousedown", clickHandler);
-    };
-  });
-
-  return domNode;
-};
+import { useClickOutside } from "../../hooks"
 
 const ColorPicker = ({courseId}) => {
   const [isOpen, setIsOpen] = useState(false)
