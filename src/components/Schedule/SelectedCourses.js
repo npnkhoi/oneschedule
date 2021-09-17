@@ -43,19 +43,14 @@ const ColorPicker = ({courseId}) => {
 }
 
 const CreditCount = ({selectedCourses}) =>{
-  function creditCount(selectedCourses){
-    let credits = 0
-    for (let course of selectedCourses){
-      if (course.visible){
-        credits += parseInt(getCourseInfo(course.id).credits)
-      }
-    }
-    
-    return credits
-  }
- 
+  let credits = selectedCourses.reduce((preValue, curValue) => (
+      preValue + 
+        (curValue.visible ? parseInt(getCourseInfo(curValue.id).credits) : 0)
+    ), 0
+  )
+
   return (
-    <div id="credit-count">Credits count - <span>{creditCount(selectedCourses)}</span></div>
+    <div id="credit-count">Credits count - <span>{credits}</span></div>
   )
 }
 
