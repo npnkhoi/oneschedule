@@ -48,7 +48,6 @@
 /* Change this value manually if further expand the time */
 .fc {
     height: 120vh;
-    width: 57.5vw;
 }
 .fc .fc-timegrid-col.fc-day-today {
     background-color: white;
