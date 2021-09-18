@@ -109,6 +109,7 @@ const Calendar = ({selectedCourses}) => {
       })
     }
     eventTextColor = "black"
+    dayHeaderFormat = { {weekday: 'short' }}
   />
   )
 }

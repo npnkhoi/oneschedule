@@ -29,3 +29,7 @@
   color: var(--dark-green);
   text-decoration: none;
 }
+
+.fc .fc-timegrid-col.fc-day-today { /*remove today colour*/
+  background-color: white;
+}
