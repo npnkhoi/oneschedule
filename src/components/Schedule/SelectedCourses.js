@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
-import { getCourseInfo } from "../../utils/course"
+import { courseExist, getCourseInfo } from "../../utils/course"
 
 
 const ColorPicker = ({courseId}) => {
@@ -49,6 +49,7 @@ const SelectedCourses = ({selectedCourses}) => {
   <div className="mt-4 d-flex flex-column">
     {
       selectedCourses
+      .filter(course => courseExist(course.id))
       .map(course => {
         const info = getCourseInfo(course.id)
         return {...course, title: info.title, instructor: info.instructor}

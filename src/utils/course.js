@@ -57,6 +57,8 @@ export const getDescription = (course) => {
 
 export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
 
+export const courseExist = (id) => COURSES.filter(course => course.id === id).length > 0
+
 export const getRandomCourses = (n) => {
   const total = COURSES.length
   if (n > total) {

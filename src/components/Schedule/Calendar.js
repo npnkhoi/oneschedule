@@ -4,7 +4,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
-import { getCourseInfo } from '../../utils/course';
+import { courseExist, getCourseInfo } from '../../utils/course';
 import './Calendar.css'
 
 const Calendar = ({selectedCourses}) => {
@@ -39,7 +39,7 @@ const Calendar = ({selectedCourses}) => {
   }
 
   const visibleCourses = selectedCourses
-    .filter(course => course.visible)
+    .filter(course => courseExist(course.id) && course.visible)
     .map(course => {
       const info = getCourseInfo(course.id)
       return {...info, color: course.color}
