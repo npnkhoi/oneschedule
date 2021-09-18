@@ -16,7 +16,7 @@ const Contributor = ({contributor}) => {
       >
         {contributor.login}
       </a >
-      <div>{contributor.contributions} commits</div>
+      <div>{contributor.contributions} commit(s)</div>
     </div>
   )
 }

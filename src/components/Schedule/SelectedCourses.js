@@ -17,7 +17,6 @@ const ColorPicker = ({courseId}) => {
     dispatch(setColor({id: courseId, color: color.hex}))   
     setChanging(false)
   }
-
   return (
     <div className='modifier me-2'>
       <div className='color-btn modifier rounded'
@@ -31,7 +30,7 @@ const ColorPicker = ({courseId}) => {
         {changing 
         ? 
           <TwitterPicker
-            colors={COLORS}
+            colors={COLORS.sort()}
             onChangeComplete={changeColor}
             width="204px"
           />
