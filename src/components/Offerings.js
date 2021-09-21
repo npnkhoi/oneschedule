@@ -112,7 +112,7 @@ const Courses = ({courses}) => {
           <p className='o-title'>Course Offerings</p>
           <div className="alert alert-primary" role="alert">
               <b>Last update</b>: {moment(config.last_updated).format('h:mm A, D MMMM, YYYY')}.
-              When in doubt, plese double-check on OneStop.
+              When in doubt, please double-check on OneStop.
           </div>
             {compact ? <TableView /> : <GalleryView />}
         </div>
