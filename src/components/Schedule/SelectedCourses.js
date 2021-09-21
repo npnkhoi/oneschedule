@@ -26,7 +26,7 @@ const ColorPicker = ({courseId}) => {
         style={({backgroundColor: color})}
       >
       </div>
-      <div className='color-picker  position-relative'>
+      <div className='color-picker position-relative'>
         {changing 
         ? 
           <TwitterPicker
@@ -41,11 +41,25 @@ const ColorPicker = ({courseId}) => {
   )
 }
 
+const CreditCount = ({selectedCourses}) =>{
+  const credits = selectedCourses.reduce((preValue, curValue) => (
+      preValue + 
+        (curValue.visible ? parseInt(getCourseInfo(curValue.id).credits) : 0)
+    ), 0
+  )
+
+  return (
+    <div className="mt-3 o-large o-dark-primary">
+      Current credits: <span className="o-larger">{credits}</span>
+    </div>
+  )
+}
+
 const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
 
   return (
-  <div className="mt-4 d-flex flex-column">
+  <div className="selected-courses d-flex flex-column">
     {
       selectedCourses
       .filter(course => courseExist(course.id))
@@ -74,20 +88,21 @@ const SelectedCourses = ({selectedCourses}) => {
               className="modifier eye"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
-              {course.visible ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
+              {course.visible ? 
+              <i className="fas fa-eye o-dark-primary"></i> : <i className="fas fa-eye-slash o-dark-primary"></i>}
             </div>
             <div 
               className="modifier trash"
               onClick={() => dispatch(toggleSelection({id: course.id}))}
             >
-              <i className="fas fa-trash"></i>
+              <i className="fas fa-trash o-dark-primary"></i>
             </div>
           </div>
         </div>
-      ))
-    }
+      ))   
+    }    
   </div>
   )
 }
 
-export default SelectedCourses
+export {SelectedCourses, CreditCount}
