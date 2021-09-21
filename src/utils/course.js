@@ -16,6 +16,9 @@ export const MAJORS = [
   {value: 'VS', label: 'Vietnamese Studies'},
 ]
 
+export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4']
+  .map(s => ({label: s, value: s}))
+
 export const LEVELS = ['100', '200', '300'].map(
   level => ({label: level, value: level})
 )
@@ -48,6 +51,8 @@ export const getSchedule = (course) => course.schedule
   .join('\n')
 
 export const getNotes = (course) => course.description.split('---')[0]
+
+export const getCategories = (course) => course.categories.join(', ')
 
 export const getDescription = (course) => {
   const des = course.description
