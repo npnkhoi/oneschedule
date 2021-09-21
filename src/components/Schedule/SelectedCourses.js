@@ -43,14 +43,14 @@ const ColorPicker = ({courseId}) => {
 }
 
 const CreditCount = ({selectedCourses}) =>{
-  let credits = selectedCourses.reduce((preValue, curValue) => (
+  const credits = selectedCourses.reduce((preValue, curValue) => (
       preValue + 
         (curValue.visible ? parseInt(getCourseInfo(curValue.id).credits) : 0)
     ), 0
   )
 
   return (
-    <div className="credit-count o-large o-dark-primary">
+    <div className="mt-3 o-large o-dark-primary">
       Current credits: <span className="o-larger">{credits}</span>
     </div>
   )
