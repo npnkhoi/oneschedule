@@ -111,8 +111,7 @@ const Courses = ({courses}) => {
         <div className='flex-grow-1'>
           <p className='o-title'>Course Offerings</p>
           <div className="alert alert-primary" role="alert">
-              Last update: {moment(config.last_updated).format('h:mm A, D MMMM, YYYY')}.
-              <br/>
+              <b>Last update</b>: {moment(config.last_updated).format('h:mm A, D MMMM, YYYY')}.
               When in doubt, plese double-check on OneStop.
           </div>
             {compact ? <TableView /> : <GalleryView />}
