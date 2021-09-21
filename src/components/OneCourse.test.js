@@ -5,14 +5,15 @@ import "@testing-library/jest-dom/extend-expect"
 import { Provider } from 'react-redux';
 import store from '../store'
 
-it.skip('render', () => {
+it('render', () => {
   const course = {
     id: 'MAJOR101_Fall2021',
     title: 'Testing',
     instructor: '',
     schedule: [],
     credits: '4',
-    description: 'N/A'
+    description: 'N/A',
+    categories: ['C4']
   }
 
 
