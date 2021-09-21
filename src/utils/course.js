@@ -16,7 +16,7 @@ export const MAJORS = [
   {value: 'VS', label: 'Vietnamese Studies'},
 ]
 
-export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4']
+export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'Seminar', 'EL']
   .map(s => ({label: s, value: s}))
 
 export const LEVELS = ['100', '200', '300'].map(
