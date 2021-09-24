@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleSelection } from '../../store/selectedCoursesSlice'
 import { isSelected } from '../../utils/course'
-import { useClickOutside } from '../../hooks'
 
 const Searcher = ({courses}) => {
   const [filter, setFilter] = useState('')
@@ -10,10 +9,6 @@ const Searcher = ({courses}) => {
   const [focusItem, setFocusItem] = useState(0)
   const dispatch = useDispatch()
   const selectedCourses = useSelector(state => state.selectedCourses.value)
-
-  let domNode = useClickOutside(() => {
-    setIsOpen(false);
-  });
 
   let matchedCourses = []
   let nVisibleCourses = 0
@@ -103,7 +98,7 @@ const Searcher = ({courses}) => {
   const isFocused = (id) => (matchedCourses[focusItem].id === id)
   
   return (
-    <div ref={domNode} className="filter position-relative">
+    <div className="filter position-relative">
       <input 
         className="form-control py-2" 
         id="search-input"
@@ -128,12 +123,13 @@ const Searcher = ({courses}) => {
         }}
       />
       {
-        (filter !== "") && isOpen ?
+        (filter !== "" && isOpen) ?
           <div className="selecting list-group shadow position-absolute w-100">
+            <div className='cover' onClick={() => setIsOpen(false)}></div>
             <CourseList/>
             {/* <p className="list-group-item"> {matchedCourses.length} courses matched. </p> */}
           </div>
-        : <></>
+        : null
       }
     </div>
   )

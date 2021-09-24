@@ -62,6 +62,10 @@
 /* END SeclectedCourse */
 
 /* Searcher.js */
+.filter{
+  z-index: 2;
+}
+
 .course-id, .instructor-name{
   width: 20%;
   color: gray;
