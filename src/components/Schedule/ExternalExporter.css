@@ -1,0 +1,18 @@
+.dropdown-btn{
+    background-color: var(--dark-green);
+    border-radius: 8px;
+    color: white;
+    width: 10.2rem;
+    padding: 10px 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.dropdown-btn:hover {
+    background-color: var(--orange) !important;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 12rem;
+}
