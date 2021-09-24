@@ -43,10 +43,22 @@
 }
 
 .color-picker {
-  top: 14px;
-  left: -6px;
+  margin-top: 14px;
+  margin-left: -6px;
+  z-index: 2;
 }
 
+.cover{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.cover:hover{
+  cursor: default;
+}
 /* END SeclectedCourse */
 
 /* Searcher.js */
