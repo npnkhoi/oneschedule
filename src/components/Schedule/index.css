@@ -1,19 +1,19 @@
 /* SelectedCourse.js */
-#selected-courses{
+.selected-courses{
   margin-top: 16px;
   height: calc(100vh - 230px);
   overflow-y: scroll;
   overflow: overlay;
 }
-#selected-courses::-webkit-scrollbar {
+.selected-courses::-webkit-scrollbar {
   width: 10px;
   display: none;
 }
-#selected-courses::-webkit-scrollbar-thumb {
+.selected-courses::-webkit-scrollbar-thumb {
   background: #b6b6b6;
   border-radius: 3px;
 }
-#selected-courses:hover::-webkit-scrollbar{
+.selected-courses:hover::-webkit-scrollbar{
   display: block;
 }
 
@@ -37,10 +37,6 @@
   margin-right: 10px;
 }
 
-.toggle-btns > div > i {
-  color: var(--dark-green);
-}
-
 .color-btn {
   border-color: white;
   cursor: pointer;
@@ -51,24 +47,11 @@
   left: -6px;
 }
 
-#credit-count{
-  font-size: 1.2em;
-  font-weight: 600;
-  color: var(--dark-green);
-  position: absolute;
-  margin: 20px auto 20px 6.5%;
-  bottom: 0;
-}
-
-#credit-count > span {
-  font-size: 1.1em;
-}
 /* END SeclectedCourse */
 
 /* Searcher.js */
 .course-id, .instructor-name{
   width: 20%;
-  font-size: 0.8em;
   color: gray;
 }
 

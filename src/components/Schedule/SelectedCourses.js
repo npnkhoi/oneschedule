@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
-import { getCourseInfo } from "../../utils/course"
+import { courseExist, getCourseInfo } from "../../utils/course"
 import { useClickOutside } from "../../hooks"
 
 const ColorPicker = ({courseId}) => {
@@ -18,7 +18,7 @@ const ColorPicker = ({courseId}) => {
     setIsOpen(false)
   }
 
-  let domNode = useClickOutside(() => {
+  const domNode = useClickOutside(() => {
     setIsOpen(false);
   });
     
@@ -35,7 +35,7 @@ const ColorPicker = ({courseId}) => {
         {isOpen 
         ? 
           <TwitterPicker
-            colors={COLORS}
+            colors={COLORS.sort()}
             onChangeComplete={changeColor}
             width="204px"
           />
@@ -47,19 +47,16 @@ const ColorPicker = ({courseId}) => {
 }
 
 const CreditCount = ({selectedCourses}) =>{
-  function creditCount(selectedCourses){
-    let credits = 0
-    for (let course of selectedCourses){
-      if (course.visible){
-        credits += parseInt(getCourseInfo(course.id).credits)
-      }
-    }
-    
-    return credits
-  }
- 
+  const credits = selectedCourses.reduce((preValue, curValue) => (
+      preValue + 
+        (curValue.visible ? parseInt(getCourseInfo(curValue.id).credits) : 0)
+    ), 0
+  )
+
   return (
-    <div id="credit-count">Credits count - <span>{creditCount(selectedCourses)}</span></div>
+    <div className="mt-3 o-large o-dark-primary">
+      Current credits: <span className="o-larger">{credits}</span>
+    </div>
   )
 }
 
@@ -67,9 +64,10 @@ const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
 
   return (
-  <div id="selected-courses" className="d-flex flex-column">
+  <div className="selected-courses d-flex flex-column">
     {
       selectedCourses
+      .filter(course => courseExist(course.id))
       .map(course => {
         const info = getCourseInfo(course.id)
         return {...course, title: info.title, instructor: info.instructor}
@@ -95,13 +93,14 @@ const SelectedCourses = ({selectedCourses}) => {
               className="modifier eye"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
-              {course.visible ? <i className="fas fa-eye"></i> : <i className="fas fa-eye-slash"></i>}
+              {course.visible ? 
+              <i className="fas fa-eye o-dark-primary"></i> : <i className="fas fa-eye-slash o-dark-primary"></i>}
             </div>
             <div 
               className="modifier trash"
               onClick={() => dispatch(toggleSelection({id: course.id}))}
             >
-              <i className="fas fa-trash"></i>
+              <i className="fas fa-trash o-dark-primary"></i>
             </div>
           </div>
         </div>

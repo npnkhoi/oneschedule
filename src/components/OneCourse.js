@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
+import { getCategories, getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
 import './OneCourse.css'
 
@@ -41,6 +41,7 @@ const OneCourse = ({course}) => {
             <tbody>
               <Row header='Instructor' content={course.instructor} />
               <Row header='Schedule' content={getSchedule(course)} />
+              <Row header='Categories' content={getCategories(course)} />
               <Row header='Credits' content={course.credits} />
               <Row header='Further notes' content={getNotes(course)} />
               {/* <Row header='Dates' content={getDates(course)} />
