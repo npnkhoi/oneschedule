@@ -12,7 +12,8 @@ it('render', () => {
     instructor: '',
     schedule: [],
     credits: '4',
-    description: 'N/A'
+    description: 'N/A',
+    categories: ['C4']
   }
 
 
