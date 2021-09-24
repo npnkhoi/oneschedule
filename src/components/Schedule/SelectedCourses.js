@@ -19,7 +19,7 @@ const ColorPicker = ({courseId}) => {
     setIsOpen(false)
   }
 
-  let domNode = useClickOutside(() => {
+  const domNode = useClickOutside(() => {
     setIsOpen(false);
   });
     
