@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
 import { courseExist, getCourseInfo } from "../../utils/course"
-import { useClickOutside } from "../../hooks"
 
 const ColorPicker = ({courseId}) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,12 +17,8 @@ const ColorPicker = ({courseId}) => {
     setIsOpen(false)
   }
 
-  const domNode = useClickOutside(() => {
-    setIsOpen(false);
-  });
-    
   return (
-    <div ref={domNode} className='modifier me-2'>
+    <div className='modifier me-2'>
       <div className='color-btn modifier rounded'
         onClick={() => {
           setIsOpen(!isOpen)
@@ -31,17 +26,20 @@ const ColorPicker = ({courseId}) => {
         style={({backgroundColor: color})}
       >
       </div>
-      <div className='color-picker position-relative'>
-        {isOpen 
-        ? 
+      
+      {isOpen 
+      ? 
+        <div className='color-picker position-absolute'>
+          <div className='cover' onClick={() => setIsOpen(false)}></div>
           <TwitterPicker
             colors={COLORS.sort()}
             onChangeComplete={changeColor}
             width="204px"
           />
-        : <div></div>
-        }
-      </div>
+        </div>
+      : null
+      }
+     
     </div>
   )
 }
