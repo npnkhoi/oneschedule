@@ -5,6 +5,12 @@ import Searcher from './Searcher'
 import './index.css'
 import { useSelector } from 'react-redux'
 import COURSES from '../../data/courses.json'
+import { selectTerm } from '../../store/selectors'
+
+const TermSwitch = () => {
+  const term = useSelector(selectTerm)
+  return <p className="o-title">{term}</p>
+}
 
 const Timetable = () => {
   const selectedCourses = useSelector(state => state.selectedCourses.value)
@@ -16,7 +22,8 @@ const Timetable = () => {
       />
     
       <div className="info-bar">
-        <p className="o-title">Fall, 2021</p>
+        
+        <TermSwitch />
 
         <Searcher
           courses={COURSES}

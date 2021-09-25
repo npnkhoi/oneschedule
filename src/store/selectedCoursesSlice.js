@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getRarestColor } from "../utils/colors";
 
-// This slice maintains the course-to-color mapping
 const selectedCourses = createSlice({
   name: 'selectedCourses',
   initialState: {
