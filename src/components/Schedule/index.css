@@ -1,4 +1,22 @@
 /* SelectedCourse.js */
+.selected-courses{
+  margin-top: 16px;
+  height: calc(100vh - 230px);
+  overflow-y: scroll;
+  overflow: overlay;
+}
+.selected-courses::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+.selected-courses::-webkit-scrollbar-thumb {
+  background: #b6b6b6;
+  border-radius: 3px;
+}
+.selected-courses:hover::-webkit-scrollbar{
+  display: block;
+}
+
 .selected-course{
   padding-bottom: 12px;
   padding-top: 10px;
@@ -16,10 +34,7 @@
 
 .toggle-btns {
   width: fit-content;
-}
-
-.toggle-btns > div > i {
-  color: var(--dark-green);
+  margin-right: 10px;
 }
 
 .color-btn {
@@ -31,12 +46,12 @@
   top: 14px;
   left: -6px;
 }
+
 /* END SeclectedCourse */
 
 /* Searcher.js */
 .course-id, .instructor-name{
   width: 20%;
-  font-size: 0.8em;
   color: gray;
 }
 
@@ -44,9 +59,8 @@
   width: 60%;
 }
 
-/*hanlde overflow*/
-.instructor-name, .course-title{ 
-  display: -webkit-box;
+.instructor-name, .course-title{  /*hanlde overflow*/
+  display: -webkit-box; 
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -55,6 +69,7 @@
 
 .selecting > .list-group-item{
   max-height: 100px;
+  z-index: 100;
 }
 
 .selecting > .list-group-item.focus {
@@ -76,7 +91,6 @@
 
 .heading-2 {
   font-weight: 600;
-  margin-top: 2px;
 }
 
 .modifier {
