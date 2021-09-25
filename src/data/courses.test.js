@@ -1,11 +1,11 @@
-import COURSES from './courses.json'
+import {COURSES} from './'
 
 describe('Course data', () => {
-  test('is a list', () => {
+  it('is a list', () => {
     expect(COURSES).toBeInstanceOf(Array)
   })
 
-  test('each element has all required fields', () => {
+  it('each element has all required fields', () => {
     const REQUIRED_FIELDS = ['id', 'title', 'instructor', 'credits', 'description', 'schedule']
     COURSES.forEach(course => {
       REQUIRED_FIELDS.forEach(field => {
@@ -14,7 +14,7 @@ describe('Course data', () => {
     })
   })
 
-  test('schedule attribute has correct format', () => {
+  it('schedule attribute has correct format', () => {
     COURSES.forEach(course => {
       course.schedule.forEach(block => {
         const timeMatcher = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$/gm

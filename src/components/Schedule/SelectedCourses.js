@@ -1,10 +1,10 @@
 import { TwitterPicker } from "react-color"
-import COLORS from '../../data/colors.json'
+import {COLORS} from '../../data/'
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
-import { getCourseInfo } from "../../utils/course"
+import { courseExist, getCourseInfo } from "../../utils/course"
 
 
 const ColorPicker = ({courseId}) => {
@@ -17,7 +17,6 @@ const ColorPicker = ({courseId}) => {
     dispatch(setColor({id: courseId, color: color.hex}))   
     setChanging(false)
   }
-
   return (
     <div className='modifier me-2'>
       <div className='color-btn modifier rounded'
@@ -31,7 +30,7 @@ const ColorPicker = ({courseId}) => {
         {changing 
         ? 
           <TwitterPicker
-            colors={COLORS}
+            colors={COLORS.sort()}
             onChangeComplete={changeColor}
             width="204px"
           />
@@ -63,6 +62,7 @@ const SelectedCourses = ({selectedCourses}) => {
   <div className="selected-courses d-flex flex-column">
     {
       selectedCourses
+      .filter(course => courseExist(course.id))
       .map(course => {
         const info = getCourseInfo(course.id)
         return {...course, title: info.title, instructor: info.instructor}
@@ -85,14 +85,14 @@ const SelectedCourses = ({selectedCourses}) => {
           </div>
           <div className="toggle-btns d-flex flex-column">
             <div 
-              className="modifier"
+              className="modifier eye"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
               {course.visible ? 
               <i className="fas fa-eye o-dark-primary"></i> : <i className="fas fa-eye-slash o-dark-primary"></i>}
             </div>
             <div 
-              className="modifier"
+              className="modifier trash"
               onClick={() => dispatch(toggleSelection({id: course.id}))}
             >
               <i className="fas fa-trash o-dark-primary"></i>

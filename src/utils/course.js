@@ -1,4 +1,4 @@
-import COURSES from '../data/courses.json'
+import {COURSES} from '../data/'
 
 export const MAJORS = [
   {value: 'ARTS', label: 'Arts and Media'},
@@ -15,6 +15,9 @@ export const MAJORS = [
   {value: 'SOCI', label: 'Social Sciences'},
   {value: 'VS', label: 'Vietnamese Studies'},
 ]
+
+export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'Seminar', 'EL']
+  .map(s => ({label: s, value: s}))
 
 export const LEVELS = ['100', '200', '300'].map(
   level => ({label: level, value: level})
@@ -49,6 +52,8 @@ export const getSchedule = (course) => course.schedule
 
 export const getNotes = (course) => course.description.split('---')[0]
 
+export const getCategories = (course) => course.categories.join(', ')
+
 export const getDescription = (course) => {
   const des = course.description
   const split = des.indexOf('---')
@@ -56,3 +61,19 @@ export const getDescription = (course) => {
 }
 
 export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
+
+export const courseExist = (id) => COURSES.filter(course => course.id === id).length > 0
+
+export const getRandomCourses = (n) => {
+  const total = COURSES.length
+  if (n > total) {
+    throw new RangeError("Requesting more elements than available.")
+  }
+  const chosen = []
+  while (n--) {
+    const available = COURSES.filter(course => !chosen.includes(course.id))
+    const id = Math.floor(Math.random() * available.length)
+    chosen.push(COURSES[id])
+  }
+  return chosen
+}
