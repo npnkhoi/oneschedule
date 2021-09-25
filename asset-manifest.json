@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/oneschedule/static/css/main.5836cc5a.chunk.css",
-    "main.js": "/oneschedule/static/js/main.87aa0d79.chunk.js",
-    "main.js.map": "/oneschedule/static/js/main.87aa0d79.chunk.js.map",
-    "runtime-main.js": "/oneschedule/static/js/runtime-main.b74498fa.js",
-    "runtime-main.js.map": "/oneschedule/static/js/runtime-main.b74498fa.js.map",
+    "main.js": "/oneschedule/static/js/main.df329556.chunk.js",
+    "main.js.map": "/oneschedule/static/js/main.df329556.chunk.js.map",
+    "runtime-main.js": "/oneschedule/static/js/runtime-main.2e3863be.js",
+    "runtime-main.js.map": "/oneschedule/static/js/runtime-main.2e3863be.js.map",
     "static/css/2.e7357373.chunk.css": "/oneschedule/static/css/2.e7357373.chunk.css",
-    "static/js/2.5d78d42b.chunk.js": "/oneschedule/static/js/2.5d78d42b.chunk.js",
-    "static/js/2.5d78d42b.chunk.js.map": "/oneschedule/static/js/2.5d78d42b.chunk.js.map",
-    "static/js/3.746ceac5.chunk.js": "/oneschedule/static/js/3.746ceac5.chunk.js",
-    "static/js/3.746ceac5.chunk.js.map": "/oneschedule/static/js/3.746ceac5.chunk.js.map",
+    "static/js/2.96112c67.chunk.js": "/oneschedule/static/js/2.96112c67.chunk.js",
+    "static/js/2.96112c67.chunk.js.map": "/oneschedule/static/js/2.96112c67.chunk.js.map",
+    "static/js/3.3fa8e19a.chunk.js": "/oneschedule/static/js/3.3fa8e19a.chunk.js",
+    "static/js/3.3fa8e19a.chunk.js.map": "/oneschedule/static/js/3.3fa8e19a.chunk.js.map",
     "index.html": "/oneschedule/index.html",
     "static/css/2.e7357373.chunk.css.map": "/oneschedule/static/css/2.e7357373.chunk.css.map",
     "static/css/main.5836cc5a.chunk.css.map": "/oneschedule/static/css/main.5836cc5a.chunk.css.map",
-    "static/js/2.5d78d42b.chunk.js.LICENSE.txt": "/oneschedule/static/js/2.5d78d42b.chunk.js.LICENSE.txt",
+    "static/js/2.96112c67.chunk.js.LICENSE.txt": "/oneschedule/static/js/2.96112c67.chunk.js.LICENSE.txt",
     "static/media/Avatar.920d60e7.png": "/oneschedule/static/media/Avatar.920d60e7.png",
     "static/media/Logo.126cd675.svg": "/oneschedule/static/media/Logo.126cd675.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b74498fa.js",
+    "static/js/runtime-main.2e3863be.js",
     "static/css/2.e7357373.chunk.css",
-    "static/js/2.5d78d42b.chunk.js",
+    "static/js/2.96112c67.chunk.js",
     "static/css/main.5836cc5a.chunk.css",
-    "static/js/main.87aa0d79.chunk.js"
+    "static/js/main.df329556.chunk.js"
   ]
 }
