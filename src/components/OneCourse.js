@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
 import { getCategories, getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
@@ -17,9 +18,11 @@ const Row = ({header, content}) => {
 const OneCourse = ({course}) => {
   const selectedCourses = useSelector(state => state.selectedCourses.value)
   const selected = isSelected(selectedCourses, course.id)
-
   return (
     <div className='text-start m-4'>
+      <Helmet>
+        <title> {course.title} </title>
+      </Helmet>
       
       <div className="d-flex flex-column border-bottom mb-4 align-items-start">
         <div className='d-flex flex-row align-items-end w-100'>
@@ -34,7 +37,7 @@ const OneCourse = ({course}) => {
       
       <div className='d-flex flex-row justify-content-around'>
         <div className='description flex-shrink-0 multiple-lines'>
-          {getDescription(course).split('\n').map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+          {getDescription(course)}
         </div>
         <div className='flex-grow-1 ms-5'>
           <table className='table table-hover table-bordered'>
