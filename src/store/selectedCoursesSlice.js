@@ -9,8 +9,8 @@ const selectedCourses = createSlice({
   reducers: {
     toggleSelection: (state, action) => {
       const {id} = action.payload
-      const courseExist = (state.value.filter(course => course.id === id).length > 0)
-      if (!courseExist) {
+      const isSelected = (state.value.filter(course => course.id === id).length > 0)
+      if (!isSelected) {
         state.value.push({
           'id': id,
           'selected': true,
@@ -23,8 +23,8 @@ const selectedCourses = createSlice({
     },
     toggleVisibility: (state, action) => {
       const {id} = action.payload
-      const courseExist = (state.value.filter(course => course.id === id).length > 0)
-      if (courseExist) {
+      const isSelected = (state.value.filter(course => course.id === id).length > 0)
+      if (isSelected) {
         state.value = state.value.map(course => (
           course.id === id
           ? {...course, visible: !course.visible}
@@ -37,8 +37,8 @@ const selectedCourses = createSlice({
     setColor: (state, action) => {
       const {id, color} = action.payload
       console.log(id, color);
-      const courseExist = (state.value.filter(course => course.id === id).length > 0)
-      if (courseExist) {
+      const isSelected = (state.value.filter(course => course.id === id).length > 0)
+      if (isSelected) {
         state.value = state.value.map(course => (
           course.id === id
           ? {...course, color: color}

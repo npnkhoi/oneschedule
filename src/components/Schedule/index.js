@@ -1,35 +1,25 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Calendar from './Calendar'
 import {SelectedCourses, CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 import './index.css'
-import { selectTerm } from '../../store/selectors'
-import { useDispatch, useSelector } from 'react-redux'
-import {COURSES} from '../../data/'
-import { toggleSelection } from '../../store/selectedCoursesSlice'
-
-const TermSwitch = () => {
-  const term = useSelector(selectTerm)
-  return <p className="o-title">{term}</p>
-}
+import { selectCurrentCourseSelection, selectCurrentTerm } from '../../store/selectors'
+import { useSelector } from 'react-redux'
+import TermSwitch from '../TermSwitch'
+import { Helmet } from 'react-helmet'
 
 const Timetable = () => {
-  const selectedCourses = useSelector(state => state.selectedCourses.value)
-  const dispatch = useDispatch()
+  const currentCourseSelection = useSelector(selectCurrentCourseSelection)
 
-  useEffect(() => {
-    // FIXME: This is just a clean up, and cannot replace a proper check
-    selectedCourses.forEach(course => {
-      if (COURSES.filter(c => c.id === course.id).length == 0) {
-        dispatch(toggleSelection({id: course.id}))
-      }
-    })
-  })
+  const currentTerm = useSelector(selectCurrentTerm)
 
   return (
     <div className="d-flex flex-row flex-grow-1">
+      <Helmet>
+        <title>OneSchedule</title>
+      </Helmet>
       <Calendar 
-        selectedCourses={selectedCourses} 
+        selectedCourses={currentCourseSelection} 
       />
     
       <div className="info-bar">
@@ -37,15 +27,15 @@ const Timetable = () => {
         <TermSwitch />
 
         <Searcher
-          courses={COURSES}
+          courses={currentTerm}
         />
 
         <SelectedCourses 
-          selectedCourses={selectedCourses}
+          selectedCourses={currentCourseSelection}
         />
 
         <CreditCount 
-          selectedCourses={selectedCourses}
+          selectedCourses={currentCourseSelection}
         />
       </div>
     </div>

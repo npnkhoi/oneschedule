@@ -83,7 +83,7 @@ const Searcher = ({courses}) => {
           <button 
             className={`
               px-0 list-group-item
-              ${isSelected(selectedCourses, course.id) ? "heading-2" : ""}
+              ${isSelected(selectedCourses, course.id) ? "fw-bold" : ""}
               ${isFocused(course.id) ? "focus" : ""}
             `}
             onClick={() => onCourseToggle(course.id)}

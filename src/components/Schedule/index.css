@@ -89,10 +89,6 @@
   max-width: 350px;
 }
 
-.heading-2 {
-  font-weight: 600;
-}
-
 .modifier {
   width: 30px;
   height: 30px;
@@ -100,6 +96,5 @@
 
 .modifier:hover {
   cursor: pointer;
-  background-color: var(--light-gray);
 }
 /* END index */

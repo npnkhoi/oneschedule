@@ -7,6 +7,9 @@ import AddDropBtn from './AddDropBtn'
 import { useSelector } from 'react-redux'
 import moment from 'moment'
 import config from '../utils/config'
+import TermSwitch from './TermSwitch'
+import { selectCurrentCourseSelection, selectCurrentTerm, selectTerm } from '../store/selectors'
+import { Helmet } from 'react-helmet'
 
 const CourseCard = ({course}) => {
   return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden' target='_blank'
@@ -22,13 +25,15 @@ const CourseCard = ({course}) => {
   </Link>
 }
 
-const Courses = ({courses}) => {
+const Offerings = () => {
   const [compact, setCompact] = useState(true)
   const [majorFilter, setMajorFilter] = useState([])
   const [instructorFilter, setInstructorFilter] = useState([])
   const [levelFilter, setLevelFilter] = useState([])
   const [categoryFilter, setCategoryFilter] = useState([])
-  const selectedCourses = useSelector(state => state.selectedCourses.value)
+  const selectedCourses = useSelector(selectCurrentCourseSelection)
+  const courses = useSelector(selectCurrentTerm)
+  const term = useSelector(selectTerm)
   
 
   // Instructor options for filter
@@ -107,14 +112,17 @@ const Courses = ({courses}) => {
 
   return (
     <div>
+      <Helmet>
+        <title>{term} Offerings - OneSchedule</title>
+      </Helmet>
       <div className='d-flex flex-row justify-content-between'>
-        <div className='flex-grow-1'>
-          <p className='o-title'>Course Offerings</p>
-          <div className="alert alert-primary" role="alert">
+        <div className='flex-grow-1 d-flex flex-column align-items-center'>
+        <TermSwitch />
+          <div className="alert alert-primary w-100" role="alert">
               <b>Last update</b>: {moment(config.last_updated).format('h:mm A, D MMMM, YYYY')}.
               When in doubt, please double-check on OneStop.
           </div>
-            {compact ? <TableView /> : <GalleryView />}
+          {compact ? <TableView /> : <GalleryView />}
         </div>
 
         <div className='right-bar flex-shrink-0 flex-grow-0 sticky-top ms-4'>
@@ -158,4 +166,4 @@ const Courses = ({courses}) => {
   )
 }
 
-export default Courses
+export default Offerings
