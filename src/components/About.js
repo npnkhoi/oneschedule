@@ -28,7 +28,6 @@ const Contributors = () => {
   useEffect(() => {
     axios.get('https://api.github.com/repos/npnkhoi/oneschedule/contributors')
     .then((res) => {
-      console.log(res);
       setContributors(res.data)
     })
   }, [])

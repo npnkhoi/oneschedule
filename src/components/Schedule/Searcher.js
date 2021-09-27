@@ -1,14 +1,16 @@
 import {useEffect, useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleSelection } from '../../store/selectedCoursesSlice'
+import { selectCurrentTerm } from '../../store/selectors'
 import { isSelected } from '../../utils/course'
 
 
-const Searcher = ({courses}) => {
+const Searcher = () => {
   const [ filter, setFilter ] = useState('')
   const [ focusItem, setFocusItem ] = useState(0)
   const dispatch = useDispatch()
   const selectedCourses = useSelector(state => state.selectedCourses.value)
+  const courses = useSelector(selectCurrentTerm)
 
   let matchedCourses = []
   let nVisibleCourses = 0

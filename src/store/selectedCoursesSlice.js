@@ -36,7 +36,6 @@ const selectedCourses = createSlice({
     },
     setColor: (state, action) => {
       const {id, color} = action.payload
-      console.log(id, color);
       const isSelected = (state.value.filter(course => course.id === id).length > 0)
       if (isSelected) {
         state.value = state.value.map(course => (

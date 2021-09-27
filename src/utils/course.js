@@ -23,15 +23,6 @@ export const LEVELS = ['100', '200', '300'].map(
   level => ({label: level, value: level})
 )
 
-export const getCourseInfo = (courses, id) => {
-  const matches = courses.filter(course => course.id === id)
-  if (matches.length > 0) {
-    return matches[0]
-  } else {
-    return null
-  }
-}
-
 export const getCourse = (id) => {
   let ret = null
   availableTerms.forEach(term => {
@@ -72,8 +63,6 @@ export const getDescription = (course) => {
 }
 
 export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
-
-export const courseExist = (courses, id) => courses.filter(course => course.id === id).length > 0
 
 export const getRandomCourses = (courses, n) => {
   const total = courses.length

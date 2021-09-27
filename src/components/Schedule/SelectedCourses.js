@@ -4,8 +4,7 @@ import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
-import { courseExist, getCourseInfo } from "../../utils/course"
-import { selectCurrentTerm } from "../../store/selectors"
+import { getCourse } from "../../utils/course"
 
 
 const ColorPicker = ({courseId}) => {
@@ -43,11 +42,9 @@ const ColorPicker = ({courseId}) => {
 }
 
 const CreditCount = ({selectedCourses}) =>{
-  const courses = useSelector(selectCurrentTerm)
   const credits = selectedCourses.reduce((preValue, curValue) => {
-    
-    const courseInfo = getCourseInfo(courses, curValue.id)
-    const val = courseInfo ? parseInt(courseInfo.credits) : 0
+    const courseInfo = getCourse(curValue.id)
+    const val = parseInt(courseInfo.credits)
     return preValue + (curValue.visible ? val : 0)
   } , 0
   )
@@ -61,15 +58,13 @@ const CreditCount = ({selectedCourses}) =>{
 
 const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
-  const courses = useSelector(selectCurrentTerm)
 
   return (
   <div className="selected-courses d-flex flex-column">
     {
       selectedCourses
-      .filter(course => courseExist(courses, course.id))
       .map(course => {
-        const info = getCourseInfo(courses, course.id)
+        const info = getCourse(course.id)
         return {...course, title: info.title, instructor: info.instructor}
       })
       .sort((a, b) => a.title.localeCompare(b.title))

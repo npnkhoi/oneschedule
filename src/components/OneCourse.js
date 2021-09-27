@@ -19,6 +19,9 @@ const OneCourse = ({courseId}) => {
   const course = getCourse(courseId)
   const selectedCourses = useSelector(state => state.selectedCourses.value)
   const selected = isSelected(selectedCourses, course.id)
+  const OneStop = () => (
+    <a href={course.url} target='_blank' rel="noreferrer"> {course.id} </a>
+  )
   return (
     <div className='text-start m-4'>
       <Helmet>
@@ -47,10 +50,8 @@ const OneCourse = ({courseId}) => {
               <Row header='Schedule' content={getSchedule(course)} />
               <Row header='Categories' content={getCategories(course)} />
               <Row header='Credits' content={course.credits} />
+              <Row header='OneStop URL' content={<OneStop />} />
               <Row header='Further notes' content={getNotes(course)} />
-              {/* <Row header='Dates' content={getDates(course)} />
-              <Row header='Capacity' content={course.capacity} />
-              <Row header='Type' content={course.type} /> */}
             </tbody>
           </table>
         </div>

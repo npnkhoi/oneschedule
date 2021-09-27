@@ -4,7 +4,7 @@ import {availableTerms} from '../data'
 const term = createSlice({
   name: 'term',
   initialState: {
-    value: 'Fall2021'
+    value: availableTerms[0]
   },
   reducers: {
     set: (state, action) => {

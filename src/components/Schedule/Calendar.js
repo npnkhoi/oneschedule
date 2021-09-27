@@ -1,16 +1,13 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
-import { selectCurrentTerm } from '../../store/selectors';
 import { getTextColor } from '../../utils/colors';
-import { courseExist, getCourseInfo } from '../../utils/course';
+import { getCourse } from '../../utils/course';
 import './Calendar.css'
 
 const Calendar = ({selectedCourses}) => {
   const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
-  const courses = useSelector(selectCurrentTerm)
   
   const dayId = {
     'Sunday': 0,
@@ -21,12 +18,6 @@ const Calendar = ({selectedCourses}) => {
     'Friday': 5,
     'Saturday': 6,
   }
-
-  // const transformTime = (time) => {
-  //   const timeObject = moment(time, 'h:mm A')
-  //   console.log(time, timeObject);
-  //   return timeObject.format('HH:mm:ss')
-  // }
 
   const getTimeblocks = (course) => {
 
@@ -41,9 +32,8 @@ const Calendar = ({selectedCourses}) => {
   }
 
   const visibleCourses = selectedCourses
-    .filter(course => courseExist(courses, course.id) && course.visible)
-    .map(course => {
-      const info = getCourseInfo(courses, course.id)
+  .map(course => {
+      const info = getCourse(course.id)
       return {...info, color: course.color}
     })
   
