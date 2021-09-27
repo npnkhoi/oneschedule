@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleSelection } from '../../store/selectedCoursesSlice'
+import { selectCurrentTerm } from '../../store/selectors'
 import { isSelected } from '../../utils/course'
 import { useClickOutside } from '../../hooks'
 
@@ -10,8 +11,9 @@ const Searcher = ({courses}) => {
   const [focusItem, setFocusItem] = useState(0)
   const dispatch = useDispatch()
   const selectedCourses = useSelector(state => state.selectedCourses.value)
+  const courses = useSelector(selectCurrentTerm)
 
-  let domNode = useClickOutside(() => {
+  const domNode = useClickOutside(() => {
     setIsOpen(false);
   });
 
@@ -88,7 +90,7 @@ const Searcher = ({courses}) => {
           <button 
             className={`
               px-0 list-group-item
-              ${isSelected(selectedCourses, course.id) ? "heading-2" : ""}
+              ${isSelected(selectedCourses, course.id) ? "fw-bold" : ""}
               ${isFocused(course.id) ? "focus" : ""}
             `}
             onClick={() => onCourseToggle(course.id)}

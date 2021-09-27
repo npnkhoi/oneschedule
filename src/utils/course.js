@@ -1,4 +1,4 @@
-import {COURSES} from '../data/'
+import { availableTerms, courseData } from "../data/"
 
 export const MAJORS = [
   {value: 'ARTS', label: 'Arts and Media'},
@@ -23,13 +23,15 @@ export const LEVELS = ['100', '200', '300'].map(
   level => ({label: level, value: level})
 )
 
-export const getCourseInfo = (id) => {
-  const matches = COURSES.filter(course => course.id === id)
-  if (matches.length > 0) {
-    return matches[0]
-  } else {
-    return null
-  }
+export const getCourse = (id) => {
+  let ret = null
+  availableTerms.forEach(term => {
+    const matches = courseData[term].filter(course => course.id === id)
+    if (matches.length > 0) {
+      ret = matches[0]
+    }
+  })
+  return ret
 }
 
 export const getMajor = (id) => {
@@ -62,18 +64,17 @@ export const getDescription = (course) => {
 
 export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
 
-export const courseExist = (id) => COURSES.filter(course => course.id === id).length > 0
-
 export const getRandomCourses = (n) => {
-  const total = COURSES.length
+  const courses = courseData[availableTerms[0]]
+  const total = courses.length
   if (n > total) {
     throw new RangeError("Requesting more elements than available.")
   }
   const chosen = []
   while (n--) {
-    const available = COURSES.filter(course => !chosen.includes(course.id))
+    const available = courses.filter(course => !chosen.includes(course.id))
     const id = Math.floor(Math.random() * available.length)
-    chosen.push(COURSES[id])
+    chosen.push(courses[id])
   }
   return chosen
 }
