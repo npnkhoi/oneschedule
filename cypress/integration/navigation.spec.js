@@ -4,7 +4,7 @@ describe('Navigation through main views', function() {
   })
   it('Visit Offerings', function() {
     cy.get('.navbar-btn').contains('Offerings').click()
-    cy.contains('Course Offerings')
+    cy.contains('Filters')
   })
 
   it('Visit Contribute', function() {

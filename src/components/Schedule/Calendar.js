@@ -32,6 +32,7 @@ const Calendar = ({selectedCourses}) => {
   }
 
   const visibleCourses = selectedCourses
+  .filter(course => course.visible)
   .map(course => {
       const info = getCourse(course.id)
       return {...info, color: course.color}
