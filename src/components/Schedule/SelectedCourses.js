@@ -44,10 +44,12 @@ const ColorPicker = ({courseId}) => {
 
 const CreditCount = ({selectedCourses}) =>{
   const courses = useSelector(selectCurrentTerm)
-  const credits = selectedCourses.reduce((preValue, curValue) => (
-      preValue + 
-        (curValue.visible ? parseInt(getCourseInfo(courses, curValue.id).credits) : 0)
-    ), 0
+  const credits = selectedCourses.reduce((preValue, curValue) => {
+    
+    const courseInfo = getCourseInfo(courses, curValue.id)
+    const val = courseInfo ? parseInt(courseInfo.credits) : 0
+    return preValue + (curValue.visible ? val : 0)
+  } , 0
   )
 
   return (
