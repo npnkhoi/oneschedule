@@ -5,7 +5,7 @@ import { selectCurrentTerm } from '../../store/selectors'
 import { isSelected } from '../../utils/course'
 import { useClickOutside } from '../../hooks'
 
-const Searcher = ({courses}) => {
+const Searcher = () => {
   const [filter, setFilter] = useState('')
   const [isOpen, setIsOpen] = useState(true)
   const [focusItem, setFocusItem] = useState(0)
