@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import avatar from '../assets/Avatar.png'
 import './About.css'
 
@@ -27,7 +28,6 @@ const Contributors = () => {
   useEffect(() => {
     axios.get('https://api.github.com/repos/npnkhoi/oneschedule/contributors')
     .then((res) => {
-      console.log(res);
       setContributors(res.data)
     })
   }, [])
@@ -52,6 +52,9 @@ const About = () => {
   return (
     <div className='about d-flex flex-column align-items-center 
       text-start m-auto o-big-body'>
+        <Helmet>
+          <title>About - OneSchedule</title>
+        </Helmet>
       <p className='o-title'>Hi there!</p>
 
       <div className='d-flex flex-row align-items-center justify-content-between w-100'>

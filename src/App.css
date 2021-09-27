@@ -67,6 +67,11 @@
   color: black !important;
 }
 
+/* Component stypes */
+.gray-hover:hover {
+  background-color: var(--light-gray);
+}
+
 
 /* Override Bootstrap styles */
 a:hover {

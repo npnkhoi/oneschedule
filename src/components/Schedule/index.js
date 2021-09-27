@@ -1,44 +1,37 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Calendar from './Calendar'
 import {SelectedCourses, CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 import './index.css'
-import { useDispatch, useSelector } from 'react-redux'
-import {COURSES} from '../../data/'
-import { toggleSelection } from '../../store/selectedCoursesSlice'
+import { selectCurrentCourseSelection } from '../../store/selectors'
+import { useSelector } from 'react-redux'
+import TermSwitch from '../TermSwitch'
+import { Helmet } from 'react-helmet'
 
 const Timetable = () => {
-  const selectedCourses = useSelector(state => state.selectedCourses.value)
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    // FIXME: This is just a clean up, and cannot replace a proper check
-    selectedCourses.forEach(course => {
-      if (COURSES.filter(c => c.id === course.id).length == 0) {
-        dispatch(toggleSelection({id: course.id}))
-      }
-    })
-  })
+  const currentCourseSelection = useSelector(selectCurrentCourseSelection)
 
   return (
     <div className="d-flex flex-row flex-grow-1">
+      <Helmet>
+        <title>OneSchedule</title>
+      </Helmet>
       <Calendar 
-        selectedCourses={selectedCourses} 
+        selectedCourses={currentCourseSelection} 
       />
     
       <div className="info-bar">
-        <p className="o-title">Fall, 2021</p>
+        
+        <TermSwitch />
 
-        <Searcher
-          courses={COURSES}
-        />
+        <Searcher />
 
         <SelectedCourses 
-          selectedCourses={selectedCourses}
+          selectedCourses={currentCourseSelection}
         />
 
         <CreditCount 
-          selectedCourses={selectedCourses}
+          selectedCourses={currentCourseSelection}
         />
       </div>
     </div>

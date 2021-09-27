@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import './About.css'
 import CTA from './utils/CTA'
 
@@ -6,6 +7,9 @@ import CTA from './utils/CTA'
 const Contribute = () => {
   return (
     <div className='about m-auto'>
+      <Helmet>
+        <title>Contribute - OneSchedule</title>
+      </Helmet>
       <p className='o-title'>3 ways to contribute to OneSchedule</p>
       <div className='text-start'>
         <p className='o-heading'>1. Give feedback</p>
