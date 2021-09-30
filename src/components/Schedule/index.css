@@ -2,6 +2,7 @@
 .selected-courses{
   margin-top: 16px;
   height: calc(100vh - 230px);
+  min-height: calc(700px - 200px);
   overflow-y: scroll;
   overflow: overlay;
 }
@@ -84,7 +85,6 @@
 /* index.js */
 .info-bar {
   margin-left: 30px;
-  /* width: 35%; */
   min-width: 250px;
   max-width: 500px;
 }
