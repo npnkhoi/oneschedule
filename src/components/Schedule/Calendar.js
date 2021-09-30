@@ -1,10 +1,9 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
-// import moment from 'moment';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
-import { courseExist, getCourseInfo } from '../../utils/course';
+import { getCourse } from '../../utils/course';
 import './Calendar.css'
 
 
@@ -20,12 +19,6 @@ const Calendar = ({selectedCourses}) => {
     'Saturday': 6,
   }
 
-  // const transformTime = (time) => {
-  //   const timeObject = moment(time, 'h:mm A')
-  //   console.log(time, timeObject);
-  //   return timeObject.format('HH:mm:ss')
-  // }
-
   const getTimeblocks = (course) => {
 
     return course.schedule.reduce((blocks, block) => blocks.concat({
@@ -38,9 +31,9 @@ const Calendar = ({selectedCourses}) => {
     }), [])
   }
   const visibleCourses = selectedCourses
-    .filter(course => courseExist(course.id) && course.visible)
-    .map(course => {
-      const info = getCourseInfo(course.id)
+  .filter(course => course.visible)
+  .map(course => {
+      const info = getCourse(course.id)
       return {...info, color: course.color}
     })
   

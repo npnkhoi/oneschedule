@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { loadFromLocalStorage } from '../utils/localStorage'
 import selectedCoursesReducer from './selectedCoursesSlice'
+import termReducer from './termSlice'
 
 // const currentVersion = localStorage.getItem('version')
 // if (currentVersion !== config.version) {
@@ -14,7 +15,8 @@ import selectedCoursesReducer from './selectedCoursesSlice'
 
 export default configureStore({
   reducer: {
-    selectedCourses: selectedCoursesReducer
+    selectedCourses: selectedCoursesReducer,
+    term: termReducer
   },
   preloadedState: loadFromLocalStorage()
 })

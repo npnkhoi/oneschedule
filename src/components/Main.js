@@ -5,14 +5,13 @@ import OneCourse from './OneCourse';
 import About from './About';
 import Contribute from './Contribute';
 import './Main.css'
-import {COURSES} from '../data/'
 
 const Main = () => {
   const match = useRouteMatch('/courses/:id')
   
   // If viewing one course, get the info of current course
-  const course = match
-    ? COURSES.find(course => course.id === match.params.id)
+  const courseId = match
+    ? match.params.id
     : null
 
   return (
@@ -28,10 +27,10 @@ const Main = () => {
         <div>help</div>
       </Route>
       <Route path='/courses/:id'>
-        <OneCourse course={course}/>
+        <OneCourse courseId={courseId}/>
       </Route>
       <Route path='/courses'>
-        <Offerings courses={COURSES}/>
+        <Offerings />
       </Route>
       <Route path='/'>
         <Timetable />
