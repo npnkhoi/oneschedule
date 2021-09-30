@@ -1,40 +1,29 @@
 import React from 'react'
 import ical from 'ical-generator'
-import { getCourseInfo } from '../../utils/course';
+import { selectTerm } from '../../store/selectors';
+import { useSelector } from 'react-redux';
+import trimesterInfo from '../../data/trimester_info.json'
+import { getCourse } from '../../utils/course';
 
-const cal = ical({
-    domain: 'example.com',
-    events: [
-        {
-            start: new Date(2021,9-1,30,2,30),
-            end: new Date(2021,9-1,30,3,50),
-            timestamp: new Date(),
-            timezone: 'Asia/Jerusalem',
-            summary: 'Event 1',
-            organizer: 'Me <mail@example.com>',
-            repeating: {
-                freq: 'WEEKLY', // required
-                until: new Date(2021,10-1,30),
-                byDay: ['th'],
-                exclude: [new Date(2021,10-1,7)] // exclude these dates
-            }
-        },
-        {
-            start: new Date(2021,10-1,1,5,30),
-            end: new Date(2021,10-1,1,5,50),
-            timestamp: new Date(),
-            timezone: 'Asia/Jerusalem',
-            summary: 'Event 2',
-            organizer: 'Me <mail@example.net>',
-            repeating: {
-                freq: 'WEEKLY', // required
-                until: new Date(2021,10-1,30),
-                byDay: ['fr'], // repeat only sunday and monday
-                exclude: [new Date(2021,10-1,15)] // exclude these dates
-            }
-        }
-    ]
-});
+const time_location = "Asia/Ho_Chi_Minh";
+const short_days = {
+    'Monday': 'mo',
+    'Tuesday': 'tu',
+    'Wednesday': 'we',
+    'Thursday': 'th',
+    'Friday': 'fr',
+    'Saturday': 'sa',
+    'Sunday': 'su'
+}
+const num_days = {
+    'Monday': 0,
+    'Tuesday': 1,
+    'Wednesday': 2,
+    'Thursday': 3,
+    'Friday': 4,
+    'Saturday': 5,
+    'Sunday': 6
+}
 
 
 function downloadUrl(blob, filename) {
@@ -50,15 +39,62 @@ function downloadUrl(blob, filename) {
     }
   }
 
-const ExportCalendar= (props) => {
-    console.log(props.selectedCourses)
-    for (let each of props.selectedCourses) {
-        console.log(getCourseInfo(each.id).schedule)
+function downloadCalendar(selectedCourses, cur_term_info) {
+    let list_of_events = []
+    //Info about current semester
+    const start_date_term = new Date(cur_term_info['start_date'])
+    const end_date_term = new Date(cur_term_info['end_date'])
+    let no_meet_dates = cur_term_info['exclude_dates']
+    for (let i = 0; i < no_meet_dates.length; i += 1) {
+        no_meet_dates[i] = new Date(no_meet_dates[i])
+        no_meet_dates[i].setDate(no_meet_dates[i].getUTCDate())
     }
-    const blob = new Blob([cal.toString()], { type: 'text/plain' });    
+    //For each course
+    for (let each_courses of selectedCourses) {
+        let course_info = getCourse(each_courses.id)
+        let course_schedule = course_info.schedule
+        let course_title = course_info.title
+        //Course might have several time -> treat each different time slot sas different events
+        for (let each_time of course_schedule) {
+            //Meet_day: thứ
+            let meet_day = each_time['day']
+            let start_time = each_time['start_time']
+            let end_time = each_time['end_time']
+            //By ical convention: set event for first day, then add repeat later
+            let first_day = new Date(start_date_term.getFullYear(),start_date_term.getMonth(),start_date_term.getUTCDate()+num_days[meet_day])
+            first_day = first_day.toISOString().slice(0,10)
+            let first_session_start = new Date(first_day+"T"+start_time)
+            let first_session_end = new Date(first_day+"T"+end_time)
+            //Standard ical format
+            let current_event = {
+                start: first_session_start,
+                end: first_session_end,
+                time_stamp: new Date(),
+                timezone: time_location,
+                summary: course_title,
+                repeating: {
+                    freq: 'WEEKLY',
+                    until: end_date_term,
+                    byDay: [short_days[meet_day]],
+                    exclude: no_meet_dates
+                }
+            }
+            list_of_events.push(current_event)
+        }
+    }
+    const cal = ical({
+        events: list_of_events
+    });
+
+    const blob = new Blob([cal.toString()], { type: 'text/plain' });   
+    downloadUrl(blob, 'fulbright_calendar.ics')
+}
+
+const ExportCalendar= (props) => {
+    const cur_term_info = trimesterInfo.filter(term => term['name'] == useSelector(selectTerm))[0]
     return (
     <button type="button" className="btn btn-white " 
-        onClick={() => {downloadUrl(blob, 'fulbright_calendar.ics')}}>
+        onClick={() => {downloadCalendar(props.selectedCourses, cur_term_info)}}>
         <i className="fa fa-calendar me-3" aria-hidden="true"></i>
         Calendar file (ics)
     </button>

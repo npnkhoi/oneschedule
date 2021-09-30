@@ -6,9 +6,9 @@ import { getTextColor } from '../../utils/colors';
 import { getCourse } from '../../utils/course';
 import './Calendar.css'
 
-
 const Calendar = ({selectedCourses}) => {
   const [ scheduleOverlap, setScheduleOverlap ] = useState(false)
+  
   const dayId = {
     'Sunday': 0,
     'Monday': 1,
@@ -30,6 +30,7 @@ const Calendar = ({selectedCourses}) => {
       textColor: getTextColor(course.color),
     }), [])
   }
+
   const visibleCourses = selectedCourses
   .filter(course => course.visible)
   .map(course => {
@@ -82,31 +83,27 @@ const Calendar = ({selectedCourses}) => {
     setScheduleOverlap(overlapDeteced)
   }
 
-
-
   return (
-    <div>
-      <FullCalendar
-        plugins={[ timeGridPlugin ]}
-        initialView="timeGridWeek"
-        events = {events}
-        slotMinTime = "08:00"
-        slotMaxTime = "21:00"
-        weekends = {false}
-        expandRows = {true}
-        allDaySlot = {false}
-        headerToolbar = {
-          ({
-            start: "",
-            center: "",
-            end: ""
-          })
-        }
-        eventTextColor = "black"
-        dayHeaderFormat = { {weekday: 'short' }}
-      />
-    </div>
-
+  <FullCalendar
+    plugins={[ timeGridPlugin ]}
+    initialView="timeGridWeek"
+    events = {events}
+    slotMinTime = "08:00"
+    slotMaxTime = "21:00"
+    scrollTime = "09:00"
+    weekends = {false}
+    expandRows = {true}
+    allDaySlot = {false}
+    headerToolbar = {
+      ({
+        start: "",
+        center: "",
+        end: ""
+      })
+    }
+    eventTextColor = "black"
+    dayHeaderFormat = { {weekday: 'short' }}
+  />
   )
 }
 

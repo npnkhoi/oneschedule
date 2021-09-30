@@ -18,26 +18,27 @@ const Timetable = () => {
       <Helmet>
         <title>OneSchedule</title>
       </Helmet>
-      <Calendar 
-        selectedCourses={currentCourseSelection} 
-      />
-
+      <div ref={calendarRef} className="flex-grow-1">
+        <Calendar
+          selectedCourses={currentCourseSelection} 
+        />
+      </div>
       <div className="info-bar">
         
         <TermSwitch />
+
+        <Searcher />
         <div className="row">
           <div className="col-6">
             <ExternalExporter
               className="calendar-exporter" 
               componentRef={calendarRef}
-              selectedCourses={selectedCourses}>
+              selectedCourses={currentCourseSelection}>
             </ExternalExporter>
           </div>
           <div className="col-5">
           </div>
         </div>
-
-        <Searcher />
 
         <SelectedCourses 
           selectedCourses={currentCourseSelection}
