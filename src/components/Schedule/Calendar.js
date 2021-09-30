@@ -37,7 +37,6 @@ const Calendar = ({selectedCourses}) => {
       textColor: getTextColor(course.color),
     }), [])
   }
-  console.log(selectedCourses)
   const visibleCourses = selectedCourses
     .filter(course => courseExist(course.id) && course.visible)
     .map(course => {

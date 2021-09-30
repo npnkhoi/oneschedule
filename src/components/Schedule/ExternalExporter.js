@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { exportComponentAsJPEG} from 'react-component-export-image';
-import './ExternalExporter.css'
+import ExportCalendar from './ExportCalendar';
+
+import './ExternalExporter.css';
 
 
-let jpgFilePropoties = {
+const jpgFilePropoties = {
     fileName : "Fulbright-course-calendar.jpg",
     html2CanvasOptions: {
       allowTaint: true,
@@ -30,20 +32,18 @@ const ExternalExporter = (props) => {
             Image file (jpg)
           </button>
         </li>
+
+
         {/* <li>
           <button type="button" className="btn btn-white " 
             >
             <i className="fa fa-file-pdf-o me-3" aria-hidden="true"></i>
             Document file (pdf)
           </button>
-        </li>
-        <li>
-          <button type="button" className="btn btn-white " 
-            >
-            <i className="fa fa-calendar me-3" aria-hidden="true"></i>
-            Calendar file (ics)
-          </button>
         </li> */}
+        <li>
+          <ExportCalendar selectedCourses={props.selectedCourses}></ExportCalendar>
+        </li>
       </ul>
     </div>
   )
