@@ -12,30 +12,39 @@ const Timetable = () => {
   const currentCourseSelection = useSelector(selectCurrentCourseSelection)
 
   return (
-    <div className="d-flex flex-row flex-grow-1">
+    <div>
       <Helmet>
         <title>OneSchedule</title>
       </Helmet>
-      <Calendar 
-        selectedCourses={currentCourseSelection} 
-      />
     
-      <div className="info-bar">
+      {/* <div className="d-flex flex-column align-items-center"> */}
+      <div className="d-flex flex-column">
         
-        <TermSwitch />
+        <div className="d-flex flex-column align-items-center d-block d-md-none">
+          <TermSwitch />
+        </div>
+      
+        <div className="d-flex flex-row flex-grow-1">
+          <Calendar 
+            selectedCourses={currentCourseSelection} 
+          />
 
-        <Searcher />
+          <div className="info-bar col-md-3 d-none d-md-block">
+            <TermSwitch />
+            
+            <Searcher />
 
-        <SelectedCourses 
-          selectedCourses={currentCourseSelection}
-        />
+            <SelectedCourses 
+              selectedCourses={currentCourseSelection}
+            />
 
-        <CreditCount 
-          selectedCourses={currentCourseSelection}
-        />
+            <CreditCount 
+              selectedCourses={currentCourseSelection}
+            />
+          </div>
+        </div>
       </div>
     </div>
-
   )
 }
 

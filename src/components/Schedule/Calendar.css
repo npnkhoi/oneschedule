@@ -1,6 +1,7 @@
 .fc {
   flex-grow: 1;
   height: 95vh;
+  min-height: 700px;
   color: var(--dark-green);
 }
 

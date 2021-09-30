@@ -57,9 +57,11 @@ const Offerings = () => {
       <Helmet>
         <title>{term} Offerings - OneSchedule</title>
       </Helmet>
+      
       <div className='d-flex flex-row justify-content-between'>
-        <div className='flex-grow-1 d-flex flex-column align-items-center'>
-        <TermSwitch />
+        <div className='d-flex flex-column flex-grow-1 align-items-center'>
+          <TermSwitch />
+
           <div className="alert alert-primary w-100" role="alert">
               <b>Last update: {moment(config.last_updated).fromNow()}. </b>
               When in doubt, please double-check on OneStop.
