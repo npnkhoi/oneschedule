@@ -83,12 +83,6 @@
 /* END Searcher */
 
 /* index.js */
-.info-bar {
-  margin-left: 30px;
-  min-width: 250px;
-  max-width: 500px;
-}
-
 .modifier {
   width: 30px;
   height: 30px;
@@ -98,3 +92,17 @@
   cursor: pointer;
 }
 /* END index */
+
+/* InfoBar.js */
+.info-bar {
+  margin-left: 30px;
+  min-width: 250px;
+  max-width: 500px;
+}
+
+.info-bar-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 5px;
+}
+/* END InfoBar */

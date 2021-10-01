@@ -1,11 +1,10 @@
 import React from 'react'
 import Calendar from './Calendar'
-import {SelectedCourses, CreditCount} from './SelectedCourses'
-import Searcher from './Searcher'
 import './index.css'
 import { selectCurrentCourseSelection } from '../../store/selectors'
 import { useSelector } from 'react-redux'
 import TermSwitch from '../TermSwitch'
+import InfoBar from './InfoBar'
 import { Helmet } from 'react-helmet'
 
 const Timetable = () => {
@@ -29,19 +28,9 @@ const Timetable = () => {
             selectedCourses={currentCourseSelection} 
           />
 
-          <div className="info-bar col-md-3 d-none d-lg-block">
-            <TermSwitch />
-            
-            <Searcher />
-
-            <SelectedCourses 
-              selectedCourses={currentCourseSelection}
-            />
-
-            <CreditCount 
-              selectedCourses={currentCourseSelection}
-            />
-          </div>
+          <InfoBar 
+            courses={currentCourseSelection}
+          />
         </div>
       </div>
     </div>
