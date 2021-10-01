@@ -1,36 +1,21 @@
-import {React, useState} from 'react'
 import TermSwitch from '../TermSwitch'
 import {SelectedCourses, CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 
-const InfoBar = ({courses}) => {
-  const [isOpen, setIsOpen] = useState(true)
-
+const InfoBar = ({selectedCourses}) => {
   return (
-    <div className="info-bar col-md-3 d-none d-lg-block">
-      {isOpen ?
-      <div>
-        <TermSwitch />
-    
-        <Searcher />
+    <div className="info-bar col-md-3 d-none d-lg-block flex-shrink-1">        
+      <TermSwitch />
+  
+      <Searcher />
 
-        <SelectedCourses 
-          selectedCourses={courses}
-        />
+      <SelectedCourses 
+        selectedCourses={selectedCourses}
+      />
 
-        <CreditCount 
-          selectedCourses={courses}
-        />
-      </div>
-      : null
-      }
-    
-      <button type="button"
-        className='info-bar-btn btn btn-outline-primary'
-        onClick={() => setIsOpen(!isOpen)}
-      >
-          Button
-      </button>
+      <CreditCount 
+        selectedCourses={selectedCourses}
+      />
     </div>
   )
 }

@@ -101,8 +101,23 @@
 }
 
 .info-bar-btn {
+  color: var(--dark-green);
+  border-color: var(--dark-green);
+  border-width: 3px;
+  border-radius: 10px;
   position: absolute;
-  bottom: 30px;
-  right: 5px;
+  bottom: 15px;
+  right: 30px;
+  z-index: 1;
+}
+
+.info-bar-btn:hover {
+  color: white;
+  border-color: var(--dark-green);
+  background-color: var(--dark-green);
+}
+
+.info-bar-btn i {
+  font-size: 1.5em;
 }
 /* END InfoBar */
