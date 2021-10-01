@@ -73,7 +73,7 @@ const Offerings = () => {
           : <GalleryView filteredCourses={filteredCourses} />}
         </div>
 
-        <div className='right-bar flex-shrink-0 flex-grow-0 sticky-top ms-4'>
+        <div className='right-bar flex-shrink-0 flex-grow-0 sticky-top ms-4 pt-2'>
           <div className='bg-light p-3 border rounded mb-3'>
             <div className="form-check form-switch d-flex flex-row align-items-center">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"

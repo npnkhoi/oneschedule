@@ -20,7 +20,7 @@ const Timetable = () => {
       {/* <div className="d-flex flex-column align-items-center"> */}
       <div className="d-flex flex-column">
         
-        <div className="d-flex flex-column align-items-center d-block d-md-none">
+        <div className="d-flex flex-column align-items-center d-lg-none d-md-block">
           <TermSwitch />
         </div>
       
@@ -29,7 +29,7 @@ const Timetable = () => {
             selectedCourses={currentCourseSelection} 
           />
 
-          <div className="info-bar col-md-3 d-none d-md-block">
+          <div className="info-bar col-md-3 d-none d-lg-block">
             <TermSwitch />
             
             <Searcher />

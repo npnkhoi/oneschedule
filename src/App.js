@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <div className="App d-flex flex-row w-100">
+      <div className="App d-flex flex-lg-row flex-column w-100">
         <NavBar />
         <div className='d-flex flex-column w-100'>
           <Main/>
