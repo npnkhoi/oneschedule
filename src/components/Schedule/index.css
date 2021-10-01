@@ -100,6 +100,30 @@
   max-width: 500px;
 }
 
+.info-bar-pop {
+  position: absolute;
+  background-color: white;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 5px;
+  right: 0;
+  bottom: 0;
+  height: 60%;
+  width: 40%;
+  z-index: 1;
+}
+
+.pop-bar{
+  background-color: black;
+  opacity: 30%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;  
+}
+
 .info-bar-btn {
   color: var(--dark-green);
   border-color: var(--dark-green);
@@ -108,7 +132,7 @@
   position: absolute;
   bottom: 15px;
   right: 30px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .info-bar-btn:hover {

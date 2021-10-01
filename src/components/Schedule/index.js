@@ -8,7 +8,7 @@ import InfoBar from './InfoBar'
 import { Helmet } from 'react-helmet'
 
 const Timetable = () => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const currentCourseSelection = useSelector(selectCurrentCourseSelection)
 
@@ -16,7 +16,7 @@ const Timetable = () => {
     return (
       <div type="button"
         // className='info-bar-btn btn btn-outline-primary py-0 px-1 d-block d-xl-none'
-        className='info-bar-btn btn btn-outline-primary py-0 px-1'
+        className='info-bar-btn btn btn-outline-primary py-0 px-1 d-block d-xl-none'
         onClick={() => setIsOpen(!isOpen)}
       >
         <i className="fas fa-arrows-alt-h"></i>
@@ -40,13 +40,28 @@ const Timetable = () => {
           <Calendar 
             selectedCourses={currentCourseSelection} 
           />
+
+          <InfoBar 
+            selectedCourses={currentCourseSelection}
+            classes={"info-bar col-xl-3 d-none d-xl-block"}
+          />
           
           {isOpen ?
             <InfoBar 
               selectedCourses={currentCourseSelection}
+              classes={"info-bar col-lg-3 d-none d-lg-block"}
             />
           : null }
           
+          {isOpen ?
+            <div>
+              <div className="pop-bar d-block d-lg-none" onClick={() => setIsOpen(!isOpen)}></div>
+              <InfoBar 
+                selectedCourses={currentCourseSelection}
+                classes={"info-bar-pop d-md-block d-lg-none p-4"}
+              />
+            </div>
+          : null }
         </div>
       </div>
       

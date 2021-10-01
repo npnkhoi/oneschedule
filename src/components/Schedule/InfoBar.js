@@ -2,9 +2,11 @@ import TermSwitch from '../TermSwitch'
 import {SelectedCourses, CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 
-const InfoBar = ({selectedCourses}) => {
+const InfoBar = ({selectedCourses, classes}) => {
+
   return (
-    <div className="info-bar col-md-3 d-none d-lg-block flex-shrink-1">        
+    // <div className="info-bar col-md-3 d-none d-lg-block">  
+    <div className={`${classes}`}>           
       <TermSwitch />
   
       <Searcher />
