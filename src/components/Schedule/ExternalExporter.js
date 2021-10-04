@@ -33,14 +33,6 @@ const ExternalExporter = (props) => {
           </button>
         </li>
 
-
-        {/* <li>
-          <button type="button" className="btn btn-white " 
-            >
-            <i className="fa fa-file-pdf-o me-3" aria-hidden="true"></i>
-            Document file (pdf)
-          </button>
-        </li> */}
         <li>
           <ExportCalendar selectedCourses={props.selectedCourses}></ExportCalendar>
         </li>

@@ -50,7 +50,7 @@ const Timetable = () => {
       </div>
     </div>
 
-      )
+  )
 }
 
 export default Timetable

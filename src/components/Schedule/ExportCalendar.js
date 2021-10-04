@@ -25,7 +25,6 @@ const num_days = {
     'Sunday': 6
 }
 
-
 function downloadUrl(blob, filename) {
     const link = document.createElement('a');
     if (window.navigator.msSaveOrOpenBlob) {
@@ -49,6 +48,7 @@ function downloadCalendar(selectedCourses, cur_term_info) {
         no_meet_dates[i] = new Date(no_meet_dates[i])
         no_meet_dates[i].setDate(no_meet_dates[i].getUTCDate())
     }
+    console.log(no_meet_dates)
     //For each course
     for (let each_courses of selectedCourses) {
         let course_info = getCourse(each_courses.id)
