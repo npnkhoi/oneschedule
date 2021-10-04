@@ -43,8 +43,7 @@
 }
 
 .color-picker {
-  top: 14px;
-  left: -6px;
+  margin: 14px auto auto -6px;
 }
 
 /* END SeclectedCourse */
