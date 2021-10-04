@@ -43,11 +43,6 @@ function downloadCalendar(selectedCourses, cur_term_info) {
     //Info about current semester
     const start_date_term = new Date(cur_term_info['start_date'])
     const end_date_term = new Date(cur_term_info['end_date'])
-    let no_meet_dates = cur_term_info['exclude_dates']
-    for (let i = 0; i < no_meet_dates.length; i += 1) {
-        no_meet_dates[i] = new Date(no_meet_dates[i])
-        no_meet_dates[i].setDate(no_meet_dates[i].getUTCDate())
-    }
     //For each course
     for (let each_courses of selectedCourses) {
         let course_info = getCourse(each_courses.id)
@@ -75,7 +70,6 @@ function downloadCalendar(selectedCourses, cur_term_info) {
                     freq: 'WEEKLY',
                     until: end_date_term,
                     byDay: [short_days[meet_day]],
-                    exclude: no_meet_dates
                 }
             }
             list_of_events.push(current_event)
