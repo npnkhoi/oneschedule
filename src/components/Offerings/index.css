@@ -61,7 +61,9 @@
     width: 300px;
   }
   .filter-card {
-    width: 300px;
+    width: 40%;
+    min-width: 200px;
+    max-width: 300px;
     height: fit-content;
   }
 }
