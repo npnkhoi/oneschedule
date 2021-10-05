@@ -37,7 +37,7 @@ const Timetable = () => {
           <TermSwitch />
         </div>
       
-        <div className="d-flex flex-row flex-grow-1">          
+        <div className="d-flex flex-row">          
           <Calendar 
             selectedCourses={currentCourseSelection} 
           />
