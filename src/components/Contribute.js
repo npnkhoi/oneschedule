@@ -6,7 +6,7 @@ import CTA from './utils/CTA'
 
 const Contribute = () => {
   return (
-    <div className='about m-auto'>
+    <div className='col-8 col-lg-7 m-auto'>
       <Helmet>
         <title>Contribute - OneSchedule</title>
       </Helmet>
