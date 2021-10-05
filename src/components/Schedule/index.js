@@ -12,7 +12,7 @@ const Timetable = () => {
 
   const currentCourseSelection = useSelector(selectCurrentCourseSelection)
 
-  const InfoBarCollapse = () => {
+  const InfoBarCollapseBtn = () => {
     return (
       <div type="button"
         // className='info-bar-btn btn btn-outline-primary py-0 px-1 d-block d-xl-none'
@@ -32,7 +32,8 @@ const Timetable = () => {
     
       {/* <div className="d-flex flex-column align-items-center"> */}
       <div className="d-flex flex-column">
-        <div className="d-flex flex-column align-items-center d-lg-none d-md-block">
+        <div className="d-lg-none d-md-flex flex-column align-items-center ">
+        {/* <div className="d-lg-none d-md-block"> */}
           <TermSwitch />
         </div>
       
@@ -65,7 +66,7 @@ const Timetable = () => {
         </div>
       </div>
       
-      <InfoBarCollapse/>
+      <InfoBarCollapseBtn />
     </div>
   )
 }
