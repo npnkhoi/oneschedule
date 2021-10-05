@@ -131,7 +131,7 @@
   border-color: var(--dark-green);
   border-width: 3px;
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   bottom: 15px;
   right: 30px;
   z-index: 2;
