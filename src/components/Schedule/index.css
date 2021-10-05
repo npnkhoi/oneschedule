@@ -93,7 +93,7 @@
 
 /* InfoBar.js */
 .info-bar {
-  margin-left: 30px;
+  padding-left: 30px;
   height: 95vh;
   min-height: 700px;
   min-width: 350px;
@@ -102,28 +102,28 @@
 
 @media (max-width: 991px) {
   .info-bar {
-    position: absolute;
+    position: fixed;
     background-color: white;
-    border-color: black;
+    /* border-color: black;
     border-radius: 5px;
-    border-width: 5px;
+    border-width: 5px; */
     right: 0;
     bottom: 0;
-    height: 60%;
-    width: 40%;
-    z-index: 1;
+    /* height: calc(100vh - 59px); */
+    height: 60vh;
+    min-height: 400px;
+    /* width: 40%; */
+    z-index: 1050;
   }
 }
 
-.popover{
+.infobar-pop{
   background-color: black;
   opacity: 30%;
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;  
+  height: calc(100vh - 60px);
+  inset: auto 0 0 0;
+  z-index: 1049;  
 }
 
 .info-bar-btn {

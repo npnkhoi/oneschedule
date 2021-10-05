@@ -49,10 +49,10 @@ const Timetable = () => {
           
           {isOpen ?
             <div>
-              <div className="popover d-block d-lg-none" onClick={() => setIsOpen(!isOpen)}></div>
+              <div className="infobar-pop d-block d-lg-none" onClick={() => setIsOpen(!isOpen)}></div>
               <InfoBar 
                 selectedCourses={currentCourseSelection}
-                className={"d-xl-none p-0"}
+                className={"d-xl-none"}
               />
             </div>
           : null }
