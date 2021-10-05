@@ -43,13 +43,13 @@ const Timetable = () => {
 
           <InfoBar 
             selectedCourses={currentCourseSelection}
-            classes={"info-bar col-xl-3 d-none d-xl-block"}
+            className={"info-bar col-xl-3 d-none d-xl-flex"}
           />
           
           {isOpen ?
             <InfoBar 
               selectedCourses={currentCourseSelection}
-              classes={"info-bar col-lg-3 d-none d-lg-block"}
+              className={"info-bar col-lg-3 d-none d-lg-flex"}
             />
           : null }
           
@@ -58,7 +58,7 @@ const Timetable = () => {
               <div className="pop-bar d-block d-lg-none" onClick={() => setIsOpen(!isOpen)}></div>
               <InfoBar 
                 selectedCourses={currentCourseSelection}
-                classes={"info-bar-pop d-md-block d-lg-none p-4"}
+                className={"info-bar-pop d-md-flex d-lg-none p-4"}
               />
             </div>
           : null }

@@ -1,8 +1,6 @@
 /* SelectedCourse.js */
 .selected-courses{
   margin-top: 16px;
-  height: calc(100vh - 230px);
-  min-height: calc(700px - 200px);
   overflow-y: scroll;
   overflow: overlay;
 }
@@ -96,7 +94,9 @@
 /* InfoBar.js */
 .info-bar {
   margin-left: 30px;
-  min-width: 250px;
+  height: 95vh;
+  min-height: 700px;
+  min-width: 350px;
   max-width: 500px;
 }
 
