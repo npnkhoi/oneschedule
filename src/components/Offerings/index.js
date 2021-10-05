@@ -58,8 +58,8 @@ const Offerings = () => {
         <title>{term} Offerings - OneSchedule</title>
       </Helmet>
       
-      <div className='d-flex flex-row justify-content-between'>
-        <div className='d-flex flex-column flex-grow-1 align-items-center'>
+      <div className='d-flex flex-column flex-lg-row justify-content-between'>
+        <div className='d-flex flex-column flex-grow-1 align-items-center order-2 order-lg-1'>
           <TermSwitch />
 
           <div className="alert alert-primary w-100" role="alert">
@@ -73,7 +73,7 @@ const Offerings = () => {
           : <GalleryView filteredCourses={filteredCourses} />}
         </div>
 
-        <div className='right-bar flex-shrink-0 flex-grow-0 sticky-top ms-4 pt-2'>
+        <div className='right-bar flex-shrink-0 col-lg-2 ms-4 order-1 order-lg-2'>
           <div className='bg-light p-3 border rounded mb-3'>
             <div className="form-check form-switch d-flex flex-row align-items-center">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
