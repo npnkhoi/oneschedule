@@ -28,7 +28,12 @@ const Timetable = () => {
         <TermSwitch />
 
         <Searcher />
-        <div className="row">
+
+        <SelectedCourses 
+          selectedCourses={currentCourseSelection}
+        />
+
+      <div className="row">
           <div className="col-6">
             <ExternalExporter
               className="calendar-exporter" 
@@ -36,17 +41,16 @@ const Timetable = () => {
               selectedCourses={currentCourseSelection}>
             </ExternalExporter>
           </div>
-          <div className="col-5">
+          <div className="col-6">
+            <div className="mt-2">
+              <CreditCount 
+                selectedCourses={currentCourseSelection}
+              />
+            </div>
+            
           </div>
         </div>
-
-        <SelectedCourses 
-          selectedCourses={currentCourseSelection}
-        />
-
-        <CreditCount 
-          selectedCourses={currentCourseSelection}
-        />
+        
       </div>
     </div>
 

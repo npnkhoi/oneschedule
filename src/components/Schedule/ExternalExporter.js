@@ -19,8 +19,8 @@ const jpgFilePropoties = {
 
 const ExternalExporter = (props) => {
   return (
-  <div className="dropdown mt-3 mb-0">
-      <button className="btn cta dropdown-toggle float-left o-heading"
+  <div className="dropdown">
+      <button className="btn cta dropdown-toggle float-left"
        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         <i className="fa fa-download me-2" aria-hidden="true"></i>
         Download
