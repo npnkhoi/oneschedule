@@ -73,8 +73,8 @@ const Offerings = () => {
           : <GalleryView filteredCourses={filteredCourses} />}
         </div>
 
-        <div className='right-bar flex-shrink-0 col-lg-2 ms-4 order-1 order-lg-2'>
-          <div className='bg-light p-3 border rounded mb-3'>
+        <div className='right-bar flex-shrink-0 col-lg-2 ms-lg-4 order-1 order-lg-2'>
+          <div className='gallery-view bg-light p-3 border rounded mb-3'>
             <div className="form-check form-switch d-flex flex-row align-items-center">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
                 onClick={() => setCompact(!compact)}
@@ -94,7 +94,7 @@ const Offerings = () => {
             setLevelFilter={setLevelFilter}
           />
 
-          <div className='mt-3 fw-bold'> {filteredCourses.length} course(s) found </div>
+          <div className='right-bar-course-count mt-3 fw-bold'> {filteredCourses.length} course(s) found </div>
         </div>
       </div>
     </div>

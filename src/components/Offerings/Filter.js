@@ -14,28 +14,37 @@ const Filter = (props) => {
 
   return (
     <div className='bg-light p-3 border rounded'>
-      <p className='o-heading border-bottom pb-1'>Filters</p>
+      <div className='o-heading border-bottom pb-1'>Filters</div>
 
-      <div className='mt-3 mb-1'>Majors</div>
-      <Select options={MAJORS} isMulti 
-        onChange={props.setMajorFilter}
-        />
-      
-      <div className='mt-3 mb-1'>Instructors</div>
-      <Select options={instructors} isMulti
-        onChange={props.setInstructorFilter}
-      />
+      <div className='d-flex flex-row flex-wrap justify-content-around'>
+        <div className='filter-card d-flex flex-column mt-3 mx-4 mx-lg-0'>
+          <div className='mb-1'>Majors</div>
+          <Select options={MAJORS} isMulti 
+          onChange={props.setMajorFilter}
+          />
+        </div>
 
-      <div className='mt-3 mb-1'>Levels</div>
-      <Select options={LEVELS} isMulti
-        onChange={props.setLevelFilter}
-      />
+        <div className='filter-card d-flex flex-column mt-3 mx-4 mx-lg-0'>
+          <div className='mb-1'>Instructors</div>
+          <Select options={instructors} isMulti
+          onChange={props.setInstructorFilter}
+          />
+        </div>
 
-      <div className='mt-3 mb-1'>Categories (BETA)</div>
-      <Select options={CATEGORIES} isMulti
-        onChange={props.setCategoryFilter}
-      />
+        <div className='filter-card d-flex flex-column mt-3 mx-4 mx-lg-0'>
+          <div className='mb-1'>Levels</div>
+          <Select options={LEVELS} isMulti
+          onChange={props.setLevelFilter}
+          />
+        </div>
 
+        <div className='filter-card d-flex flex-column mt-3 mx-4 mx-lg-0'>
+          <div className='mb-1'>Categories (BETA)</div>
+          <Select options={CATEGORIES} isMulti
+          onChange={props.setCategoryFilter}
+          />
+        </div>
+      </div>
     </div>
   )
 }
