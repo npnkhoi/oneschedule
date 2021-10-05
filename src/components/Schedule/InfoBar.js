@@ -6,7 +6,7 @@ const InfoBar = ({selectedCourses, className}) => {
 
   return (
     // <div className="info-bar col-md-3 d-none d-lg-block">  
-    <div className={`d-flex flex-column ${className}`}>           
+    <div className={`info-bar d-flex flex-column col-3 ${className}`}>           
       <TermSwitch />
   
       <Searcher />

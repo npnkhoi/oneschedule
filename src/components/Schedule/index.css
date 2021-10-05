@@ -100,20 +100,22 @@
   max-width: 500px;
 }
 
-.info-bar-pop {
-  position: absolute;
-  background-color: white;
-  border-color: black;
-  border-radius: 5px;
-  border-width: 5px;
-  right: 0;
-  bottom: 0;
-  height: 60%;
-  width: 40%;
-  z-index: 1;
+@media (max-width: 991px) {
+  .info-bar {
+    position: absolute;
+    background-color: white;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 5px;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+    width: 40%;
+    z-index: 1;
+  }
 }
 
-.pop-bar{
+.popover{
   background-color: black;
   opacity: 30%;
   position: fixed;
