@@ -4,6 +4,17 @@
   color: var(--dark-green);
 }
 
+/* Change this value manually if further expand the time */
+
+.fc .fc-timegrid-col.fc-day-today {
+  background-color: white;
+}
+/*debug some printing style*/
+
+/* .fc .fc-scrollgrid {
+  border-width: 1px;
+} */
+
 .fc-header-toolbar {
   display: none !important;
 }
