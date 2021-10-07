@@ -58,8 +58,10 @@
   width: 60%;
 }
 
-.instructor-name, .course-title{  /*hanlde overflow*/
-  display: -webkit-box; 
+
+/*hanlde overflow*/
+.instructor-name, .course-title{ 
+  display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
