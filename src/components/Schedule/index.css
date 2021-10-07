@@ -131,6 +131,7 @@
 .info-bar-btn {
   color: var(--dark-green);
   border-color: var(--dark-green);
+  background-color: white;
   border-width: 3px;
   border-radius: 10px;
   position: fixed;
