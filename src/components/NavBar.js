@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './NavBar.css'
-import logoSVG from '../assets/Logo.svg'
+import logoVertical from '../assets/Logo-Vertical.svg'
+import logoHorizontal from '../assets/Logo-Horizontal-full.svg'
+
+
 
 const NavBtn = ({label, path, icon}) => {
   const location = useLocation()
@@ -40,14 +43,15 @@ const ExternalNavBtn = ({label, url, icon}) => {
 
 const Logo = () => (
   <Link to='/'>
-    <img className="d-none d-xl-block" src={logoSVG} alt='Bookmark with OneSchedule text on it' />
+    <img className="d-none d-xl-block" src={logoVertical} alt='Bookmark with OneSchedule text on it' />
+    <img className="d-block d-lg-none" src={logoHorizontal} alt='Bookmark with OneSchedule text on it' />
   </Link>
 )
 
 const NavBar = () => {
   return (
       <div className='wrapper d-flex flex-row flex-lg-column align-items-center text-center 
-              justify-content-between justify-content-lg-start px-5 px-lg-0 sticky-top'>
+              justify-content-between justify-content-lg-start pe-5 px-lg-0 sticky-top'>
         <Logo />
         <NavBtn label='Schedule' path='/' icon='far fa-calendar'/>
         <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt'/>
