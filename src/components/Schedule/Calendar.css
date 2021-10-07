@@ -3,6 +3,7 @@
   height: 95vh;
   min-height: 700px;
   color: var(--dark-green);
+  width: 100%;
 }
 
 .fc-header-toolbar {
