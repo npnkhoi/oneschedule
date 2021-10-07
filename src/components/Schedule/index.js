@@ -72,7 +72,7 @@ const Timetable = () => {
         </div>
       
         <div className="d-flex flex-row">          
-          <div ref={calendarRef} className="flex-grow-1">
+          <div ref={calendarRef} className="w-100">
             <Calendar
               selectedCourses={currentCourseSelection} 
             />
