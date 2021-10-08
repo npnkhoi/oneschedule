@@ -50,7 +50,7 @@ const Logo = () => (
 
 const NavBar = () => {
   return (
-    <div className='wrapper d-flex flex-row flex-lg-column text-center 
+    <div className='wrapper d-flex flex-row flex-lg-column text-center
             justify-content-start px-lg-0 sticky-top'>
       <Logo />
       
@@ -65,10 +65,10 @@ const NavBar = () => {
         />
       </div>
 
-      <button className="btn btn-primary ms-auto d-block d-md-none me-4" type="button" data-bs-toggle="collapse" 
+      <div className="d-block d-md-none align-self-strech me-4 ms-auto mt-3 o-heading" type="button" data-bs-toggle="collapse" 
                   data-bs-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">
-        Button<i className="bi bi-list o-dark-primary"></i>
-      </button>
+        <i className="fas fa-bars"></i>
+      </div>
     </div>
   )
 }
