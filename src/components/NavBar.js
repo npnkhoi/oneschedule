@@ -18,8 +18,8 @@ const NavBtn = ({label, path, icon}) => {
         ${('/' + currentView === path ? 'current' : '')}
       `}
     >
-      <i className={`${icon} fa-2x mb-1`}/>
-      <p className='d-none d-xl-block'>{label}</p>
+      <i className={`${icon} d-none d-md-block fa-2x mb-1`}/>
+      <p className='d-block d-md-none d-xl-block'>{label}</p>
     </Link>
   )
 }
@@ -35,8 +35,8 @@ const ExternalNavBtn = ({label, url, icon}) => {
       className="navbar-btn d-flex flex-column align-items-center p-2 text-decoration-none"
 
     >
-      <i className={`${currentIcon} fa-2x mb-1`}/>
-      <p className='d-none d-xl-block'>{label}</p>
+      <i className={`${currentIcon} d-none d-md-block fa-2x mb-1`}/>
+      <p className='d-block d-md-none d-xl-block'>{label}</p>
     </a>
   )
 }
@@ -51,10 +51,11 @@ const Logo = () => (
 const NavBar = () => {
   return (
     <div className='wrapper d-flex flex-row flex-lg-column text-center 
-            justify-content-between justify-content-lg-start pe-5 px-lg-0 sticky-top'>
+            justify-content-start px-lg-0 sticky-top'>
       <Logo />
-
-      <div className="collapse navbar-collapse" id="collapseExample">
+      
+      <div className="collapse d-md-flex flex-lg-column flex-grow-1 flex-lg-grow-0 
+                align-items-center justify-content-around px-4 px-lg-0" id="collapseNav">
         <NavBtn label='Schedule' path='/' icon='far fa-calendar'/>
         <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt'/>
         <NavBtn label='Contribute' path='/contribute' icon='far fa-star'/>
@@ -64,31 +65,12 @@ const NavBar = () => {
         />
       </div>
 
-      <button className="btn btn-primary d-block d-md-none" type="button" data-bs-toggle="collapse" 
-                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Button
+      <button className="btn btn-primary ms-auto d-block d-md-none me-4" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">
+        Button<i className="bi bi-list o-dark-primary"></i>
       </button>
     </div>
-    )
-  //       <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-lg-column ">
-  //         <li className="nav-item">
-  //           <NavBtn label='Schedule' path='/' icon='far fa-calendar'/>
-  //         </li>
-  //         <li className="nav-item">
-  //           <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt'/>
-  //         </li>
-  //         <li className="nav-item">
-  //           <NavBtn label='Contribute' path='/contribute' icon='far fa-star'/>
-  //         </li>
-  //         <li className="nav-item">
-  //           <NavBtn label='About' path='/about' icon='fas fa-info'/>
-  //         </li>
-  //         <li className="nav-item">
-  //           <ExternalNavBtn label='Updates' icon='fas fa-bell'
-  //              url='https://npnkhoi.notion.site/OneSchedule-Updates-c3ce635ee748488a9fa33ecb925e3bdb' 
-  //         />
-  //         </li>
-  //       </ul>
+  )
 }
 
 export default NavBar

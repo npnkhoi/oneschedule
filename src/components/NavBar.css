@@ -1,12 +1,9 @@
 .wrapper {
-  /* width: 100px; */
-  /* height: 100vh; */
   background-color: var(--light-gray);
 }
 
 @media (max-width: 991px) { 
   .wrapper{
-    height: 60px;
     width: 100vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
   }

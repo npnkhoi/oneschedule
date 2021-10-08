@@ -13,7 +13,7 @@ const InfoBar = ({selectedCourses, className, calendarRef}) => {
 
   return (
     <div className={`info-bar d-flex flex-column col-3 ${className}`}>           
-      <TermSwitch />
+      <div className='d-none d-lg-block'><TermSwitch /></div>
       <Searcher />
       <SelectedCourses 
         selectedCourses={selectedCourses}
@@ -46,18 +46,27 @@ const Timetable = () => {
 
   const currentCourseSelection = useSelector(selectCurrentCourseSelection)
 
-  const InfoBarCollapseBtn = () => {
+  const ExpandBtn = () => {
     return (
       <div type="button"
-        // className='info-bar-btn btn btn-outline-primary py-0 px-1 d-block d-xl-none'
-        className='info-bar-btn btn btn-outline-primary py-0 px-1 d-block d-xl-none'
+        className='info-bar-btn py-0 px-1 d-block d-xl-none'
         onClick={() => setIsOpen(!isOpen)}
       >
-        <i className="fas fa-arrows-alt-h"></i>
+        <i className="fas fa-expand"></i>
       </div>  
     )
   }
 
+  const CompressBtn = () => {
+    return (
+      <div type="button"
+        className='info-bar-btn py-0 px-1 d-block d-xl-none'
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <i className="fas fa-compress"></i>
+      </div>  
+    )
+  }
   const calendarRef = useRef()
 
   return (
@@ -67,7 +76,7 @@ const Timetable = () => {
       </Helmet>
     
       <div className="d-flex flex-column">
-        <div className="d-lg-none d-md-flex flex-column align-items-center ">
+        <div className="d-lg-none d-flex flex-column align-items-center ">
           <TermSwitch />
         </div>
       
@@ -85,17 +94,16 @@ const Timetable = () => {
           
           {isOpen ?
             <div>
+              <CompressBtn />
               <div className="infobar-pop d-block d-lg-none" onClick={() => setIsOpen(!isOpen)}></div>
               <InfoBar 
                 selectedCourses={currentCourseSelection}
-                className={"d-xl-none"}
+                className={"d-xl-none pt-3 pt-lg-0 rounded-top"}
               />
             </div>
-          : null }
+          : <ExpandBtn /> }
         </div>
       </div>
-      
-      <InfoBarCollapseBtn />
     </div>
   )
 }
