@@ -38,7 +38,7 @@
 /* END GalleryView */
 
 /* Laptop display */
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .right-bar {
     min-width: 200px;
     max-width: 250px;
@@ -53,7 +53,7 @@
 }
 
 /* Tablet display */
-@media screen and (max-width: 991.5px) {
+@media (max-width: 991px) {
   .right-bar-course-count {
     font-size: 1.4em;
   }

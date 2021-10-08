@@ -2,13 +2,16 @@
   background-color: var(--light-gray);
 }
 
-@media (max-width: 991px) { 
-  .wrapper{
-    width: 100vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
-  }
+.navbar-btn {
+  color: var(--dark-green);
 }
 
+.navbar-btn:hover, .current {
+  color: var(--orange);
+  font-weight: 900;
+}
+
+/* Small Desktop view */
 @media (min-width: 992px) and (max-width: 1199px){
   .wrapper{
     width: 80px;
@@ -20,11 +23,18 @@
   }
 }
 
-.navbar-btn {
-  color: var(--dark-green);
+/* Tablet view */
+@media (max-width: 991px) { 
+  .wrapper{
+    width: 100vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.125);
+  }
 }
 
-.navbar-btn:hover, .current {
-  color: var(--orange);
-  font-weight: 900;
+/* Mobile view */
+@media (max-width: 767px){
+  #collapseNav {
+    background-color: var(--dark-gray);
+    font-size: 1.2em;
+  }
 }

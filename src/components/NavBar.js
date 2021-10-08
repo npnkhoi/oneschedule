@@ -50,12 +50,19 @@ const Logo = () => (
 
 const NavBar = () => {
   return (
-    <div className='wrapper d-flex flex-row flex-lg-column text-center
+    <div className='wrapper d-flex flex-column flex-md-row flex-lg-column text-center
             justify-content-start px-lg-0 sticky-top'>
-      <Logo />
+      <div className='d-flex flex-row'>
+        <Logo />
+        
+        <div className="d-block d-md-none align-self-strech me-4 ms-auto mt-3 o-heading" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">
+          <i className="fas fa-bars"></i>
+        </div>
+      </div>
       
       <div className="collapse d-md-flex flex-lg-column flex-grow-1 flex-lg-grow-0 
-                align-items-center justify-content-around px-4 px-lg-0" id="collapseNav">
+                align-items-center justify-content-around px-4 px-lg-0 pt-2 pt-md-0" id="collapseNav">
         <NavBtn label='Schedule' path='/' icon='far fa-calendar'/>
         <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt'/>
         <NavBtn label='Contribute' path='/contribute' icon='far fa-star'/>
@@ -65,10 +72,6 @@ const NavBar = () => {
         />
       </div>
 
-      <div className="d-block d-md-none align-self-strech me-4 ms-auto mt-3 o-heading" type="button" data-bs-toggle="collapse" 
-                  data-bs-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav">
-        <i className="fas fa-bars"></i>
-      </div>
     </div>
   )
 }
