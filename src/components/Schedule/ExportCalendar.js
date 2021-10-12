@@ -45,6 +45,9 @@ function downloadCalendar(selectedCourses, cur_term_info) {
     const end_date_term = new Date(cur_term_info['end_date'])
     //For each course
     for (let each_courses of selectedCourses) {
+        if (each_courses.visible == false) {
+            continue
+        }
         let course_info = getCourse(each_courses.id)
         let course_schedule = course_info.schedule
         let course_title = course_info.title
