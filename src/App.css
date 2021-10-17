@@ -20,6 +20,12 @@
   font-weight: 400;
 }
 
+@media (max-width: 767px) {
+  .App {
+    font-size: 13px;
+  }
+}
+
 /* Custom text styles */
 
 .o-heading {
