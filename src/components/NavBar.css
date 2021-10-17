@@ -9,6 +9,7 @@
 .navbar-btn:hover, .current {
   color: var(--orange);
   font-weight: 900;
+  /* background-color: var(--dark-gray); */
 }
 
 /* Small Desktop view */
@@ -29,12 +30,16 @@
     width: 100vw;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.125);
   }
+  .nav-icon {
+    font-size: 24px;
+  }
+  
+  .h-logo {
+    height: 64px;
+  }
 }
 
 /* Mobile view */
-@media (max-width: 767px){
-  #collapseNav {
-    background-color: var(--dark-gray);
-    font-size: 1.2em;
-  }
+@media (max-width: 767px) {
+
 }
