@@ -54,7 +54,7 @@ const NavBar = () => {
     <div className='wrapper d-flex flex-row flex-lg-column text-center
             justify-content-start align-items-center px-lg-0 sticky-top'>
       <Logo />
-      <div className='d-flex flex-row h-100
+      <div className='d-flex flex-row
         flex-lg-column flex-lg-grow-0 
         justify-content-around flex-grow-1'>
         <NavBtn label='Schedule' path='/' icon='far fa-calendar'/>
