@@ -6,8 +6,9 @@ const TableView = ({filteredCourses, selectedCourses}) => {
   return <table className='table table-hover table-bordered align-middle'>
     <thead className='table-light'>
       <tr>
-        <th>ID</th>
-        <th>Categories</th>
+        <th className='d-none d-md-table-cell'>ID</th>
+        <th className='d-none d-md-table-cell'>Categories</th>
+        <th className='d-table-cell d-md-none'>Cat.</th>
         <th>Title</th>
         <th>Instructor</th>
         <th style={{width: '25%'}}>Action</th>
@@ -16,7 +17,7 @@ const TableView = ({filteredCourses, selectedCourses}) => {
     <tbody>
       {filteredCourses.map(course => (
         <tr key={course.id}>
-            <td>{course.id}</td>
+            <td className='d-none d-md-table-cell'>{course.id}</td>
             <td>{getCategories(course)}</td>
             <td>
               <Link to={`/courses/${course.id}`} className='text-decoration-none fw-bold'>
