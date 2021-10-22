@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 const CourseCard = ({course}) => {
   return <Link className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden'
     to={`/courses/${course.id}`}
-    target={`${(window.innerWidth < 992) ? '' : '_blank'}`}
   >
     <div className='thumbnail p-2 w-100 flex-shrink-0 d-flex justify-content-center align-items-center'>
       <div className='thumbnail-text o-heading multiple-lines'>{course.id}</div>

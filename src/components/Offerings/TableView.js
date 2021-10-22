@@ -19,8 +19,7 @@ const TableView = ({filteredCourses, selectedCourses}) => {
             <td>{course.id}</td>
             <td>{getCategories(course)}</td>
             <td>
-              <Link to={`/courses/${course.id}`} className='text-decoration-none fw-bold' 
-                target={`${(window.innerWidth < 992) ? '' : '_blank'}`}>
+              <Link to={`/courses/${course.id}`} className='text-decoration-none fw-bold'>
                 {course.title}
               </Link>
             </td>
