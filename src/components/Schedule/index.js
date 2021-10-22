@@ -76,7 +76,7 @@ const Timetable = () => {
       </Helmet>
     
       <div className="d-flex flex-column">
-        <div className="d-lg-none d-flex flex-column align-items-center ">
+        <div className="d-flex d-lg-none flex-column align-items-center">
           <TermSwitch />
         </div>
       
