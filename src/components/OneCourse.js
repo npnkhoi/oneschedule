@@ -20,7 +20,7 @@ const OneCourse = ({courseId}) => {
   const selectedCourses = useSelector(state => state.selectedCourses.value)
   const selected = isSelected(selectedCourses, course.id)
   const OneStop = () => (
-    <a href={course.url} target='_blank' rel="noreferrer"> {course.id} </a>
+    <a href={course.url}> {course.id} </a>
   )
   return (
     <div className='text-start m-4'>

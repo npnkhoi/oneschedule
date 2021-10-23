@@ -20,7 +20,7 @@ const Contribute = () => {
         />
 
         <p className='o-heading'>2. Code</p>
-        <p>The best way to learn is doing meaningful things under appropriate guidance. Same for coding. OneSchedule is open-source under MIT License. That means you can contribute, copy or redistribute whatever you want.</p>
+        <p>The best way to learn is doing meaningful things under appropriate guidance. Same for coding. OneSchedule is open-source under MIT License. That means you can contribute, copy or redistribute however you want.</p>
         <p>If you know the drill, head toward our Github repository and raise a pull request. Otherwise, talking with me is a good start.</p>
         <CTA 
           text='Go to Github'

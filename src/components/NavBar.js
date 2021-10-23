@@ -15,7 +15,7 @@ const NavBtn = ({label, path, icon}) => {
   return (
     <Link to={path} 
       className={`navbar-btn d-flex flex-column align-items-center 
-       text-decoration-none p-2
+       text-decoration-none p-2 flex-grow-1
         ${('/' + currentView === path ? 'current' : '')}
       `}
     >
@@ -26,14 +26,16 @@ const NavBtn = ({label, path, icon}) => {
 }
 
 const ExternalNavBtn = ({label, url, icon}) => {
+  // TODO: Consider remove the changing icon, because mobile users cannot see the changes
   const externalIcon = 'fas fa-external-link-alt'
   const [currentIcon, setCurrentIcon] = useState(icon)
 
   return (
-    <a href={url} target='_blank' rel="noreferrer"
+    <a href={url}
       onMouseEnter={() => setCurrentIcon(externalIcon)}
       onMouseLeave={() => setCurrentIcon(icon)}
-      className="navbar-btn d-flex flex-column align-items-center p-2 text-decoration-none"
+      className="navbar-btn d-flex flex-column align-items-center p-2 
+      text-decoration-none flex-grow-1"
 
     >
       <i className={`${currentIcon} fa-2x mb-1 nav-icon`}/>

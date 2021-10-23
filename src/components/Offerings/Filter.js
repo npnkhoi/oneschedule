@@ -21,6 +21,7 @@ const Filter = (props) => {
           <div className='mb-1'>Majors</div>
           <Select options={MAJORS} isMulti 
           onChange={props.setMajorFilter}
+          defaultValue={props.majorFilter}
           />
         </div>
 
@@ -39,7 +40,7 @@ const Filter = (props) => {
         </div>
 
         <div className='filter-card d-flex flex-column mt-3 mx-4 mx-lg-0'>
-          <div className='mb-1'>Categories (BETA)</div>
+          <div className='mb-1'>Categories</div>
           <Select options={CATEGORIES} isMulti
           onChange={props.setCategoryFilter}
           />

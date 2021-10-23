@@ -13,7 +13,6 @@ const Contributor = ({contributor}) => {
       <a 
         href={contributor.html_url} 
         className='fw-bold'
-        target='_blank' rel="noreferrer"
       >
         {contributor.login}
       </a >
@@ -62,24 +61,24 @@ const About = () => {
           <img src={avatar} className='w-100' alt='avatar of Khoi'/>
           
           <div className='d-flex flex-row mt-2'>
-            <a href='https://github.com/npnkhoi' target='_blank' rel="noreferrer">
+            <a href='https://github.com/npnkhoi'>
               <i className='fab fa-github 2x o-dark-primary'/>
             </a>
-            <a href='https://www.linkedin.com/in/npnkhoi/' target='_blank' rel="noreferrer">
+            <a href='https://www.linkedin.com/in/npnkhoi/'>
               <i className='fab fa-linkedin-in 2x o-dark-primary ms-2'/>
             </a>
-            <a href='mailto: khoi.nguyen.190037@student.fulbright.edu.vn' target='_blank' rel="noreferrer">
+            <a href='mailto: khoi.nguyen.190037@student.fulbright.edu.vn'>
               <i className='far fa-envelope 2x o-dark-primary ms-2'/>
             </a>
           </div>
         </div>
         
         <div className='ms-4'>
-          <p>My name is Khoi. I am a Fulbright student and I program for fun. I don&apos;t like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, I built OneSchedule to visualize course schedules. This app is inspired by <a href='https://nusmods.com/' target="_blank" rel="noreferrer">NUSMods</a>.</p>
+          <p>My name is Khoi. I am a Fulbright student and I program for fun. I don&apos;t like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, I built OneSchedule to visualize course schedules. This app is inspired by <a href='https://nusmods.com/'>NUSMods</a>.</p>
           <p>
             OneSchedule is not an official channel of Fulbright.
             OneSchedule is free and open-source (
-            <a href='https://github.com/npnkhoi/oneschedule' target='_blank' rel="noreferrer">Github</a>
+            <a href='https://github.com/npnkhoi/oneschedule'>Github</a>
             ).
             
           </p>

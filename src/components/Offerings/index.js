@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet'
 import TableView from './TableView'
 import GalleryView from './GalleryView'
 import Filter from './Filter'
+import { usePersistedState } from '../../hooks'
 
 const Offerings = () => {
   const [compact, setCompact] = useState(true)
@@ -17,10 +18,10 @@ const Offerings = () => {
   const courses = useSelector(selectCurrentTerm)
   const term = useSelector(selectTerm)
 
-  const [majorFilter, setMajorFilter] = useState([])
-  const [instructorFilter, setInstructorFilter] = useState([])
-  const [levelFilter, setLevelFilter] = useState([])
-  const [categoryFilter, setCategoryFilter] = useState([])
+  const [majorFilter, setMajorFilter] = usePersistedState('majorFilter', [])
+  const [instructorFilter, setInstructorFilter] = usePersistedState('instructorFilter', [])
+  const [levelFilter, setLevelFilter] = usePersistedState('levelFilter', [])
+  const [categoryFilter, setCategoryFilter] = usePersistedState('categoryFilter', [])
 
   const getFilteredCourses = () => {
     const oneFilter = (filterList, courses, getDetail, manyToMany=false) => {
