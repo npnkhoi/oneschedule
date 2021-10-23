@@ -75,7 +75,7 @@ const Offerings = () => {
         </div>
 
         <div className='right-bar flex-shrink-0 col-lg-2 ms-lg-4 order-1 order-lg-2'>
-          <div className='gallery-view bg-light p-3 border rounded mb-3'>
+          <div className='d-none d-lg-block gallery-view bg-light p-3 border rounded mb-3'>
             <div className="form-check form-switch d-flex flex-row align-items-center">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
                 onClick={() => setCompact(!compact)}

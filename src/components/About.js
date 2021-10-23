@@ -49,15 +49,15 @@ const Contributors = () => {
 
 const About = () => {
   return (
-    <div className='col-10 col-lg-8 d-flex flex-column align-items-center 
+    <div className='col-lg-8 d-flex flex-column align-items-center 
       text-start m-auto o-big-body'>
         <Helmet>
           <title>About - OneSchedule</title>
         </Helmet>
       <p className='o-title'>Hi there!</p>
 
-      <div className='d-flex flex-row align-items-center justify-content-between w-100'>
-        <div className='w-25 d-flex flex-column align-items-center flex-shrink-0'>
+      <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
+        <div className='d-flex flex-column col-6 col-md-4 col-lg-3 align-items-center flex-shrink-0'>
           <img src={avatar} className='w-100' alt='avatar of Khoi'/>
           
           <div className='d-flex flex-row mt-2'>
@@ -73,7 +73,7 @@ const About = () => {
           </div>
         </div>
         
-        <div className='ms-4'>
+        <div className='mt-4 mt-md-0 ms-md-4'>
           <p>My name is Khoi. I am a Fulbright student and I program for fun. I don&apos;t like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, I built OneSchedule to visualize course schedules. This app is inspired by <a href='https://nusmods.com/'>NUSMods</a>.</p>
           <p>
             OneSchedule is not an official channel of Fulbright.
@@ -98,7 +98,7 @@ const About = () => {
         </ul>
       </div>
       
-      <iframe width='70%' height="400" src="https://www.youtube.com/embed/KKc_RMln5UY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      <iframe width='80%' height="400" src="https://www.youtube.com/embed/KKc_RMln5UY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
   )
 }

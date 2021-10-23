@@ -20,12 +20,6 @@
   font-weight: 400;
 }
 
-@media (max-width: 767px) {
-  .App {
-    font-size: 13px;
-  }
-}
-
 /* Custom text styles */
 
 .o-heading {
@@ -87,4 +81,13 @@ a:hover {
 
 a {
   color: var(--dark-green)
+}
+
+@media (max-width: 767px) {
+  .App {
+    font-size: 13px;
+  }
+  .o-title {
+    font-size: 36px;
+  }
 }
