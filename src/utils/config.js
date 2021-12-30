@@ -1,5 +1,5 @@
 const config =  {
-    last_updated: '2021-10-09 08:30+07',
+    last_updated: '2021-12-30 20:00+07',
 }
 
 export default config
