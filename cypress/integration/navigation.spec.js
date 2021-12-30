@@ -3,17 +3,17 @@ describe('Navigation through main views', function() {
     cy.visit('')
   })
   it('Visit Offerings', function() {
-    cy.get('.navbar-btn').contains('Offerings').click()
+    cy.get('.navbar-btn').get('.fa-list-alt').click()
     cy.contains('Filters')
   })
 
   it('Visit Contribute', function() {
-    cy.get('.navbar-btn').contains('Contribute').click()
+    cy.get('.navbar-btn').get('.fa-star').click()
     cy.contains('OneSchedule')
   })
 
   it('Visit About', function() {
-    cy.get('.navbar-btn').contains('About').click()
+    cy.get('.navbar-btn').get('.fa-info').click()
     cy.contains('OneSchedule')
   })
 

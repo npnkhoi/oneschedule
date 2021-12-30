@@ -21,15 +21,15 @@ const Contribute = () => {
 
         <p className='o-heading mt-4'>2. Code</p>
         <p>The best way to learn is doing meaningful things under appropriate guidance. Same for coding. OneSchedule is open-source under MIT License. That means you can contribute, copy or redistribute however you want.</p>
-        <p>If you know the drill, head toward our Github repository and raise a pull request. Otherwise, talking with me is a good start.</p>
+        <p>If you know the drill, head toward our Github repository and raise a pull request. Otherwise, talk to me, you are more than welcome!</p>
         <CTA 
           text='Go to Github'
           link='https://github.com/npnkhoi/oneschedule'
         />
 
         <p className='o-heading mt-4'>3. Design</p>
-        <p>Things can be more beautiful, especially when you help to make it. Send us your design ideas via khoi.nguyen.190037@student.fulbright.edu.vn. </p>
-        <p>Examples are: interface analysis, new design proposal (big or small), or simply feedback.</p>
+        <p>Things can be more beautiful when you help to make it. Send us your design ideas via khoi.nguyen.190037@student.fulbright.edu.vn. </p>
+        <p>Examples are: interface analysis, new design proposal (big or small), or simply visual feedback.</p>
 
         {/* <p className='o-heading'>4. Donate</p>
         <p>We are having lots of things to do: hosting public web domain (fuv-schedule.com), add Fulbright classroom map, course review, etc. With limited resources, we currently cannot deliver those features. We need your help! Every dollar we receive will be used to develop OneSchedule.</p>

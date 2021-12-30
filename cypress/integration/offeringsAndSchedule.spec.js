@@ -4,13 +4,14 @@ describe('Link between Offerings and Schedule', function() {
   it('Add from Schedule, delete from Offerings', function() {
     cy.visit('')
     const course = getRandomCourses(1)[0]
-  
+    cy.get('.fa-expand')
+      .click()
     cy.get('#search-input')
-      .type(course.id + '{enter}')
+      .type(course.id + '{enter}', {force: true})
     cy.contains(course.id)
       .should('exist')
     cy.get('.navbar-btn')
-      .contains('Offerings')
+      .get('.fa-list-alt')
       .click()
     cy.contains(course.id)
       .parent()
@@ -24,7 +25,7 @@ describe('Link between Offerings and Schedule', function() {
       .get('.cta')
       .contains('Add')
     cy.get('.navbar-btn')
-      .contains('Schedule')
+      .get('.fa-calendar')
       .click()
     cy.contains(course.id)
       .should('not.exist')
