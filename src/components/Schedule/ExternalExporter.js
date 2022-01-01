@@ -1,21 +1,21 @@
 import React from 'react';
-import { exportComponentAsJPEG} from 'react-component-export-image';
+// import { exportComponentAsJPEG} from 'react-component-export-image';
 import ExportCalendar from './ExportCalendar';
 
 import './ExternalExporter.css';
 import '../utils/index.css'
 
 
-const jpgFilePropoties = {
-    fileName : "Fulbright-course-calendar.jpg",
-    html2CanvasOptions: {
-      allowTaint: true,
-      useCORS: true,
-      logging: false,
-      height: 722,
-      windowHeight: 722, 
-    }
-}
+// const jpgFilePropoties = {
+//     fileName : "Fulbright-course-calendar.jpg",
+//     html2CanvasOptions: {
+//       allowTaint: true,
+//       useCORS: true,
+//       logging: false,
+//       height: 722,
+//       windowHeight: 722, 
+//     }
+// }
 
 const ExternalExporter = (props) => {
   return (
@@ -26,13 +26,13 @@ const ExternalExporter = (props) => {
         Download
       </button>
       <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li>
+        {/* <li>
           <button type="button" className="btn btn-white " 
             onClick={() => {exportComponentAsJPEG(props.componentRef, jpgFilePropoties)}}>
             <i className="fa fa-file-image-o me-3" aria-hidden="true"></i>
             Image file (jpg)
           </button>
-        </li>
+        </li> */}
 
         <li>
           <ExportCalendar selectedCourses={props.selectedCourses}></ExportCalendar>

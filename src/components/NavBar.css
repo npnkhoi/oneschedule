@@ -1,7 +1,6 @@
 .wrapper {
-  width: 100px;
-  height: 100vh;
   background-color: var(--light-gray);
+  width: 95px;
 }
 
 .navbar-btn {
@@ -11,4 +10,20 @@
 .navbar-btn:hover, .current {
   color: var(--orange);
   font-weight: 900;
+  /* background-color: var(--dark-gray); */
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .wrapper{
+    width: 100vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.125);
+  }
+  .nav-icon {
+    font-size: 24px;
+  }
+  
+  .h-logo {
+    height: 64px;
+  }
 }

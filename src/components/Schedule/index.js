@@ -1,59 +1,108 @@
-import React, {useRef } from 'react'
+import React, {useRef, useState } from 'react'
 import Calendar from './Calendar'
-import {SelectedCourses, CreditCount} from './SelectedCourses'
-import Searcher from './Searcher'
 import './index.css'
 import { selectCurrentCourseSelection } from '../../store/selectors'
 import { useSelector } from 'react-redux'
 import ExternalExporter from './ExternalExporter'
 import TermSwitch from '../TermSwitch'
+import {SelectedCourses, CreditCount} from './SelectedCourses'
+import Searcher from './Searcher'
 import { Helmet } from 'react-helmet'
 
-const Timetable = () => {
-  const currentCourseSelection = useSelector(selectCurrentCourseSelection)
-  const calendarRef = useRef()
-  
+const InfoBar = ({selectedCourses, className, calendarRef}) => {
+
   return (
-    <div className="d-flex flex-row flex-grow-1">
-      <Helmet>
-        <title>OneSchedule</title>
-      </Helmet>
-      <div ref={calendarRef} className="flex-grow-1">
-        <Calendar
-          selectedCourses={currentCourseSelection} 
-        />
-      </div>
-      <div className="info-bar">
-        
-        <TermSwitch />
+    <div className={`info-bar d-flex flex-column col-3 ${className}`}>           
+      <div className='d-none d-md-block'><TermSwitch /></div>
+      <Searcher />
+      <SelectedCourses 
+        selectedCourses={selectedCourses}
+      />
 
-        <Searcher />
-
-        <SelectedCourses 
-          selectedCourses={currentCourseSelection}
-        />
-
-      <div className="row">
-          <div className="col-6">
+      <div className="row mt-auto mx-auto">
+          <div className="col-6 d-none d-md-block">
             <ExternalExporter
               className="calendar-exporter" 
               componentRef={calendarRef}
-              selectedCourses={currentCourseSelection}>
+              selectedCourses={selectedCourses}>
             </ExternalExporter>
           </div>
-          <div className="col-6">
-            <div className="mt-2">
-              <CreditCount 
-                selectedCourses={currentCourseSelection}
-              />
-            </div>
-            
+          
+          <div className="my-auto col-md-6">
+            <CreditCount 
+              selectedCourses={selectedCourses}
+            />
           </div>
+      </div>
+
+    </div>
+  )
+}
+
+const Timetable = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const currentCourseSelection = useSelector(selectCurrentCourseSelection)
+
+  const ExpandBtn = () => {
+    return (
+      <div type="button"
+        className='info-bar-btn py-0 px-1 d-block d-md-none'
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <i className="fas fa-pencil-square-o"></i>
+      </div>  
+    )
+  }
+
+  const CompressBtn = () => {
+    return (
+      <div type="button"
+        className='info-bar-btn py-0 px-1 d-block d-md-none'
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <i className="fas fa-compress"></i>
+      </div>  
+    )
+  }
+  const calendarRef = useRef()
+
+  return (
+    <div>
+      <Helmet>
+        <title>OneSchedule</title>
+      </Helmet>
+    
+      <div className="d-flex flex-column">
+        <div className="d-flex d-md-none flex-column align-items-center">
+          <TermSwitch />
         </div>
-        
+      
+        <div className="d-flex flex-row">          
+          <div ref={calendarRef} className="w-100">
+            <Calendar
+              selectedCourses={currentCourseSelection} 
+            />
+          </div>
+          
+          <InfoBar 
+            selectedCourses={currentCourseSelection}
+            className={"d-none d-md-flex"}
+          />
+          
+          {isOpen ?
+            <div>
+              <CompressBtn />
+              <div className="infobar-pop d-block d-md-none" onClick={() => setIsOpen(!isOpen)}></div>
+                <InfoBar 
+                  selectedCourses={currentCourseSelection}
+                  className={"p-4 rounded-top d-md-none"}
+                />
+              </div>
+          : <ExpandBtn /> }
+        </div>
       </div>
     </div>
-
   )
 }
 

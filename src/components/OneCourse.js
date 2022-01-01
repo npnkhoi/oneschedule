@@ -20,7 +20,7 @@ const OneCourse = ({courseId}) => {
   const selectedCourses = useSelector(state => state.selectedCourses.value)
   const selected = isSelected(selectedCourses, course.id)
   const OneStop = () => (
-    <a href={course.url} target='_blank' rel="noreferrer"> {course.id} </a>
+    <a href={course.url}> {course.id} </a>
   )
   return (
     <div className='text-start m-4'>
@@ -36,14 +36,15 @@ const OneCourse = ({courseId}) => {
           <AddDropBtn course={course} preStatus={selected} />
         </div>
 
-        <div className='o-title  o-dark-primary'>{course.title}</div>
+        <div className='o-title o-dark-primary'>{course.title}</div>
       </div>
       
-      <div className='d-flex flex-row justify-content-around'>
-        <div className='description flex-shrink-0 multiple-lines'>
+      <div className='d-flex flex-column flex-md-row justify-content-around'>
+        <div className=' multiple-lines col-md-6 order-2 order-md-1'>
           {getDescription(course)}
         </div>
-        <div className='flex-grow-1 ms-5'>
+        <div className='flex-grow-1 pb-4 pt-md-0 ms-md-5 order-1 order-md-2'>
+
           <table className='table table-hover table-bordered'>
             <tbody>
               <Row header='Instructor' content={course.instructor} />

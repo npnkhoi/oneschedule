@@ -1,6 +1,7 @@
 .fc {
   flex-grow: 1;
   height: 95vh;
+  min-height: 700px;
   color: var(--dark-green);
 }
 
@@ -44,3 +45,10 @@
 .fc .fc-timegrid-col.fc-day-today { /*remove today colour*/
   background-color: white;
 }
+
+/* @media (max-width: 991px) {
+  .fc {
+    min-height: 620px;
+    font-size: 0.9em;
+  }
+} */
