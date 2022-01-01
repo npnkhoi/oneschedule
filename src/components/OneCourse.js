@@ -39,11 +39,11 @@ const OneCourse = ({courseId}) => {
         <div className='o-title o-dark-primary'>{course.title}</div>
       </div>
       
-      <div className='d-flex flex-column flex-lg-row justify-content-around'>
-        <div className='flex-shrink-0 multiple-lines col-lg-8 order-2 order-lg-1'>
+      <div className='d-flex flex-column flex-md-row justify-content-around'>
+        <div className=' multiple-lines col-md-6 order-2 order-md-1'>
           {getDescription(course)}
         </div>
-        <div className='flex-grow-1 pb-4 pt-lg-0 ms-lg-5 order-1 order-lg-2'>
+        <div className='flex-grow-1 pb-4 pt-md-0 ms-md-5 order-1 order-md-2'>
 
           <table className='table table-hover table-bordered'>
             <tbody>

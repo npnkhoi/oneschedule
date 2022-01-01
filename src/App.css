@@ -82,12 +82,3 @@ a:hover {
 a {
   color: var(--dark-green)
 }
-
-@media (max-width: 767px) {
-  .App {
-    font-size: 13px;
-  }
-  .o-title {
-    font-size: 36px;
-  }
-}

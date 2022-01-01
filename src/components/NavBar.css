@@ -12,20 +12,8 @@
   /* background-color: var(--dark-gray); */
 }
 
-/* Small Desktop view */
-@media (min-width: 992px) and (max-width: 1199px){
-  .wrapper{
-    width: 80px;
-  }
-
-  .navbar-btn{
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-}
-
-/* Tablet view */
-@media (max-width: 991px) { 
+/* Mobile view */
+@media (max-width: 767px) {
   .wrapper{
     width: 100vw;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.125);
@@ -37,9 +25,5 @@
   .h-logo {
     height: 64px;
   }
-}
-
-/* Mobile view */
-@media (max-width: 767px) {
 
 }

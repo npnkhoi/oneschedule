@@ -8,17 +8,18 @@ const TableView = ({filteredCourses, selectedCourses}) => {
       <tr>
         <th className='d-none d-md-table-cell'>ID</th>
         <th className='d-none d-md-table-cell'>Categories</th>
-        <th className='d-table-cell d-md-none'>Cat.</th>
         <th>Title</th>
-        <th>Instructor</th>
-        <th style={{width: '25%'}}>Action</th>
+        <th className='d-none d-md-table-cell'>Instructor</th>
+        <th> Action </th>
       </tr>
     </thead>
     <tbody>
       {filteredCourses.map(course => (
         <tr key={course.id}>
-            <td className='d-none d-md-table-cell'>{course.id}</td>
-            <td>{getCategories(course)}</td>
+            <td className='d-none d-md-table-cell'> 
+              {course.id}
+            </td>
+            <td className='d-none d-md-table-cell'>{getCategories(course)}</td>
             <td>
               <Link to={`/courses/${course.id}`} 
                 className='text-decoration-none fw-bold' 
@@ -26,8 +27,12 @@ const TableView = ({filteredCourses, selectedCourses}) => {
                 {course.title}
               </Link>
             </td>
-            <td>{course.instructor}</td>
-            <td> <AddDropBtn course={course} preStatus={isSelected(selectedCourses, course.id)} /> </td>
+            <td className='d-none d-md-table-cell' >
+              {course.instructor}
+            </td>
+            <td>
+              <AddDropBtn course={course} preStatus={isSelected(selectedCourses, course.id)} /> 
+            </td>
         </tr>
       ))}
     </tbody>

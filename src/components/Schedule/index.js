@@ -13,7 +13,7 @@ const InfoBar = ({selectedCourses, className, calendarRef}) => {
 
   return (
     <div className={`info-bar d-flex flex-column col-3 ${className}`}>           
-      <div className='d-none d-lg-block'><TermSwitch /></div>
+      <div className='d-none d-md-block'><TermSwitch /></div>
       <Searcher />
       <SelectedCourses 
         selectedCourses={selectedCourses}
@@ -49,7 +49,7 @@ const Timetable = () => {
   const ExpandBtn = () => {
     return (
       <div type="button"
-        className='info-bar-btn py-0 px-1 d-block d-xl-none'
+        className='info-bar-btn py-0 px-1 d-block d-md-none'
         onClick={() => setIsOpen(!isOpen)}
       >
         <i className="fas fa-expand"></i>
@@ -60,7 +60,7 @@ const Timetable = () => {
   const CompressBtn = () => {
     return (
       <div type="button"
-        className='info-bar-btn py-0 px-1 d-block d-xl-none'
+        className='info-bar-btn py-0 px-1 d-block d-md-none'
         onClick={() => setIsOpen(!isOpen)}
       >
         <i className="fas fa-compress"></i>
@@ -76,7 +76,7 @@ const Timetable = () => {
       </Helmet>
     
       <div className="d-flex flex-column">
-        <div className="d-flex d-lg-none flex-column align-items-center">
+        <div className="d-flex d-md-none flex-column align-items-center">
           <TermSwitch />
         </div>
       
@@ -89,18 +89,18 @@ const Timetable = () => {
           
           <InfoBar 
             selectedCourses={currentCourseSelection}
-            className={"d-none d-xl-flex"}
+            className={"d-none d-md-flex"}
           />
           
           {isOpen ?
             <div>
               <CompressBtn />
-              <div className="infobar-pop d-block d-lg-none" onClick={() => setIsOpen(!isOpen)}></div>
-              <InfoBar 
-                selectedCourses={currentCourseSelection}
-                className={"d-xl-none pt-3 pt-lg-0 rounded-top"}
-              />
-            </div>
+              <div className="infobar-pop d-block d-md-none" onClick={() => setIsOpen(!isOpen)}></div>
+                <InfoBar 
+                  selectedCourses={currentCourseSelection}
+                  className={"pt-3 rounded-top d-md-none"}
+                />
+              </div>
           : <ExpandBtn /> }
         </div>
       </div>

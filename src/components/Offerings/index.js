@@ -53,6 +53,8 @@ const Offerings = () => {
 
   const filteredCourses = getFilteredCourses()
 
+
+  // NOTICE: In this component, 'lg' breakpoint is used instead of 'md' as usual.
   return (
     <div>
       <Helmet>
@@ -74,13 +76,15 @@ const Offerings = () => {
           : <GalleryView filteredCourses={filteredCourses} />}
         </div>
 
-        <div className='right-bar flex-shrink-0 col-lg-2 ms-lg-4 order-1 order-lg-2'>
+        <div className='right-bar flex-shrink-0 order-1 col-lg-2 ms-lg-4 order-lg-2'>
+          
+          {/* Button to toggler Gallery View */}
           <div className='d-none d-lg-block gallery-view bg-light p-3 border rounded mb-3'>
             <div className="form-check form-switch d-flex flex-row align-items-center">
               <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
                 onClick={() => setCompact(!compact)}
               />
-              <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery view</label>
+              <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery (beta)</label>
             </div>
           </div>
 

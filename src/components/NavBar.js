@@ -20,7 +20,7 @@ const NavBtn = ({label, path, icon}) => {
       `}
     >
       <i className={`${icon} fa-2x mb-1 nav-icon`}/>
-      <p className='d-none d-xl-block'>{label}</p>
+      <p className='d-none d-md-block'>{label}</p>
     </Link>
   )
 }
@@ -39,25 +39,26 @@ const ExternalNavBtn = ({label, url, icon}) => {
 
     >
       <i className={`${currentIcon} fa-2x mb-1 nav-icon`}/>
-      <p className='d-none d-xl-block'>{label}</p>
+      <p className='d-none d-md-block'>{label}</p>
     </a>
   )
 }
 
 const Logo = () => (
   <Link to='/'>
-    <img className="d-none d-lg-block w-100" src={logoVertical} alt='Bookmark with OneSchedule text on it' />
-    <img className="d-block d-lg-none h-logo" src={logoHorizontal} alt='Bookmark with OneSchedule text on it' />
+    <img className="d-none d-md-block w-100" src={logoVertical} alt='Bookmark with OneSchedule text on it' />
+    <img className="d-block d-md-none h-logo" src={logoHorizontal} alt='Bookmark with OneSchedule text on it' />
   </Link>
 )
 
 const NavBar = () => {
   return (
-    <div className='wrapper d-flex flex-row flex-lg-column text-center
-            justify-content-start align-items-center px-lg-0 sticky-top'>
+    <div className='wrapper d-flex flex-row justify-content-start align-items-center sticky-top text-center
+      flex-md-column'>
       <Logo />
+      
       <div className='d-flex flex-row
-        flex-lg-column flex-lg-grow-0 
+        flex-md-column flex-md-grow-0 
         justify-content-around flex-grow-1'>
         <NavBtn label='Schedule' path='/' icon='far fa-calendar'/>
         <NavBtn label='Offerings' path='/courses' icon='far fa-list-alt'/>

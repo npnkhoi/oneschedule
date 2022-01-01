@@ -14,7 +14,7 @@
 .course-card {
   background-color: var(--light-gray);
   height: 200px;
-  width: 220px;
+  width: 240px;
   border-radius: 16px;
   text-decoration: none;
   color: inherit
@@ -37,7 +37,13 @@
 }
 /* END GalleryView */
 
+.filter-card {
+  min-width: 180px;
+  max-width: 300px;
+}
+
 /* Laptop display */
+
 @media (min-width: 992px) {
   .right-bar {
     min-width: 200px;
@@ -45,10 +51,6 @@
     position: sticky;
     top: 24px;
     z-index: 1020;
-  }
-  
-  .filter-card {
-    width: 100%;
   }
 }
 
@@ -62,8 +64,6 @@
   }
   .filter-card {
     width: 40%;
-    min-width: 200px;
-    max-width: 300px;
     height: fit-content;
   }
 }

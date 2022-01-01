@@ -102,7 +102,7 @@
   max-width: 500px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .info-bar {
     position: fixed;
     background-color: white;

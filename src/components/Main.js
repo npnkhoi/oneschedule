@@ -15,7 +15,7 @@ const Main = () => {
     : null
 
   return (
-  <div className='main p-4 h-100 flex-grow-1'>
+  <div className='main p-3 h-100 flex-grow-1'>
     <Switch>
       <Route path='/about'>
         <About />

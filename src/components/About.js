@@ -6,7 +6,7 @@ import './About.css'
 
 const Contributor = ({contributor}) => {
   return (
-    <div className='m-4 text-center'>
+    <div className='m-3 text-center'>
       <div className='cont-img rounded-circle overflow-hidden width'>
         <img className='w-100' src={contributor.avatar_url}/>
       </div>
@@ -49,15 +49,15 @@ const Contributors = () => {
 
 const About = () => {
   return (
-    <div className='col-lg-8 d-flex flex-column align-items-center 
-      text-start m-auto o-big-body'>
+    <div className='d-flex flex-column align-items-center text-start m-auto o-big-body
+      col-md-8'>
         <Helmet>
           <title>About - OneSchedule</title>
         </Helmet>
       <p className='o-title'>Hi there!</p>
 
       <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
-        <div className='d-flex flex-column col-6 col-md-4 col-lg-3 align-items-center flex-shrink-0'>
+        <div className='d-flex flex-column col-6 align-items-center flex-shrink-0 col-md-4'>
           <img src={avatar} className='w-100' alt='avatar of Khoi'/>
           
           <div className='d-flex flex-row mt-2'>
