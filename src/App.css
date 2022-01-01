@@ -9,6 +9,7 @@
   --light-orange: #F4A261;
   --bright-gray: #dee2e6;
   --light-gray: #F2F2F2;
+  --dark-gray: #e9e9e9;
 }
 
 .App {
@@ -80,4 +81,13 @@ a:hover {
 
 a {
   color: var(--dark-green)
+}
+
+@media (max-width: 767px) {
+  .App {
+    font-size: 13px;
+  }
+  .o-title {
+    font-size: 36px;
+  }
 }

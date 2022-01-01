@@ -1,6 +1,4 @@
 .wrapper {
-  width: 100px;
-  height: 100vh;
   background-color: var(--light-gray);
 }
 
@@ -11,4 +9,37 @@
 .navbar-btn:hover, .current {
   color: var(--orange);
   font-weight: 900;
+  /* background-color: var(--dark-gray); */
+}
+
+/* Small Desktop view */
+@media (min-width: 992px) and (max-width: 1199px){
+  .wrapper{
+    width: 80px;
+  }
+
+  .navbar-btn{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* Tablet view */
+@media (max-width: 991px) { 
+  .wrapper{
+    width: 100vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.125);
+  }
+  .nav-icon {
+    font-size: 24px;
+  }
+  
+  .h-logo {
+    height: 64px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+
 }

@@ -3,7 +3,7 @@ import { getRandomCourses } from '../../src/utils/course'
 describe('Schedule', function() {
   const searchAndChoose = (course, numTimeBlocks) => {
     // console.log('adding', course.id);
-    cy.get('#search-input').type(course.id + '{enter}')
+    cy.get('#search-input').type(course.id + '{enter}', {force: true})
     const ret = numTimeBlocks + course.schedule.length
     cy.get('.fc-event-main').should('have.length', ret)
     return ret
@@ -26,6 +26,7 @@ describe('Schedule', function() {
 
   beforeEach(function() {
     cy.visit('')
+    cy.get('.fa-expand').click()
   })
 
   it('add one course', function() {  

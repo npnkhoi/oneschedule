@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 60" width="160" height="60">
+	<title>New Project</title>
+	<defs>
+		<image  width="120" height="60" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAA8CAMAAACac46aAAAAAXNSR0IB2cksfwAAARFQTFRFJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTJkZTOMQiWwAAAFt0Uk5T/+AP/Y0IANAw9nICuh/rWZ0Q2z36gwfIKPJprRnnS/6TDdM0+HkEvyHuX6MU4UH8icwt9G8BtRzpVJg4+X4GwyXemaoX8GBxggzkRmt8BdcJnrIYZQt2HYfdNn0V6BAAAAFySURBVHicxdnHVkJBEATQktCCgkpQwIQi5oCAWcyYcw7//yE+jy7UFxevp+YH7mbOdFUPQDkdEQobjcWF4XYmRAhwsqtbGHAqLUKAe3pFGHBfRhhwNidCgPP9A8KAC0URAlwaFGHAQ8P/XSPwyKiNNQGXx8YdXH24MuHEqsPVySlnVxmennFhdeHZOVdWFZ5f8HD14MUlL1YNri3HvV0luN7wYXXg5sqqr6sBr637swrwxmYQNnS4vBUJ5oYMZ7cDsuHCrZ3dwG6Y8N5+cDZM2BZuTMEHOX9NBQYOg97osGHncGUCBo7aJBjHJyTYijtpEozkaYDhpDOP60USjPyZ7+OpA1vjwiXHq8NWcznnwMDFJQn2Ttaq8K8lj2EYSLklP20YzSsSDBQck4kBGK3rGw4M3CZIMKKxOw5sr63GYOA+Q4L/1iqTMPDwSIJRevpxnw3DVtH53kC1jcOovnx9hryah4FKQyTNgFF7i3Ng4P3jE788NZVCuxQtAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #264653 } 
+		.txt1 { font-size: 16px;fill: #e9c46a;font-weight: 700;font-family: "Lato-Bold", "Lato" } 
+	</style>
+	<use id="Layer 1" href="#img1" x="41" y="0" />
+	<path id="Shape 1" class="shp0" d="M-10 -2L90 -2L90 62L-10 62L-10 -2Z" />
+	<text id="ONE SCHEDULE" style="transform: matrix(1,0,0,1,58,26)" >
+		<tspan x="-17.228" y="0" class="txt1">O</tspan><tspan  y="0" class="txt1">N</tspan><tspan  y="0" class="txt1">E</tspan><tspan  y="0" class="txt1">
+</tspan>
+		<tspan x="-41.224" y="19.2" class="txt1">S</tspan><tspan  y="19.2" class="txt1">C</tspan><tspan  y="19.2" class="txt1">H</tspan><tspan  y="19.2" class="txt1">E</tspan><tspan  y="19.2" class="txt1">D</tspan><tspan  y="19.2" class="txt1">U</tspan><tspan  y="19.2" class="txt1">L</tspan><tspan  y="19.2" class="txt1">E</tspan><tspan  y="19.2" class="txt1">
+</tspan>
+	</text>
+</svg>

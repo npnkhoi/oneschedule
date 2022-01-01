@@ -3,8 +3,8 @@ import './index.css'
 
 const CTA = ({link, text}) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer" className='text-decoration-none'>
-      <div className='cta'>
+    <a href={link} className='text-decoration-none'>
+      <div className='cta my-2'>
         <div className='text-white o-heading'>{text}</div>
       </div>
     </a>

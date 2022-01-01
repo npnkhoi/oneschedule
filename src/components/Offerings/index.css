@@ -1,3 +1,16 @@
+/* index.js */
+.form-check-input {
+  height: 28px;
+  width: 48px !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--dark-green);
+  border-color: var(--dark-green);
+}
+/* END index.js */
+
+/* GalleryView.js */
 .course-card {
   background-color: var(--light-gray);
   height: 200px;
@@ -22,18 +35,35 @@
   color: var(--yellow);
   font-size: 20px;
 }
+/* END GalleryView */
 
-.right-bar {
-  height: fit-content;
-  width: 250px !important;
+/* Laptop display */
+@media (min-width: 992px) {
+  .right-bar {
+    min-width: 200px;
+    max-width: 250px;
+    position: sticky;
+    top: 24px;
+    z-index: 1020;
+  }
+  
+  .filter-card {
+    width: 100%;
+  }
 }
 
-.form-check-input {
-  height: 28px;
-  width: 48px !important;
-}
-
-.form-check-input:checked {
-  background-color: var(--dark-green);
-  border-color: var(--dark-green);
+/* Tablet display */
+@media (max-width: 991px) {
+  .right-bar-course-count {
+    font-size: 1.4em;
+  }
+  .gallery-view {
+    width: 300px;
+  }
+  .filter-card {
+    width: 40%;
+    min-width: 200px;
+    max-width: 300px;
+    height: fit-content;
+  }
 }
