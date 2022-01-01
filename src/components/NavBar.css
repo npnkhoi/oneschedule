@@ -1,5 +1,6 @@
 .wrapper {
   background-color: var(--light-gray);
+  width: 95px;
 }
 
 .navbar-btn {
@@ -25,5 +26,4 @@
   .h-logo {
     height: 64px;
   }
-
 }

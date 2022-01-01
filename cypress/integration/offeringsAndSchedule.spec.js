@@ -4,8 +4,6 @@ describe('Link between Offerings and Schedule', function() {
   it('Add from Schedule, delete from Offerings', function() {
     cy.visit('')
     const course = getRandomCourses(1)[0]
-    cy.get('.fa-expand')
-      .click()
     cy.get('#search-input')
       .type(course.id + '{enter}', {force: true})
     cy.contains(course.id)

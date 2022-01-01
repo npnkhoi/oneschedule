@@ -19,8 +19,8 @@ const InfoBar = ({selectedCourses, className, calendarRef}) => {
         selectedCourses={selectedCourses}
       />
 
-      <div className="row mt-auto">
-          <div className="col-6">
+      <div className="row mt-auto mx-auto">
+          <div className="col-6 d-none d-md-block">
             <ExternalExporter
               className="calendar-exporter" 
               componentRef={calendarRef}
@@ -28,12 +28,10 @@ const InfoBar = ({selectedCourses, className, calendarRef}) => {
             </ExternalExporter>
           </div>
           
-          <div className="col-6">
-            <div className="mt-2">
-              <CreditCount 
-                selectedCourses={selectedCourses}
-              />
-            </div>
+          <div className="my-auto col-md-6">
+            <CreditCount 
+              selectedCourses={selectedCourses}
+            />
           </div>
       </div>
 
@@ -52,7 +50,7 @@ const Timetable = () => {
         className='info-bar-btn py-0 px-1 d-block d-md-none'
         onClick={() => setIsOpen(!isOpen)}
       >
-        <i className="fas fa-expand"></i>
+        <i className="fas fa-pencil-square-o"></i>
       </div>  
     )
   }
@@ -98,7 +96,7 @@ const Timetable = () => {
               <div className="infobar-pop d-block d-md-none" onClick={() => setIsOpen(!isOpen)}></div>
                 <InfoBar 
                   selectedCourses={currentCourseSelection}
-                  className={"pt-3 rounded-top d-md-none"}
+                  className={"p-4 rounded-top d-md-none"}
                 />
               </div>
           : <ExpandBtn /> }

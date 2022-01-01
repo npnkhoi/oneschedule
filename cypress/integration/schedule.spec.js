@@ -26,7 +26,6 @@ describe('Schedule', function() {
 
   beforeEach(function() {
     cy.visit('')
-    cy.get('.fa-expand').click()
   })
 
   it('add one course', function() {  
