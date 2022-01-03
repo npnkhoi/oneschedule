@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
 import { getCategories, getCourse, getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
-import './OneCourse.css'
+import './OneCourse.scss'
 
 const Row = ({header, content}) => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './index.css'
+import './index.scss'
 import { getLevel, getMajor } from '../../utils/course'
 import { useSelector } from 'react-redux'
 import moment from 'moment'

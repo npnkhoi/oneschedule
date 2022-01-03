@@ -1,6 +1,6 @@
 import React, {useRef, useState } from 'react'
 import Calendar from './Calendar'
-import './index.css'
+import './index.scss'
 import { selectCurrentCourseSelection } from '../../store/selectors'
 import { useSelector } from 'react-redux'
 import ExternalExporter from './ExternalExporter'

@@ -1,6 +1,6 @@
 import React from 'react'
 // import config from '../utils/config'
-import './Footer.css'
+import './Footer.scss'
 
 const Footer = () => (
   <div className='footer text-white'>

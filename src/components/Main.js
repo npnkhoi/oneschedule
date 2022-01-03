@@ -4,7 +4,7 @@ import Offerings from './Offerings';
 import OneCourse from './OneCourse';
 import About from './About';
 import Contribute from './Contribute';
-import './Main.css'
+import './Main.scss'
 
 const Main = () => {
   const match = useRouteMatch('/courses/:id')

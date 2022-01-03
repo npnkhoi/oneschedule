@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import './About.css'
+import './About.scss'
 import CTA from './utils/CTA'
 
 

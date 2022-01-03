@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import avatar from '../assets/Avatar.png'
-import './About.css'
+import './About.scss'
 
 const Contributor = ({contributor}) => {
   return (

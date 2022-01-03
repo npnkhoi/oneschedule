@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import './NavBar.css'
+import './NavBar.scss'
 import logoVertical from '../assets/VerticalLogo.svg'
 import logoHorizontal from '../assets/HorizontalLogo.svg'
 
