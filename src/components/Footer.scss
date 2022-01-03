@@ -1,5 +1,7 @@
+@import '../styles/modules-entry.scss';
+
 .footer {
-  background-color: var(--dark-green);
+  background-color: $primary;
   padding-top: 50px;
   padding-bottom: 50px;
 }

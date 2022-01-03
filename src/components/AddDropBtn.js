@@ -13,7 +13,7 @@ const AddDropBtn = ({course, preStatus}) => {
     })
   }
 
-  return (<div className={`cta ${preStatus ? 'o-bg-yellow' : ''} flex-shrink-2`}
+  return (<div className={`cta ${preStatus ? 'bg-warning text-dark' : ''} flex-shrink-2`}
     onClick={onToggleSelection}
   > 
     { preStatus ? 'Remove' : 'Add' }

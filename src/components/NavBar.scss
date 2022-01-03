@@ -1,16 +1,18 @@
+@import '../styles/modules-entry.scss';
+
 .wrapper {
-  background-color: var(--light-gray);
+  background-color: $light-gray;
   width: 95px;
 }
 
 .navbar-btn {
-  color: var(--dark-green);
+  color: $primary;
 }
 
 .navbar-btn:hover, .current {
-  color: var(--orange);
+  color: $orange;
   font-weight: 900;
-  /* background-color: var(--dark-gray); */
+  /* background-color: $dark-gray; */
 }
 
 /* Mobile view */

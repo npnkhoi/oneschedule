@@ -1,3 +1,5 @@
+@import '../../styles/modules-entry.scss';
+
 /* SelectedCourse.js */
 .selected-courses{
   margin-top: 16px;
@@ -20,7 +22,7 @@
   padding-bottom: 12px;
   padding-top: 10px;
   margin-top: 2px;
-  border-bottom: 1px solid var(--bright-gray);
+  border-bottom: 1px solid $bright-gray;
 }
 
 .selected-info {
@@ -129,8 +131,8 @@
 }
 
 .info-bar-btn {
-  color: var(--dark-green);
-  /* border-color: var(--dark-green);
+  color: $primary;
+  /* border-color: $primary;
   background-color: white;
   border-width: 3px;
   border-radius: 10px; */
@@ -141,10 +143,10 @@
 }
 
 .info-bar-btn:hover {
-  color: var(--orange);
+  color: $orange;
   font-size: 1.1em;
-  /* border-color: var(--dark-green);
-  background-color: var(--dark-green); */
+  /* border-color: $primary;
+  background-color: $primary; */
 }
 
 .info-bar-btn i {

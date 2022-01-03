@@ -9,7 +9,7 @@ const CourseCard = ({course}) => {
       <div className='thumbnail-text o-heading multiple-lines'>{course.id}</div>
     </div>
     <div className='d-flex flex-column align-items-start p-3 text-start'>
-      <div className='fw-bold o-dark-primary mb-2'>{course.title}</div>
+      <div className='fw-bold  mb-2'>{course.title}</div>
       <div>{course.instructor}</div>
     </div>
   </Link>

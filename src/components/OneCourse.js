@@ -36,7 +36,7 @@ const OneCourse = ({courseId}) => {
           <AddDropBtn course={course} preStatus={selected} />
         </div>
 
-        <div className='o-title o-dark-primary'>{course.title}</div>
+        <div className='o-title '>{course.title}</div>
       </div>
       
       <div className='d-flex flex-column flex-md-row justify-content-around'>

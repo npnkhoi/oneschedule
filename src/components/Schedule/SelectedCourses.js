@@ -50,7 +50,7 @@ const CreditCount = ({selectedCourses}) =>{
   )
 
   return (
-    <div className="fw-bold o-dark-primary">
+    <div className="fw-bold ">
       Total credits: <span className="o-larger">{credits}</span>
     </div>
   )
@@ -85,17 +85,17 @@ const SelectedCourses = ({selectedCourses}) => {
           </div>
           <div className="toggle-btns d-flex flex-column">
             <div 
-              className="modifier gray-hover eye"
+              className="modifier eye"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
               {course.visible ? 
-              <i className="fas fa-eye o-dark-primary"></i> : <i className="fas fa-eye-slash o-dark-primary"></i>}
+              <i className="fas fa-eye "></i> : <i className="fas fa-eye-slash "></i>}
             </div>
             <div 
-              className="modifier gray-hover trash"
+              className="modifier trash"
               onClick={() => dispatch(toggleSelection({id: course.id}))}
             >
-              <i className="fas fa-trash o-dark-primary"></i>
+              <i className="fas fa-trash "></i>
             </div>
           </div>
         </div>

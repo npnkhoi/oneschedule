@@ -1,8 +1,10 @@
+@import '../../styles/modules-entry.scss';
+
 .fc {
   flex-grow: 1;
   height: 95vh;
   min-height: 700px;
-  color: var(--dark-green);
+  color: $primary;
 }
 
 /* Change this value manually if further expand the time */
@@ -38,7 +40,7 @@
 }
 
 .fc-col-header-cell-cushion {
-  color: var(--dark-green);
+  color: $primary;
   text-decoration: none;
 }
 

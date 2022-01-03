@@ -62,13 +62,13 @@ const About = () => {
           
           <div className='d-flex flex-row mt-2'>
             <a href='https://github.com/npnkhoi'>
-              <i className='fab fa-github 2x o-dark-primary'/>
+              <i className='fab fa-github 2x '/>
             </a>
             <a href='https://www.linkedin.com/in/npnkhoi/'>
-              <i className='fab fa-linkedin-in 2x o-dark-primary ms-2'/>
+              <i className='fab fa-linkedin-in 2x  ms-2'/>
             </a>
             <a href='mailto: khoi.nguyen.190037@student.fulbright.edu.vn'>
-              <i className='far fa-envelope 2x o-dark-primary ms-2'/>
+              <i className='far fa-envelope 2x  ms-2'/>
             </a>
           </div>
         </div>
@@ -80,15 +80,14 @@ const About = () => {
             OneSchedule is free and open-source (
             <a href='https://github.com/npnkhoi/oneschedule'>Github</a>
             ).
-            
           </p>
         </div>
       </div>
 
       <div className='mt-5'>
-      <div className='o-heading o-dark-primary'>Our developers</div>
+      <div className='o-heading '>Our developers</div>
         <Contributors />
-        <p className='o-heading o-dark-primary'>Special thanks to:</p>
+        <p className='o-heading '>Special thanks to:</p>
         
         <ul>
           <li>Le Thuc Minh Chau for being the first person to support this idea.</li>

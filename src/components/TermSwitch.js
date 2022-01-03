@@ -15,13 +15,13 @@ const TermSwitch = () => {
 
   return (
     <div className="o-title term-switcher d-flex flex-row align-items-center mb-2">
-      <button className={`${isFirst ? 'text-muted' : 'gray-hover'} btn o-title`}
+      <button className={`${isFirst ? 'text-muted' : ''} btn btn-outline-primary o-title`}
         onClick={() => dispatch(backward())}
       >
         <i className='fas fa-angle-left '/>
       </button>
       <span className='flex-grow-1' > {prettyTerm(term)}</span>
-      <button className={`${isLast ? 'text-muted' : ''} btn o-title gray-hover`}
+      <button className={`${isLast ? 'text-muted' : ''} btn btn-outline-primary o-title`}
         onClick={() => dispatch(forward())}
       >
         <i className='fas fa-angle-right '/>

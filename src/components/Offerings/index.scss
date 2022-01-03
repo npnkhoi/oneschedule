@@ -1,3 +1,5 @@
+@import '../../styles/modules-entry.scss';
+
 /* index.js */
 .form-check-input {
   height: 28px;
@@ -5,14 +7,14 @@
 }
 
 .form-check-input:checked {
-  background-color: var(--dark-green);
-  border-color: var(--dark-green);
+  background-color: $primary;
+  border-color: $primary;
 }
 /* END index.js */
 
 /* GalleryView.js */
 .course-card {
-  background-color: var(--light-gray);
+  background-color: $light-gray;
   height: 200px;
   width: 240px;
   border-radius: 16px;
@@ -28,11 +30,11 @@
 
 .thumbnail {
   width: 75px;
-  background-color: var(--dark-green);
+  background-color: $primary;
 }
 
 .thumbnail-text {
-  color: var(--yellow);
+  color: $yellow;
   font-size: 20px;
 }
 /* END GalleryView */
