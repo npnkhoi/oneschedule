@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleSelection } from '../../store/selectedCoursesSlice'
 import { selectCurrentTerm } from '../../store/selectors'
 import { isSelected } from '../../utils/course'
+import './Searcher.scss'
 
 
 const Searcher = () => {
@@ -61,9 +62,9 @@ const Searcher = () => {
   const CourseInfo = (course) => {
     return (
       <div className="d-flex flex-row justify-content-between align-items-center">
-        <div className="course-id o-smaller">{course.id.split("_")[0]}</div>
+        <div className="course-id text-sm">{course.id.split("_")[0]}</div>
         <div className="mx-1 course-title">{course.title}</div>
-        <div className="instructor-name o-smaller mx-1 border-left">{course.instructor}</div>
+        <div className="instructor-name text-sm mx-1 border-left">{course.instructor}</div>
       </div>
     )
   }

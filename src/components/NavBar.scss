@@ -1,31 +1,25 @@
 @import '../styles/modules-entry.scss';
 
 .wrapper {
-  background-color: $light-gray;
-  width: 95px;
-}
+  background-color: $gray-200;
+  width: 5.6rem;
+  height: 100vh;
 
-.navbar-btn {
-  color: $primary;
-}
-
-.navbar-btn:hover, .current {
-  color: $orange;
-  font-weight: 900;
-  /* background-color: $dark-gray; */
-}
-
-/* Mobile view */
-@media (max-width: 767px) {
-  .wrapper{
+  .navbar-btn {
+    &:hover, &.current {
+      color: $secondary;
+      font-weight: 900;
+    }
+  }
+  @include media-breakpoint-down(md) {
     width: 100vw;
+    height: fit-content;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.125);
-  }
-  .nav-icon {
-    font-size: 24px;
-  }
-  
-  .h-logo {
-    height: 64px;
+    .nav-icon {
+      font-size: 1.5rem;
+    }
+    .h-logo {
+      height: 4rem;
+    }
   }
 }

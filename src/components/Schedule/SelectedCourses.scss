@@ -1,0 +1,31 @@
+@import '../../styles/modules-entry.scss';
+
+// .selected-courses {
+//   overflow: overlay;
+//   ::-webkit-scrollbar {
+//     width: 10px;
+//     display: none;
+//   }
+//   ::-webkit-scrollbar-thumb {
+//     background: $gray-600;
+//     border-radius: 3px;
+//   }
+//   :hover::-webkit-scrollbar{
+//     display: block;
+//   }
+// }
+
+.selected-course {
+  border-bottom: 1px solid $gray-300;
+  flex: 0 0 auto;
+}
+
+.color-picker {
+  top: 0.875rem;
+  left: -0.375rem;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+}

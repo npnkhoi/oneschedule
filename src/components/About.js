@@ -49,12 +49,11 @@ const Contributors = () => {
 
 const About = () => {
   return (
-    <div className='d-flex flex-column align-items-center text-start m-auto o-big-body
-      col-md-8'>
+    <div className='d-flex flex-column align-items-center text-start m-auto fs-5 col-md-8'>
         <Helmet>
           <title>About - OneSchedule</title>
         </Helmet>
-      <p className='o-title'>Hi there!</p>
+      <h1>Hi there!</h1>
 
       <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
         <div className='d-flex flex-column col-6 align-items-center flex-shrink-0 col-md-4'>
@@ -84,10 +83,10 @@ const About = () => {
         </div>
       </div>
 
-      <div className='mt-5'>
-      <div className='o-heading '>Our developers</div>
-        <Contributors />
-        <p className='o-heading '>Special thanks to:</p>
+      <div>
+        <h3>Our developers</h3>
+          <Contributors />
+        <h3>Special thanks to:</h3>
         
         <ul>
           <li>Le Thuc Minh Chau for being the first person to support this idea.</li>

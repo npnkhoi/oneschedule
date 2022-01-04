@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
 import { getCourse } from "../../utils/course"
+import './SelectedCourses.scss'
 
 
 const ColorPicker = ({courseId}) => {
@@ -18,8 +19,8 @@ const ColorPicker = ({courseId}) => {
     setChanging(false)
   }
   return (
-    <div className='modifier me-2'>
-      <div className='color-btn modifier rounded'
+    <div className='me-2'>
+      <div className='color-btn btn rounded'
         onClick={() => {
           setChanging(!changing)
         }}
@@ -50,8 +51,8 @@ const CreditCount = ({selectedCourses}) =>{
   )
 
   return (
-    <div className="fw-bold ">
-      Total credits: <span className="o-larger">{credits}</span>
+    <div className="fw-bold fs-5">
+      Credits: {credits}
     </div>
   )
 }
@@ -60,7 +61,7 @@ const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
 
   return (
-  <div className="selected-courses d-flex flex-column">
+  <div className="selected-course-list d-flex flex-column overflow-scroll mt-2">
     {
       selectedCourses
       .map(course => {
@@ -69,8 +70,10 @@ const SelectedCourses = ({selectedCourses}) => {
       })
       .sort((a, b) => a.title.localeCompare(b.title))
       .map((course) => (
-        <div className="selected-course d-flex flex-row justify-content-between align-items-start" key={course.id}> 
-          <div className="selected-info flex-grow-1 d-flex flex-column">
+        // A COURSE
+        <div className="selected-course d-flex flex-row justify-content-between align-items-start mt-2 pb-2" key={course.id}> 
+          {/* INFORMATION */}
+          <div className="info flex-grow-1 d-flex flex-column text-start">
             <Link className="fw-bold text-decoration-none"
               to={`/courses/${course.id}`}
             >
@@ -79,20 +82,21 @@ const SelectedCourses = ({selectedCourses}) => {
             <div className='d-flex flex-row align-items-center mt-2'>
               <ColorPicker courseId={course.id}/>
               <div className='d-flex flex-column'>
-                <div className="selected-instructor"> {course.id} | {course.instructor} </div>
+                <small className="selected-instructor"> {course.id} | {course.instructor} </small>
               </div>
             </div>
           </div>
-          <div className="toggle-btns d-flex flex-column">
+          {/* EDIT BUTTONS */}
+          <div className="d-flex flex-column">
             <div 
-              className="modifier eye"
+              className="btn eye"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
             >
               {course.visible ? 
               <i className="fas fa-eye "></i> : <i className="fas fa-eye-slash "></i>}
             </div>
             <div 
-              className="modifier trash"
+              className="btn trash"
               onClick={() => dispatch(toggleSelection({id: course.id}))}
             >
               <i className="fas fa-trash "></i>

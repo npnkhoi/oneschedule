@@ -1,0 +1,11 @@
+@import '../../styles/modules-entry.scss';
+
+.info-bar {
+  @include media-breakpoint-up(md) {
+    height: 95vh;
+  }
+}
+
+.toolbar {
+  height: 3rem;
+}

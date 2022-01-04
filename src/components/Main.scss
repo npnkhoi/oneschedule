@@ -1,8 +1,14 @@
+@import '../styles/modules-entry.scss';
+
 .main {
   min-height: 100vh;
-}
+  
+  @include media-breakpoint-up(md) {
+    margin: 1rem 0 1rem 5.6rem;
+    width: calc(100vw - 5.6rem);
+  }
 
-/* .term-switcher {
-  max-width: 400px;
-  min-width: 350px;
-} */
+  @include media-breakpoint-down(md) {
+    margin: 4rem 0 1rem 0;
+  }
+}

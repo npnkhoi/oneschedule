@@ -1,43 +1,5 @@
 @import '../styles/modules-entry.scss';
 
 .App {
-  font-size: 16px;
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-}
-
-/* Custom text styles */
-
-.o-heading {
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
-  color: $primary;
-}
-
-.o-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 40px;
-  color: $primary;
-}
-
-.o-large {
-  font-size: 20px; 
-  font-weight: 600;
-}
-
-.o-larger {
-  font-size: 1.1em;
-}
-
-.o-smaller {
-  font-size: 0.8em;
-}
-
-.o-formal-font {
-  font-family: 'Oswald', sans-serif;
-}
-
-.o-big-body {
-  font-size: 18px;
 }

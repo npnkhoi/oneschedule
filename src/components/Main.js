@@ -1,5 +1,5 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
-import Timetable from './Schedule';
+import Schedule from './Schedule';
 import Offerings from './Offerings';
 import OneCourse from './OneCourse';
 import About from './About';
@@ -15,28 +15,30 @@ const Main = () => {
     : null
 
   return (
-  <div className='main p-3 h-100 flex-grow-1'>
-    <Switch>
-      <Route path='/about'>
-        <About />
-      </Route>
-      <Route path='/contribute'>
-       <Contribute />
-      </Route>
-      <Route path='/help'>
-        <div>help</div>
-      </Route>
-      <Route path='/courses/:id'>
-        <OneCourse courseId={courseId}/>
-      </Route>
-      <Route path='/courses'>
-        <Offerings />
-      </Route>
-      <Route path='/'>
-        <Timetable />
-      </Route>
-      
-    </Switch>
+  <div className='main'>
+    <div className='container-fluid py-3'>
+      <Switch>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/contribute'>
+        <Contribute />
+        </Route>
+        <Route path='/help'>
+          <div>help</div>
+        </Route>
+        <Route path='/courses/:id'>
+          <OneCourse courseId={courseId}/>
+        </Route>
+        <Route path='/courses'>
+          <Offerings />
+        </Route>
+        <Route path='/'>
+          <Schedule />
+        </Route>
+        
+      </Switch>
+    </div>
   </div>
 )}
 

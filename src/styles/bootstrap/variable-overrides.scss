@@ -1,0 +1,15 @@
+$dark-green: #264653;
+$bright-green: #2A9D8F;
+$yellow: #E9C46A;
+$orange: #E76F51;
+$light-orange: #F4A261;
+
+$primary: $dark-green;
+$secondary: $orange;
+$headings-font-family: 'Oswald', sans-serif;
+$font-family-base: 'Lato', sans-serif;
+$headings-color: $dark-green;
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';

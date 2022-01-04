@@ -1,22 +1,16 @@
 @import '../../styles/modules-entry.scss';
 
+// Override Fullcalendar CSS
+
+:root {
+  --fc-today-bg-color: $gray-100;
+}
+
 .fc {
   flex-grow: 1;
   height: 95vh;
   min-height: 700px;
-  color: $primary;
 }
-
-/* Change this value manually if further expand the time */
-
-.fc .fc-timegrid-col.fc-day-today {
-  background-color: white;
-}
-/*debug some printing style*/
-
-/* .fc .fc-scrollgrid {
-  border-width: 1px;
-} */
 
 .fc-header-toolbar {
   display: none !important;
@@ -27,12 +21,12 @@
 }
 
 .fc-event-main-frame {
-  padding: 5px;
+  padding: 0.25rem;
 }
 
 .fc-v-event {
   border-color: white;
-  border-radius: 6px;
+  border-radius: 0.4rem;
 }
 
 .fc-event-title {
@@ -40,17 +34,5 @@
 }
 
 .fc-col-header-cell-cushion {
-  color: $primary;
   text-decoration: none;
 }
-
-.fc .fc-timegrid-col.fc-day-today { /*remove today colour*/
-  background-color: white;
-}
-
-/* @media (max-width: 991px) {
-  .fc {
-    min-height: 620px;
-    font-size: 0.9em;
-  }
-} */

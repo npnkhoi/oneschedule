@@ -1,109 +1,54 @@
-import React, {useRef, useState } from 'react'
+import React, {useRef} from 'react'
 import Calendar from './Calendar'
 import './index.scss'
 import { selectCurrentCourseSelection } from '../../store/selectors'
 import { useSelector } from 'react-redux'
-import ExternalExporter from './ExternalExporter'
 import TermSwitch from '../TermSwitch'
-import {SelectedCourses, CreditCount} from './SelectedCourses'
-import Searcher from './Searcher'
 import { Helmet } from 'react-helmet'
+import InfoBar from './InfoBar'
 
-const InfoBar = ({selectedCourses, className, calendarRef}) => {
-
-  return (
-    <div className={`info-bar d-flex flex-column col-3 ${className}`}>           
-      <div className='d-none d-md-block'><TermSwitch /></div>
-      <Searcher />
-      <SelectedCourses 
-        selectedCourses={selectedCourses}
-      />
-
-      <div className="row mt-auto mx-auto">
-          <div className="col-6 d-none d-md-block">
-            <ExternalExporter
-              className="calendar-exporter" 
-              componentRef={calendarRef}
-              selectedCourses={selectedCourses}>
-            </ExternalExporter>
-          </div>
-          
-          <div className="my-auto col-md-6">
-            <CreditCount 
-              selectedCourses={selectedCourses}
-            />
-          </div>
-      </div>
-
-    </div>
-  )
-}
-
-const Timetable = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
+const Schedule = () => {
   const currentCourseSelection = useSelector(selectCurrentCourseSelection)
-
-  const ExpandBtn = () => {
-    return (
-      <div type="button"
-        className='info-bar-btn py-0 px-1 d-block d-md-none'
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <i className="fas fa-pencil-square-o"></i>
-      </div>  
-    )
-  }
-
-  const CompressBtn = () => {
-    return (
-      <div type="button"
-        className='info-bar-btn py-0 px-1 d-block d-md-none'
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <i className="fas fa-compress"></i>
-      </div>  
-    )
-  }
   const calendarRef = useRef()
 
   return (
-    <div>
+    <div className='row w-100 m-0'>
       <Helmet>
         <title>OneSchedule</title>
       </Helmet>
-    
-      <div className="d-flex flex-column">
-        <div className="d-flex d-md-none flex-column align-items-center">
-          <TermSwitch />
-        </div>
-      
-        <div className="d-flex flex-row">          
-          <div ref={calendarRef} className="w-100">
-            <Calendar
-              selectedCourses={currentCourseSelection} 
+
+      {/* TERMSWITCHER AND COLLAPSABLE INFO BAR - FOR SMALL DEVICES */}
+      <div className="d-flex d-md-none flex-column align-items-center">
+        <TermSwitch />
+      </div>
+      <p className="d-md-none d-block">
+        <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Edit schedule
+        </button>
+        <div className="collapse mt-3" id="collapseExample">
+          <div className="card card-body">
+            <InfoBar
+              selectedCourses={currentCourseSelection}
             />
           </div>
-          
-          <InfoBar 
-            selectedCourses={currentCourseSelection}
-            className={"d-none d-md-flex"}
-          />
-          
-          {isOpen ?
-            <div>
-              <CompressBtn />
-              <div className="infobar-pop d-block d-md-none" onClick={() => setIsOpen(!isOpen)}></div>
-                <InfoBar 
-                  selectedCourses={currentCourseSelection}
-                  className={"p-4 rounded-top d-md-none"}
-                />
-              </div>
-          : <ExpandBtn /> }
         </div>
+      </p>
+
+      {/* CALENDAR  */}
+      <div ref={calendarRef} className="col-md-9">
+        <Calendar
+          selectedCourses={currentCourseSelection} 
+        />
+      </div>
+      
+      {/* PERSISTENT INFO BAR - FOR LARGE DEVICES */}
+      <div className="d-md-inline-block d-none col-3">
+        <InfoBar
+          selectedCourses={currentCourseSelection}
+        />
       </div>
     </div>
   )
 }
 
-export default Timetable
+export default Schedule

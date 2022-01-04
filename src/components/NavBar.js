@@ -53,7 +53,7 @@ const Logo = () => (
 
 const NavBar = () => {
   return (
-    <div className='wrapper d-flex flex-row justify-content-start align-items-center sticky-top text-center
+    <div className='wrapper d-flex flex-row justify-content-start align-items-center fixed-top text-center
       flex-md-column'>
       <Logo />
       

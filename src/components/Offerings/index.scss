@@ -14,7 +14,7 @@
 
 /* GalleryView.js */
 .course-card {
-  background-color: $light-gray;
+  background-color: $gray-300;
   height: 200px;
   width: 240px;
   border-radius: 16px;
@@ -46,21 +46,18 @@
 
 /* Laptop display */
 
-@media (min-width: 992px) {
-  .right-bar {
-    min-width: 200px;
-    max-width: 250px;
-    position: sticky;
-    top: 24px;
-    z-index: 1020;
-  }
-}
+// @media (min-width: 992px) {
+//   .right-bar {
+//     min-width: 200px;
+//     max-width: 250px;
+//     position: sticky;
+//     top: 24px;
+//     z-index: 1020;
+//   }
+// }
 
 /* Tablet display */
 @media (max-width: 991px) {
-  .right-bar-course-count {
-    font-size: 1.4em;
-  }
   .gallery-view {
     width: 300px;
   }

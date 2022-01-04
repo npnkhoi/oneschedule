@@ -1,0 +1,30 @@
+@import '../../styles/modules-entry.scss';
+
+.course-id, .instructor-name{
+  width: 20%;
+}
+
+.course-title{
+  width: 60%;
+}
+
+.instructor-name, .course-title{ 
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.selecting > .list-group-item{
+  max-height: 100px;
+  z-index: 100;
+}
+
+.selecting > .list-group-item.focus {
+  background-color: $gray-400;
+}
+
+.selecting > .list-group-item:hover {
+  background-color: $gray-400;
+}
