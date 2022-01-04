@@ -39,7 +39,8 @@
     "react-to-print": "^2.13.0",
     "react-toastify": "^7.0.4",
     "web-vitals": "^0.2.4",
-    "yarn": "^1.22.11"
+    "yarn": "^1.22.11",
+    "sass": "^1.45.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -79,7 +80,6 @@
     "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-react": "^7.24.0",
     "identity-obj-proxy": "^3.0.0",
-    "react-test-renderer": "^17.0.2",
-    "sass": "^1.45.2"
+    "react-test-renderer": "^17.0.2"
   }
 }
