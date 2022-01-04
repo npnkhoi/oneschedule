@@ -23,6 +23,6 @@ jobs:
       - name: Cypress (integration test)
         uses: cypress-io/github-action@v2
         with:
-          run: yarn build
+          build: yarn build
           start: yarn start      
       
