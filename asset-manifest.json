@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/oneschedule/static/css/main.d5bad59e.chunk.css",
-    "main.js": "/oneschedule/static/js/main.5d08123b.chunk.js",
-    "main.js.map": "/oneschedule/static/js/main.5d08123b.chunk.js.map",
-    "runtime-main.js": "/oneschedule/static/js/runtime-main.0ad55d40.js",
-    "runtime-main.js.map": "/oneschedule/static/js/runtime-main.0ad55d40.js.map",
+    "main.css": "/oneschedule/static/css/main.91826d6d.chunk.css",
+    "main.js": "/oneschedule/static/js/main.e28fc0d0.chunk.js",
+    "main.js.map": "/oneschedule/static/js/main.e28fc0d0.chunk.js.map",
+    "runtime-main.js": "/oneschedule/static/js/runtime-main.c61ed790.js",
+    "runtime-main.js.map": "/oneschedule/static/js/runtime-main.c61ed790.js.map",
     "static/css/2.bd982727.chunk.css": "/oneschedule/static/css/2.bd982727.chunk.css",
-    "static/js/2.80b83f9e.chunk.js": "/oneschedule/static/js/2.80b83f9e.chunk.js",
-    "static/js/2.80b83f9e.chunk.js.map": "/oneschedule/static/js/2.80b83f9e.chunk.js.map",
-    "static/js/3.06766b3b.chunk.js": "/oneschedule/static/js/3.06766b3b.chunk.js",
-    "static/js/3.06766b3b.chunk.js.map": "/oneschedule/static/js/3.06766b3b.chunk.js.map",
+    "static/js/2.d13b01ff.chunk.js": "/oneschedule/static/js/2.d13b01ff.chunk.js",
+    "static/js/2.d13b01ff.chunk.js.map": "/oneschedule/static/js/2.d13b01ff.chunk.js.map",
     "index.html": "/oneschedule/index.html",
     "static/css/2.bd982727.chunk.css.map": "/oneschedule/static/css/2.bd982727.chunk.css.map",
-    "static/css/main.d5bad59e.chunk.css.map": "/oneschedule/static/css/main.d5bad59e.chunk.css.map",
-    "static/js/2.80b83f9e.chunk.js.LICENSE.txt": "/oneschedule/static/js/2.80b83f9e.chunk.js.LICENSE.txt",
+    "static/css/main.91826d6d.chunk.css.map": "/oneschedule/static/css/main.91826d6d.chunk.css.map",
+    "static/js/2.d13b01ff.chunk.js.LICENSE.txt": "/oneschedule/static/js/2.d13b01ff.chunk.js.LICENSE.txt",
     "static/media/Avatar.920d60e7.png": "/oneschedule/static/media/Avatar.920d60e7.png",
     "static/media/HorizontalLogo.eb5fb444.svg": "/oneschedule/static/media/HorizontalLogo.eb5fb444.svg",
-    "static/media/VerticalLogo.126cd675.svg": "/oneschedule/static/media/VerticalLogo.126cd675.svg"
+    "static/media/VerticalLogo.126cd675.svg": "/oneschedule/static/media/VerticalLogo.126cd675.svg",
+    "static/media/main.scss": "/oneschedule/static/media/fa-solid-900.eeccf4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.0ad55d40.js",
+    "static/js/runtime-main.c61ed790.js",
     "static/css/2.bd982727.chunk.css",
-    "static/js/2.80b83f9e.chunk.js",
-    "static/css/main.d5bad59e.chunk.css",
-    "static/js/main.5d08123b.chunk.js"
+    "static/js/2.d13b01ff.chunk.js",
+    "static/css/main.91826d6d.chunk.css",
+    "static/js/main.e28fc0d0.chunk.js"
   ]
 }
