@@ -1,11 +1,11 @@
-import './App.css';
+import './App.scss';
 import React  from 'react'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {HashRouter as Router } from 'react-router-dom'
-import NavBar from './components/NavBar';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import NavBar from './NavBar';
+import Main from './Main';
+import Footer from './Footer';
 
 function App() {
   return (

@@ -2,8 +2,8 @@ import React from 'react';
 // import { exportComponentAsJPEG} from 'react-component-export-image';
 import ExportCalendar from './ExportCalendar';
 
-import './ExternalExporter.css';
-import '../utils/index.css'
+import './ExternalExporter.scss';
+import '../utils/index.scss'
 
 
 // const jpgFilePropoties = {

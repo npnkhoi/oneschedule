@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
 import { getCourse } from '../../utils/course';
-import './Calendar.css'
+import './Calendar.scss'
 
 const Calendar = ({selectedCourses}) => {
   const [ scheduleOverlap, setScheduleOverlap ] = useState(false)

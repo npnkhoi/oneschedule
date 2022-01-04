@@ -6,10 +6,10 @@ const CourseCard = ({course}) => {
     className='course-card d-flex flex-column align-items-center m-4 shadow overflow-hidden'
   >
     <div className='thumbnail p-2 w-100 flex-shrink-0 d-flex justify-content-center align-items-center'>
-      <div className='thumbnail-text o-heading multiple-lines'>{course.id}</div>
+      <h5 className='thumbnail-text multiple-lines'>{course.id}</h5>
     </div>
     <div className='d-flex flex-column align-items-start p-3 text-start'>
-      <div className='fw-bold o-dark-primary mb-2'>{course.title}</div>
+      <div className='fw-bold  mb-2'>{course.title}</div>
       <div>{course.instructor}</div>
     </div>
   </Link>

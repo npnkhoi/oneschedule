@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
 import { getCategories, getCourse, getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
 import AddDropBtn from './AddDropBtn'
-import './OneCourse.css'
+import './OneCourse.scss'
 
 const Row = ({header, content}) => {
   return (
@@ -30,13 +30,13 @@ const OneCourse = ({courseId}) => {
       
       <div className="d-flex flex-column border-bottom mb-4 align-items-start">
         <div className='d-flex flex-row align-items-end w-100'>
-          <div className='o-heading flex-grow-1'>
+          <h4 className='flex-grow-1'>
             {course.id}  
-          </div>
+          </h4>
           <AddDropBtn course={course} preStatus={selected} />
         </div>
 
-        <div className='o-title o-dark-primary'>{course.title}</div>
+        <h1 className='display-4'>{course.title}</h1>
       </div>
       
       <div className='d-flex flex-column flex-md-row justify-content-around'>

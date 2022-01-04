@@ -1,0 +1,25 @@
+@import '../styles/modules-entry.scss';
+
+.wrapper {
+  background-color: $gray-200;
+  width: 5.6rem;
+  height: 100vh;
+
+  .navbar-btn {
+    &:hover, &.current {
+      color: $secondary;
+      font-weight: 900;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 100vw;
+    height: fit-content;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.125);
+    .nav-icon {
+      font-size: 1.5rem;
+    }
+    .h-logo {
+      height: 4rem;
+    }
+  }
+}

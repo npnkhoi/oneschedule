@@ -1,0 +1,38 @@
+@import '../../styles/modules-entry.scss';
+
+// Override Fullcalendar CSS
+
+:root {
+  --fc-today-bg-color: $gray-100;
+}
+
+.fc {
+  flex-grow: 1;
+  height: 95vh;
+  min-height: 700px;
+}
+
+.fc-header-toolbar {
+  display: none !important;
+}
+
+.fc-event-title {
+  word-wrap: break-word;
+}
+
+.fc-event-main-frame {
+  padding: 0.25rem;
+}
+
+.fc-v-event {
+  border-color: white;
+  border-radius: 0.4rem;
+}
+
+.fc-event-title {
+  font-weight: 600;
+}
+
+.fc-col-header-cell-cushion {
+  text-decoration: none;
+}

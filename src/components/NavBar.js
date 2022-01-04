@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import './NavBar.css'
+import './NavBar.scss'
 import logoVertical from '../assets/VerticalLogo.svg'
 import logoHorizontal from '../assets/HorizontalLogo.svg'
 
@@ -53,7 +53,7 @@ const Logo = () => (
 
 const NavBar = () => {
   return (
-    <div className='wrapper d-flex flex-row justify-content-start align-items-center sticky-top text-center
+    <div className='wrapper d-flex flex-row justify-content-start align-items-center fixed-top text-center
       flex-md-column'>
       <Logo />
       

@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import avatar from '../assets/Avatar.png'
-import './About.css'
+import './About.scss'
 
 const Contributor = ({contributor}) => {
   return (
@@ -49,12 +49,11 @@ const Contributors = () => {
 
 const About = () => {
   return (
-    <div className='d-flex flex-column align-items-center text-start m-auto o-big-body
-      col-md-8'>
+    <div className='d-flex flex-column align-items-center text-start m-auto fs-5 col-md-8'>
         <Helmet>
           <title>About - OneSchedule</title>
         </Helmet>
-      <p className='o-title'>Hi there!</p>
+      <h1>Hi there!</h1>
 
       <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
         <div className='d-flex flex-column col-6 align-items-center flex-shrink-0 col-md-4'>
@@ -62,13 +61,13 @@ const About = () => {
           
           <div className='d-flex flex-row mt-2'>
             <a href='https://github.com/npnkhoi'>
-              <i className='fab fa-github 2x o-dark-primary'/>
+              <i className='fab fa-github 2x '/>
             </a>
             <a href='https://www.linkedin.com/in/npnkhoi/'>
-              <i className='fab fa-linkedin-in 2x o-dark-primary ms-2'/>
+              <i className='fab fa-linkedin-in 2x  ms-2'/>
             </a>
             <a href='mailto: khoi.nguyen.190037@student.fulbright.edu.vn'>
-              <i className='far fa-envelope 2x o-dark-primary ms-2'/>
+              <i className='far fa-envelope 2x  ms-2'/>
             </a>
           </div>
         </div>
@@ -80,15 +79,14 @@ const About = () => {
             OneSchedule is free and open-source (
             <a href='https://github.com/npnkhoi/oneschedule'>Github</a>
             ).
-            
           </p>
         </div>
       </div>
 
-      <div className='mt-5'>
-      <div className='o-heading o-dark-primary'>Our developers</div>
-        <Contributors />
-        <p className='o-heading o-dark-primary'>Special thanks to:</p>
+      <div>
+        <h3>Our developers</h3>
+          <Contributors />
+        <h3>Special thanks to:</h3>
         
         <ul>
           <li>Le Thuc Minh Chau for being the first person to support this idea.</li>

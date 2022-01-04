@@ -1,11 +1,11 @@
 import React from 'react'
-import './index.css'
+import './index.scss'
 
 const CTA = ({link, text}) => {
   return (
     <a href={link} className='text-decoration-none'>
       <div className='cta my-2'>
-        <div className='text-white o-heading'>{text}</div>
+        <div className='text-white fs-5 fw-bold'>{text}</div>
       </div>
     </a>
   )

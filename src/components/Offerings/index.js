@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './index.css'
+import './index.scss'
 import { getLevel, getMajor } from '../../utils/course'
 import { useSelector } from 'react-redux'
 import moment from 'moment'
@@ -56,51 +56,50 @@ const Offerings = () => {
 
   // NOTICE: In this component, 'lg' breakpoint is used instead of 'md' as usual.
   return (
-    <div>
+    <div className='row'>
       <Helmet>
         <title>{term} Offerings - OneSchedule</title>
       </Helmet>
       
-      <div className='d-flex flex-column flex-lg-row justify-content-between'>
-        <div className='d-flex flex-column flex-grow-1 align-items-center order-2 order-lg-1'>
-          <TermSwitch />
+      {/* COURSE LIST */}
+      <div className='d-flex flex-column align-items-center col-lg-10 order-lg-1 order-2'>
+        <TermSwitch />
 
-          <div className="alert alert-primary w-100" role="alert">
-              <b>Last update: {moment(config.last_updated).fromNow()}. </b>
-              When in doubt, please double-check on OneStop.
+        <div className="alert alert-primary w-100" role="alert">
+            <b>Last update: {moment(config.last_updated).fromNow()}. </b>
+            When in doubt, please double-check on OneStop.
+        </div>
+        {compact 
+        ? <TableView filteredCourses={filteredCourses} 
+            selectedCourses={selectedCourses}
+          /> 
+        : <GalleryView filteredCourses={filteredCourses} />}
+      </div>
+      
+      {/* RIGHT BAR: FILTERS */}
+      <div className='right-bar order-lg-2 order-1 col-lg-2'>
+        {/* Button to toggle Gallery View */}
+        <div className='d-none d-lg-block gallery-view bg-light p-3 border rounded mb-3'>
+          <div className="form-check form-switch d-flex flex-row align-items-center">
+            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
+              onClick={() => setCompact(!compact)}
+            />
+            <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery (beta)</label>
           </div>
-          {compact 
-          ? <TableView filteredCourses={filteredCourses} 
-              selectedCourses={selectedCourses}
-            /> 
-          : <GalleryView filteredCourses={filteredCourses} />}
         </div>
 
-        <div className='right-bar flex-shrink-0 order-1 col-lg-2 ms-lg-4 order-lg-2'>
-          
-          {/* Button to toggler Gallery View */}
-          <div className='d-none d-lg-block gallery-view bg-light p-3 border rounded mb-3'>
-            <div className="form-check form-switch d-flex flex-row align-items-center">
-              <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
-                onClick={() => setCompact(!compact)}
-              />
-              <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery (beta)</label>
-            </div>
-          </div>
+        <Filter
+          majorFilter={majorFilter}            
+          instructorFilter={instructorFilter}            
+          categoryFilter={categoryFilter}            
+          levelFilter={levelFilter}
+          setMajorFilter={setMajorFilter}            
+          setInstructorFilter={setInstructorFilter}            
+          setCategoryFilter={setCategoryFilter}            
+          setLevelFilter={setLevelFilter}
+        />
 
-          <Filter
-            majorFilter={majorFilter}            
-            instructorFilter={instructorFilter}            
-            categoryFilter={categoryFilter}            
-            levelFilter={levelFilter}
-            setMajorFilter={setMajorFilter}            
-            setInstructorFilter={setInstructorFilter}            
-            setCategoryFilter={setCategoryFilter}            
-            setLevelFilter={setLevelFilter}
-          />
-
-          <div className='right-bar-course-count mt-3 fw-bold'> {filteredCourses.length} course(s) found </div>
-        </div>
+        <div className='right-bar-course-count my-3 fw-bold'> {filteredCourses.length} course(s) found </div>
       </div>
     </div>
   )

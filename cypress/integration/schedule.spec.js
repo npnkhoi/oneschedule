@@ -10,14 +10,14 @@ describe('Schedule', function() {
   }
 
   const trash = (course, numTimeBlocks) => {
-    cy.get('.selected-course').contains(course.id).parent().parent().parent().parent().get('.toggle-btns').get('.trash').click()
+    cy.get('.selected-course').contains(course.id).parent().parent().parent().parent().get('.togglers').get('.trash').last().click()
     const ret = numTimeBlocks - course.schedule.length
     cy.get('.fc-event-main').should('have.length', ret)
     return ret
   }
 
   const hide = (course, numTimeBlocks) => {
-    cy.get('.selected-course').contains(course.id).parent().parent().parent().parent().get('.toggle-btns').get('.eye').click()
+    cy.get('.selected-course').contains(course.id).parent().parent().parent().parent().get('.togglers').get('.eye').last().click()
     const ret = numTimeBlocks - course.schedule.length
     cy.get('.fc-event-main').should('have.length', ret)
     return ret
@@ -25,6 +25,7 @@ describe('Schedule', function() {
   
 
   beforeEach(function() {
+    cy.viewport('macbook-15')
     cy.visit('')
   })
 

@@ -14,7 +14,7 @@ const Filter = (props) => {
 
   return (
     <div className='bg-light p-3 border rounded'>
-      <div className='o-heading border-bottom pb-1'>Filters</div>
+      <h4 className='border-bottom pb-1'>Filters</h4>
 
       <div className='d-flex flex-row flex-wrap justify-content-around'>
         <div className='filter-card d-flex flex-column mt-3'>

@@ -1,5 +1,7 @@
+@import '../../styles/modules-entry.scss';
+
 .cta {
-  background-color: var(--dark-green);
+  background-color: $primary;
   border-radius: 8px;
   color: white;
   width: fit-content;
@@ -9,6 +11,6 @@
 }
 
 .cta:hover {
-  background-color: var(--orange) !important;
+  background-color: $orange !important;
   cursor: pointer;
 }
