@@ -19,12 +19,10 @@ jobs:
       
       - name: Jest (unit test)
         run: yarn jest
-      
-      - name: Build
-        run: yarn build
 
       - name: Cypress (integration test)
         uses: cypress-io/github-action@v2
         with:
+          run: yarn build
           start: yarn start      
       
