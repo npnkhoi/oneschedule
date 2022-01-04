@@ -87,7 +87,7 @@ const SelectedCourses = ({selectedCourses}) => {
             </div>
           </div>
           {/* EDIT BUTTONS */}
-          <div className="d-flex flex-column">
+          <div className="togglers d-flex flex-column">
             <div 
               className="btn eye"
               onClick={() => dispatch(toggleVisibility({id: course.id}))}
