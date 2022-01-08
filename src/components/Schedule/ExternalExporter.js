@@ -23,7 +23,6 @@ const ExternalExporter = (props) => {
       <button className="btn cta dropdown-toggle float-left"
        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         <i className="fa fa-download me-2" aria-hidden="true"></i>
-        Download
       </button>
       <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         {/* <li>

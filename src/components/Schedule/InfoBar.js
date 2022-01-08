@@ -13,12 +13,20 @@ const InfoBar = ({selectedCourses,calendarRef}) => {
       
       <Searcher />
       
-      <SelectedCourses 
-        selectedCourses={selectedCourses}
-      />
+      <div className="flex-grow-1">
+        <SelectedCourses
+          selectedCourses={selectedCourses}
+        />
+      </div>
 
-      <div className="toolbar row mt-auto mx-auto">
-          <div className="col-6 d-none d-md-block">
+      <div className="toolbar w-100 justify-content-between d-flex mt-auto border border-primary border-1 rounded">
+          <div className="my-auto mx-auto text-left">
+            <CreditCount 
+              selectedCourses={selectedCourses}
+            />
+          </div>
+
+          <div className="d-none d-md-block">
             <DownloadBtn
               className="calendar-exporter" 
               componentRef={calendarRef}
@@ -26,11 +34,6 @@ const InfoBar = ({selectedCourses,calendarRef}) => {
             </DownloadBtn>
           </div>
           
-          <div className="my-auto col-md-6">
-            <CreditCount 
-              selectedCourses={selectedCourses}
-            />
-          </div>
       </div>
     </div>
   )

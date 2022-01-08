@@ -20,24 +20,22 @@ const ColorPicker = ({courseId}) => {
   }
   return (
     <div className='me-2'>
-      <div className='color-btn btn rounded'
-        onClick={() => {
-          setChanging(!changing)
-        }}
-        style={({backgroundColor: color})}
+      <div className="dropdown">
+      <button className="btn dropdown-toggle float-left" style={({backgroundColor: color})}
+        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+        onClick={() => {setChanging(!changing)}}
       >
-      </div>
-      <div className='color-picker position-relative'>
-        {changing 
-        ? 
+      </button>
+      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li>
           <TwitterPicker
             colors={COLORS.sort()}
             onChangeComplete={changeColor}
             width="204px"
           />
-        : <div></div>
-        }
-      </div>
+        </li>
+      </ul>
+    </div>
     </div>
   )
 }
@@ -51,8 +49,8 @@ const CreditCount = ({selectedCourses}) =>{
   )
 
   return (
-    <div className="fw-bold fs-5">
-      Credits: {credits}
+    <div className="fw-bold">
+      <span className="d-inline d-sm-none d-lg-inline">Credits: </span>{credits}
     </div>
   )
 }
@@ -61,7 +59,7 @@ const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
 
   return (
-  <div className="selected-course-list d-flex flex-column overflow-scroll mt-2">
+  <div className="selected-course-list h-100 d-flex flex-column overflow-scroll mt-2">
     {
       selectedCourses
       .map(course => {
