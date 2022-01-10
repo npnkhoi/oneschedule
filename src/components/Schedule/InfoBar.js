@@ -13,11 +13,9 @@ const InfoBar = ({selectedCourses,calendarRef}) => {
       
       <Searcher />
       
-      <div className="flex-grow-1">
-        <SelectedCourses
-          selectedCourses={selectedCourses}
-        />
-      </div>
+      <SelectedCourses
+        selectedCourses={selectedCourses}
+      />
 
       <div className="toolbar w-100 justify-content-between d-flex mt-auto border border-primary border-1 rounded">
           <div className="my-auto mx-auto text-left">

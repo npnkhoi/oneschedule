@@ -59,7 +59,7 @@ const SelectedCourses = ({selectedCourses}) => {
   const dispatch = useDispatch()
 
   return (
-  <div className="selected-course-list h-100 d-flex flex-column overflow-scroll mt-2">
+  <div className="selected-course-list d-flex flex-column overflow-scroll mt-2">
     {
       selectedCourses
       .map(course => {

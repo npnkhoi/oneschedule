@@ -1,23 +1,26 @@
 @import '../../styles/modules-entry.scss';
 
-// .selected-courses {
-//   overflow: overlay;
-//   ::-webkit-scrollbar {
-//     width: 10px;
-//     display: none;
-//   }
-//   ::-webkit-scrollbar-thumb {
-//     background: $gray-600;
-//     border-radius: 3px;
-//   }
-//   :hover::-webkit-scrollbar{
-//     display: block;
-//   }
-// }
+.selected-course-list {
+  overflow-y: scroll;
+
+  // Legacy code -- know sure if I should delete
+  // overflow: overlay;
+  // ::-webkit-scrollbar {
+  //   width: 10px;
+  //   display: none;
+  // }
+  // ::-webkit-scrollbar-thumb {
+  //   background: $gray-600;
+  //   border-radius: 3px;
+  // }
+  // :hover::-webkit-scrollbar{
+  //   display: block;
+  // }
+}
 
 .selected-course {
   border-bottom: 1px solid $gray-300;
-  flex: 0 0 auto;
+  width: 100%;
 }
 
 .color-picker {
@@ -29,3 +32,5 @@
   width: 30px;
   height: 30px;
 }
+
+$dropdown-border-radius: 0;
