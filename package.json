@@ -2,7 +2,7 @@
   "name": "oneschedule",
   "version": "0.3.2",
   "private": true,
-  "homepage": "http://npnkhoi.github.io/oneschedule",
+  "homepage": "http://npnkhoi.github.io/oneschedule/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

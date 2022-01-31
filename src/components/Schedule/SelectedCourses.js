@@ -1,44 +1,9 @@
-import { TwitterPicker } from "react-color"
-import {COLORS} from '../../data/'
-import { useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
-import { setColor, toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
+import { toggleSelection, toggleVisibility } from "../../store/selectedCoursesSlice"
 import { getCourse } from "../../utils/course"
+import ColorPicker from "./ColorPicker"
 import './SelectedCourses.scss'
-
-
-const ColorPicker = ({courseId}) => {
-  const [changing, setChanging] = useState(false)
-  const color = useSelector(state => state.selectedCourses.value
-    .filter(course => course.id === courseId)[0].color)
-  const dispatch = useDispatch()
-
-  const changeColor = (color) => {
-    dispatch(setColor({id: courseId, color: color.hex}))   
-    setChanging(false)
-  }
-  return (
-    <div className='me-2'>
-      <div className="dropdown">
-      <button className="btn dropdown-toggle float-left" style={({backgroundColor: color})}
-        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
-        onClick={() => {setChanging(!changing)}}
-      >
-      </button>
-      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li>
-          <TwitterPicker
-            colors={COLORS.sort()}
-            onChangeComplete={changeColor}
-            width="204px"
-          />
-        </li>
-      </ul>
-    </div>
-    </div>
-  )
-}
 
 const CreditCount = ({selectedCourses}) =>{
   const credits = selectedCourses.reduce((preValue, curValue) => {

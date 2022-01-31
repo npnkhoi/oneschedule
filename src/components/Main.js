@@ -15,7 +15,7 @@ const Main = () => {
     : null
 
   return (
-  <div className='main'>
+  <div className='main w-100 text-center'>
     <div className='container-fluid py-3'>
       <Switch>
         <Route path='/about'>

@@ -1,7 +1,6 @@
 import FullCalendar from '@fullcalendar/react'
 import timeGridPlugin from '@fullcalendar/timegrid';
 import { useState } from 'react';
-import { toast } from 'react-toastify';
 import { getTextColor } from '../../utils/colors';
 import { getCourse } from '../../utils/course';
 import './Calendar.scss'
@@ -76,9 +75,10 @@ const Calendar = ({selectedCourses}) => {
   })
   if (scheduleOverlap !== overlapDeteced) {
     if (overlapDeteced) {
-      toast.error("There are some schedule conflicts!", {
-        toastId: 1
-      })
+      // toast.error("There are some schedule conflicts!", {
+      //   toastId: 1
+      // })
+      console.log('Schedule conflict');
     }
     setScheduleOverlap(overlapDeteced)
   }

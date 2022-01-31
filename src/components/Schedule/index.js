@@ -21,7 +21,7 @@ const Schedule = () => {
       <div className="d-flex d-md-none flex-column align-items-center">
         <TermSwitch />
       </div>
-      <p className="d-md-none d-block">
+      <div className="d-md-none d-block">
         <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           Edit schedule
         </button>
@@ -32,7 +32,7 @@ const Schedule = () => {
             />
           </div>
         </div>
-      </p>
+      </div>
 
       {/* CALENDAR  */}
       <div ref={calendarRef} className="col-md-9">
