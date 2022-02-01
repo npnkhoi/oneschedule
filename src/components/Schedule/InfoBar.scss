@@ -1,7 +1,7 @@
 @import '../../styles/modules-entry.scss';
 
 .info-bar {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     height: 90vh;
   }
 }

@@ -1,5 +1,5 @@
-import React  from 'react'
-import {HashRouter as Router } from 'react-router-dom'
+import React from 'react'
+import { HashRouter as Router } from 'react-router-dom'
 import './App.scss';
 import Main from './Main';
 import Footer from './Footer';
@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <TopNav />
-      <Main/>
+      <Main />
       <Footer />
     </Router>
   );

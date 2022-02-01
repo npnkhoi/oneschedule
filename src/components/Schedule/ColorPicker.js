@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { setColor } from "../../store/selectedCoursesSlice"
 import { TwitterPicker } from "react-color"
 import {COLORS} from '../../data/'
+import './ColorPicker.scss'
 
 const ColorPicker = ({ courseId }) => {
     const [changing, setChanging] = useState(false)
@@ -17,21 +18,20 @@ const ColorPicker = ({ courseId }) => {
     return (
         <div className='me-2'>
             <div className="dropdown">
-                <button className="btn p-3" style={({ backgroundColor: color })}
-                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                <button className="btn p-3 m-1" style={({ backgroundColor: color })}
                     onClick={() => { setChanging(!changing) }}
-                >
-                </button>
-                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                        <TwitterPicker
-                            colors={COLORS.sort()}
-                            onChangeComplete={changeColor}
-                            width="204px"
-                            triangle="hide"
-                        />
-                    </li>
-                </ul>
+                />   
+                {
+                    changing
+                    ? <TwitterPicker
+                        colors={COLORS.sort()}
+                        onChangeComplete={changeColor}
+                        width="18rem"
+                        triangle="hide"
+                        className="position-absolute twitter-picker border"
+                    />
+                    : <></>
+                }
             </div>
         </div>
     )

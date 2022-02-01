@@ -1,16 +1,13 @@
 import {SelectedCourses, CreditCount} from './SelectedCourses'
 import Searcher from './Searcher'
 import DownloadBtn from './ExternalExporter'
-import TermSwitch from '../TermSwitch'
 import './InfoBar.scss'
 
 
 const InfoBar = ({selectedCourses,calendarRef}) => {
 
   return (
-    <div className={`info-bar d-flex flex-column`}>
-      <div className='d-none d-md-block'><TermSwitch /></div>
-      
+    <div className='info-bar d-flex flex-column'>
       <Searcher />
       
       <SelectedCourses

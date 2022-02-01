@@ -3,6 +3,7 @@ import { backward, forward } from '../store/termSlice'
 import { selectTerm } from '../store/selectors'
 import { getTermId, prettyTerm } from '../utils/term'
 import { availableTerms } from '../data'
+import './TermSwitch.scss'
 
 const TermSwitch = () => {
   const term = useSelector(selectTerm)
@@ -14,21 +15,23 @@ const TermSwitch = () => {
   
 
   return (
-    <h3 className=" d-flex flex-row align-items-center mb-3">
-      <button className={`${isFirst ? 'text-muted' : ''} btn btn-outline-primary`}
+    <div className="d-flex flex-row align-items-center text-light border border-light rounded">
+      <button className='btn btn-dark'
+        disabled={isFirst}
         onClick={() => dispatch(backward())}
       >
         <i className='fas fa-angle-left '/>
       </button>
 
-      <span className='flex-grow-1 px-3'> {prettyTerm(term)}</span>
+      <span className='flex-grow-1 text-center mx-3'> {prettyTerm(term)}</span>
 
-      <button className={`${isLast ? 'text-muted' : ''} btn btn-outline-primary`}
+      <button className='btn btn-dark'
+        disabled={isLast}
         onClick={() => dispatch(forward())}
       >
         <i className='fas fa-angle-right '/>
       </button>
-    </h3>
+    </div>
   )
 }
 

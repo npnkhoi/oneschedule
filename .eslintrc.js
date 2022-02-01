@@ -24,6 +24,7 @@ module.exports = {
     "rules": {
         'react/prop-types': 'off',
         'react/react-in-jsx-scope': 0,
+        'no-unused-vars': 'warn',
         "cypress/no-assigning-return-values": "error",
         "cypress/no-unnecessary-waiting": "error",
         "cypress/assertion-before-screenshot": "warn",

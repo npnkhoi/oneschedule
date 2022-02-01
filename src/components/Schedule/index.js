@@ -3,7 +3,6 @@ import Calendar from './Calendar'
 import './index.scss'
 import { selectCurrentCourseSelection } from '../../store/selectors'
 import { useSelector } from 'react-redux'
-import TermSwitch from '../TermSwitch'
 import { Helmet } from 'react-helmet'
 import InfoBar from './InfoBar'
 
@@ -17,32 +16,27 @@ const Schedule = () => {
         <title>OneSchedule</title>
       </Helmet>
 
-      {/* TERMSWITCHER AND COLLAPSABLE INFO BAR - FOR SMALL DEVICES */}
-      <div className="d-flex d-md-none flex-column align-items-center">
-        <TermSwitch />
-      </div>
-      <div className="d-md-none d-block">
-        <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      {/* COLLAPSABLE INFO BAR - FOR SMALL DEVICES */}
+      <div className="d-lg-none d-block mb-3">
+        <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-info-bar" aria-expanded="false" aria-controls="collapsable-info-bar">
           Edit schedule
         </button>
-        <div className="collapse mt-3" id="collapseExample">
-          <div className="card card-body">
-            <InfoBar
-              selectedCourses={currentCourseSelection}
-            />
-          </div>
+        <div className="collapse mt-3" id="collapsable-info-bar">
+          <InfoBar
+            selectedCourses={currentCourseSelection}
+          />
         </div>
       </div>
 
       {/* CALENDAR  */}
-      <div ref={calendarRef} className="col-md-9">
+      <div ref={calendarRef} className="col-lg-9">
         <Calendar
           selectedCourses={currentCourseSelection} 
         />
       </div>
       
       {/* PERSISTENT INFO BAR - FOR LARGE DEVICES */}
-      <div className="d-md-inline-block d-none col-3">
+      <div className="d-lg-inline-block d-none col-3">
         <InfoBar
           selectedCourses={currentCourseSelection}
         />
