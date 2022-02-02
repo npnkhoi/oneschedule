@@ -1,27 +1,27 @@
-/* eslint-disable react/jsx-key */
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
-import { getCategories, getCourse, getDescription, getNotes, getSchedule, isSelected } from '../utils/course'
-import AddDropBtn from './AddDropBtn'
+import { getCategories, getCourse, getDescription, getNotes, getSchedule, isSelected } from '../../utils/course'
+import AddDropBtn from '../utils/AddDropBtn'
 import './OneCourse.scss'
-
-const Row = ({header, content}) => {
-  return (
-    <tr>
-      <td className='fw-bold'> {header} </td>
-      <td className='multiple-lines'> {content} </td>
-    </tr>
-  )
-}
 
 const OneCourse = ({courseId}) => {
   const course = getCourse(courseId)
   const selectedCourses = useSelector(state => state.selectedCourses.value)
   const selected = isSelected(selectedCourses, course.id)
+  
   const OneStop = () => (
     <a href={course.url}> {course.id} </a>
   )
+  const Row = ({header, content}) => {
+    return (
+      <tr>
+        <td className='fw-bold'> {header} </td>
+        <td className='multiple-lines'> {content} </td>
+      </tr>
+    )
+  }
+  
   return (
     <div className='text-start m-4'>
       <Helmet>

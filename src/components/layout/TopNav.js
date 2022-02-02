@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
-import TermSwitch from './TermSwitch'
+import TermSwitch from '../utils/TermSwitch'
 import './TopNav.scss'
 
 const NavLink = ({label, path, icon}) => {
@@ -9,12 +9,12 @@ const NavLink = ({label, path, icon}) => {
     const isCurrentView = ('/' + location.pathname.split('/')[1]) === path
   
     return (
-      <Link to={path} 
+      <Link to={path}
         className={`nav-item nav-link d-flex flex-row align-items-center text-decoration-none p-2 me-3
           ${(isCurrentView ? 'active' : '')}
         `}
       >
-        <i className={`${icon} fa me-3 nav-icon text-center`}/>
+        <i className={`${icon} fa me-2 nav-icon text-center`}/>
         <span>{label}</span>
       </Link>
     )

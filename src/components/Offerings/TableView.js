@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { getCategories, isSelected } from "../../utils/course"
-import AddDropBtn from "../AddDropBtn"
+import AddDropBtn from "../utils/AddDropBtn"
 
 const TableView = ({filteredCourses, selectedCourses}) => {
   return <table className='table table-hover table-bordered align-middle'>

@@ -1,8 +1,8 @@
 import { Switch, Route, useRouteMatch } from 'react-router-dom'
-import Schedule from './Schedule';
-import Offerings from './Offerings';
-import OneCourse from './OneCourse';
-import About from './About';
+import Schedule from '../Schedule';
+import Offerings from '../Offerings';
+import OneCourse from '../Offerings/OneCourse';
+import About from '../About';
 import './Main.scss'
 
 const Main = () => {

@@ -1,9 +1,9 @@
 import React from 'react'
 import { HashRouter as Router } from 'react-router-dom'
 import './App.scss';
-import Main from './Main';
-import Footer from './Footer';
-import TopNav from './TopNav'
+import Main from './layout/Main';
+import Footer from './layout/Footer';
+import TopNav from './layout/TopNav'
 
 function App() {
   return (

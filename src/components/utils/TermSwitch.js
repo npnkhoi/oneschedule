@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { backward, forward } from '../store/termSlice'
-import { selectTerm } from '../store/selectors'
-import { getTermId, prettyTerm } from '../utils/term'
-import { availableTerms } from '../data'
+import { backward, forward } from '../../store/termSlice'
+import { selectTerm } from '../../store/selectors'
+import { getTermId, prettyTerm } from '../../utils/term'
+import { availableTerms } from '../../data'
 import './TermSwitch.scss'
 
 const TermSwitch = () => {
@@ -15,7 +15,9 @@ const TermSwitch = () => {
   
 
   return (
-    <div className="d-flex flex-row align-items-center text-light border border-light rounded">
+    <div className="d-flex flex-row align-items-center text-light border border-light rounded"
+      aria-label='term switch'
+    >
       <button className='btn btn-dark'
         disabled={isFirst}
         onClick={() => dispatch(backward())}
@@ -28,6 +30,7 @@ const TermSwitch = () => {
       <button className='btn btn-dark'
         disabled={isLast}
         onClick={() => dispatch(forward())}
+        aria-label='next term'
       >
         <i className='fas fa-angle-right '/>
       </button>
