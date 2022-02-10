@@ -1,4 +1,5 @@
 import { availableTerms, courseData } from "../data/"
+import config from './config'
 
 export const MAJORS = [
   {value: 'ARTS', label: 'Arts and Media'},
@@ -65,7 +66,7 @@ export const getDescription = (course) => {
 export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
 
 export const getRandomCourses = (n) => {
-  const courses = courseData[availableTerms[0]]
+  const courses = courseData[config.currentTerm]
   const total = courses.length
   if (n > total) {
     throw new RangeError("Requesting more elements than available.")

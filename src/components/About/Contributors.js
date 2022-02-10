@@ -5,7 +5,7 @@ const Contributor = ({ contributor }) => {
     return (
         <div className='m-3 text-center'>
             <div className='cont-img rounded-circle overflow-hidden width'>
-                <img className='w-100' src={contributor.avatar_url} />
+                <img className='w-100' src={contributor.avatar_url} alt='Developer avatar'/>
             </div>
             <a
                 href={contributor.html_url}

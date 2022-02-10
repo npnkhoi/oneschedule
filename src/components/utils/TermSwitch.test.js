@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import store from '../store'
-import config from "../utils/config";
-import { prettyTerm } from "../utils/term";
+import store from '../../store'
+import config from "../../utils/config";
+import { prettyTerm } from "../../utils/term";
 import TermSwitch from "./TermSwitch";
 
 beforeEach(() => {

@@ -3,18 +3,13 @@ describe('Navigation through main views', function() {
     cy.visit('')
   })
   it('Visit Offerings', function() {
-    cy.get('.navbar-btn').get('.fa-list-alt').click()
+    cy.get('.navbar').contains('Courses').click()
     cy.contains('Filters')
   })
 
-  it('Visit Contribute', function() {
-    cy.get('.navbar-btn').get('.fa-star').click()
-    cy.contains('OneSchedule')
-  })
-
   it('Visit About', function() {
-    cy.get('.navbar-btn').get('.fa-info').click()
-    cy.contains('OneSchedule')
+    cy.get('.navbar').contains('About').click()
+    cy.contains('Special thanks')
   })
 
   // TODO: Test Updates site?

@@ -1,6 +1,6 @@
 import { getRandomCourses } from '../../src/utils/course'
 
-describe('Schedule', function() {
+describe.skip('Schedule', function() {
   const searchAndChoose = (course, numTimeBlocks) => {
     // console.log('adding', course.id);
     cy.get('#search-input').type(course.id + '{enter}', {force: true})

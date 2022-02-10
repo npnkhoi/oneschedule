@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {availableTerms} from '../data'
+import config from "../utils/config";
 
 const term = createSlice({
   name: 'term',
   initialState: {
-    value: availableTerms[0]
+    value: config.currentTerm
   },
   reducers: {
     set: (state, action) => {

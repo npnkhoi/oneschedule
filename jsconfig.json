@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es6",
-    "baseUrl": "./src",
-    "checkJs": true,
-    "jsx": "react"
+    "target": "es6"
   },
-  "exclude": ["node_modules"],
   "typeAcquisition": { 
     "include": [ "jest" ] 
   },
-  "include": ["./node_modules/cypress", "cypress/**/*.js"]
+  "exclude": ["node_modules"],
+  "include": ["./node_modules/cypress", "cypress/**/*.js", "src"]
 }

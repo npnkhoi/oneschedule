@@ -1,3 +1,4 @@
 {
-  "baseUrl": "http://localhost:3000/oneschedule#/"
+  "baseUrl": "http://localhost:3000/oneschedule#/",
+  "video": false
 }

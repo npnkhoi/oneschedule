@@ -3,8 +3,8 @@ import { render, screen } from "@testing-library/react"
 import OneCourse from "./OneCourse"
 import "@testing-library/jest-dom/extend-expect"
 import { Provider } from 'react-redux';
-import store from '../store'
-import { getCourse } from '../utils/course';
+import store from '../../store'
+import { getCourse } from '../../utils/course';
 
 it('render one course', () => {
   const courseId = 'ARTS101_Fall2021_S01'
