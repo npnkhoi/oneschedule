@@ -49,6 +49,7 @@ const OneCourse = ({courseId}) => {
             <tbody>
               <Row header='Instructor' content={course.instructor} />
               <Row header='Schedule' content={getSchedule(course)} />
+              <Row header='Location' content={course.location} />
               <Row header='Categories' content={getCategories(course)} />
               <Row header='Credits' content={course.credits} />
               <Row header='OneStop URL' content={<OneStop />} />
