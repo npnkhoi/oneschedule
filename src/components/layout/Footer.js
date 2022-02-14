@@ -12,6 +12,7 @@ const Footer = () => (
     </span>
     <div>
       <a className='me-3 text-decoration-none text-secondary'href="https://github.com/npnkhoi/oneschedule">Github</a>
+      <a className='me-3 text-decoration-none text-secondary'href="https://www.facebook.com/fuv.oneschedule">Facebook</a>
       <a className='me-3 text-decoration-none text-secondary'href="https://npnkhoi.notion.site/OneSchedule-Updates-c3ce635ee748488a9fa33ecb925e3bdb">Updates</a>
       <a className='me-3 text-decoration-none text-secondary'href="https://npnkhoi.github.io/#/">Author</a>
     </div>
