@@ -2,20 +2,37 @@ import { Link, useLocation } from "react-router-dom"
 import TermSwitch from '../utils/TermSwitch'
 import './TopNav.scss'
 
-const NavLink = ({label, path, icon}) => {
+const NavLink = ({label, path, icon, isNew}) => {
     const location = useLocation()
     
     // Detect current view for highlighting
     const isCurrentView = ('/' + location.pathname.split('/')[1]) === path
-  
+
+    const RedDot = () => {
+      const styles = {
+        width: 12,
+        height: 12,
+        top: -5
+      }
+      return (
+        <div 
+          style={styles} 
+          className='rounded-circle bg-secondary color-red-300 position-relative'
+        />
+      )
+    }
+
     return (
       <Link to={path}
-        className={`nav-item nav-link d-flex flex-row align-items-center text-decoration-none p-2 me-3
+        className={`nav-item nav-link text-decoration-none p-2 me-3
           ${(isCurrentView ? 'active' : '')}
         `}
       >
-        <i className={`${icon} fa me-2 nav-icon text-center`}/>
-        <span>{label}</span>
+        <div className="d-flex flex-row align-items-center">
+          <i className={`${icon} fa me-2 nav-icon text-center`}/>
+          <span>{label}</span>
+          {isNew ? <RedDot /> : null}
+        </div>
       </Link>
     )
   }
@@ -32,7 +49,7 @@ const TopNav = () => {
                 <div className="navbar-nav">
                     <NavLink label='Schedule' path='/' icon='far fa-calendar'/>
                     <NavLink label='Courses' path='/courses' icon='fas fa-book-open'/>
-                    <NavLink label='About' path='/about' icon='fas fa-info'/>
+                    <NavLink label='About' path='/about' icon='fas fa-info' isNew/>
                     <div className="nav-item">
                       <TermSwitch />
                     </div>

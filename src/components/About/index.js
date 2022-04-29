@@ -24,7 +24,7 @@ const About = () => {
           </div>
 
           <div className="col-md-6">
-            <div className="rounded border p-3">
+            <div className="rounded border border-secondary p-3">
               <h5>2. Donate</h5>
               {/* <p>
                 Every dollar you donate will greatly help me deliver more features for OneSchedule (redit planning, classroom map, course review, nicer domain, etc.)
