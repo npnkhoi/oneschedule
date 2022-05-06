@@ -24,7 +24,7 @@ const About = () => {
         <div>
         
         <h5>Our developers</h5>
-        <p>This app would not be possible without my these skillful and dedicated programmers/friends of mine:</p>
+        <p>This app would not be possible without these dedicated programmers/friends of mine:</p>
         <Contributors />
 
         <h5>Special thanks to</h5>
