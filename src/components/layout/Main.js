@@ -3,6 +3,7 @@ import Schedule from '../Schedule';
 import Offerings from '../Offerings';
 import OneCourse from '../Offerings/OneCourse';
 import About from '../About';
+import Contribute from '../Contribute';
 import './Main.scss'
 
 const Main = () => {
@@ -19,6 +20,9 @@ const Main = () => {
       <Switch>
         <Route path='/about'>
           <About />
+        </Route>
+        <Route path='/contribute'>
+          <Contribute />
         </Route>
         <Route path='/courses/:id'>
           <OneCourse courseId={courseId}/>

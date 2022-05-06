@@ -1,76 +1,32 @@
 import { Helmet } from 'react-helmet'
 import './index.scss'
-import CTA from '../utils/CTA'
 import Contributors from './Contributors'
 
 const About = () => {
   return (
     <div className='d-flex flex-column text-start m-auto col-lg-8'>
-        <Helmet>
-          <title>About</title>
-        </Helmet>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
 
-      <h2 className='mb-4'>Contribute to OneSchedule</h2>
-        <div className='text-start row g-3'>
-          <div className="col-md-6">
-            <div className='border rounded p-3'>
-              <h5>1. Give feedback</h5>
-              <p>If you find a bug in the app, or simpy want to let us know your thoughts, we would love to here it. That is really the best and easiest way to support this app.</p>
-              <CTA 
-                text='Give feedback'
-                link='https://docs.google.com/forms/d/e/1FAIpQLScIRIBsSk_ciXC_peeanPJXyeh7MB56eaGhOvNWWoznSaM_6g/viewform'
-              />
-            </div>
+      <h2 className='my-4'>About this website</h2>
+        <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
+          <div className=''>
+            <p>This website is created mainly by Khoi (me), a Fulbright CS student. I don&apos;t like copying class schedule to paper during course selection each semester. Therefore, I built OneSchedule to help <i>visualize schedules in one minute</i>.</p>
+            <p>
+              OneSchedule is not an official channel of Fulbright. It is free, <a href='https://github.com/npnkhoi/oneschedule'>open-source</a> and maintained by volunteers.
+            </p>
+            <p>
+            This app is inspired by <a href='https://nusmods.com/'>NUSMods</a>.
+            </p>
           </div>
-
-          <div className="col-md-6">
-            <div className="rounded border border-secondary p-3">
-              <h5>2. Donate</h5>
-              {/* <p>
-                Every dollar you donate will greatly help me deliver more features for OneSchedule (redit planning, classroom map, course review, nicer domain, etc.)
-              </p> */}
-              <p>You can donate to OneSchedule via 2 following channels:</p>
-              <div>
-                <ol>
-                  <li>ACB Bank
-                    <ul>
-                      <li>Account number: 7132717</li>
-                      <li>Name: Nguyen Phung Nhat Khoi</li>
-                      <li>Branch: Nam Sai Gon</li>
-                      {/* <li>Message: OneSchedule Donation</li> */}
-                    </ul>
-                  </li>
-
-                  <li>Momo
-                    <ul>
-                      <li>Phone number: 0343059217</li>
-                      <li>Name: Nguyen Phung Nhat Khoi</li>
-                      {/* <li>Message: OneSchedule Donation</li> */}
-                    </ul>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-
-        <h2 className='my-4'>About this website</h2>
-          <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
-            <div className=''>
-              <p>This website is mainly created by Khoi, a Fulbright student who programs for fun. He doesn&apos;t like copying class schedule to paper before each semester, when thinking which courses to choose. Therefore, he built OneSchedule to visualize course schedules. This app is inspired by <a href='https://nusmods.com/'>NUSMods</a>.</p>
-              <p>
-                OneSchedule is not an official channel of Fulbright.
-                OneSchedule is free and open-source (
-                <a href='https://github.com/npnkhoi/oneschedule'>Github</a>
-                ).
-              </p>
-            </div>
-          </div>
         <div>
+        
         <h5>Our developers</h5>
-          <Contributors />
+        <p>This app would not be possible without my these skillful and dedicated programmers/friends of mine:</p>
+        <Contributors />
+
         <h5>Special thanks to</h5>
         
         <ul>
