@@ -37,7 +37,7 @@
     "react-toastify": "^7.0.4",
     "sass": "1.39.2",
     "web-vitals": "^0.2.4",
-    "yarn": "^1.22.11"
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
