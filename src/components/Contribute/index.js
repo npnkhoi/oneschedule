@@ -31,7 +31,7 @@ const Contribute = () => {
           <li>Momo: 0343059217 (NGUYEN PHUNG NHAT KHOI, don&apos;t judge my avatar)
           </li>
         </ol>
-        <p>When you give, don&apos;t forget to leave us a message. You support will be remembered forever.</p>
+        <p>When you give, don&apos;t forget to leave us a message. Your support will be remembered forever.</p>
         {/* <div className="rounded border p-3">
         </div> */}
 
