@@ -12,7 +12,7 @@ const About = () => {
       <h2 className='my-4'>About this website</h2>
         <div className='d-flex flex-column flex-md-row align-items-center justify-content-between'>
           <div className=''>
-            <p>This website is founded by Khoi, a Fulbright CS student. He doess&apos;t like copying class schedule to paper when selecting courses each semester. Therefore, he built <b>OneSchedule</b> to help visualize <b>schedules</b> in <b>one</b> minute.</p>
+            <p>This website is founded by Khoi, a Fulbright CS student. He doesn&apos;t like copying class schedule to paper when selecting courses each semester. Therefore, he built <b>OneSchedule</b> to help visualize <b>schedules</b> in <b>one</b> minute.</p>
             <p>
               OneSchedule is not an official channel of Fulbright. It is free, <a href='https://github.com/npnkhoi/oneschedule'>open-source</a> and maintained by volunteers.
             </p>
