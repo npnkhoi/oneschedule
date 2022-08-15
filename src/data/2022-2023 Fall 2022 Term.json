@@ -736,13 +736,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
+                "start_time": "09:45:00",
+                "end_time": "11:15:00"
             },
             {
                 "day": "Thursday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
+                "start_time": "09:45:00",
+                "end_time": "11:15:00"
             }
         ],
         "location": "Science Lab"
@@ -1132,13 +1132,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
+                "start_time": "07:30:00",
+                "end_time": "09:00:00"
             },
             {
                 "day": "Thursday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
+                "start_time": "07:30:00",
+                "end_time": "09:00:00"
             }
         ],
         "location": "Science Lab"
@@ -1200,12 +1200,12 @@
         "categories": [],
         "schedule": [
             {
-                "day": "Wednesday",
+                "day": "Tuesday",
                 "start_time": "09:45:00",
                 "end_time": "11:15:00"
             },
             {
-                "day": "Friday",
+                "day": "Thursday",
                 "start_time": "09:45:00",
                 "end_time": "11:15:00"
             }
@@ -1222,14 +1222,14 @@
         "categories": [],
         "schedule": [
             {
-                "day": "Monday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
             },
             {
-                "day": "Wednesday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
             }
         ],
         "location": "Ting Foundation Space"
@@ -1379,14 +1379,9 @@
         "categories": [],
         "schedule": [
             {
-                "day": "Wednesday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
-            },
-            {
-                "day": "Friday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
+                "day": "Monday",
+                "start_time": "09:00:00",
+                "end_time": "12:00:00"
             }
         ],
         "location": "Classroom 8 & 9"
@@ -1445,13 +1440,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             },
             {
                 "day": "Thursday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             }
         ],
         "location": "Ting Foundation Space"
@@ -1500,7 +1495,7 @@
                 "end_time": "11:15:00"
             }
         ],
-        "location": "Ting Foundation Space"
+        "location": "Classroom 8 & 9"
     },
     {
         "title": "Introductory Psychology",
@@ -1964,13 +1959,13 @@
         "schedule": [
             {
                 "day": "Wednesday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
+                "start_time": "09:45:00",
+                "end_time": "11:15:00"
             },
             {
                 "day": "Friday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
+                "start_time": "09:45:00",
+                "end_time": "11:15:00"
             }
         ],
         "location": "Ting Foundation Space"
@@ -1986,13 +1981,13 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             },
             {
                 "day": "Wednesday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             }
         ],
         "location": "Art Studio"
