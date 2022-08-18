@@ -7,7 +7,7 @@ import store from '../../store'
 import { getCourse } from '../../utils/course';
 
 it('render one course', () => {
-  const courseId = 'ARTS101_Fall2021_S01'
+  const courseId = 'ARTS101_Fall2022_S01'
   const course = getCourse(courseId)
 
   render(
