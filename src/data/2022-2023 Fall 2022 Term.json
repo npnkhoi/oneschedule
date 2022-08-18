@@ -35,12 +35,12 @@
         ],
         "schedule": [
             {
-                "day": "Monday",
+                "day": "Wednesday",
                 "start_time": "09:45:00",
                 "end_time": "11:15:00"
             },
             {
-                "day": "Wednesday",
+                "day": "Friday",
                 "start_time": "09:45:00",
                 "end_time": "11:15:00"
             }
@@ -200,6 +200,16 @@
             }
         ],
         "location": "Meeting room 1"
+    },
+    {
+        "title": "Capstone I",
+        "id": "ARTS401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIcjMQAT/arts401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "Global Humanities and Social Change",
@@ -613,9 +623,9 @@
         "title": "Design and Systems Thinking",
         "id": "CORE105_Fall2022_S03",
         "credits": "4",
-        "instructor": "Le Quan",
+        "instructor": "Phung Manh Duong",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TF5eGQAT/core105fall2022s03",
-        "description": "Faculty: Le Quan - E: quan.le@fulbright.edu.vn\nCategory: Core\nPre-requisite: No\n---\nCourse Description: We learn across the Fulbright Core how transformations have happened in human history \u2013 transformations in thought, in social structures, and in individual lives. We also see how transformations happen in nature and how human intervention transforms the natural world. But what about transformation that humans create through intentional design? This might be a new mask that filters air in a superior manner, a drone that can deliver medicines to remote parts of the country faster than any vehicle, or an app that allows you to create new music depending on your mood. In this course, we showcase how innovation is linked to rigorous scientific, mathematical, and engineering methods, with an emphasis on teamwork and hands-on experience. Students may take this as an entry point into the deeper study of design and engineering, or they may apply what they learn in this introductory course to their understanding of social and economic systems, to creative fabrication in the fine arts, or to the design and development of a start-up company in collaboration with Fulbright\u2019s Center for Entrepreneurship and Innovation. This course embraces both the art and science of creation, instilling the confidence to experiment, sometimes to fail, but ultimately to prevail in designing and building a better future.\n Designing and Systems Thinking (D&ST) course introduces the principles, processes, and tools of systems thinking and design thinking that are used to identify and generate solutions to frictions in our society. The building blocks to understand systems and to approach the designing process include: how ethnographic observation can be used to frame and observe real world challenges from the consumer\u2019s perspective; an introduction to systems thinking to understand how challenges exist in a broader context; design thinking, enabling a structured approach to developing solutions and concepts; prototyping of physical products and designs; and key engineering concepts that enable concepts to become reality. This course employs project-based learning among teams of students to identify problems, specify client, consumer, or societal needs, and design a system answering those needs. This process includes defining the product\u2019s features and specifications, decomposing it into components, integrating it into an environment, building it, and then validating and verifying its results. For example, teams may create elements of a smart home like automatic lighting and watering, or an Internet of Things (IoT) system for drought monitoring and early warning, or an automatic hand sanitizer. They will use modules, materials, tools, and facilities available in the market or in the Fulbright Maker Space to prototype these systems. In the process, they will develop a basic command of agile methods used in project management, learn basic modern fabrication skills, and practice critical thinking, including an understanding of constraints, negotiating between options, and examining social and environmental impact.\n ---\nLearning Objectives: After completing the course, students will be able to\nUnderstand and practice the tools and principles of systems thinking and design thinking.\nDefine the requirements of potential solutions and the quantitative and qualitative specifications of a system, with consideration for potentially related factors.\nDecompose a system into deterministic components and functions, explain how they interact with each other and behave when integrated as a whole system, and explain how the system works within its environment.\nBuild a working prototype and verify whether this prototype meets defined requirements and specifications.\nImprove communication skills through oral and written presentations, sharpen teamwork skills by working with other students on term projects, as well as critical thinking while giving comments to others.\n---\nAssessments & Grading: \nMaker Space Training: 20%\nTheory: 40%\nApplication: 40%",
+        "description": "Faculty: Phung Manh Duong - E: duong.phung@fulbright.edu.vn\nCategory: Core\nPre-requisite: No\n---\nCourse Description: We learn across the Fulbright Core how transformations have happened in human history \u2013 transformations in thought, in social structures, and in individual lives. We also see how transformations happen in nature and how human intervention transforms the natural world. But what about transformation that humans create through intentional design? This might be a new mask that filters air in a superior manner, a drone that can deliver medicines to remote parts of the country faster than any vehicle, or an app that allows you to create new music depending on your mood. In this course, we showcase how innovation is linked to rigorous scientific, mathematical, and engineering methods, with an emphasis on teamwork and hands-on experience. Students may take this as an entry point into the deeper study of design and engineering, or they may apply what they learn in this introductory course to their understanding of social and economic systems, to creative fabrication in the fine arts, or to the design and development of a start-up company in collaboration with Fulbright\u2019s Center for Entrepreneurship and Innovation. This course embraces both the art and science of creation, instilling the confidence to experiment, sometimes to fail, but ultimately to prevail in designing and building a better future.\n Designing and Systems Thinking (D&ST) course introduces the principles, processes, and tools of systems thinking and design thinking that are used to identify and generate solutions to frictions in our society. The building blocks to understand systems and to approach the designing process include: how ethnographic observation can be used to frame and observe real world challenges from the consumer\u2019s perspective; an introduction to systems thinking to understand how challenges exist in a broader context; design thinking, enabling a structured approach to developing solutions and concepts; prototyping of physical products and designs; and key engineering concepts that enable concepts to become reality. This course employs project-based learning among teams of students to identify problems, specify client, consumer, or societal needs, and design a system answering those needs. This process includes defining the product\u2019s features and specifications, decomposing it into components, integrating it into an environment, building it, and then validating and verifying its results. For example, teams may create elements of a smart home like automatic lighting and watering, or an Internet of Things (IoT) system for drought monitoring and early warning, or an automatic hand sanitizer. They will use modules, materials, tools, and facilities available in the market or in the Fulbright Maker Space to prototype these systems. In the process, they will develop a basic command of agile methods used in project management, learn basic modern fabrication skills, and practice critical thinking, including an understanding of constraints, negotiating between options, and examining social and environmental impact.\n ---\nLearning Objectives: After completing the course, students will be able to\nUnderstand and practice the tools and principles of systems thinking and design thinking.\nDefine the requirements of potential solutions and the quantitative and qualitative specifications of a system, with consideration for potentially related factors.\nDecompose a system into deterministic components and functions, explain how they interact with each other and behave when integrated as a whole system, and explain how the system works within its environment.\nBuild a working prototype and verify whether this prototype meets defined requirements and specifications.\nImprove communication skills through oral and written presentations, sharpen teamwork skills by working with other students on term projects, as well as critical thinking while giving comments to others.\n---\nAssessments & Grading: \nMaker Space Training: 20%\nTheory: 40%\nApplication: 40%",
         "categories": [
             "Core"
         ],
@@ -661,9 +671,9 @@
         "title": "Design and Systems Thinking",
         "id": "CORE105_Fall2022_S05",
         "credits": "4",
-        "instructor": "Phung Manh Duong",
+        "instructor": "Le Quan",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TF5eIQAT/core105fall2022s05",
-        "description": "Faculty: Phung Manh Duong - E: duong.phung@fulbright.edu.vn\nCategory: Core\nPre-requisite: No\n---\nCourse Description: We learn across the Fulbright Core how transformations have happened in human history \u2013 transformations in thought, in social structures, and in individual lives. We also see how transformations happen in nature and how human intervention transforms the natural world. But what about transformation that humans create through intentional design? This might be a new mask that filters air in a superior manner, a drone that can deliver medicines to remote parts of the country faster than any vehicle, or an app that allows you to create new music depending on your mood. In this course, we showcase how innovation is linked to rigorous scientific, mathematical, and engineering methods, with an emphasis on teamwork and hands-on experience. Students may take this as an entry point into the deeper study of design and engineering, or they may apply what they learn in this introductory course to their understanding of social and economic systems, to creative fabrication in the fine arts, or to the design and development of a start-up company in collaboration with Fulbright\u2019s Center for Entrepreneurship and Innovation. This course embraces both the art and science of creation, instilling the confidence to experiment, sometimes to fail, but ultimately to prevail in designing and building a better future.\n Designing and Systems Thinking (D&ST) course introduces the principles, processes, and tools of systems thinking and design thinking that are used to identify and generate solutions to frictions in our society. The building blocks to understand systems and to approach the designing process include: how ethnographic observation can be used to frame and observe real world challenges from the consumer\u2019s perspective; an introduction to systems thinking to understand how challenges exist in a broader context; design thinking, enabling a structured approach to developing solutions and concepts; prototyping of physical products and designs; and key engineering concepts that enable concepts to become reality. This course employs project-based learning among teams of students to identify problems, specify client, consumer, or societal needs, and design a system answering those needs. This process includes defining the product\u2019s features and specifications, decomposing it into components, integrating it into an environment, building it, and then validating and verifying its results. For example, teams may create elements of a smart home like automatic lighting and watering, or an Internet of Things (IoT) system for drought monitoring and early warning, or an automatic hand sanitizer. They will use modules, materials, tools, and facilities available in the market or in the Fulbright Maker Space to prototype these systems. In the process, they will develop a basic command of agile methods used in project management, learn basic modern fabrication skills, and practice critical thinking, including an understanding of constraints, negotiating between options, and examining social and environmental impact.\n ---\nLearning Objectives: After completing the course, students will be able to\nUnderstand and practice the tools and principles of systems thinking and design thinking.\nDefine the requirements of potential solutions and the quantitative and qualitative specifications of a system, with consideration for potentially related factors.\nDecompose a system into deterministic components and functions, explain how they interact with each other and behave when integrated as a whole system, and explain how the system works within its environment.\nBuild a working prototype and verify whether this prototype meets defined requirements and specifications.\nImprove communication skills through oral and written presentations, sharpen teamwork skills by working with other students on term projects, as well as critical thinking while giving comments to others.\n---\nAssessments & Grading: \nMaker Space Training: 20%\nTheory: 40%\nApplication: 40%",
+        "description": "Faculty: Le Quan - E: quan.le@fulbright.edu.vn\nCategory: Core\nPre-requisite: No\n---\nCourse Description: We learn across the Fulbright Core how transformations have happened in human history \u2013 transformations in thought, in social structures, and in individual lives. We also see how transformations happen in nature and how human intervention transforms the natural world. But what about transformation that humans create through intentional design? This might be a new mask that filters air in a superior manner, a drone that can deliver medicines to remote parts of the country faster than any vehicle, or an app that allows you to create new music depending on your mood. In this course, we showcase how innovation is linked to rigorous scientific, mathematical, and engineering methods, with an emphasis on teamwork and hands-on experience. Students may take this as an entry point into the deeper study of design and engineering, or they may apply what they learn in this introductory course to their understanding of social and economic systems, to creative fabrication in the fine arts, or to the design and development of a start-up company in collaboration with Fulbright\u2019s Center for Entrepreneurship and Innovation. This course embraces both the art and science of creation, instilling the confidence to experiment, sometimes to fail, but ultimately to prevail in designing and building a better future.\n Designing and Systems Thinking (D&ST) course introduces the principles, processes, and tools of systems thinking and design thinking that are used to identify and generate solutions to frictions in our society. The building blocks to understand systems and to approach the designing process include: how ethnographic observation can be used to frame and observe real world challenges from the consumer\u2019s perspective; an introduction to systems thinking to understand how challenges exist in a broader context; design thinking, enabling a structured approach to developing solutions and concepts; prototyping of physical products and designs; and key engineering concepts that enable concepts to become reality. This course employs project-based learning among teams of students to identify problems, specify client, consumer, or societal needs, and design a system answering those needs. This process includes defining the product\u2019s features and specifications, decomposing it into components, integrating it into an environment, building it, and then validating and verifying its results. For example, teams may create elements of a smart home like automatic lighting and watering, or an Internet of Things (IoT) system for drought monitoring and early warning, or an automatic hand sanitizer. They will use modules, materials, tools, and facilities available in the market or in the Fulbright Maker Space to prototype these systems. In the process, they will develop a basic command of agile methods used in project management, learn basic modern fabrication skills, and practice critical thinking, including an understanding of constraints, negotiating between options, and examining social and environmental impact.\n ---\nLearning Objectives: After completing the course, students will be able to\nUnderstand and practice the tools and principles of systems thinking and design thinking.\nDefine the requirements of potential solutions and the quantitative and qualitative specifications of a system, with consideration for potentially related factors.\nDecompose a system into deterministic components and functions, explain how they interact with each other and behave when integrated as a whole system, and explain how the system works within its environment.\nBuild a working prototype and verify whether this prototype meets defined requirements and specifications.\nImprove communication skills through oral and written presentations, sharpen teamwork skills by working with other students on term projects, as well as critical thinking while giving comments to others.\n---\nAssessments & Grading: \nMaker Space Training: 20%\nTheory: 40%\nApplication: 40%",
         "categories": [
             "Core"
         ],
@@ -711,7 +721,7 @@
         "credits": "4",
         "instructor": "Huynh Viet Linh",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TF5fGQAT/cs102fall2022s01",
-        "description": "Visiting Faculty: Huynh Viet Linh - E:\nPre-requisite: No\n---\nCourse Description\nThe course Algorithm Design and Analysis aims to provide students with concepts and techniques to design an algorithm, prove its correctness, and analyze its efficiency. Three algorithm design techniques (divide-and-conquer, greedy, and dynamic programming) will be introduced. Some common graph algorithms are also introduced and analyzed. The students will also learn how to classify algorithms into some basic complexity classes such as P, NP, and NP-complete. \n---\nLearning Outcomes:\n\n---\nAssessments & Grading:",
+        "description": "Visiting Faculty: Huynh Viet Linh - E: linh.huynh@fulbright.edu.vn\nPre-requisite: Completed all core courses\n---\nCourse Description\nThe course Algorithm Design and Analysis aims to provide students with concepts and techniques to design an algorithm, prove its correctness, and analyze its efficiency. Three algorithm design techniques (divide-and-conquer, greedy, and dynamic programming) will be introduced. Some common graph algorithms are also introduced and analyzed. The students will also learn how to classify algorithms into some basic complexity classes such as P, NP, and NP-complete. \n---\nLearning Outcomes:\nBy the end of this course, students will be able to\nDescribe an algorithm succinctly using pseudo code.\nProve the correctness of an algorithm using loop variants and mathematical induction.\nAnalyze the worst-case running time of an algorithm using asymptotic analysis.\nUnderstand three basic algorithm design techniques including divide-and-conquer, greedy, and dynamic programming. \nApply these three techniques to design efficient algorithms for different problems.\nUnderstand common graph algorithms and their running time analysis.\nUnderstand basic complexity classes including P, NP, NP-complete.\n---\nTentative weekly topics:\nWeek 1: Introduction\nWeek 2: Recurrence relation, Big-O, master theorem\nWeek 3: Divide-and-conquer algorithms (I): Merge sort, quick sort\nWeek 4: Divide-and-conquer algorithms (II): Matrix multiplication, closest pair\nWeek 5: Greedy algorithms I: Activity selection\nWeek 6: Greedy algorithms II: Knapsack, money changing\nWeek 7: Dynamic programming algorithms I: Rod cutting, matrix-chain multiplication\nWeek 8: Dynamic programming algorithms II: Longest common subsequence, knapsack\nWeek 9: Dynamic programming algorithms III: Edit distance\nWeek 10: Graph algorithms: Depth-first-search, breath-first-search, topological sort\nWeek 11: Graph algorithms: Minimum spanning tree, shortest path\nWeek 12: NP-completeness\nWeek 13: Student presentation\nWeek 14: Course summary\n---\nAssessments & Grading:\n(20%) Homework\n(20%) Quizzes\n(20%) Project: Each group of 3-4 students will design an efficient algorithm to solve a given problem.\n(40%) Final writing exam",
         "categories": [],
         "schedule": [
             {
@@ -959,6 +969,16 @@
         "location": "Art Studio"
     },
     {
+        "title": "Capstone I",
+        "id": "ECON401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIcjlQAD/econ401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Experiential Learning",
         "id": "EL102_Fall2022_S01",
         "credits": "4",
@@ -1032,14 +1052,9 @@
         ],
         "schedule": [
             {
-                "day": "Tuesday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
-            },
-            {
-                "day": "Thursday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "day": "Monday",
+                "start_time": "13:15:00",
+                "end_time": "16:15:00"
             }
         ],
         "location": "Makerspace"
@@ -1235,6 +1250,16 @@
         "location": "Ting Foundation Space"
     },
     {
+        "title": "Capstone I",
+        "id": "HIS401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIcjvQAD/his401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Introductory Biology",
         "id": "IS101_Fall2022_S01",
         "credits": "4",
@@ -1307,6 +1332,16 @@
         "location": "Science Lab"
     },
     {
+        "title": "Capstone I",
+        "id": "IS401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIck0QAD/is401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Foundations in Literary Studies",
         "id": "LIT101_Fall2022_S01",
         "credits": "4",
@@ -1375,7 +1410,7 @@
         "credits": "4",
         "instructor": "Isadora Wagner",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002THKU2QAP/lit305fall2022s01",
-        "description": "Visiting Faculty: Isadora Wagner - E: isadora.wagner@fulbright.edu.vn\nPre-requisite: 1 literature course in Historical Breadth Courses (pre-1800s designation) and 1 literature course in Comparative Breadth Courses (cross-cultural comparisons) - Contact Instructor for further clarification of pre-requisites.\n\n---\nCourse description\nStudents taking this course can expect to examine the transnational narrative rise, features, influences, and circulations of a distinct genre of literature, the Pacific travel narrative. By studying texts, films, and visual representations in the English language from the late eighteenth century to the present, we\u2019ll first learn how ships moved with increasing regularity on risky voyages between the world\u2019s oceans at the same time that novels came to dominate the literary world, and then turn our attention to the role of Pacific travel narratives in film, media, and prose narratives for expressing economic, military, and environmental anxieties in the twentieth and twenty-first centuries. As Michelle Burnham notes in Transoceanic America: Risk, Writing, and Revolution in the Global Pacific (2019), \u201cThese developments are related by their shared narrative dynamics, especially in the relationship between narrative suspense and numerical speculation, between words and numbers\u201d (23). Just as \u201cthe short-term risks and losses that attended these voyages were offset by their long-term profits, . . . the pleasure of accumulation concealed but also depended on the horrors of violence\u201d (ibid). Key authors include Captain James Cook, Herman Melville, Jack London, Amitav Ghosh, Nam Le, Lin Dinh, and films by H\u00e0m Tr\u1ea7n and Nguy\u1ec5n V\u00f5 Nghi\u00eam Minh, among others.\n---\nLearning Outcomes:\n1. Successfully employ close reading and interpretive analysis skills when making evidence-based arguments about literary and filmic texts and other visual media. \n2. Apply the language and critical approaches of travel narratives, transnationalism, cultural studies, and literary studies when examining and discussing fictionalized, autobiographical, and factual portrayals of transpacific oceanic travel. \n3. Work comparatively, critically, and deconstructively across genres, mediums, and geographies to account for patterns in portrayals of self, other, and nation when examining narratives of Pacific voyages.\n4. Critically assess distinctions between different genres of cultural representations, including their limits, effects, and public reception; for example, between a short story and a graphic memoir or a documentary and a Hollywood film.\n5. Gain confidence in presenting original research and ideas in a public setting before a cohort of peers and faculty.\n---\nAssessments and Grading\nWeekly in-class short writing assignments (1-2 paragraphs each) (20%)\nShort close reading paper (15%)\nGroup presentation / discussion leader assignment (15%) \nFinal research paper (20%)\nClass conference / individual presentation (10%)\nClass participation (20%)",
+        "description": "Visiting Faculty: Isadora Wagner - E: isadora.wagner@fulbright.edu.vn\nPre-requisite: 1.) one 100-level course in Lit (such as Foundations in Lit), and 2.) any 200-level Lit course.\n\n---\nCourse description\nStudents taking this course can expect to examine the transnational narrative rise, features, influences, and circulations of a distinct genre of literature, the Pacific travel narrative. By studying texts, films, and visual representations in the English language from the late eighteenth century to the present, we\u2019ll first learn how ships moved with increasing regularity on risky voyages between the world\u2019s oceans at the same time that novels came to dominate the literary world, and then turn our attention to the role of Pacific travel narratives in film, media, and prose narratives for expressing economic, military, and environmental anxieties in the twentieth and twenty-first centuries. As Michelle Burnham notes in Transoceanic America: Risk, Writing, and Revolution in the Global Pacific (2019), \u201cThese developments are related by their shared narrative dynamics, especially in the relationship between narrative suspense and numerical speculation, between words and numbers\u201d (23). Just as \u201cthe short-term risks and losses that attended these voyages were offset by their long-term profits, . . . the pleasure of accumulation concealed but also depended on the horrors of violence\u201d (ibid). Key authors include Captain James Cook, Herman Melville, Jack London, Amitav Ghosh, Nam Le, Lin Dinh, and films by H\u00e0m Tr\u1ea7n and Nguy\u1ec5n V\u00f5 Nghi\u00eam Minh, among others.\n---\nLearning Outcomes:\n1. Successfully employ close reading and interpretive analysis skills when making evidence-based arguments about literary and filmic texts and other visual media. \n2. Apply the language and critical approaches of travel narratives, transnationalism, cultural studies, and literary studies when examining and discussing fictionalized, autobiographical, and factual portrayals of transpacific oceanic travel. \n3. Work comparatively, critically, and deconstructively across genres, mediums, and geographies to account for patterns in portrayals of self, other, and nation when examining narratives of Pacific voyages.\n4. Critically assess distinctions between different genres of cultural representations, including their limits, effects, and public reception; for example, between a short story and a graphic memoir or a documentary and a Hollywood film.\n5. Gain confidence in presenting original research and ideas in a public setting before a cohort of peers and faculty.\n---\nAssessments and Grading\nWeekly in-class short writing assignments (1-2 paragraphs each) (20%)\nShort close reading paper (15%)\nGroup presentation / discussion leader assignment (15%) \nFinal research paper (20%)\nClass conference / individual presentation (10%)\nClass participation (20%)",
         "categories": [],
         "schedule": [
             {
@@ -1635,6 +1670,16 @@
         "location": "Art Studio"
     },
     {
+        "title": "Capstone I",
+        "id": "PSY401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIck5QAD/psy401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Fall Seminar",
         "id": "SEM301_Fall2022_S01",
         "credits": "2",
@@ -1796,6 +1841,16 @@
             }
         ],
         "location": "Online"
+    },
+    {
+        "title": "Capstone I",
+        "id": "SOCI401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIckPQAT/soci401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "Cultural and Intellectual Foundation of Vietnamese Literary Chinese 1",
@@ -1991,5 +2046,15 @@
             }
         ],
         "location": "Art Studio"
+    },
+    {
+        "title": "Capstone I",
+        "id": "VS401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIckAQAT/vs401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
     }
 ]
