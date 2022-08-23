@@ -28,6 +28,7 @@ yarn-error.log*
 
 .vscode/
 .vscode/settings.json
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 cypress/videos/
@@ -35,3 +36,5 @@ cypress/screenshots/
 =======
 package-lock.json
 >>>>>>> 4a29bde ('typo')
+=======
+>>>>>>> 4d2481b (readd)
