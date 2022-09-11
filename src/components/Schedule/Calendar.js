@@ -88,7 +88,7 @@ const Calendar = ({selectedCourses}) => {
     plugins={[ timeGridPlugin ]}
     initialView="timeGridWeek"
     events = {events}
-    slotMinTime = "08:00"
+    slotMinTime = "07:00"
     slotMaxTime = "21:00"
     scrollTime = "09:00"
     weekends = {false}
