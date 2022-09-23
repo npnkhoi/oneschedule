@@ -145,7 +145,7 @@
                 "end_time": "20:00:00"
             }
         ],
-        "location": "Classroom 502"
+        "location": "Classroom 1"
     },
     {
         "title": "Sound Art",
@@ -816,6 +816,16 @@
         "location": "Classroom 6 & 7"
     },
     {
+        "title": "Capstone I",
+        "id": "CS401_Fall2022_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TIcjbQAD/cs401fall2022s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Principles of Economics 1",
         "id": "ECON101_Fall2022_S01",
         "credits": "4",
@@ -837,7 +847,7 @@
                 "end_time": "16:30:00"
             }
         ],
-        "location": "Classroom 6 & 7"
+        "location": "Classroom 6&7 - 8&9"
     },
     {
         "title": "Principles of Economics 2",
@@ -1173,7 +1183,7 @@
                 "end_time": "16:30:00"
             }
         ],
-        "location": "Classroom 8 & 9"
+        "location": "Art Studio"
     },
     {
         "title": "Asian Borderlands",
@@ -1217,7 +1227,7 @@
                 "end_time": "18:15:00"
             }
         ],
-        "location": "Ting Foundation Space"
+        "location": "Art Studio"
     },
     {
         "title": "Capstone I",
@@ -1275,7 +1285,7 @@
                 "end_time": "14:45:00"
             }
         ],
-        "location": "Classroom 6 & 7"
+        "location": "Classroom 6&7 - 8&9"
     },
     {
         "title": "Organic Chemistry",
@@ -1300,16 +1310,6 @@
             }
         ],
         "location": "Science Lab"
-    },
-    {
-        "title": "Integrated Science: Independent Study",
-        "id": "IS398_Fall2022_S01",
-        "credits": "4",
-        "instructor": "Nguyen Thi Trang",
-        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TuD1hQAF/is398fall2022s01",
-        "description": "https://fuveduvn.sharepoint.com/:b:/s/share/EbfiERHBGGVFsbd-5ytSHu4Bq5z9rB9Hr0GYPGhoe4yyoA?e=mfweNa",
-        "categories": [],
-        "schedule": []
     },
     {
         "title": "Capstone I",
@@ -1338,7 +1338,7 @@
                 "end_time": "12:00:00"
             }
         ],
-        "location": "Classroom 502"
+        "location": "Art Studio"
     },
     {
         "title": "Critical Methods in Literary Studies",
@@ -1382,7 +1382,7 @@
                 "end_time": "14:45:00"
             }
         ],
-        "location": "Classroom 8 & 9"
+        "location": "Classroom 1"
     },
     {
         "title": "Pacific Voyages in Literature & Film",
@@ -1390,7 +1390,7 @@
         "credits": "4",
         "instructor": "Isadora Wagner",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002THKU2QAP/lit305fall2022s01",
-        "description": "Visiting Faculty: Isadora Wagner - E: isadora.wagner@fulbright.edu.vn\nPre-requisite: 1.) one 100-level course in Lit (such as Foundations in Lit), and 2.) any 200-level Lit course.\n\n---\nCourse description\nStudents taking this course can expect to examine the transnational narrative rise, features, influences, and circulations of a distinct genre of literature, the Pacific travel narrative. By studying texts, films, and visual representations in the English language from the late eighteenth century to the present, we\u2019ll first learn how ships moved with increasing regularity on risky voyages between the world\u2019s oceans at the same time that novels came to dominate the literary world, and then turn our attention to the role of Pacific travel narratives in film, media, and prose narratives for expressing economic, military, and environmental anxieties in the twentieth and twenty-first centuries. As Michelle Burnham notes in Transoceanic America: Risk, Writing, and Revolution in the Global Pacific (2019), \u201cThese developments are related by their shared narrative dynamics, especially in the relationship between narrative suspense and numerical speculation, between words and numbers\u201d (23). Just as \u201cthe short-term risks and losses that attended these voyages were offset by their long-term profits, . . . the pleasure of accumulation concealed but also depended on the horrors of violence\u201d (ibid). Key authors include Captain James Cook, Herman Melville, Jack London, Amitav Ghosh, Nam Le, Lin Dinh, and films by H\u00e0m Tr\u1ea7n and Nguy\u1ec5n V\u00f5 Nghi\u00eam Minh, among others.\n---\nLearning Outcomes:\n1. Successfully employ close reading and interpretive analysis skills when making evidence-based arguments about literary and filmic texts and other visual media. \n2. Apply the language and critical approaches of travel narratives, transnationalism, cultural studies, and literary studies when examining and discussing fictionalized, autobiographical, and factual portrayals of transpacific oceanic travel. \n3. Work comparatively, critically, and deconstructively across genres, mediums, and geographies to account for patterns in portrayals of self, other, and nation when examining narratives of Pacific voyages.\n4. Critically assess distinctions between different genres of cultural representations, including their limits, effects, and public reception; for example, between a short story and a graphic memoir or a documentary and a Hollywood film.\n5. Gain confidence in presenting original research and ideas in a public setting before a cohort of peers and faculty.\n---\nAssessments and Grading\nWeekly in-class short writing assignments (1-2 paragraphs each) (20%)\nShort close reading paper (15%)\nGroup presentation / discussion leader assignment (15%) \nFinal research paper (20%)\nClass conference / individual presentation (10%)\nClass participation (20%)",
+        "description": "Visiting Faculty: Isadora Wagner - E: isadora.wagner@fulbright.edu.vn\nOffice Hours: Office hours are available on Tuesdays and Thursdays, 8:00 \u2013 9:30AM or by appointment. To schedule a meeting, please email me 24 hours in advance.\nPre-requisite: 1) one 100-level course in Lit (such as LIT101 Foundations in Lit), and 2) any 200-level Lit course.\nThis course meets Literature requirements for comparative breadth, historical breadth, and 300-level coursework.\n\n---\nCourse description\nIn this course, you can expect to explore three important and interrelated developments in Anglophone literature and film from the eighteenth to the twenty-first centuries: (1) the transoceanic rise, influences, characteristics, and circulations of a distinct genre of narrative\u2014the Pacific travel story; (2) its formative influences upon the rise of the English novel in the eighteenth century and, in the late nineteenth and early twentieth centuries, modern cinema; and (3) the ways that Pacific travel narratives of both mediums reflect the anxieties of cultural contact, influence, and empire in an increasingly globalized and commercialized world. The course moves chronologically through four periods and pairs key works in literature with cinematic adaptations. In Part I: Early Precursors (1400s-1700s), we consider epics, epistles, encyclopedic compendiums, first-person travelogues, and imaginative plays that precede the novel and shape its development through their tales of far-off peoples, lands, adventures, risks, and riches in the Pacific. Part II: The Novel studies the emergence and generic conventions of arguably two of the very earliest English novels\u2014Daniel Defoe\u2019s Robinson Crusoe (1719) and Jonathan Swift\u2019s Gulliver\u2019s Travels (1726)\u2014out of true-life tales of mutiny, shipwreck, island maroonage, cultural contact, and rescue. \nBuilding on these themes, and noting the increasing imperialism and internationalism of the modern era, the third section considers two famous novels of the long nineteenth century\u2014Benito Cereno (1855), American author Herman Melville\u2019s short novel about a revolt on a slave ship in the Pacific off the coast of Chile, and Heart of Darkness (1899), English novelist Joseph Conrad\u2019s cautionary tale of colonialism, madness, and greed in the Dutch Congo, told from the viewpoint of Marlow, a Pacific sea captain, to an unnamed narrator on a boat. The last course section examines the role of the Pacific in the formation of early cinema and ongoing representations in literature and film today, including through the novels of Indian writer Amitav Ghosh (The Glass Palace, 2002), Hawaiian writer Kiana Davenport (House of Many Gods, 2007), and the films Apocalypse Now Redux (1979/2001), Amistad (1997), Castaway (2000), and Waikiki (2020). \n\n---\nLearning Outcomes: By the end of the course, students will be able to:\nSuccessfully employ close reading and interpretive analysis skills when making evidence-based arguments about literary and filmic texts and other visual media. \nApply the language and critical approaches of travel narratives, transnationalism, cultural studies, and literary studies when examining and discussing fictionalized, autobiographical, and factual portrayals of transpacific oceanic travel. \nWork comparatively, critically, and deconstructively across genres, mediums, and geographies to account for patterns in portrayals of self, other, and nation when examining narratives of Pacific voyages.\nCritically assess distinctions between different genres of cultural representations, including their limits, effects, and public reception; for example, between a short story and a graphic memoir or a documentary and a Hollywood film.\nGain confidence in presenting original research and ideas in a public setting before a cohort of peers and faculty.\n---\nRequired Texts & Materials \u2013 The primary texts and films for this course are listed below. Digital copies will be provided as Internet links or downloadable PDFs though the course Canvas site and email. Thus, Canvas, Zoom, and email accounts for Fulbright University are required for this course. A laptop or computer, word processor (for written assignments), and stable wi-fi connection are also needed.\nWilliam Shakespeare, The Tempest (1611) / The Tempest (dir. Julie Teymor, 2010; UK)\nDaniel Defoe, Robinson Crusoe (1719) / Castaway (dir. Robert Zemeckis, 2000; USA)\nJonathan Swift, Gulliver\u2019s Travels (1726) / Le Voyage de Gulliver \u00e0 Lilliput et Chez les G\u00e9ants (dir. Georges M\u00e9li\u00e8s, 1902; FR) and Gulliver Mickey (dir. Burt Gillett, 1934; USA)\nHerman Melville, Benito Cereno (1855) / Amistad (dir. Stephen Spielberg, 1997; USA)\nJoseph Conrad, Heart of Darkness (1899) / Apocalypse Now Redux (dir. Francis Ford Coppola, 1979/2001; USA)\nAmitav Ghosh, The Glass Palace (2002) / We Were Kings: Burma\u2019s Last Royals (dir. Alex Bescoby, 2017; UK)\nKiana Davenport, House of Many Gods (2007) / Waikiki (dir. Christopher Kahunahana, 2020; Hawaii, USA)\nFilm screenings will be offered at mutually agreeable times for the class during the weeks noted on the reading schedule. Copies of the screenings and post-film discussions will be made available on Canvas after the event. Students are encouraged to procure their own copies of the primary texts, if possible. Digital files or links will also be provided.\n---\n\nAssessments and Grading\nPaper #1- close reading: 10%\nPaper #2 - Lit/Film comparison: 20%\nPaper #3 - Research paper: 30%\nDiscussion starter (small group project, date varies); 10%\nWeekly Canvas discussion posts: 15%\nIn-class preparation and participation: 15%",
         "categories": [],
         "schedule": [
             {
@@ -1399,7 +1399,7 @@
                 "end_time": "12:00:00"
             }
         ],
-        "location": "Classroom 8 & 9"
+        "location": "Art Studio"
     },
     {
         "title": "Calculus",
@@ -1423,7 +1423,7 @@
                 "end_time": "09:00:00"
             }
         ],
-        "location": "Classroom 6 & 7"
+        "location": "Ting Foundation Space"
     },
     {
         "title": "Ideas of Math",
@@ -1488,7 +1488,7 @@
                 "end_time": "20:00:00"
             }
         ],
-        "location": "Classroom 4 & 5"
+        "location": "Classroom 6&7 - 8&9"
     },
     {
         "title": "Stochastic Calculus",
@@ -1880,7 +1880,7 @@
                 "end_time": "16:30:00"
             }
         ],
-        "location": "Classroom 502"
+        "location": "Classroom 8 & 9"
     },
     {
         "title": "Digital Humanities in Vietnam Studies Contexts I",
@@ -1906,7 +1906,7 @@
                 "end_time": "11:15:00"
             }
         ],
-        "location": "Classrooms 8&9"
+        "location": "Classroom 502"
     },
     {
         "title": "The Challenge of Change: Civil Society and Social Movements in Vietnam ",
@@ -1976,7 +1976,7 @@
         "credits": "4",
         "instructor": "Nguyen Nam",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002TF5f3QAD/vs214fall2022s01",
-        "description": "This course is in collaboration with Dartmouth College\nFaculty: Nguyen Nam - E: nam.nguyen@fulbright.edu.vn\nPre-requisite: CORE102 Modern Vietnamese Culture and Society\nReading/Writing: Intensive\n---\nCourse Description:\nThis course explores the contemporary history, society, and culture of Vietnam, with a focus on the period since the 1980s. It will provide you with an introduction to Vietnamese Studies, which is both an interdisciplinary field and a transnational community of scholars and students in Vietnam and across the world. The course incorporates scholarship and methods from multiple disciplines, with particular attention to History, Environmental Studies, and Literary and Film Studies. These interdisciplinary investigations will be linked by our focus on the theme of development in Vietnam. In this course, we will analyze development historically and contextually; we will also seek to understand it not simply as an economic process, but also as a political, social, and ideological category.\nThis course inaugurates a new collaborative learning partnership between Dartmouth College, a member of the Ivy League founded in 1769, and Fulbright University Vietnam, a liberal arts university established in Ho Chi Minh City in 2016. Throughout the fall 2020 term, you and your Fulbright classmates will be interacting and co-learning with a group of American students enrolled in a similar course at Dartmouth. Our two courses will function as a single \u201cconnected course,\u201d co-designed and co-taught by Dartmouth and Fulbright faculty, and using a common syllabus.  \n---\nLearning Objectives:\nStudents who successfully complete this course will:\nGain an introductory knowledge of the field of Vietnamese Studies and the major theoretical and practical issues in the field;\nConstruct a working definition of the meaning of development, informed by the critical perspectives developed by scholars in History, Environmental Studies, Literary and Film Studies, and other fields;\nInvestigate key questions in the study of the recent history of development in Vietnam (especially since the 1980s);\nInvestigate key questions in the study of environmental governance in contemporary Vietnam, especially as it relates to development;\nInvestigate how development has been represented, celebrated, and critiqued in contemporary Vietnamese literature and film;\nWork in a team composed of Dartmouth and Fulbright University students to design and execute a research project on some aspect of development in contemporary Vietnam;\nCollaborate with their teammates to produce a short film that presents the main findings of their research project.\n---\nAssessments & Grading:\nAttendance: 5%\nParticipation: 10%\nOne-on-one interview assignment: 5%\nOnline Field Journal: 10%\nDartmouth-Fulbright Team Research Project: 60%\nSummative Reflection paper: 10%",
+        "description": "This course is in collaboration with Dartmouth College\nFaculty: Nguyen Nam - E: nam.nguyen@fulbright.edu.vn\nPre-requisite: CORE102 Modern Vietnamese Culture and Society\nReading/Writing: Intensive\n* Cross-listed with Social Studies and History\n---\nCourse Description:\nThis course explores the contemporary history, society, and culture of Vietnam, with a focus on the period since the 1980s. It will provide you with an introduction to Vietnamese Studies, which is both an interdisciplinary field and a transnational community of scholars and students in Vietnam and across the world. The course incorporates scholarship and methods from multiple disciplines, with particular attention to History, Environmental Studies, and Literary and Film Studies. These interdisciplinary investigations will be linked by our focus on the theme of development in Vietnam. In this course, we will analyze development historically and contextually; we will also seek to understand it not simply as an economic process, but also as a political, social, and ideological category.\nThis course inaugurates a new collaborative learning partnership between Dartmouth College, a member of the Ivy League founded in 1769, and Fulbright University Vietnam, a liberal arts university established in Ho Chi Minh City in 2016. Throughout the fall 2020 term, you and your Fulbright classmates will be interacting and co-learning with a group of American students enrolled in a similar course at Dartmouth. Our two courses will function as a single \u201cconnected course,\u201d co-designed and co-taught by Dartmouth and Fulbright faculty, and using a common syllabus.  \n---\nLearning Objectives:\nStudents who successfully complete this course will:\nGain an introductory knowledge of the field of Vietnamese Studies and the major theoretical and practical issues in the field;\nConstruct a working definition of the meaning of development, informed by the critical perspectives developed by scholars in History, Environmental Studies, Literary and Film Studies, and other fields;\nInvestigate key questions in the study of the recent history of development in Vietnam (especially since the 1980s);\nInvestigate key questions in the study of environmental governance in contemporary Vietnam, especially as it relates to development;\nInvestigate how development has been represented, celebrated, and critiqued in contemporary Vietnamese literature and film;\nWork in a team composed of Dartmouth and Fulbright University students to design and execute a research project on some aspect of development in contemporary Vietnam;\nCollaborate with their teammates to produce a short film that presents the main findings of their research project.\n---\nAssessments & Grading:\nAttendance: 5%\nParticipation: 10%\nOne-on-one interview assignment: 5%\nOnline Field Journal: 10%\nDartmouth-Fulbright Team Research Project: 60%\nSummative Reflection paper: 10%",
         "categories": [],
         "schedule": [
             {
