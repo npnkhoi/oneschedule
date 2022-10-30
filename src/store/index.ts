@@ -13,10 +13,16 @@ import termReducer from './termSlice'
 //   localStorage.setItem('version', config.version)
 // }
 
-export default configureStore({
+const store = configureStore({
   reducer: {
     selectedCourses: selectedCoursesReducer,
     term: termReducer
   },
   preloadedState: loadFromLocalStorage()
 })
+export default store
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch

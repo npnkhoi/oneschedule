@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet"
-
-const { default: CTA } = require("../utils/CTA")
+import CTA from "../utils/CTA"
 
 const Contribute = () => {
   return (

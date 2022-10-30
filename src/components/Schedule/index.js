@@ -1,13 +1,13 @@
 import React, {useRef} from 'react'
 import Calendar from './Calendar'
 import './index.scss'
-import { selectCurrentCourseSelection } from '../../store/selectors'
+import { selectCurrentSelectedCourseIds } from '../../store/selectors'
 import { useSelector } from 'react-redux'
 import { Helmet } from 'react-helmet'
 import InfoBar from './InfoBar'
 
 const Schedule = () => {
-  const currentCourseSelection = useSelector(selectCurrentCourseSelection)
+  const currentCourseSelection = useSelector(selectCurrentSelectedCourseIds)
   const calendarRef = useRef()
 
   return (

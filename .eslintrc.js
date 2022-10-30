@@ -8,8 +8,11 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -19,7 +22,8 @@ module.exports = {
     },
     "plugins": [
         "react",
-        "cypress"
+        "cypress",
+        "@typescript-eslint"
     ],
     "rules": {
         'react/prop-types': 'off',
@@ -29,7 +33,8 @@ module.exports = {
         "cypress/no-unnecessary-waiting": "error",
         "cypress/assertion-before-screenshot": "warn",
         "cypress/no-force": "warn",
-        "cypress/no-async-tests": "error"
+        "cypress/no-async-tests": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
     },
     "settings": {
         react: {

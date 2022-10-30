@@ -1,4 +1,4 @@
-import { availableTerms, courseData } from "../data/"
+import { availableTerms, Course, courseData } from "../data"
 import config from './config'
 
 export const MAJORS = [
@@ -24,7 +24,7 @@ export const LEVELS = ['100', '200', '300'].map(
   level => ({label: level, value: level})
 )
 
-export const getCourse = (id) => {
+export const getCourse = (id: string) => {
   let ret = null
   availableTerms.forEach(term => {
     const matches = courseData[term].filter(course => course.id === id)
@@ -35,13 +35,13 @@ export const getCourse = (id) => {
   return ret
 }
 
-export const getMajor = (id) => {
+export const getMajor = (id: string) => {
   const head = id.slice(0, id.indexOf('_'))
   const split = head.search(/\d/g)
   return head.slice(0, split)
 }
 
-export const getLevel = (id) => {
+export const getLevel = (id: string) => {
   const head = id.slice(0, id.indexOf('_'))
   const split = head.search(/\d/g)
   return head[split] + '00'
@@ -49,33 +49,34 @@ export const getLevel = (id) => {
 
 // export const getDates = (course) => `${course.start_date} - ${course.end_date}`
 
-export const getSchedule = (course) => course.schedule
+export const getSchedule = (course: Course) => course.schedule
   .map(({day, start_time, end_time}) => `${day} ${start_time} - ${end_time}`)
   .join('\n')
 
-export const getNotes = (course) => course.description.split('---')[0]
+export const getNotes = (course: Course) => course.description.split('---')[0]
 
-export const getCategories = (course) => course.categories.join(', ')
+export const getCategories = (course: Course) => course.categories.join(', ')
 
-export const getDescription = (course) => {
+export const getDescription = (course: Course) => {
   const des = course.description
   const split = des.indexOf('---')
   return des.slice(split + 4)
 }
 
-export const isSelected = (selected, id) => (selected.filter(course => course.id === id).length > 0)
+export const isSelected = (selected: Array<Course>, id: string) => 
+  (selected.filter(course => course.id === id).length > 0)
 
-export const getRandomCourses = (n) => {
+export const getRandomCourses = (n: number) => {
   const courses = courseData[config.currentTerm]
   const total = courses.length
   if (n > total) {
     throw new RangeError("Requesting more elements than available.")
   }
-  const chosen = []
+  const chosen: string[] = []
   while (n--) {
     const available = courses.filter(course => !chosen.includes(course.id))
     const id = Math.floor(Math.random() * available.length)
-    chosen.push(courses[id])
+    chosen.push(courses[id].id)
   }
   return chosen
 }

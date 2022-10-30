@@ -4,7 +4,7 @@ import { getLevel, getMajor } from '../../utils/course'
 import { useSelector } from 'react-redux'
 import moment from 'moment'
 import config from '../../utils/config'
-import { selectCurrentCourseSelection, selectCurrentTerm, selectTerm } from '../../store/selectors'
+import { selectCurrentSelectedCourseIds, selectCurrentTerm, selectTerm } from '../../store/selectors'
 import { Helmet } from 'react-helmet'
 import TableView from './TableView'
 import GalleryView from './GalleryView'
@@ -13,7 +13,7 @@ import { usePersistedState } from '../../hooks'
 
 const Offerings = () => {
   const [compact, setCompact] = useState(true)
-  const selectedCourses = useSelector(selectCurrentCourseSelection)
+  const selectedCourses = useSelector(selectCurrentSelectedCourseIds)
   const courses = useSelector(selectCurrentTerm)
   const term = useSelector(selectTerm)
 

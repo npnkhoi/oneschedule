@@ -12,7 +12,7 @@ export function loadFromLocalStorage() {
 }
 
 // convert object to string and store in localStorage
-export function saveToLocalStorage(state) {
+export function saveToLocalStorage(state: Record<string, unknown>) {
   try {
     const serialisedState = JSON.stringify(state);
     localStorage.setItem("persistantState", serialisedState);

@@ -1,13 +1,13 @@
 module.exports = {
     // change to .tsx if necessary
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     output: {
       filename: './bundle.js'
     },
     resolve: {
       // changed from extensions: [".js", ".jsx"]
       extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".scss"],
-      fallback: {
+      fallback: { // https://github.com/sebbo2002/ical-generator/issues/64
         fs: false
       }
     },

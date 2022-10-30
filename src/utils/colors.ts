@@ -1,8 +1,8 @@
-import {COLORS} from '../data/'
+import {COLORS} from '../data'
 
 // Return an appropriate text color (black/white)
 // based on background color
-export const getTextColor = (bg) => {
+export const getTextColor = (bg: string) => {
   const backgroundColor = (bg ? bg : '#000000')
 
   const rgb = [
@@ -10,9 +10,9 @@ export const getTextColor = (bg) => {
     parseInt(backgroundColor.slice(3, 5), 16),
     parseInt(backgroundColor.slice(5, 7), 16),
   ]
-  const brightness = Math.round(((parseInt(rgb[0]) * 299) +
-  (parseInt(rgb[1]) * 587) +
-  (parseInt(rgb[2]) * 114)) / 1000);
+  const brightness = Math.round(((rgb[0] * 299) +
+  (rgb[1] * 587) +
+  (rgb[2] * 114)) / 1000);
   return (brightness > 125) ? 'black' : 'white'
 }
 
@@ -21,15 +21,15 @@ export const getTextColor = (bg) => {
 //   return COLORS[colorId]
 // }
 
-export const getRarestColor = (colors) => {
-  const freq = {}
+export const getRarestColor = (colors: Array<string>) => {
+  const freq: {[key: string]: number} = {}
   COLORS.forEach(color => {
     freq[color] = colors.filter(_color => _color === color).length
   })
 
-  let ret = null
+  let ret: string = COLORS[0]
   COLORS.forEach((color) => {
-    if (!ret || freq[color] < freq[ret]) {
+    if (freq[color] < freq[ret]) {
       ret = color
     }
   })

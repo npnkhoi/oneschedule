@@ -1,4 +1,4 @@
-import {COLORS} from '../data/'
+import {COLORS} from '../data'
 import { getRarestColor, getTextColor } from './colors'
 
 describe('Color utils', () => {

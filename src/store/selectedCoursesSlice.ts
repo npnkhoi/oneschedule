@@ -1,10 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { Course } from "../data";
 import { getRarestColor } from "../utils/colors";
+
+export interface SelectedCourseState {
+  id: string,
+  selected: boolean,
+  visible: boolean,
+  color: string
+}
+
+const initalState: SelectedCourseState[] = []
 
 const selectedCourses = createSlice({
   name: 'selectedCourses',
   initialState: {
-    value: []
+    value: initalState
   },
   reducers: {
     toggleSelection: (state, action) => {

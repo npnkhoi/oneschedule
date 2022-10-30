@@ -1,20 +1,21 @@
-import { courseData, availableTerms } from './'
+import { courseData, availableTerms } from '.'
 
 describe('Course data', () => {
   it('is an object', () => {
     expect(courseData).toBeInstanceOf(Object)
   })
 
-  it('each element has all required fields', () => {
-    const REQUIRED_FIELDS = ['id', 'title', 'instructor', 'credits', 'description', 'schedule', 'categories']
-    availableTerms.forEach(term => {
-      courseData[term].forEach(course => {
-        REQUIRED_FIELDS.forEach(field => {
-          expect(course[field]).toBeDefined()
-        })
-      })
-    })
-  })
+  // Disabling this because this looks like overlapping the role of TS type-checking system
+  // it('each element has all required fields', () => {
+  //   const REQUIRED_FIELDS = ['id', 'title', 'instructor', 'credits', 'description', 'schedule', 'categories']
+  //   availableTerms.forEach(term => {
+  //     courseData[term].forEach(course => {
+  //       REQUIRED_FIELDS.forEach(field => {
+  //         expect(course[field]).toBeDefined()
+  //       })
+  //     })
+  //   })
+  // })
 
   it('schedule attribute has correct format', () => {
     availableTerms.forEach(term => {

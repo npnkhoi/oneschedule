@@ -1,7 +1,14 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const Contributor = ({ contributor }) => {
+interface IContributor {
+    html_url: string,
+    login: string,
+    contributions: number,
+    avatar_url: string,
+}
+
+const Contributor = ({ contributor }: {contributor: IContributor}) => {
     return (
         <div className='m-3 text-center'>
             <div className='cont-img rounded-circle overflow-hidden width'>
@@ -19,7 +26,7 @@ const Contributor = ({ contributor }) => {
 }
 
 const Contributors = () => {
-    const [contributors, setContributors] = useState()
+    const [contributors, setContributors] = useState<IContributor[]>()
 
     useEffect(() => {
         axios.get('https://api.github.com/repos/npnkhoi/oneschedule/contributors')

@@ -1,4 +1,4 @@
-import {COLORS} from './'
+import {COLORS} from '.'
 
 describe('Color data', () => {
   
