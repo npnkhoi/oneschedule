@@ -1,4 +1,4 @@
-import { Switch, Route, useRouteMatch } from 'react-router-dom'
+import { Switch, Route, useRouteMatch, useParams } from 'react-router-dom'
 import Schedule from '../Schedule';
 import Offerings from '../Offerings';
 import OneCourse from '../Offerings/OneCourse';
@@ -8,10 +8,12 @@ import './Main.scss'
 
 const Main = () => {
   const match = useRouteMatch('/courses/:id')
-  
   // If viewing one course, get the info of current course
+  interface Params {
+    id: string
+  }
   const courseId = match
-    ? match.params.id
+    ? () => useParams<Params>().id
     : null
 
   return (

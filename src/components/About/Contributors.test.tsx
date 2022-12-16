@@ -3,7 +3,7 @@ import Contributors from './Contributors'
 import "@testing-library/jest-dom/extend-expect"
 
 test('At least 3 developers should appear', async () => {
-    render(() => <Contributors />)
+    render(<Contributors />)
     screen.getByText('Loading ...')
     
     await waitForElementToBeRemoved(() => screen.queryByText('Loading ...'), {timeout: 3000})

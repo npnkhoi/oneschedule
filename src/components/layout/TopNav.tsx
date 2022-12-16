@@ -2,7 +2,14 @@ import { Link, useLocation } from "react-router-dom"
 import TermSwitch from '../utils/TermSwitch'
 import './TopNav.scss'
 
-const NavLink = ({label, path, icon, isNew}) => {
+interface NavLinkProps {
+  label: string,
+  path: string,
+  icon: string,
+  isNew?: boolean
+}
+
+const NavLink = ({label, path, icon, isNew}: NavLinkProps) => {
     const location = useLocation()
     
     // Detect current view for highlighting

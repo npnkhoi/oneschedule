@@ -1,3 +1,4 @@
+// import { GroupBase, Options } from "react-select"
 import { availableTerms, Course, courseData } from "../data"
 import config from './config'
 

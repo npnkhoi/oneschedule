@@ -1,5 +1,6 @@
 import COLORS from './colors.json'
 import Fall2022 from './2022-2023 Fall 2022 Term.json'
+import Spring2023 from './2022-2023 Spring 2023 Term.json'
 
 export interface Course {
     title: string;
@@ -17,7 +18,7 @@ export interface Course {
     location?: string;
 }
 
-const courseData: {[key: string]: Array<Course>} = {Fall2022}
-const availableTerms = ['Fall2022']
+const courseData: {[key: string]: Array<Course>} = {Fall2022, Spring2023}
+const availableTerms = ['Fall2022', 'Spring2023']
 
 export {COLORS, courseData, availableTerms}

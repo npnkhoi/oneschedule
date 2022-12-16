@@ -14,7 +14,7 @@ const About = () => {
           <div className=''>
             <p>This website is founded by Khoi, a Fulbright CS student. He doesn&apos;t like copying class schedule to paper when selecting courses each semester. Therefore, he built <b>OneSchedule</b> to help visualize <b>schedules</b> in <b>one</b> minute.</p>
             <p>
-              OneSchedule is not an official channel of Fulbright. It is free, <a href='https://github.com/npnkhoi/oneschedule'>open-source</a> and maintained by volunteers.
+              OneSchedule is not an official channel of Fulbright. It is free, <a href='https://github.com/npnkhoi/oneschedule'>open-source</a>, and maintained by volunteers.
             </p>
             <p>
             This app is inspired by <a href='https://nusmods.com/'>NUSMods</a>.
@@ -24,7 +24,7 @@ const About = () => {
         <div>
         
         <h5>Our developers</h5>
-        <p>This app would not be possible without these dedicated programmers/friends of mine (Khoi):</p>
+        <p>This app would not be possible without these dedicated programmers:</p>
         <Contributors />
 
         <h5>Special thanks to</h5>
