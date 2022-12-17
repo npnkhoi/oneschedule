@@ -18,7 +18,7 @@ export interface Course {
     location?: string;
 }
 
-const courseData: {[key: string]: Array<Course>} = {Fall2022, Spring2023}
-const availableTerms = ['Fall2022', 'Spring2023']
+const courseData: {[key: string]: Course[]} = {Fall2022, Spring2023}
+const availableTerms: string[] = ['Fall2022', 'Spring2023']
 
 export {COLORS, courseData, availableTerms}

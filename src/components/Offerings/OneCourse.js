@@ -1,12 +1,20 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
+import { useParams, useRouteMatch } from 'react-router-dom'
 import { getCategories, getCourse, getDescription, getNotes, getSchedule, isSelected } from '../../utils/course'
 import AddDropBtn from '../utils/AddDropBtn'
 import './OneCourse.scss'
 
-const OneCourse = ({courseId}) => {
+const OneCourse = () => {
+  const courseId = useParams().id
   const course = getCourse(courseId)
+  if (!course) {
+    return <div>
+      <h1>Course not found</h1>
+      <p>If you think this is a bug, let us know!</p>
+    </div>
+  }
   const selectedCourses = useSelector(state => state.selectedCourses.value)
   const selected = isSelected(selectedCourses, course.id)
   

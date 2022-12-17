@@ -26,14 +26,20 @@ export const LEVELS = ['100', '200', '300'].map(
 )
 
 export const getCourse = (id: string) => {
-  let ret = null
-  availableTerms.forEach(term => {
-    const matches = courseData[term].filter(course => course.id === id)
-    if (matches.length > 0) {
-      ret = matches[0]
-    }
+  const allCourses: Course[] = availableTerms.reduce(
+    (courses, thisTerm) => {
+      return courses.concat(courseData[thisTerm])
+    }, 
+    [] as Course[]
+  )
+  const matches = allCourses.filter(course => {
+    return course.id === id
   })
-  return ret
+  if (matches.length > 0) {
+    return matches[0]
+  } else {
+    return null
+  }
 }
 
 export const getMajor = (id: string) => {

@@ -34,20 +34,15 @@ describe('course utils', () => {
       ],
       schedule: [
           {
-              day: "Tuesday",
-              start_time: "15:00:00",
-              end_time: "16:30:00"
-          },
-          {
-              day: "Thursday",
-              start_time: "15:00:00",
-              end_time: "16:30:00"
+              day: "Wednesday",
+              start_time: "12:00:00",
+              end_time: "14:00:00"
           }
       ],
       "location": "Classroom 1"
   }
 
-    const scheduleText = 'Wednesday 12:00 - 14:00'
+    const scheduleText = 'Wednesday 12:00:00 - 14:00:00'
 
     expect(getSchedule(course)).toBe(scheduleText)
   })
