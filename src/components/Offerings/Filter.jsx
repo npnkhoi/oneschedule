@@ -4,22 +4,22 @@ import Select, { Options } from 'react-select'
 import { selectCurrentTerm } from '../../store/selectors'
 import { CATEGORIES, LEVELS, MAJORS } from '../../utils/course'
 
-type StringStateSetter = Dispatch<SetStateAction<string>>
+// type StringStateSetter = Dispatch<SetStateAction<string>>
 
-interface FilterProps {
-  majorFilter: string,
-  setMajorFilter: StringStateSetter,
-  instructorFilter: string,
-  setInstructorFilter: Dispatch<SetStateAction<string>>,
-  levelFilter: string,
-  setLevelFilter: Dispatch<SetStateAction<string>>,
-  categoryFilter: string,
-  setCategoryFilter: Dispatch<SetStateAction<string>>
-}
+// interface FilterProps {
+//   majorFilter: string,
+//   setMajorFilter: StringStateSetter,
+//   instructorFilter: string,
+//   setInstructorFilter: Dispatch<SetStateAction<string>>,
+//   levelFilter: string,
+//   setLevelFilter: Dispatch<SetStateAction<string>>,
+//   categoryFilter: string,
+//   setCategoryFilter: Dispatch<SetStateAction<string>>
+// }
 
-const fooOptions: Options<string> = ['abc']
+// const fooOptions: Options<string> = ['abc']
 
-const Filter = (props: FilterProps) => {
+const Filter = (props) => {
   const courses = useSelector(selectCurrentTerm)
   // Instructor options for filter
   // NOTE: Majors and levels are saved as constants
@@ -35,13 +35,13 @@ const Filter = (props: FilterProps) => {
       <div className='d-flex flex-column align-items-center'>
         <div className='filter-card d-flex flex-column'>
           <div className='mb-1'>Majors</div>
-          <Select options={fooOptions} isMulti 
+          <Select options={MAJORS} isMulti 
           value={props.majorFilter}
-          // onChange={props.setMajorFilter}
+          onChange={props.setMajorFilter}
           />
         </div>
 
-        {/* <div className='filter-card d-flex flex-column mt-3'>
+        <div className='filter-card d-flex flex-column mt-3'>
           <div className='mb-1'>Instructors</div>
           <Select options={instructors} isMulti
           onChange={props.setInstructorFilter}
@@ -63,7 +63,7 @@ const Filter = (props: FilterProps) => {
           onChange={props.setCategoryFilter}
           value={props.categoryFilter}
           />
-        </div> */}
+        </div>
       </div>
     </div>
   )
