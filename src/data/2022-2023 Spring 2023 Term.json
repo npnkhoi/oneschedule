@@ -55,13 +55,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             },
             {
                 "day": "Thursday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             }
         ],
         "location": "Classroom 502"
@@ -78,14 +78,14 @@
         ],
         "schedule": [
             {
-                "day": "Monday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
+                "day": "Tuesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             },
             {
-                "day": "Wednesday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
+                "day": "Thursday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             }
         ],
         "location": "Classroom 502"
@@ -138,7 +138,19 @@
         "categories": [
             "E1"
         ],
-        "schedule": []
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 502"
     },
     {
         "title": "Gender and Sexuality in East Asian Film and Fiction",
@@ -178,6 +190,16 @@
             }
         ],
         "location": "Science Lab"
+    },
+    {
+        "title": "ARTS Capstone II",
+        "id": "ARTS402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X91K1QAJ/arts402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your Capstone.",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "Modern Vietnamese Culture and Society",
@@ -757,6 +779,16 @@
         "location": "Online"
     },
     {
+        "title": "CS Capstone II",
+        "id": "CS402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92hcQAB/cs402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Principles of Economics 1",
         "id": "ECON101_Spring2023_S02",
         "credits": "4",
@@ -769,13 +801,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
             },
             {
                 "day": "Thursday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
             }
         ],
         "location": "Classroom 502"
@@ -862,7 +894,19 @@
         "categories": [
             "E2"
         ],
-        "schedule": []
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "17:00:00",
+                "end_time": "20:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "17:00:00",
+                "end_time": "20:00:00"
+            }
+        ],
+        "location": "Classroom 1"
     },
     {
         "title": "Giving and Effectiveness",
@@ -929,6 +973,16 @@
             }
         ],
         "location": "Classroom 8 & 9"
+    },
+    {
+        "title": "ECON Capstone II",
+        "id": "ECON402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92iuQAB/econ402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "Experiential Learning",
@@ -1196,6 +1250,16 @@
         "location": "Classroom 8 & 9"
     },
     {
+        "title": "HIS Capstone II",
+        "id": "HIS402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92izQAB/his402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Physics of Smart Devices",
         "id": "IS106_Spring2023_S01",
         "credits": "4",
@@ -1383,6 +1447,16 @@
         "location": "Online"
     },
     {
+        "title": "IS Capstone II",
+        "id": "IS402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92j4QAB/is402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "American Short Story",
         "id": "LIT205_Spring2023_S01",
         "credits": "4",
@@ -1469,6 +1543,16 @@
             }
         ],
         "location": "Online"
+    },
+    {
+        "title": "LIT Capstone II",
+        "id": "LIT402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92j9QAB/lit402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "Multivariable Calculus",
@@ -1758,6 +1842,16 @@
         "location": "Classroom 4 & 5"
     },
     {
+        "title": "PSY Capstone II",
+        "id": "PSY402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92jEQAR/psy402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "Spring Seminar",
         "id": "SEM302_Spring2023_S01",
         "credits": "2",
@@ -1777,7 +1871,14 @@
         "categories": [
             "E2"
         ],
-        "schedule": []
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "08:30:00",
+                "end_time": "11:30:00"
+            }
+        ],
+        "location": "Classroom 1"
     },
     {
         "title": "Research Methods & Statistics",
@@ -1791,7 +1892,14 @@
             "E3",
             "E4"
         ],
-        "schedule": []
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:00:00",
+                "end_time": "16:00:00"
+            }
+        ],
+        "location": "Classroom 4 & 5"
     },
     {
         "title": "Introduction to Political Science",
@@ -1905,7 +2013,14 @@
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X89lOQAR/soci309spring2023s01",
         "description": "Faculty: Liz Miles\nReading/Writing: Intensive\nPre-requisite: SOCI102 Social Inquiry and any 200-level course(s)\n---\nCourse Description: What is sex? Why do we have sex? Moreover, how can we study sex anthropologically and ethically? Both in terms of male/female bodily sexes and in terms of sexual play and desire, sex has been a central concern to anthropologists since the very founding of the discipline in the late nineteenth century. This course analyzes the various aspects of sex from the perspective of two subfields of anthropology: sociocultural anthropology and linguistic anthropology. This includes but is not limited to: social and linguistic constructions of sex and gender; gendered violence; power and language; the regulation of sex; and the queering of sex. Course readings will draw broadly from both historical and contemporary work within sociocultural and linguistic anthropology, as well as critical works (theoretical and historical) in gender/sexuality studies.\n---\nLearning Outcomes: By the end of this course students should be able to:\n1. Critically identify and discuss the ways in which sex (and gender) are constructed within different social contexts\n2. Understand and apply different ethnographic research methods to a particular research question\n3. Articulate the ethics of ethnographic research, with a particular focus on gender and sex\n4. Identify the components of a solid research project and grant application\n5. Critically read anthropological texts\n6. Explain and use key terms in the interdisciplinary study of sex, gender, and sexuality\n7. Critically and self-reflexively interpret sex and gender in their own personal, political, social, and mediated worlds\n---\nTentative Schedule:\nIntroduction to the Course\nWeek 1 - The History of Sex in Anthropology\nWeek 2 - How Do We Ethnographically Study Sex? Methods - How Do We Ethnographically Study Sex? Ethics\nWeek 3 - Sex, Sexuality, and Sex: Defining Terms - Constructing Sex\nWeek 4 - Gender and Language in Practice - Sex and Sports\nWeek 5 - Regulating Sex - Queer Sex\nWeek 6 - Queer International\nWeek 7 - In-class discussions of mid-term progress/project - Race and Desire\nWeek 8 - Language and Desire\nWeek 9 - Moral & Sexual Panics - Sex Work\nWeek 10 - Sexual Violence and \u201cRape Culture\u201d - Pornography\nWeek 11 - Aging and Sex - Virginity\nWeek 12 - Sex and Disability - Sexual Rights\n\\Week 13 - Decline of Sex? - Future of Sex?\nWeek 14 - Class discussion and workshopping\n---\nAssessments & Grading:\nReading Reflections/Class Discussion Leading (15%)\nFinal Project (40%)\nMini Assignments (45%)",
         "categories": [],
-        "schedule": []
+        "schedule": [
+            {
+                "day": "Thursday",
+                "start_time": "15:00:00",
+                "end_time": "18:00:00"
+            }
+        ],
+        "location": "Art Studio"
     },
     {
         "title": "The Anthropology of Law",
@@ -1928,6 +2043,16 @@
             }
         ],
         "location": "Art Studio"
+    },
+    {
+        "title": "SS Capstone II",
+        "id": "SOCI402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92jdQAB/soci402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "How to Become a Writer: Lessons from Vietnamese and Non-Vietnamese Writers",
@@ -2097,6 +2222,16 @@
                 "end_time": "11:00:00"
             }
         ],
-        "location": "Art Studio"
+        "location": "Meeting room 1"
+    },
+    {
+        "title": "VS Capstone II",
+        "id": "VS402_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X92k7QAB/vs402spring2023s01",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
     }
 ]
