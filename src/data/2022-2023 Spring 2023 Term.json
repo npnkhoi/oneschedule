@@ -121,7 +121,7 @@
         ],
         "schedule": [
             {
-                "day": "Tuesday",
+                "day": "Wednesday",
                 "start_time": "11:30:00",
                 "end_time": "14:30:00"
             }
@@ -163,16 +163,11 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
-            },
-            {
-                "day": "Wednesday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
+                "start_time": "16:45:00",
+                "end_time": "19:45:00"
             }
         ],
-        "location": "Art Studio"
+        "location": "Classroom 1"
     },
     {
         "title": "Curating in Context",
@@ -190,6 +185,16 @@
             }
         ],
         "location": "Science Lab"
+    },
+    {
+        "title": "ARTS Capstone I",
+        "id": "ARTS401_Spring2023_S02",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X9W1EQAV/arts401spring2023s02",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "ARTS Capstone II",
@@ -1059,7 +1064,7 @@
                 "end_time": "14:45:00"
             },
             {
-                "day": "Wednesday",
+                "day": "Tuesday",
                 "start_time": "13:15:00",
                 "end_time": "14:45:00"
             }
@@ -1205,7 +1210,7 @@
                 "end_time": "09:30:00"
             }
         ],
-        "location": "Science Lab"
+        "location": "Art Studio"
     },
     {
         "title": "Fulbright History Lab",
@@ -1390,17 +1395,17 @@
         "categories": [],
         "schedule": [
             {
-                "day": "Tuesday",
+                "day": "Monday",
                 "start_time": "08:00:00",
                 "end_time": "09:30:00"
             },
             {
-                "day": "Thursday",
+                "day": "Wednesday",
                 "start_time": "08:00:00",
                 "end_time": "09:30:00"
             }
         ],
-        "location": "Art Studio"
+        "location": "Science Lab"
     },
     {
         "title": "Advanced Organic Chemistry",
@@ -1439,7 +1444,7 @@
                 "end_time": "09:00:00"
             },
             {
-                "day": "Wednesday",
+                "day": "Thursday",
                 "start_time": "07:30:00",
                 "end_time": "09:00:00"
             }
@@ -1744,7 +1749,7 @@
                 "end_time": "11:30:00"
             }
         ],
-        "location": "Ting Foundation Space"
+        "location": "Art Studio"
     },
     {
         "title": "Community Development",
@@ -2042,7 +2047,7 @@
                 "end_time": "11:15:00"
             }
         ],
-        "location": "Art Studio"
+        "location": "Classroom 4 & 5"
     },
     {
         "title": "SS Capstone II",
@@ -2183,6 +2188,27 @@
         "location": "Classroom 6 & 7"
     },
     {
+        "title": "Applied Digital Humanities for Vietnam Studies",
+        "id": "VS216_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Nguyen Nam",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X89lWQAR/vs216spring2023s01",
+        "description": "This is the continuity of the course VS116 Digital Humanities in Vietnam Studies Contexts, offered in the Fall 2022. \nFaculty: Nguyen Nam - Co-taught by a teaching team from Vietnam National University Hanoi\nPre-requisite: VS116 Digital Humanities in Vietnam Studies Contexts I\nCategory: Exploratory - Arts and Humanities (E1); Exploratory - Social Sciences (E2); Exploratory - Mathematics and Computing (E4)\n* Cross-listed with Computer Science (CS), History (HIS), Social Studies (SS)\n---\nCourse Description:\nApplied Digital Humanities in Vietnam Studies Contexts is specifically designed for and offered to Fulbright students who successfully completed the first part of this course taught during the Fall Semester 2022.  \nBy nature, what to be offered during the upcoming semester is an applied course, in which students will have the chance to conduct their team research project previously approved by the Teaching Team. \nThis second part of our year-long course will be offered in a seminar format. Based on the research topics already decided, the course will be specifically designed to equip its students with particular knowledge, methods, and tools needed to carry out their projects in depth and successfully.  \nStudents will go through all stages of a research project, reporting the outcomes of each of the stages to the class and receive feedback from their classmates. Experts in the DH field from Vietnam National University Hanoi and VinUni with their expertise fitting the students\u2019 projects will be invited to work closely with the student teams, providing the students with hands-on experience/learning and guiding them through every step of the research procedure.\nSince students of this course have their academic strength in either social science/humanities or computer science (CS), the course will first and foremost introduce extant digital tools to its students and show them how employ the tools most effectively. Additionally, CS students with some knowledge of encoding or visual computing can develop some new tools to meet specific demands of their research project.   \nStudents\u2019 products coming out from their year-end final research project should be both academically and socially meaningful. As the dissemination of their research results must be carefully schemed to serve both academic community and the public in the spirit of DH, student research projects are not only academic by nature, but also community-oriented works located within the framework of Vietnam Studies.  \n---\nLearning Outcomes:\nRaise questions in research in the field of the humanities and social sciences, and search for solutions with the help from computer science.\nRecognize potentialities for interdisciplinary DH (research) project\nIdentify characteristics of DH in terms of interdisciplinary of computer science and the humanities.\nApply consistent theories and practical pipelines that contribute to the development of DH projects in the field of Vietnam Studies.\nEarn basic applied knowledge of data analyzing and processing, multimedia presentation and visualization, copyright, ethical and other issues in DH projects\nMaster digital tools for digitizing texts, images, videos, sounds\n---\nSyllabus:\nThe course will be taught by Fulbright instructor (Nguy\u1ec5n Nam) and an expert team from Vietnam National University Hanoi (Profs. L\u00ea Thanh H\u00e0, L\u01b0 Th\u1ecb Thanh L\u00ea, and Nguy\u1ec5n \u0110\u00ecnh L\u00e2m) who are leading scholars in the field of digital humanities in Vietnam.\nTogether, the Teaching Team is designing a syllabus carefully tailored to best suit the students\u2019 approved final team research project proposals.\nThe detailed syllabus is on progress and will be available by early January 2023\n---\nAssessments & Grading\nClass participation \u2013 all students will be expected to actively contribute to class discussions of assigned readings, provide feedback to their peers in class, and engage actively & productively during class and during designated team meetings (20%)\nTeam project progress report (20%)\nContribution to Mid-Term Report \u2013 (10%)\nTeam Project Presentation (10%)\nFinal Team Project (30%)\nCompletion of biweekly self- and team-member project contribution reports (10%)",
+        "categories": [
+            "E1",
+            "E2",
+            "E4"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "09:00:00",
+                "end_time": "12:00:00"
+            }
+        ],
+        "location": "Art Studio"
+    },
+    {
         "title": "How to Share Your Stories on the Silver Screen: Film Production in Contemporary",
         "id": "VS218_Spring2023_S01",
         "credits": "4",
@@ -2217,7 +2243,7 @@
         "categories": [],
         "schedule": [
             {
-                "day": "Friday",
+                "day": "Wednesday",
                 "start_time": "08:00:00",
                 "end_time": "11:00:00"
             }
