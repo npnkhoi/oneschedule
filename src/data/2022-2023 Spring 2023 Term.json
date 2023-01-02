@@ -732,12 +732,12 @@
         "categories": [],
         "schedule": [
             {
-                "day": "Monday",
+                "day": "Tuesday",
                 "start_time": "07:30:00",
                 "end_time": "09:00:00"
             },
             {
-                "day": "Wednesday",
+                "day": "Thursday",
                 "start_time": "07:30:00",
                 "end_time": "09:00:00"
             }
@@ -750,18 +750,18 @@
         "credits": "4",
         "instructor": "Huynh Viet Linh",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X87N2QAJ/cs302spring2023s01",
-        "description": "Faculty: Huynh Viet Linh\nPre-requisites: CS101 Computer Science 1 AND CS201 Computer Science 2 AND MATH102 Discrete Maths\nNote: This is a major course in the theory are of Computer Science major.\n---\nCourse Description: Sometime in middle school, you were taught how to multiply and add large numbers. You may have noticed then that multiplication took longer to perform than addition. Why is that? Is it because multiplication is somehow a fundamentally harder problem? Or were you just taught an inefficient way to multiply large numbers? Is there a faster way to multiply large numbers? And how do we define \u201cfaster\u201d anyway? The primary focus of this course is computational complexity theory, which is the branch of computer science that uses the tools of mathematics and logic to answer questions like these. Topics include models of computation, problem hardness, and computability.",
+        "description": "Visiting Faculty: Huynh Viet Linh\nPre-requisites: CS101 Computer Science 1 AND CS201 Computer Science 2 AND MATH102 Discrete Maths\nNote: This is a major course in the theory are of Computer Science major.\n---\nCourse Description: Sometime in middle school, you were taught how to multiply and add large numbers. You may have noticed then that multiplication took longer to perform than addition. Why is that? Is it because multiplication is somehow a fundamentally harder problem? Or were you just taught an inefficient way to multiply large numbers? Is there a faster way to multiply large numbers? And how do we define \u201cfaster\u201d anyway? The primary focus of this course is computational complexity theory, which is the branch of computer science that uses the tools of mathematics and logic to answer questions like these. Topics include models of computation, problem hardness, and computability.",
         "categories": [],
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             },
             {
                 "day": "Wednesday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             }
         ],
         "location": "Art Studio"
@@ -782,6 +782,16 @@
             }
         ],
         "location": "Online"
+    },
+    {
+        "title": "CS Capstone I",
+        "id": "CS401_Spring2023_S02",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X9xaUQAR/cs401spring2023s02",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "CS Capstone II",
@@ -1126,13 +1136,13 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "09:45:00",
+                "end_time": "11:15:00"
             },
             {
                 "day": "Wednesday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "09:45:00",
+                "end_time": "11:15:00"
             }
         ],
         "location": "Art Studio"
@@ -1233,7 +1243,7 @@
         "location": "Classroom 8 & 9"
     },
     {
-        "title": "History of Vietnamese Republicanism",
+        "title": "History of the Republic of Vietnam",
         "id": "HIS307_Spring2023_S01",
         "credits": "4",
         "instructor": "Sean Fear",
@@ -1342,7 +1352,7 @@
         "credits": "4",
         "instructor": "Huynh Viet Linh",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X89iyQAB/is210spring2023s01",
-        "description": "Faculty: Huynh Viet Linh\nCategory: Exploratory - Sciences & Engineering (E3); Exploratory - Maths & Computing (E4)\nPre-requisite: (1) CORE104 Scientific Inquiry and (2) One intermediate-level course in either Integrated Science, Engineering, Maths or Computer Science. If you don\u2019t meet these requirements and you are incredibly passionate to take the course, you must contact the instructor before enrolling.\n* Cross-listed with Computer Science (CS), Mathematics (MATH)\n---\nCourse Description: The course provides a broad introduction to the entire field of bioinformatics. The basics of bioinformatics are explained, followed by discussions of the state-of-the-art computational tools available to solve medical and biological research problems. All key areas of bioinformatics are covered including biological databases, sequence alignment, gene and promoter prediction, molecular phylogenetics, structural bioinformatics, genomics and proteomics. Some applications of bioinformatics will be introduced at the end of the course.\n---\nLearning Objectives:\nUnderstand the importance of biological big data\nPractical skills to find, retrieve and analyze data from major bioinformatic databases\n Ability to evaluate analysis bioinformatic results\n Elementary knowledge of phylogenetics and protein structure prediction/visualization\nAbility to apply bioinformatics tools to related fields\n---\nTentative Course Lectures\n1. Lecture 1: Introduction to Bioinformatics. History, related fields, application\n2. Lecture 2: Online biological databases. NCBI, UNIPROT, DRUGBANK, PROTEIN DATABANK\u2026\n3. Lecture 3: BLAST. Sequence queries against biological database, BLAST algorithms.\n4. Lecture 4 : Sequence alignment. Pair-wise alignment, multiple sequence alignment, local and global alignment, dynamic programing. Finding concencus sequence.\n5. Lecture 5: Molecular evolution and phylogenetics tree. Origin of phylogenetics Tree. Molecular evolution, methods to build molecular phylogenetics tree. Analysis of phylogenetics tree\n6. Lecture 6 : Gene Prediction. Human genome project, Converting DNA-Protein, Gene Prediction, Primer design\n7. Lecture 7: Protein structure analysis. Review protein structure, Protein structure alignment, Structure classification\n8. Lecture 8 : Protein structure prediction. Procedure, template selection, model evaluation.\n---\nAssessments & Grading\nLab work with associated assignments: 30%\nMid-term exam: 30%\nFinal exam: 40%",
+        "description": "Visiting Faculty: Huynh Viet Linh\nCategory: Exploratory - Sciences & Engineering (E3); Exploratory - Maths & Computing (E4)\nPre-requisite: (1) Basic programming skills; (2) One 100-level course in either Integrated Science, Engineering, Math or Computer Science. Taking IS101 Introductory Biology is highly recommended.\n* Cross-listed with Computer Science (CS), Applied Mathematics (MATH), and Engineering (ENG)\n---\nCourse Description: The course provides a broad introduction to the entire field of bioinformatics. The basics of bioinformatics are explained, followed by discussions of the state-of-the-art computational tools available to solve medical and biological research problems. All key areas of bioinformatics are covered including sequencing data analysis, gene expression data analysis, gene regulation data analysis, gene function analysis, biological data clustering, biological network analysis, and biological databases. Some key applications of bioinformatics will also be introduced in lectures.\n---\nLearning Objectives:\nUnderstand the meaning of data from different biology experiments\nBe able to search and access public biological databases\nUnderstand computational methods to analyze various types of biological data4\nCan apply available computational tools to analyze various types of biological data\nBe able to write simple codes to process the outputs of some available computational tools\nBe able to work in a group to study a topic in computational biology\n---\nTextbooks:\nPevsner, Jonathan. Bioinformatics and functional genomics. John Wiley & Sons,2015\nDavid A. Hendrix. Applied Bioinformatics of Nucleic Acid Sequences. Available online, 2020\nTentative weekly topics:\nWeek 1: Introduction\nWeek 2: DNA sequencing technology\nWeek 3: Sequence assembly and sequence alignment (part 1)\nWeek 4: Sequence assembly and sequence alignment (part 2)\nWeek 5: Genetic variants and phylogenetics tree\nWeek 6: Human genome\nWeek 7: Public biological databases\nWeek 8: Gene expression data analysis (RNA-seq data)\nWeek 9: Gene regulation data analysis (ChIP-seq data, DNA methylation data, Hi-C data)\nWeek 10: Protein structure analysis and gene function analysis\nWeek 11: Data clustering analysis\nWeek 12: Biological network analysis\nWeek 13: Student presentation\nWeek 14: Course summary\n---\nAssessments & Grading\nHomework: 30%\nTwo mid-term exams: 30%\nPresentation: 10% (students will present a review paper on a given topic)\nFinal Exam: 30%",
         "categories": [
             "E3",
             "E4"
@@ -1450,6 +1460,16 @@
             }
         ],
         "location": "Online"
+    },
+    {
+        "title": "IS Capstone I",
+        "id": "IS401_Spring2023_S02",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X9x4OQAR/is401spring2023s02",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "IS Capstone II",
@@ -2201,12 +2221,12 @@
         ],
         "schedule": [
             {
-                "day": "Tuesday",
-                "start_time": "09:00:00",
-                "end_time": "12:00:00"
+                "day": "Friday",
+                "start_time": "16:15:00",
+                "end_time": "19:15:00"
             }
         ],
-        "location": "Art Studio"
+        "location": "Classroom 4 & 5"
     },
     {
         "title": "How to Share Your Stories on the Silver Screen: Film Production in Contemporary",
