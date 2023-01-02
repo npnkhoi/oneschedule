@@ -1,5 +1,7 @@
 # OneSchedule
 
+**[URGENT] We are actively looking for a developer from Fulbright to maintain the website as our team is graduating. Email npnkhoi@gmail.com if you are interested!**
+
 [OneSchedule](https://npnkhoi.github.io/oneschedule) is a course-schedule visualizer for Fulbright Univesrity Vietnam. Its main features are:
 - Visualizing course schedules (with color theme)
 - Presenting course offerings (with filters and table/gallery views)
@@ -20,27 +22,5 @@ yarn start
 ## Technical design
 ### Technologies
 We use React (JavaScript), Redux and Bootstrap 5.
-### Project structure
-```
-.github/workflows/: YML files for Github Actions
-cypress/
-    integration/: integration test suites (.spec.js)
-    ...
-public/
-    index.html: original HTML file
-    favicon.ico: web icon
-src/
-    assets/: images
-    components/: JavaScript, SCSS and test files for components
-        Offerings/: Offerings view
-        Schedule/: Schedule view
-        utils/: utility components
-        ...
-    data/: data of courses, colors, etc. (mostly in JSON)
-    hooks/: React custom hooks
-    store/: Redux slices and selectors
-    styles/: global stylesheets (SCSS)
-        bootstrap/: customize Bootstrap styles
-    utils/: helper JS functions
-    index.js: original JS file
-```
+### File structure
+TBD
