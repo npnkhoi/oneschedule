@@ -716,8 +716,8 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "09:00:00",
-                "end_time": "12:00:00"
+                "start_time": "09:30:00",
+                "end_time": "12:30:00"
             }
         ],
         "location": "Ting Foundation Space"
