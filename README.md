@@ -23,4 +23,4 @@ yarn start
 ### Technologies
 We use React (JavaScript), Redux and Bootstrap 5.
 ### File structure
-TBD
+TBD 
