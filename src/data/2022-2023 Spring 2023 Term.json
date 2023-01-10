@@ -126,7 +126,7 @@
                 "end_time": "14:30:00"
             }
         ],
-        "location": "Makerspace"
+        "location": "Science Lab"
     },
     {
         "title": "Dance Creation to Performance",
@@ -699,8 +699,8 @@
         "schedule": [
             {
                 "day": "Thursday",
-                "start_time": "13:00:00",
-                "end_time": "16:00:00"
+                "start_time": "12:00:00",
+                "end_time": "15:00:00"
             }
         ],
         "location": "Ting Foundation Space"
@@ -897,7 +897,7 @@
                 "end_time": "11:15:00"
             }
         ],
-        "location": "Classroom 6 & 7"
+        "location": "Classroom 6&7 - 8&9"
     },
     {
         "title": "Digital Marketing",
@@ -973,7 +973,7 @@
         "credits": "4",
         "instructor": "Phan Tuan Ngoc",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X87PyQAJ/econ306spring2023s01",
-        "description": "Faculty: Phan Tuan Ngoc\nPre-requisite: ECON201 Microeconomic Analysis; ECON203 Macroeconomic Analysis; ECON209 Econometrics\n---\nCourse Description: This course introduces students to the major theories of economic growth and development and their applications in the context of globalization. Students will learn the models that economists use to study economic growth, trade, migration, and cross-border investment and whether their predictions manifest themselves in practice. Students will develop both abstract theorizing and data analysis skills by interacting with the current body of theoretical and empirical research.\n---\nCourse learning outcomes (CLOs): By the end of this course, students will be able to:\n1. Explain key concepts in development economics such as the Solow neoclassical growth model, endogenous growth theory, and theories of convergence\n2. Explain key concepts in international economics such as comparative advantage, the Ricardian trade model, specific-factor models, Heckscher-Ohlin model, and Stolper-Samuelson models\n3. Analyze the theoretical predictions of such models and identify the appropriate empirical strategies to test these predictions\n4. Conduct extensive review of the theoretical literature and the empirical evidence\n5. Conduct independent research using quantitative methods to evaluate certain predictions of the theoretical models 6. Communicate research results to both academic and non-technical audience\n---\nTentative Course Syllabus\nTextbooks:\nTodaro, Michael P., Smith, Stephen C.. (2015). Economic Development (Ed. 12th). Harlow: Pearson.\nHusted, Steven L., Melvin, Michael. (2013). International Economics (Ed. 9th). Pearson/Addison-Wesley.\n\nLESSON 1: Introduction to Development Economics\nLESSON 2: Comparative Economic Development\nLESSON 3: Classic Growth Theories I\nLESSON 4: Classic Growth Theories II\nLESSON 5: Contemporary Models of Development\nLESSON 6: International Economics Theory and Growth\nLESSON 7: Midterm Exam\nLESSON 8: Tools of Analysis for International Economics\nLESSON 9: Trade and Technology: The Ricardian Model\nLESSON 11: Trade and Resources: The Hecksher-Ohlin Model\nLESSON 12: Migration and Investment: Movement of Labor and Capital between Countries\nLESSON 13: Test of Trade Models: The Leontief Paradox\nLESSON 14: Review and Paper Presentations\n---\nAssessments & Grading\nWeekly assignments: 30%\nMidterm Exam: 25%\nFinal Paper: 30%\nClass Participation: 15%",
+        "description": "Faculty: Phan Tuan Ngoc\nPre-requisite: ECON201 Microeconomic Analysis; ECON209 Econometrics\n---\nCourse Description: This course introduces students to the major theories of economic growth and development and their applications in the context of globalization. Students will learn the models that economists use to study economic growth, trade, migration, and cross-border investment and whether their predictions manifest themselves in practice. Students will develop both abstract theorizing and data analysis skills by interacting with the current body of theoretical and empirical research.\n---\nCourse learning outcomes (CLOs): By the end of this course, students will be able to:\n1. Explain key concepts in development economics such as the Solow neoclassical growth model, endogenous growth theory, and theories of convergence\n2. Explain key concepts in international economics such as comparative advantage, the Ricardian trade model, specific-factor models, Heckscher-Ohlin model, and Stolper-Samuelson models\n3. Analyze the theoretical predictions of such models and identify the appropriate empirical strategies to test these predictions\n4. Conduct extensive review of the theoretical literature and the empirical evidence\n5. Conduct independent research using quantitative methods to evaluate certain predictions of the theoretical models 6. Communicate research results to both academic and non-technical audience\n---\nTentative Course Syllabus\nTextbooks:\nTodaro, Michael P., Smith, Stephen C.. (2015). Economic Development (Ed. 12th). Harlow: Pearson.\nHusted, Steven L., Melvin, Michael. (2013). International Economics (Ed. 9th). Pearson/Addison-Wesley.\n\nLESSON 1: Introduction to Development Economics\nLESSON 2: Comparative Economic Development\nLESSON 3: Classic Growth Theories I\nLESSON 4: Classic Growth Theories II\nLESSON 5: Contemporary Models of Development\nLESSON 6: International Economics Theory and Growth\nLESSON 7: Midterm Exam\nLESSON 8: Tools of Analysis for International Economics\nLESSON 9: Trade and Technology: The Ricardian Model\nLESSON 11: Trade and Resources: The Hecksher-Ohlin Model\nLESSON 12: Migration and Investment: Movement of Labor and Capital between Countries\nLESSON 13: Test of Trade Models: The Leontief Paradox\nLESSON 14: Review and Paper Presentations\n---\nAssessments & Grading\nWeekly assignments: 30%\nMidterm Exam: 25%\nFinal Paper: 30%\nClass Participation: 15%",
         "categories": [],
         "schedule": [
             {
@@ -1103,7 +1103,7 @@
                 "end_time": "11:15:00"
             }
         ],
-        "location": "Makerspace"
+        "location": "Art Studio"
     },
     {
         "title": "Computer Vision",
@@ -1704,7 +1704,7 @@
                 "end_time": "11:00:00"
             }
         ],
-        "location": "Classroom 6&7 - 8&9"
+        "location": "Art Studio"
     },
     {
         "title": "Real Analysis",
@@ -1769,7 +1769,7 @@
                 "end_time": "11:30:00"
             }
         ],
-        "location": "Art Studio"
+        "location": "Classroom 6&7 - 8&9"
     },
     {
         "title": "Community Development",
@@ -1963,11 +1963,11 @@
         "schedule": [
             {
                 "day": "Thursday",
-                "start_time": "16:45:00",
-                "end_time": "19:45:00"
+                "start_time": "13:00:00",
+                "end_time": "16:00:00"
             }
         ],
-        "location": "Science Lab"
+        "location": "Art Studio"
     },
     {
         "title": "Ethics and Moral Philosophy",
@@ -2213,7 +2213,7 @@
         "credits": "4",
         "instructor": "Nguyen Nam",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X89lWQAR/vs216spring2023s01",
-        "description": "This is the continuity of the course VS116 Digital Humanities in Vietnam Studies Contexts, offered in the Fall 2022. \nFaculty: Nguyen Nam - Co-taught by a teaching team from Vietnam National University Hanoi\nPre-requisite: VS116 Digital Humanities in Vietnam Studies Contexts I\nCategory: Exploratory - Arts and Humanities (E1); Exploratory - Social Sciences (E2); Exploratory - Mathematics and Computing (E4)\n* Cross-listed with Computer Science (CS), History (HIS), Social Studies (SS)\n---\nCourse Description:\nApplied Digital Humanities in Vietnam Studies Contexts is specifically designed for and offered to Fulbright students who successfully completed the first part of this course taught during the Fall Semester 2022.  \nBy nature, what to be offered during the upcoming semester is an applied course, in which students will have the chance to conduct their team research project previously approved by the Teaching Team. \nThis second part of our year-long course will be offered in a seminar format. Based on the research topics already decided, the course will be specifically designed to equip its students with particular knowledge, methods, and tools needed to carry out their projects in depth and successfully.  \nStudents will go through all stages of a research project, reporting the outcomes of each of the stages to the class and receive feedback from their classmates. Experts in the DH field from Vietnam National University Hanoi and VinUni with their expertise fitting the students\u2019 projects will be invited to work closely with the student teams, providing the students with hands-on experience/learning and guiding them through every step of the research procedure.\nSince students of this course have their academic strength in either social science/humanities or computer science (CS), the course will first and foremost introduce extant digital tools to its students and show them how employ the tools most effectively. Additionally, CS students with some knowledge of encoding or visual computing can develop some new tools to meet specific demands of their research project.   \nStudents\u2019 products coming out from their year-end final research project should be both academically and socially meaningful. As the dissemination of their research results must be carefully schemed to serve both academic community and the public in the spirit of DH, student research projects are not only academic by nature, but also community-oriented works located within the framework of Vietnam Studies.  \n---\nLearning Outcomes:\nRaise questions in research in the field of the humanities and social sciences, and search for solutions with the help from computer science.\nRecognize potentialities for interdisciplinary DH (research) project\nIdentify characteristics of DH in terms of interdisciplinary of computer science and the humanities.\nApply consistent theories and practical pipelines that contribute to the development of DH projects in the field of Vietnam Studies.\nEarn basic applied knowledge of data analyzing and processing, multimedia presentation and visualization, copyright, ethical and other issues in DH projects\nMaster digital tools for digitizing texts, images, videos, sounds\n---\nSyllabus:\nThe course will be taught by Fulbright instructor (Nguy\u1ec5n Nam) and an expert team from Vietnam National University Hanoi (Profs. L\u00ea Thanh H\u00e0, L\u01b0 Th\u1ecb Thanh L\u00ea, and Nguy\u1ec5n \u0110\u00ecnh L\u00e2m) who are leading scholars in the field of digital humanities in Vietnam.\nTogether, the Teaching Team is designing a syllabus carefully tailored to best suit the students\u2019 approved final team research project proposals.\nThe detailed syllabus is on progress and will be available by early January 2023\n---\nAssessments & Grading\nClass participation \u2013 all students will be expected to actively contribute to class discussions of assigned readings, provide feedback to their peers in class, and engage actively & productively during class and during designated team meetings (20%)\nTeam project progress report (20%)\nContribution to Mid-Term Report \u2013 (10%)\nTeam Project Presentation (10%)\nFinal Team Project (30%)\nCompletion of biweekly self- and team-member project contribution reports (10%)",
+        "description": "This is the continuity of the course VS116 Digital Humanities in Vietnam Studies Contexts, offered in the Fall 2022. \nFaculty: Nguyen Nam - Co-taught by a teaching team from Vietnam National University Hanoi\nPre-requisite: VS116 Digital Humanities in Vietnam Studies Contexts I\nCategory: Exploratory - Arts and Humanities (E1); Exploratory - Social Sciences (E2); Exploratory - Mathematics and Computing (E4)\n* Cross-listed with History (HIS), Social Studies (SS)\n---\nCourse Description:\nApplied Digital Humanities in Vietnam Studies Contexts is specifically designed for and offered to Fulbright students who successfully completed the first part of this course taught during the Fall Semester 2022.  \nBy nature, what to be offered during the upcoming semester is an applied course, in which students will have the chance to conduct their team research project previously approved by the Teaching Team. \nThis second part of our year-long course will be offered in a seminar format. Based on the research topics already decided, the course will be specifically designed to equip its students with particular knowledge, methods, and tools needed to carry out their projects in depth and successfully.  \nStudents will go through all stages of a research project, reporting the outcomes of each of the stages to the class and receive feedback from their classmates. Experts in the DH field from Vietnam National University Hanoi and VinUni with their expertise fitting the students\u2019 projects will be invited to work closely with the student teams, providing the students with hands-on experience/learning and guiding them through every step of the research procedure.\nSince students of this course have their academic strength in either social science/humanities or computer science (CS), the course will first and foremost introduce extant digital tools to its students and show them how employ the tools most effectively. Additionally, CS students with some knowledge of encoding or visual computing can develop some new tools to meet specific demands of their research project.   \nStudents\u2019 products coming out from their year-end final research project should be both academically and socially meaningful. As the dissemination of their research results must be carefully schemed to serve both academic community and the public in the spirit of DH, student research projects are not only academic by nature, but also community-oriented works located within the framework of Vietnam Studies.  \n---\nLearning Outcomes:\nRaise questions in research in the field of the humanities and social sciences, and search for solutions with the help from computer science.\nRecognize potentialities for interdisciplinary DH (research) project\nIdentify characteristics of DH in terms of interdisciplinary of computer science and the humanities.\nApply consistent theories and practical pipelines that contribute to the development of DH projects in the field of Vietnam Studies.\nEarn basic applied knowledge of data analyzing and processing, multimedia presentation and visualization, copyright, ethical and other issues in DH projects\nMaster digital tools for digitizing texts, images, videos, sounds\n---\nSyllabus:\nThe course will be taught by Fulbright instructor (Nguy\u1ec5n Nam) and an expert team from Vietnam National University Hanoi (Profs. L\u00ea Thanh H\u00e0, L\u01b0 Th\u1ecb Thanh L\u00ea, and Nguy\u1ec5n \u0110\u00ecnh L\u00e2m) who are leading scholars in the field of digital humanities in Vietnam.\nTogether, the Teaching Team is designing a syllabus carefully tailored to best suit the students\u2019 approved final team research project proposals.\nThe detailed syllabus is on progress and will be available by early January 2023\n---\nAssessments & Grading\nClass participation \u2013 all students will be expected to actively contribute to class discussions of assigned readings, provide feedback to their peers in class, and engage actively & productively during class and during designated team meetings (20%)\nTeam project progress report (20%)\nContribution to Mid-Term Report \u2013 (10%)\nTeam Project Presentation (10%)\nFinal Team Project (30%)\nCompletion of biweekly self- and team-member project contribution reports (10%)",
         "categories": [
             "E1",
             "E2",

@@ -1,5 +1,5 @@
 const config =  {
-    last_updated: '2023-01-07 16:03+07',
+    last_updated: '2023-01-10 13:10+07',
     currentTerm: 'Spring2023'
 }
 
