@@ -1,5 +1,141 @@
 [
     {
+        "title": "Badminton 1 (Session 1)",
+        "id": "Badminton1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "Off campus site"
+    },
+    {
+        "title": "Yoga 1 (Session 1)",
+        "id": "Yoga1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Yoga 1 (Session 2)",
+        "id": "Yoga1_2",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Yoga 1 (Session 3)",
+        "id": "Yoga1_3",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Chess 1 (Session 1)",
+        "id": "Chess1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Chess 1 (Session 2)",
+        "id": "Chess1_2",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Thursday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Swimming 1 (Session 1)",
+        "id": "Swimming1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Saturday",
+                "start_time": "07:00:00",
+                "end_time": "10:00:00"
+            }
+        ],
+        "location": "Off campus site"
+    },
+    {
+        "title": "Swimming 1 (Session 2)",
+        "id": "Swimming1_2",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Saturday",
+                "start_time": "13:30:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Off campus site"
+    },
+    {
         "title": "Introduction to Visual Studies",
         "id": "ARTS101_Spring2023_S03",
         "credits": "4",

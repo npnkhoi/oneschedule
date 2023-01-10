@@ -91,7 +91,7 @@ const Calendar = ({selectedCourses}) => {
     slotMinTime = "07:00"
     slotMaxTime = "21:00"
     scrollTime = "09:00"
-    weekends = {false}
+    hiddenDays = {[0]}
     expandRows = {true}
     allDaySlot = {false}
     headerToolbar = {
