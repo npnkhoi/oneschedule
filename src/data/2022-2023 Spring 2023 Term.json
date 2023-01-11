@@ -2003,6 +2003,16 @@
         "location": "Classroom 4 & 5"
     },
     {
+        "title": "PSY Capstone I",
+        "id": "PSY401_Spring2023_S02",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002XrC1DQAV/psy401spring2023s02",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "PSY Capstone II",
         "id": "PSY402_Spring2023_S01",
         "credits": "4",
@@ -2098,7 +2108,7 @@
         ],
         "schedule": [
             {
-                "day": "Thursday",
+                "day": "Friday",
                 "start_time": "13:00:00",
                 "end_time": "16:00:00"
             }
@@ -2290,16 +2300,16 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
             },
             {
                 "day": "Wednesday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
             }
         ],
-        "location": "Classroom 1"
+        "location": "Classroom 502"
     },
     {
         "title": "Cultural and Intellectual Foundation of Vietnamese Literary Chinese II",
