@@ -787,13 +787,13 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
+                "start_time": "07:30:00",
+                "end_time": "09:00:00"
             },
             {
                 "day": "Wednesday",
-                "start_time": "08:00:00",
-                "end_time": "09:30:00"
+                "start_time": "07:30:00",
+                "end_time": "09:00:00"
             }
         ],
         "location": "Classroom 502"
@@ -852,8 +852,8 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "09:30:00",
-                "end_time": "12:30:00"
+                "start_time": "09:00:00",
+                "end_time": "12:00:00"
             }
         ],
         "location": "Ting Foundation Space"
@@ -1126,6 +1126,16 @@
         "location": "Classroom 8 & 9"
     },
     {
+        "title": "Economics Independent Study/Research Project",
+        "id": "ECON398_Spring2023_S03",
+        "credits": "4",
+        "instructor": "Phan Tuan Ngoc",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002XrO4hQAF/econ398spring2023s03",
+        "description": "Project Description:\nThis scholarly development project aims to answer the question: \u201cIs gold a hedge against inflation in Vietnam market?\u201d The purpose of this research is to investigate the role of gold as a hedge against inflation using monthly/yearly gold prices in Vietnam from 2000 to 2022. I aim to contribute to the field by taking a fresh look at the nonlinear autoregressive distributed lags (NARDL) model (Shin et al., 2014).\nThis topic was chosen because of my long-standing interest in investing, particularly commodities investment. While gold has traditionally been a prominent investment route that Vietnamese are interested in purchasing during times of crisis or excessive inflation. As a result, I'd want to delve further and study if gold may outperform inflation, particularly in the Vietnam market.\n---\nLearning Outcomes:\nLearn how to write and publish a professional academic research report.\nGet the opportunity to practice writing in concise and critical language.\n---\nTentative Schedule & Workplan (this agenda is subject to change)\nWeek 1,2,3,4: Literature review and investigate in methodology.\nDraft literature review and methodology\nSupervisor weekly check-in and review\nWeek 5,6,7,8: Gather data and analyze\nGather all necessary data\nRun analysis\nDraw descriptive statistics\nSupervisor weekly check-in and review\nWeek 9,10: Combine all information and findings into paper:\nConcise writing in all parts of the paper\nSupervisor weekly check-in and review\nWeek 11, 12: Finalize Paper\nFinal modification and refinement\nPublication of the final article\nSupervisor weekly check-in and review & grading\n---\nAssessments & Grading\n20%: Deliver drafts of the paper and progress on the weekly basis to the supervisor to exhibit my weekly effort.\n10%: Attendance at weekly check-ins\n70%: Final research paper",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "ECON Capstone II",
         "id": "ECON402_Spring2023_S01",
         "credits": "4",
@@ -1151,7 +1161,7 @@
         "credits": "4",
         "instructor": "Nguyen Hop Minh",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X87Q0QAJ/eng205spring2023s01",
-        "description": "Faculty: Nguyen Hop Minh\nCategory: Exploratory - Sciences & Engineering (E3)\nPre-requisites: CORE105 Design and Systems Thinking AND ENG203 Sensor, Measurement and Analysis/Sensor, Instrumentation, and Measurement\n---\nCourse Description: This course provides students with a significant engineering experience that allows future engineering majors to work on a project that develops and tests an integrated system of mechanical, electronic, and software components. Students will learn to do component design and testing as well as integration design and debugging. Team projects will be subjected to cost and time constraints that require students to develop project management and teamwork skills, and become familiarized with realistic component sourcing, contracting, and delivery processes that exist in the industry.\nDisciplinary areas: *engineering *mechanics *electronics\nCompetency areas: #innovativeandcreativethinking #criticalthinking #collaboration",
+        "description": "Faculty: Nguyen Hop Minh\nCategory: Exploratory - Sciences & Engineering (E3)\nPre-requisites: CORE105 Design and Systems Thinking or any ENG courses\n---\nCourse Description: This course provides students with a significant engineering experience that allows future engineering majors to work on a project that develops and tests an integrated system of mechanical, electronic, and software components. Students will learn to do component design and testing as well as integration design and debugging. Team projects will be subjected to cost and time constraints that require students to develop project management and teamwork skills, and become familiarized with realistic component sourcing, contracting, and delivery processes that exist in the industry.\nDisciplinary areas: *engineering *mechanics *electronics\nCompetency areas: #innovativeandcreativethinking #criticalthinking #collaboration",
         "categories": [
             "E3"
         ],
