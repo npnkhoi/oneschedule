@@ -1,141 +1,5 @@
 [
     {
-        "title": "Badminton 1 - Session 1",
-        "id": "Badminton1_1",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Friday",
-                "start_time": "18:00:00",
-                "end_time": "21:00:00"
-            }
-        ],
-        "location": "Off campus site"
-    },
-    {
-        "title": "Yoga 1 - Session 1",
-        "id": "Yoga1_1",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Monday",
-                "start_time": "18:00:00",
-                "end_time": "21:00:00"
-            }
-        ],
-        "location": "On campus"
-    },
-    {
-        "title": "Yoga 1 - Session 2",
-        "id": "Yoga1_2",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Wednesday",
-                "start_time": "18:00:00",
-                "end_time": "21:00:00"
-            }
-        ],
-        "location": "On campus"
-    },
-    {
-        "title": "Yoga 1 - Session 3",
-        "id": "Yoga1_3",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Friday",
-                "start_time": "18:00:00",
-                "end_time": "21:00:00"
-            }
-        ],
-        "location": "On campus"
-    },
-    {
-        "title": "Chess 1 - Session 1",
-        "id": "Chess1_1",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Tuesday",
-                "start_time": "18:00:00",
-                "end_time": "21:00:00"
-            }
-        ],
-        "location": "On campus"
-    },
-    {
-        "title": "Chess 1 - Session 2",
-        "id": "Chess1_2",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Thursday",
-                "start_time": "18:00:00",
-                "end_time": "21:00:00"
-            }
-        ],
-        "location": "On campus"
-    },
-    {
-        "title": "Swimming 1 - Session 1",
-        "id": "Swimming1_1",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Saturday",
-                "start_time": "07:00:00",
-                "end_time": "10:00:00"
-            }
-        ],
-        "location": "Off campus site"
-    },
-    {
-        "title": "Swimming 1 - Session 2",
-        "id": "Swimming1_2",
-        "credits": "0",
-        "instructor": "PE Instructors",
-        "url": "",
-        "description": "N/A",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Saturday",
-                "start_time": "13:30:00",
-                "end_time": "16:30:00"
-            }
-        ],
-        "location": "Off campus site"
-    },
-    {
         "title": "Introduction to Visual Studies",
         "id": "ARTS101_Spring2023_S03",
         "credits": "4",
@@ -321,6 +185,36 @@
             }
         ],
         "location": "Science Lab"
+    },
+    {
+        "title": "ARTS Independent Study/Independent Research",
+        "id": "ARTS398_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Tram Luong",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002XuBeeQAF/arts398spring2023s01",
+        "description": "Course Syllabus",
+        "categories": [],
+        "schedule": []
+    },
+    {
+        "title": "ARTS Independent Study/Independent Research",
+        "id": "ARTS398_Spring2023_S02",
+        "credits": "4",
+        "instructor": "Richard Streitmatter-Tran",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002XuGQmQAN/arts398spring2023s02",
+        "description": "Course syllabus",
+        "categories": [],
+        "schedule": []
+    },
+    {
+        "title": "ARTS Independent Study/Independent Research",
+        "id": "ARTS398_Spring2023_S03",
+        "credits": "4",
+        "instructor": "Pamela Corey",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002YvYnjQAF/arts398spring2023s03",
+        "description": "Course Proposal",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "ARTS Capstone I",
@@ -556,7 +450,7 @@
                 "end_time": "14:45:00"
             }
         ],
-        "location": "Classroom 1"
+        "location": "Classrooms 8&9"
     },
     {
         "title": "Quantitative Reasoning for a Digital Age",
@@ -913,8 +807,8 @@
         "schedule": [
             {
                 "day": "Thursday",
-                "start_time": "16:00:00",
-                "end_time": "19:00:00"
+                "start_time": "16:30:00",
+                "end_time": "19:30:00"
             }
         ],
         "location": "Online"
@@ -1079,7 +973,7 @@
                 "end_time": "16:30:00"
             }
         ],
-        "location": "Ting Foundation Space"
+        "location": "Classroom 1"
     },
     {
         "title": "Economics of Education",
@@ -1123,10 +1017,10 @@
                 "end_time": "16:30:00"
             }
         ],
-        "location": "Classroom 8 & 9"
+        "location": "Classroom 1"
     },
     {
-        "title": "Economics Independent Study/Research Project",
+        "title": "ECON Independent Study/Independent Research",
         "id": "ECON398_Spring2023_S03",
         "credits": "4",
         "instructor": "Phan Tuan Ngoc",
@@ -1154,30 +1048,6 @@
         "description": "* Open for Junior and Senior Year only.\nStudents need to submit the application and gets a supervisor's approval.",
         "categories": [],
         "schedule": []
-    },
-    {
-        "title": "Integrated Engineering Project",
-        "id": "ENG205_Spring2023_S01",
-        "credits": "4",
-        "instructor": "Nguyen Hop Minh",
-        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X87Q0QAJ/eng205spring2023s01",
-        "description": "Faculty: Nguyen Hop Minh\nCategory: Exploratory - Sciences & Engineering (E3)\nPre-requisites: CORE105 Design and Systems Thinking or any ENG courses\n---\nCourse Description: This course provides students with a significant engineering experience that allows future engineering majors to work on a project that develops and tests an integrated system of mechanical, electronic, and software components. Students will learn to do component design and testing as well as integration design and debugging. Team projects will be subjected to cost and time constraints that require students to develop project management and teamwork skills, and become familiarized with realistic component sourcing, contracting, and delivery processes that exist in the industry.\nDisciplinary areas: *engineering *mechanics *electronics\nCompetency areas: #innovativeandcreativethinking #criticalthinking #collaboration",
-        "categories": [
-            "E3"
-        ],
-        "schedule": [
-            {
-                "day": "Monday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
-            },
-            {
-                "day": "Wednesday",
-                "start_time": "09:45:00",
-                "end_time": "11:15:00"
-            }
-        ],
-        "location": "Makerspace"
     },
     {
         "title": "Mechanical Design",
@@ -1266,7 +1136,17 @@
                 "end_time": "19:45:00"
             }
         ],
-        "location": "Science Lab"
+        "location": "Classrooms 6&7"
+    },
+    {
+        "title": "ENG Independent Study/Independent Research",
+        "id": "ENG398_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Truong Trung Kien",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002YvofvQAB/eng398spring2023s01",
+        "description": "Course Syllabus",
+        "categories": [],
+        "schedule": []
     },
     {
         "title": "Atlantic World",
@@ -1341,7 +1221,7 @@
                 "end_time": "18:15:00"
             }
         ],
-        "location": "Classroom 6&7 - 8&9"
+        "location": "Classroom 8 & 9"
     },
     {
         "title": "History of Capitalism and the Corporation",
@@ -1349,7 +1229,7 @@
         "credits": "4",
         "instructor": "Elsa Costa",
         "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X87Q8QAJ/his210spring2023s01",
-        "description": "Faculty: Elsa Costa\nCategory: Exploratory - Arts & Humanities (E1); Exploratory - Social Sciences (E2)\nPre-requisites: 200-level course: sophomores only unless dispensed by instructor; one course in History, Economics, or Social Sciences unless dispensed by instructor.\n* Cross-listed with Economics (ECON), Social Sciences (SS)\n---\nCourse Description: Where did capitalism come from? Why do we treat corporations as legal persons? Does capitalism need the state to function? Are corporations always a threat to states? What relationship does the development of the corporation have with the development of international law? Was the enclosure of the English commons the fundamental foundational act and original sin of capitalism, or simply one symptom among many? This course explores the consensuses and sharp disagreements among historians who have tried to answer these questions. Students will come to understand where they stand on these debates as well as conducting their own engagement with primary sources in English.\n---\nLearning Outcomes:\nStudents will understand the scholarly debates over how to define capitalism and pinpoint its historical origins, recognizing that different heuristics (e.g. Marxism, modern economic theories, intellectual history, legal history) will produce vastly different results.\nStudents will learn to produce high-quality primary source analysis in dialogue with the various schools of thought surveyed in the class.\nStudents will learn to synthesize primary source analyses into a longer research paper bringing together elements of historiography and primary source analysis.\nStudents will learn to identify how historical debates over the legal status of the corporation and the regulation of capitalism can be used to identify major problematics in contemporary economics and international law.\nStudents will learn to create effective presentations in conjunction with teammates and lead class discussions while effectively communicating their research\n---\nAssessments & Grading:\nThree primary source analyses: 20%\nParticipation: 20%\nPresentation: 20%\nFinal paper: 40%",
+        "description": "Faculty: Elsa Costa\nCategory: Exploratory - Arts & Humanities (E1); Exploratory - Social Sciences (E2)\nPre-requisites: 200-level course: sophomores and up unless dispensed with permission from teacher; one course in History, Economics, or Social Sciences unless dispensed by instructor.\n* Cross-listed with Economics (ECON), Social Sciences (SS)\n---\nCourse Description: Where did capitalism come from? Why do we treat corporations as legal persons? Does capitalism need the state to function? Are corporations always a threat to states? What relationship does the development of the corporation have with the development of international law? Was the enclosure of the English commons the fundamental foundational act and original sin of capitalism, or simply one symptom among many? This course explores the consensuses and sharp disagreements among historians who have tried to answer these questions. Students will come to understand where they stand on these debates as well as conducting their own engagement with primary sources in English.\n---\nLearning Outcomes:\nStudents will understand the scholarly debates over how to define capitalism and pinpoint its historical origins, recognizing that different heuristics (e.g. Marxism, modern economic theories, intellectual history, legal history) will produce vastly different results.\nStudents will learn to produce high-quality primary source analysis in dialogue with the various schools of thought surveyed in the class.\nStudents will learn to synthesize primary source analyses into a longer research paper bringing together elements of historiography and primary source analysis.\nStudents will learn to identify how historical debates over the legal status of the corporation and the regulation of capitalism can be used to identify major problematics in contemporary economics and international law.\nStudents will learn to create effective presentations in conjunction with teammates and lead class discussions while effectively communicating their research\n---\nAssessments & Grading:\nThree primary source analyses: 20%\nParticipation: 20%\nPresentation: 20%\nFinal paper: 40%",
         "categories": [
             "E1",
             "E2"
@@ -1467,30 +1347,6 @@
             }
         ],
         "location": "Classroom 1"
-    },
-    {
-        "title": "Physics for Light-based Technology",
-        "id": "IS206_Spring2023_S01",
-        "credits": "4",
-        "instructor": "Son Cao",
-        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X89ixQAB/is206spring2023s01",
-        "description": "Class time is scheduled to meet every other week.\nVisiting Faculty: Cao Van Son\nCategory: Exploratory - Sciences & Engineering (E3)\nPre-requisite: CORE104 Scientific Inquiry\n---\nCourse Description: \"What is light?\" is among the oldest questions engrossing human minds through age. People are interested in nature, the aesthetic, and the technological application of light. Light provides us with an omnipotent tool to perceive almost everything from the world of sub-atomic particles to the Cosmos, but a sustainable and effective solution for various sectors of modern life, including, but not limited to, food, communication, entertainment, energy, environment, and medicine. Microwave for food heating, fiber-optic telecommunication for the Internet, laser for the massive digital data storage and reading, light detection and ranging for the autonomous vehicle, x-ray for medical imaging, fluorescence for food quality assessment, etc., are among countless examples of the light-based technologies. Those have been integrated seamlessly into our daily life, but we rarely appreciate how they work. The course aims to provide a solid background of the fundamental characteristics of light, its interaction with the matter, the mechanism of the light production, light transportation, and light detection. We will discuss technological applications of those aspects in light of the well-established and emerging technologies. We hope by the end, students will treasure the beauty of light and explore it as a sustainable solution for our common home, the Earth. \n---\nLearning Objectives:\n\u2022 Some includes, but not limited to,  \n\u2022 Understand the nature of light\n\u2022 Understand how light is produced, how they interact with matter, how we can manipulate them \n\u2022 Recognize the technical application of the light in the daily assets such as microwave, camera, x-ray\u2026\n\u2022 Practical skills to handle the light source and light sensor\n\u2022 Computing and data anlysis skills\n---\nTentative Syllabus\nTentative syllabus: for 6 hours/week in 8 weeks. The last week is for final presentation and report. Grading 40% from the in-class quizzles and 60% from the final mini-project report and presentation. \n1. Nature of light (x2 weeks)\n* Light spectrum: What you see and what you can\u2019t see by eyes\n* The speed of light: the absolute among the relative \n* Foundations for the modern theory of light: \n* Plack\u2019s formula \n* The photoelectric effect\n* the Compton effect\n* de Broglie\u2019s hypothesis \n* Wave-particle duality \n2. Light originality and production (x2 weeks)\n* \u201cLet there be light\u201d - We are the progeny of light (a glance at the Big Bang theory)\n* Here, there, everywhere: from bacteria to the star \n* Coherent and Incoherent light sources \n* Some selections of light sources and its application include, but not limited to : \n* Incandescence: emission of light from a hot body / night camera \n* Sunlight: how does the Sun shine? Is the sunlight eternal? \n* Cherenkov radiation: when the charged particle go faster than the light in the same medium \n             ->  technique to detect the invisible charged particle\n* Light-emitting diodes (LED): is LED the most effective way for lightening? \n* photoluminescence: Fluorescence spectrometer for food quality assessment \n* bioluminescence: firefly and bioluminescence imaging \n3. Light transportation and optical communication (x2 weeks)\n* Light optic: reflection and refraction -> Snell\u2019s law\n* a way to manipulate the light for changing the size of object images / Magnifying glasses, \n            microscopes, contact lenses\n* Total internal reflection, Optical fibers, and the evolution of the optical telecommunication \n* Rayleigh scattering (why sky is blue) and light loss during transmission\n4. Light detection and photosensors (x1 weeks)\n* Overview of light detection mechanism \n* Photomultipliers: vacuum-based and Silicon-based\n* Light detection and Ranging (LiDAR)\nReading materials:\n* \u201cRevolutions in Twentieth-Century Physics,\u201d some selected chapters, David J.Griffiths,\n* \u201cQED, The Strange Theory of Light and Matter,\u201d chapter 2, Richard P. Feynman \n* \u201cThe Physics of Invisibility, A story of Light and Deception,\u201d Martin Beech \n* \u201cThe physics behind\u2026 , discover the physics of everyday events,\u201d Russ Swan\n---\nAssessments & Grading\nLab reports, quizzes, and collaborative projects will be used to assess students\u2019 understanding and application of the concepts and methods related to the course.",
-        "categories": [
-            "E3"
-        ],
-        "schedule": [
-            {
-                "day": "Tuesday",
-                "start_time": "08:00:00",
-                "end_time": "11:00:00"
-            },
-            {
-                "day": "Thursday",
-                "start_time": "08:00:00",
-                "end_time": "11:00:00"
-            }
-        ],
-        "location": "Ting Foundation Space"
     },
     {
         "title": "Introduction to Bioinformatics",
@@ -1795,7 +1651,7 @@
                 "end_time": "16:30:00"
             }
         ],
-        "location": "Classroom 1"
+        "location": "Classroom 8 & 9"
     },
     {
         "title": "Discrete Mathematics",
@@ -1915,7 +1771,7 @@
                 "end_time": "11:30:00"
             }
         ],
-        "location": "Classroom 6&7 - 8&9"
+        "location": "Classroom 6 & 7"
     },
     {
         "title": "Community Development",
@@ -2104,7 +1960,7 @@
                 "end_time": "14:45:00"
             }
         ],
-        "location": "Classroom 8 & 9"
+        "location": "Classroom 1"
     },
     {
         "title": "Theories of Culture",
@@ -2226,6 +2082,16 @@
         "location": "Classroom 4 & 5"
     },
     {
+        "title": "Independent Study/Research",
+        "id": "SOCI398_Spring2023_S01",
+        "credits": "4",
+        "instructor": "Nguyen Thanh Trung",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002XuXkkQAF/soci398spring2023s01",
+        "description": "Proposal",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "SS Capstone II",
         "id": "SOCI402_Spring2023_S01",
         "credits": "4",
@@ -2253,7 +2119,7 @@
                 "end_time": "16:00:00"
             }
         ],
-        "location": "Classroom 6 & 7"
+        "location": "Classroom 6&7 - 8&9"
     },
     {
         "title": "Introduction to Comparative Politics: Bringing in Vietnam",
@@ -2319,49 +2185,7 @@
                 "end_time": "18:15:00"
             }
         ],
-        "location": "Classroom 502"
-    },
-    {
-        "title": "Cultural and Intellectual Foundation of Vietnamese Literary Chinese II",
-        "id": "VS206_Spring2023_S01",
-        "credits": "4",
-        "instructor": "Phan Thu Van",
-        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X89lUQAR/vs206spring2023s01",
-        "description": "Visiting Faculty: Phan Thu Van\nReading/Writing: Intensive\nPre-requisite: VS106 Cultural and Intellectual Foundation of Vietnamese Literary Chinese 1 or already have basic reading and writing of Vietnamese Literary Chinese.\nNote: Previous course code VS106b.\n* Cross-listed in Vietnam Studies (VS) and Literature (LIT)\n---\nCourse Description: Vietnamese Literary Chinese is an important part of the formation of Vietnamese culture and ideology. Vietnamese people were employing and localizing Chinese scripts and literary Chinese throughout more than 10 centuries (from the 10th to the beginning of the 20th centuries). As the official written language of the country for the composition of a wide variety of works, such as histories, literature, diplomatic documents, or medical treatises, this linguistic means helped the Vietnamese to record their thoughts and cultural values through times. The Vietnamese localization of the written Chinese resulted not only in new syntactic and lexical variations, but also in the emergence of a new phonetic system called Sino-Vietnamese pronunciation (\u00e2m H\u00e1n-Vi\u1ec7t) for Chinese scripts.\nNowadays, words and morphemes rooted from literary Chinese may account for up to 60% of the vocabulary written in formal and scientific texts. Hence, understanding Vietnamese literary Chinese, and being literate in Chinese scripts obviously a key to comprehend Vietnam\u2019s past and present, to better understand the nation\u2019s cultural and intellectual heritage in East Asian contexts. Like the crucial role of Latin in American-European academes, knowledge of Vietnamese literary Chinese and Sino-Vietnamese words is definitely required for any student in Vietnam Studies in general, and pre-modern Vietnam research in particular. Based on Chinese scripts, the Vietnamese invented a new writing system, popular known as the demotic Nom script, to express their thoughts and emotions in their mother tongue. However, one cannot read Nom without knowing Chinese characters. Therefore, for Vietnamese people, learning Vietnamese literary Chinese and Sino-Vietnamese characters means more than learning a language. It helps to bridge a huge gap between young Vietnamese learners and the historico-cultural textual treasure they are inheriting from the past.\n---\nLearning Outcomes: Having finished this course, students will:\n1. Have basic knowledge of Vietnamese Literary Chinese (writing, reading, grammar)\n2. Attain a vocabulary of 800 words of Vietnamese Literary Chinese.\n3. Gain the ability to read poems or tales in Vietnamese Literary Chinese.\n4. Establish basic understanding of Vietnamese classical literature and Vietnamese literary Chinese heritage (including Vietnamese Literary Chinese in temples, or at historical sites)\n5. Have greater appreciation of Vietnamese language and culture.\n---\nAssessments & Grading\nAttendance: 15%\nQuizzes: 15%\nMid-term: 20%\nFinal exam: 50%",
-        "categories": [],
-        "schedule": [
-            {
-                "day": "Friday",
-                "start_time": "08:30:00",
-                "end_time": "11:30:00"
-            }
-        ],
-        "location": "Classroom 502"
-    },
-    {
-        "title": "Modern Vietnam and its neighbors",
-        "id": "VS212_Spring2023_S01",
-        "credits": "4",
-        "instructor": "Nicolas Weber",
-        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002X89lVQAR/vs212spring2023s01",
-        "description": "Faculty: Nicolas Weber\nCategory: Exploratory - Arts & Humanities (E1); Exploratory - Social Sciences (E2)\nPre-requisite: Completion of all core courses and at least 100-level course\n* Cross-listed with History (HIS)\n---\nCourse Description: The objective of this course is to offer an overview of the relations of modern Vietnam with its neighbors: China, Champa, Cambodia, Siam and Laos. Students will be able to observe the patterns of competition, cooperation and alliance between Vietnam and the various political players in mainland Southeast Asia prior to the establishment of the Western powers. Relatively understudied period of Vietnamese history, such as the Hu\u1ebf Court\u2019s absorption of Champa in the third decade of the 19th century (1832-1835), and the assimilation of Cambodia under the Tr\u1ea5n T\u00e2y Th\u00e0nh period (1834-1847), will be explored in detail. In order to get a more nuanced approach of the events, students will have the unique opportunity be introduced to the Cham, Khmer and Siamese perspectives on the events that affected not only Champa and Cambodia, their societies, and their historical developments, but had also a deep impact on the formation of modern Vietnam.\n---\nLearning Outcomes:\n1. With a foundational grounding in history and theory, students will comprehend the broader processes of empire, political communities, transnationalism, interethnic association, and competition and apply these lessons to study other contexts in Southeast Asia and the world.\n2. Through readings, discussions, and debates, students will learn to critically analyze primary and secondary sources\n3. Students will address fundamental questions of historical change\n4. Students will develop evidence-based argumentation.\n---\nAssessments & Grading: Students will be given oral and written assignments.\n1. Oral assignments will be typically composed of:\n- Participation in class 10%\n- Short presentations/debates on specific research topics chosen by the students 20% (the topic can be the same as the one chosen for the written assignment)\n2. Written assignments:\n- Article/Book review 10%\n- Argumentative Research-Based Paper/Project 20% - Final Exam 40%",
-        "categories": [
-            "E1",
-            "E2"
-        ],
-        "schedule": [
-            {
-                "day": "Tuesday",
-                "start_time": "16:45:00",
-                "end_time": "18:15:00"
-            },
-            {
-                "day": "Thursday",
-                "start_time": "16:45:00",
-                "end_time": "18:15:00"
-            }
-        ],
-        "location": "Classroom 6 & 7"
+        "location": "Science Lab"
     },
     {
         "title": "Applied Digital Humanities for Vietnam Studies",
@@ -2427,6 +2251,16 @@
         "location": "Meeting room 1"
     },
     {
+        "title": "VS Capstone I",
+        "id": "VS401_Spring2023_S02",
+        "credits": "4",
+        "instructor": "Offering Status",
+        "url": "https://onestop.fulbright.edu.vn/s/course-offering/a046F00002XuC88QAF/vs401spring2023s02",
+        "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright.\nPlease contact your Major Advisor to plan and complete your capstone.",
+        "categories": [],
+        "schedule": []
+    },
+    {
         "title": "VS Capstone II",
         "id": "VS402_Spring2023_S01",
         "credits": "4",
@@ -2435,5 +2269,141 @@
         "description": "This course is for the students who got Major Advisor's approval for the Capstone project in Year 4 at Fulbright. \nPlease contact your Major Advisor to plan and complete your capstone. ",
         "categories": [],
         "schedule": []
+    },
+    {
+        "title": "Badminton 1 - Session 1",
+        "id": "PE_Badminton1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "Off campus site"
+    },
+    {
+        "title": "Yoga 1 - Session 1",
+        "id": "PE_Yoga1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Yoga 1 - Session 2",
+        "id": "PE_Yoga1_2",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Yoga 1 - Session 3",
+        "id": "PE_Yoga1_3",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Chess 1 - Session 1",
+        "id": "PE_Chess1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Chess 1 - Session 2",
+        "id": "PE_Chess1_2",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Thursday",
+                "start_time": "18:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "location": "On campus"
+    },
+    {
+        "title": "Swimming 1 - Session 1",
+        "id": "PE_Swimming1_1",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Saturday",
+                "start_time": "07:00:00",
+                "end_time": "10:00:00"
+            }
+        ],
+        "location": "Off campus site"
+    },
+    {
+        "title": "Swimming 1 - Session 2",
+        "id": "PE_Swimming1_2",
+        "credits": "0",
+        "instructor": "PE Instructors",
+        "url": "",
+        "description": "N/A",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Saturday",
+                "start_time": "13:30:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Off campus site"
     }
 ]
