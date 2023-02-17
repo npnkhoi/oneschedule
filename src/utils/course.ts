@@ -16,6 +16,7 @@ export const MAJORS = [
   {value: 'PSY', label: 'Psychology'},
   {value: 'SOCI', label: 'Social Sciences'},
   {value: 'VS', label: 'Vietnamese Studies'},
+  {value: 'PE', label: 'Physical Education'},
 ]
 
 export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'Seminar', 'EL']

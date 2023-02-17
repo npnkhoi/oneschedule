@@ -2272,7 +2272,7 @@
     },
     {
         "title": "Badminton 1 - Session 1",
-        "id": "PE_Badminton1_1",
+        "id": "PE000_Badminton1_1",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",
@@ -2289,7 +2289,7 @@
     },
     {
         "title": "Yoga 1 - Session 1",
-        "id": "PE_Yoga1_1",
+        "id": "PE000_Yoga1_1",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",
@@ -2306,7 +2306,7 @@
     },
     {
         "title": "Yoga 1 - Session 2",
-        "id": "PE_Yoga1_2",
+        "id": "PE000_Yoga1_2",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",
@@ -2323,7 +2323,7 @@
     },
     {
         "title": "Yoga 1 - Session 3",
-        "id": "PE_Yoga1_3",
+        "id": "PE000_Yoga1_3",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",
@@ -2340,7 +2340,7 @@
     },
     {
         "title": "Chess 1 - Session 1",
-        "id": "PE_Chess1_1",
+        "id": "PE000_Chess1_1",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",
@@ -2357,7 +2357,7 @@
     },
     {
         "title": "Chess 1 - Session 2",
-        "id": "PE_Chess1_2",
+        "id": "PE000_Chess1_2",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",
@@ -2374,7 +2374,7 @@
     },
     {
         "title": "Swimming 1 - Session 1",
-        "id": "PE_Swimming1_1",
+        "id": "PE000_Swimming1_1",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",
@@ -2391,7 +2391,7 @@
     },
     {
         "title": "Swimming 1 - Session 2",
-        "id": "PE_Swimming1_2",
+        "id": "PE000_Swimming1_2",
         "credits": "0",
         "instructor": "PE Instructors",
         "url": "",

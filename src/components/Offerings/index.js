@@ -11,6 +11,17 @@ import GalleryView from './GalleryView'
 import Filter from './Filter'
 import { usePersistedState } from '../../hooks'
 
+const GalleryToggle = () => {
+  return <div className='d-none d-lg-block gallery-view bg-light p-3 border rounded mb-3'>
+    <div className="form-check form-switch d-flex flex-row align-items-center">
+      <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
+        onClick={() => setCompact(!compact)}
+      />
+      <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery (BETA)</label>
+    </div>
+  </div>
+}
+
 const Offerings = () => {
   const [compact, setCompact] = useState(true)
   const selectedCourses = useSelector(selectCurrentSelectedCourseIds)
@@ -52,16 +63,6 @@ const Offerings = () => {
 
   const filteredCourses = getFilteredCourses()
 
-  const GalleryToggle = () => {
-    return <div className='d-none d-lg-block gallery-view bg-light p-3 border rounded mb-3'>
-      <div className="form-check form-switch d-flex flex-row align-items-center">
-        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"
-          onClick={() => setCompact(!compact)}
-        />
-        <label className="form-check-label ms-4" htmlFor="flexSwitchCheckDefault">Gallery (BETA)</label>
-      </div>
-    </div>
-  }
 
   // NOTICE: In this component, 'lg' breakpoint is used instead of 'md' as usual.
   return (
@@ -73,7 +74,7 @@ const Offerings = () => {
       {/* COURSE LIST */}
       <div className='col-lg-9 order-lg-1 order-2'>
         <div className="alert alert-primary w-100" role="alert">
-          <b>Last update: {moment(config.last_updated).fromNow()}. </b>
+          {/* <b>Last update: {moment(config.last_updated).fromNow()}. </b> */}
           When in doubt, please double-check on OneStop.
         </div>
         {compact
