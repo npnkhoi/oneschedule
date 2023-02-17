@@ -86,8 +86,8 @@ const Offerings = () => {
 
     {/* RIGHT BAR: FILTERS */}
       <div className='right-bar col-lg-3 order-lg-2 order-1'>
-        <GalleryToggle />
-        <button className="d-lg-none btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-filters" aria-expanded="true" aria-controls="collapsable-filters">
+        {/* <GalleryToggle /> */}
+        <button className="d-lg-none btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-filters" aria-expanded="true" aria-controls="collapsable-filters">
           Filter
         </button>
         <Filter

@@ -29,7 +29,7 @@ const Filter = (props) => {
     .map(name => ({value: name, label: name}))
 
   return (
-    <div className='bg-light mt-3 p-3 border rounded collapse show' id='collapsable-filters'>
+    <div className='bg-light p-3 border rounded collapse show' id='collapsable-filters'>
       <h4 className='border-bottom pb-1'>Filters</h4>
 
       <div className='d-flex flex-column align-items-center'>

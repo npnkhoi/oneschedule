@@ -61,10 +61,14 @@ const Searcher = () => {
   // search appearances
   const CourseInfo = (course) => {
     return (
-      <div className="d-flex flex-row justify-content-between align-items-center">
-        <div className="course-id text-sm">{course.id.split("_")[0]}</div>
-        <div className="mx-1 course-title">{course.title}</div>
-        <div className="instructor-name text-sm mx-1 border-left">{course.instructor}</div>
+      // <div className="d-flex flex-row justify-content-between align-items-center">
+      //   <div className="course-id text-sm">{course.id.split("_")[0]}</div>
+      //   <div className="mx-1 course-title">{course.title}</div>
+      //   <div className="instructor-name text-sm mx-1 border-left">{course.instructor}</div>
+      // </div>
+      <div>
+        <b>{course.title}</b>
+        {` by ${course.instructor} [${course.id}]`}
       </div>
     )
   }
