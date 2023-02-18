@@ -48,7 +48,6 @@ const Rooms = () => {
             {/* PERSISTENT INFO BAR - FOR LARGE DEVICES */}
             <div className="d-lg-inline-block d-block order-first col-lg-3 col-12 mb-3">
                 <Select
-                    menuIsOpen={true}
                     options={roomList}
                     onChange={setRoom} 
                     value={room}
