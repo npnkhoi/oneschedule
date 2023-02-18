@@ -59,6 +59,7 @@ const TopNav = () => {
                 <div className="navbar-nav">
                     <NavLink label='Schedule' path='/' icon='far fa-calendar'/>
                     <NavLink label='Courses' path='/courses' icon='fas fa-book-open'/>
+                    <NavLink label='Rooms' path='/rooms' icon='fas fa-door-open'/>
                     <NavLink label='Contribute' path='/contribute' icon='fas fa-star'/>
                     <NavLink label='About' path='/about' icon='fas fa-info'/>
                     <div className="nav-item">

@@ -16,10 +16,10 @@ export const getTextColor = (bg: string) => {
   return (brightness > 125) ? 'black' : 'white'
 }
 
-// export const getRandomColor = () => {
-//   const colorId = Math.floor(Math.random() * COLORS.length)
-//   return COLORS[colorId]
-// }
+export const getRandomColor = () => {
+  const colorId = Math.floor(Math.random() * COLORS.length)
+  return COLORS[colorId]
+}
 
 export const getRarestColor = (colors: Array<string>) => {
   const freq: {[key: string]: number} = {}

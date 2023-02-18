@@ -5,6 +5,7 @@ import OneCourse from '../Offerings/OneCourse';
 import About from '../About';
 import Contribute from '../Contribute';
 import './Main.scss'
+import Rooms from '../Rooms/index';
 
 const Main = () => {
   return (
@@ -22,6 +23,9 @@ const Main = () => {
           </Route>
           <Route path='/courses'>
             <Offerings />
+          </Route>
+          <Route path='/rooms'>
+            <Rooms />
           </Route>
           <Route path='/'>
             <Schedule />
