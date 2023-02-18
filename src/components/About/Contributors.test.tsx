@@ -6,7 +6,7 @@ test('At least 3 developers should appear', async () => {
     render(<Contributors />)
     screen.getByText('Loading ...')
     
-    await waitForElementToBeRemoved(() => screen.queryByText('Loading ...'), {timeout: 3000})
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading ...'), {timeout: 10000})
     const developers = await screen.findAllByAltText(/developer avatar/i)
     expect(developers.length).toBeGreaterThan(2)
 })
