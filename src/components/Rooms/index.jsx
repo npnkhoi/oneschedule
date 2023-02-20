@@ -25,10 +25,11 @@ const Rooms = () => {
         .filter(course => standardizeRoom(course.location) == room.value)
         .map(course => ({...course, visible: true, color: getRandomColor()}))
     const onlyUnique = (value, index, array) => array.indexOf(value) === index
+    
     const roomList = allCourses
         .map(course => standardizeRoom(course.location))
         .filter(onlyUnique)
-        .filter(room => room)
+        .filter(room => room && room.length <= 32)
         .map(room => ({label: room, value: room}))
         .sort((a, b) => a.label.localeCompare(b.label))
 

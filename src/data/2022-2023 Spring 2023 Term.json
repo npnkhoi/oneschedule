@@ -2405,5 +2405,187 @@
             }
         ],
         "location": "Off campus site"
+    },
+    {
+        "id": "CLB000",
+        "title": "Fulbright Soccer Club (Men)",
+        "location": "S\u00e2n v\u1eadn \u0111\u1ed9ng Qu\u1eadn 7, \u0111\u01b0\u1eddng s\u1ed1 2, Ho\u00e0ng Qu\u1ed1c Vi\u1ec7t, Ph\u00fa M\u1ef9, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "17:00:00",
+                "end_time": "19:00:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "17:00:00",
+                "end_time": "19:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB001",
+        "title": "Fulbright Soccer Club (Women)",
+        "location": "S\u00e2n v\u1eadn \u0111\u1ed9ng Qu\u1eadn 7, \u0111\u01b0\u1eddng s\u1ed1 2, Ho\u00e0ng Qu\u1ed1c Vi\u1ec7t, Ph\u00fa M\u1ef9, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB002",
+        "title": "Fulbright Basketball Club (Men)",
+        "location": "D7 Sports Park, 7b T\u00e2n Ph\u00fa, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "20:00:00",
+                "end_time": "22:00:00"
+            },
+            {
+                "day": "Saturday",
+                "start_time": "13:00:00",
+                "end_time": "15:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB003",
+        "title": "Fulbright Basketball Club (Women)",
+        "location": "(Wed) SBS Basketball, S\u1ed1 1A Khu Sinh V\u1eadt C\u1ea3nh, Nguy\u1ec5n V\u0103n Linh, T\u00e2n Ph\u00fa, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh\n(Thu) D7 Sports Park, 7b T\u00e2n Ph\u00fa, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "18:30:00",
+                "end_time": "20:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "18:00:00",
+                "end_time": "20:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB004",
+        "title": "Fulbright Ultimate Club",
+        "location": "S\u00e2n b\u00f3ng Th\u00e0nh Th\u00e1i - Sunrise Riverside, Block D, Ph\u01b0\u1edbc Ki\u1ec3n, Nh\u00e0 B\u00e8, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "19:30:00",
+                "end_time": "21:30:00"
+            },
+            {
+                "day": "Saturday",
+                "start_time": "14:00:00",
+                "end_time": "16:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB005",
+        "title": "Fulbright Running Club",
+        "location": "H\u1ed3 B\u00e1n Nguy\u1ec7t, Khu \u0111\u00f4 th\u1ecb Ph\u00fa M\u1ef9 H\u01b0ng, T\u00e2n Ph\u00fa, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "17:30:00",
+                "end_time": "19:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "17:30:00",
+                "end_time": "19:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB006",
+        "title": "Fulbright Badminton Club",
+        "location": "79 Pro Badminton, 300/13 Nguy\u1ec5n V\u0103n Linh, B\u00ecnh Thu\u1eadn, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed M\u00ecnh",
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "19:00:00",
+                "end_time": "21:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "19:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB007",
+        "title": "Fulbright Volleyball Club",
+        "location": "15 Tr\u1ea7n V\u0103n Tr\u00e0, T\u00e2n Ph\u00fa , Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "19:00:00",
+                "end_time": "21:00:00"
+            },
+            {
+                "day": "Saturday",
+                "start_time": "19:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
+    },
+    {
+        "id": "CLB008",
+        "title": "Fulbright Tennis Club",
+        "location": "S\u00e2n Nh\u00e0 V\u0103n h\u00f3a Ph\u1ee5 n\u1eef, \u0110. Nguy\u1ec5n \u0110\u1ed5ng Chi, T\u00e2n Ph\u00fa, Qu\u1eadn 7, TP H\u1ed3 Ch\u00ed Minh",
+        "schedule": [
+            {
+                "day": "Saturday",
+                "start_time": "19:00:00",
+                "end_time": "21:00:00"
+            }
+        ],
+        "credits": "0",
+        "instructor": "Coaches",
+        "url": "",
+        "description": "N/A",
+        "categories": []
     }
 ]
