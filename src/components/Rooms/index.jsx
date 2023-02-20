@@ -13,7 +13,7 @@ const standardizeRoom = (s) => !s ? '' : s
             if (index > 0 && s[index-1] == '&') return false
             if (index < s.length - 1 && s[index+1] == '&') return false
         }
-        return !(char == 's' && s.slice(0, 10) == 'Classrooms');
+        return !(char == 's' && index == 9 && s.slice(0, 10) == 'Classrooms');
     })
     .join('')
 
