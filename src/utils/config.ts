@@ -1,6 +1,6 @@
 const config =  {
-    last_updated: '2023-02-18 00:50+07',
-    currentTerm: 'Spring2023'
+    last_updated: '2023-05-02 17:40+07',
+    currentTerm: 'Summer2023'
 }
 
 export default config
