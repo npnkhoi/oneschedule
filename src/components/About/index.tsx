@@ -23,11 +23,11 @@ const About = () => {
       <div>
       
       <h5>Our team</h5>
-      <div className="alert alert-danger w-100" role="alert">
+      {/* <div className="alert alert-danger w-100" role="alert">
         As our team is graduating from Fulbright, we are actively looking for a developer from Fulbright 
         to maintain the website. 
         Email npnkhoi@gmail.com if you are interested!
-      </div>
+      </div> */}
       <Contributors />
 
       <h2 className='my-4'>How to thank us</h2>
@@ -40,10 +40,10 @@ const About = () => {
           Please consider donating to OneSchedule (say, 20K VND) via 2 following channels:
         </p>
         <ol className="border border-primary rounded py-3">
-          <li>ACB: 7132717 (NGUYEN PHUNG NHAT KHOI, Branch: Nam Sai Gon)
+          <li>Vietcombank: 0011004405309 (PHAM LAN PHUONG)
           </li>
 
-          <li>Momo/Zalopay: 0343059217 (NGUYEN PHUNG NHAT KHOI, don&apos;t judge my avatar)
+          <li>Momo: 0395128700 (PHAM LAN PHUONG)
           </li>
         </ol>
 
