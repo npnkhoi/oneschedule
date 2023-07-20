@@ -1,6 +1,6 @@
 # OneSchedule
 
-**[URGENT] We are actively looking for a developer from Fulbright to maintain the website as our team is graduating. Email npnkhoi@gmail.com if you are interested!**
+**We are actively looking for developers from Fulbright to maintain & develop new features to address student's need. Email phuong.pham.210120@student.fulbright.edu.vn if you are interested!**
 
 [OneSchedule](https://npnkhoi.github.io/oneschedule) is a course-schedule visualizer for Fulbright Univesrity Vietnam. Its main features are:
 - Visualizing course schedules (with color theme)
@@ -26,11 +26,11 @@ We use React (JavaScript), Redux and Bootstrap 5. There is no backend and offeri
 Before the registration period of every semester, we regularly update the schedule data on our website. This is the core maintenance activity keeping the app alive.
 
 Prerequisite: 
-- Ask us (@npnkhoi) to be a collaborator of this repo.
+- Ask us (@lanphgphm) to be a collaborator of this repo.
 - Clone and set up https://github.com/npnkhoi/fuv-scrapper (following the README there).
 
 Follow the steps:
-1. Srap the schedule using `fuv-scrapper`. It usually takes 30 minutes. You will get a file with name like `2022-2023 Spring 2023 Term.json`. 
+1. Scrape the schedule using `fuv-scrapper`. It usually takes 30 minutes. You will get a file with name like `2022-2023 Spring 2023 Term.json`. 
 2. Make sure the schedule file is correct: no missing schedules, manual courses -- like PE -- were added, etc. VSCode's `Format Document` command may help format the JSON.
 3. Copy the schedule file from `fuv-scrapper` repo into `src/data` here.
 4. Update the timestamp in `src/utils/config.ts` (named `config.last_updated`).
