@@ -1,32 +1,37 @@
 [
     {
-        "name": "Fall2021",
-        "start_date": "2021-10-18",
-        "end_date": "2022-01-22"
+        "name": "Fall2023",
+        "start_date": "2023-08-28",
+        "end_date": "2023-12-15"
     },
     {
-        "name": "Spring2022",
-        "start_date": "2022-02-14",
-        "end_date": "2022-05-28"
+        "name": "Spring2024",
+        "start_date": "2024-01-08",
+        "end_date": "2024-05-17"
     },
     {
-        "name": "Summer2022",
-        "start_date": "2022-06-06",
-        "end_date": "2022-10-08"
+        "name": "Summer2024",
+        "start_date": "2024-06-10",
+        "end_date": "2024-08-02"
     },
     {
-        "name": "Fall2022",
-        "start_date": "2022-09-19",
-        "end_date": "2022-12-30"
+        "name": "Fall2024",
+        "start_date": "2024-08-19",
+        "end_date": "2024-12-12"
     },
     {
-        "name": "Spring2023",
-        "start_date": "2023-02-06",
-        "end_date": "2023-06-02"
+        "name": "Spring2025",
+        "start_date": "2025-01-06",
+        "end_date": "2025-05-16"
     },
     {
-        "name": "Summer2023",
-        "start_date": "2023-06-12",
-        "end_date": "2023-08-11"
+        "name": "Summer2025",
+        "start_date": "2025-06-09",
+        "end_date": "2025-08-01"
+    }, 
+    {
+        "name": "Fall2025",
+        "start_date": "2025-08-18",
+        "end_date": "2025-12-12"
     }
 ]
