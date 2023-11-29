@@ -1155,11 +1155,11 @@
     "description": "Faculty: Nguyen Trung Hieu - E: trunghieu.nguyen@fulbright.edu.vn\nCategory: Exploratory - Maths & Computing (E4)\nPre-requisite: MATH 101 Calculus\n---\nCourse Description:\nWhat is the math behind radioactive dating, where a radioactive substance can be used to estimate the ages of ancient objects? How long does it take to cool down a room by 5 degrees? Differential equations are the mathematical language to answer these questions. They are also the language to describe the laws of nature and many problems in science and engineering. This course is an introduction to ordinary differential equations (ODEs). In this course, students will learn basic concepts of differential equations and solution methods for different types of ODEs. Students will experience how ODEs are used to model simple real-life problems in Matlab, Octave, Mathematica, or Python. The covered topics include first and second-order equations, higher-order equations, and systems of equations.\n---\nCourse Learning Outcomes:\nUpon completion of this course, students will be able to:\nCLO1. Recall basic concepts of differential equations\nCLO2. Apply correct solution methods to solve ordinary differential equations\nCLO3. Demonstrate using ordinary differential equations to model simple real-life problems\n---\nTentative Schedule:\nThe textbooks of the course are the following:\nMain text: Elementary Differential Equations and Boundary Value Problems, by William E. Boyce, Richard C. DiPrima, Douglas B. Meade, 11th Edition, Wiley, ISBN-13: 978-1119820512, 2022. Supplemental text: Advanced Engineering Mathematics by Erwin Kreyszig, 10th edition, Wiley, ISBN-13: 978-8126554232, 2015.\nThe tentative topics of the course are:\nWeek 1: Introduction: Motivation and Review of Calculus\nWeek 2: Basic Concepts\nWeek 3: Separable Equations\nWeek 4: Directional Fields, Euler's Method\nWeek 5: Introduction to a Supporting Platform/Programing Environment (Matlab, Octave, Mathematica, or Python)\nWeek 6: Linear ODEs\nWeek 7: Introduction to Projects in First Order Equations\nWeek 8: Existence and Uniqueness of Solutions and Midterm Test\nWeek 9: Homogeneous Linear ODEs of Second Order\nWeek 10: Nonhomogeneous Linear ODEs of Second Order and Projects in Second Order Equations\nWeek 11: Higher Order Equations\nWeek 12: System of Equations I\nWeek 13: System of Equations II\nWeek 14: Final and Project presentations\n---\nPossible Assessments & Grading:\nThe final grade will be decided based on the following types of assessment: \nAssessment Type \nOption 1 \nOption 2 \nOption 3 \nOption 4 \nReflections and feedback \n10% \n10% \n10% \n10% \nHomework \n25% \n20% \n25% \n30% \nMidterm test \n30% \n35% \n35% \n25% \nFinal Project  \n35% \n35% \n30% \n35% \n\nThe option with the highest score will be selected automatically. ",
     "categories": ["E4"],
     "schedule": [{
-        "day": "Monday",
+        "day": "Tuesday",
         "start_time": "08:00:00",
         "end_time": "09:30:00"
     }, {
-        "day": "Wednesday",
+        "day": "Thursday",
         "start_time": "08:00:00",
         "end_time": "09:30:00"
     }],
@@ -1174,8 +1174,8 @@
     "categories": ["E4"],
     "schedule": [{
         "day": "Wednesday",
-        "start_time": "13:15:00",
-        "end_time": "16:15:00"
+        "start_time": "11:45:00",
+        "end_time": "14:45:00"
     }],
     "location": "Classroom 4"
 }, {
@@ -1201,11 +1201,11 @@
     "description": "Faculty: Nguyen Trung Hieu - E: trunghieu.nguyen@fulbright.edu.vn\nPre-requisite: MATH101 Calculus\n---\nCourse Description:\nWhat is a real number? Why are there \"more\" real numbers than rational numbers when both sets of numbers are infinite? If a sequence does not blow up to infinity, does this mean that it must eventually converge? Is there a function that is continuous everywhere but nowhere differentiable? What is the relationship between continuity and integrability? Real Analysis answers these questions and many more. This course revisits familiar topics, such as real numbers, sequences, series, topology in the real line, limits, continuity, and integrals, but studies them in a mathematically rigorous way. It can be the first exposure of students to abstract mathematics, where graphical, numerical, and intuitive arguments are replaced by rigorous mathematical proofs.\n---\nCourse Learning Objectives:\nUpon completion of this course, students will be able to:\nCLO1. Recall and articulate fundamental concepts of real analysis\nCLO2. Apply correct proof techniques to prove important theoretical results in real analysis\nCLO3. Demonstrate ability to read and write rigorous mathematical proofs\n---\nTentative Schedule:\nThe tentative topics of the course are:\nThe Real Numbers - Irrational numbers - The axiom of completeness - Consequences of completeness\nSequences and Series - The limit of a sequence - The algebraic and order limit theorems - The monotone convergence theorem and infinite series - Subsequences and the Bolzano-Weierstrass theorem - The Cauchy Criterion - Properties of Infinite Series\nBasic Topology of R - Open and closed sets - Compact sets\nFunctional Limits and Continuity - Functional limits - Combination of continuous functions - Continuous functions on compact sets - The intermediate value theorem\nThe Derivative - The mean value theorem - A continuous nowhere-differentiable function\nThe Riemann Integral - Integrating Functions with Discontinuities - The Fundamental Theorem of Calculus - Lebesgue\u2019s Criterion for Riemann Integrability\nSequences and Series of Functions - Uniform convergence of a sequence of functions - Series of Functions - Power and Taylor series\nTopic 7 is optional and only covered if time permits.\n---\nPossible Assessments & Grading:\nThe final grade will be decided based on the following types of assessment: \nAssessment Type \nOption 1 \nOption 2 \nOption 3 \nOption 4 \nReflections and feedback \n10% \n10% \n10% \n10% \nHomework \n25% \n20% \n25% \n30% \nMidterm test \n30% \n35% \n35% \n25% \nFinal Project  \n35% \n35% \n30% \n35% \n\nThe option with the highest score will be selected automatically. \n ",
     "categories": [],
     "schedule": [{
-        "day": "Tuesday",
+        "day": "Monday",
         "start_time": "08:00:00",
         "end_time": "09:30:00"
     }, {
-        "day": "Thursday",
+        "day": "Wednesday",
         "start_time": "08:00:00",
         "end_time": "09:30:00"
     }],
