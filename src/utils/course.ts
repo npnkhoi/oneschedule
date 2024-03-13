@@ -1,6 +1,8 @@
 // import { GroupBase, Options } from "react-select"
 import { availableTerms, Course, courseData } from "../data"
 import config from './config'
+import { loadPersonalPlansFromLocalStorage } from "./localStorage"
+
 
 export const MAJORS = [
   {value: 'ARTS', label: 'Arts and Media'},
@@ -20,7 +22,7 @@ export const MAJORS = [
   {value: 'CLB', label: 'Sport Clubs'},
 ]
 
-export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'Seminar', 'EL']
+export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'Seminar', 'EL', 'Personal']
   .map(s => ({label: s, value: s}))
 
 export const LEVELS = ['100', '200', '300'].map(
@@ -30,7 +32,10 @@ export const LEVELS = ['100', '200', '300'].map(
 export const getCourse = (id: string) => {
   const allCourses: Course[] = availableTerms.reduce(
     (courses, thisTerm) => {
-      return courses.concat(courseData[thisTerm])
+      const coursesThisTerm = courseData[thisTerm] 
+      const personalPlans = loadPersonalPlansFromLocalStorage()
+      const combined = [...coursesThisTerm, ...personalPlans] // AMOGUS
+      return courses.concat(combined)
     }, 
     [] as Course[]
   )

@@ -20,3 +20,24 @@ export function saveToLocalStorage(state: Record<string, unknown>) {
     console.warn(e);
   }
 }
+
+// load personal plans from localStorage 
+export function loadPersonalPlansFromLocalStorage() {
+  try {
+    const plansJSON = localStorage.getItem("personalPlans");
+    if (plansJSON === null) return []; // no plans yet
+
+    const plans = JSON.parse(plansJSON);
+
+    if (!Array.isArray(plans)) { // validate 
+      console.warn("Plans in localStorage is not an array");
+      return [];
+    }
+
+    return plans; // returns a list of plans which has format: [{id: string, creidts: number, title: string, description: str, url: str, instructor: str, location: str, etc}]
+  }
+  catch (error) {
+    console.warn("Error loading personal plans from localStorage: ", error);
+    return []; 
+  }
+}
