@@ -4,14 +4,18 @@ import { toggleSelection } from '../../store/selectedCoursesSlice'
 import { selectCurrentTerm } from '../../store/selectors'
 import { isSelected } from '../../utils/course'
 import './Searcher.scss'
+import { selectCurrentSelectedCourseIds } from '../../store/selectors'
 
 
 const Searcher = () => {
   const [ filter, setFilter ] = useState('')
   const [ focusItem, setFocusItem ] = useState(0)
   const dispatch = useDispatch()
-  const selectedCourses = useSelector(state => state.selectedCourses.value)
-  const courses = useSelector(selectCurrentTerm)
+
+  // const selectedCourses = useSelector(state => state.selectedCourses.value)
+  const selectedCourses = useSelector(selectCurrentSelectedCourseIds)
+
+  const courses = useSelector(selectCurrentTerm) // AMOGUS
 
   let matchedCourses = []
   let nVisibleCourses = 0

@@ -43,10 +43,11 @@ const Calendar = ({selectedCourses}) => {
     plugins={[ timeGridPlugin ]}
     initialView="timeGridWeek"
     events = {events}
-    slotMinTime = "07:00"
-    slotMaxTime = "21:00"
+    slotMinTime = "00:00"
+    slotMaxTime = "24:00"
     scrollTime = "09:00"
-    hiddenDays = {[0]}
+    hiddenDays = {[]}
+    firstDay={1}
     expandRows = {true}
     allDaySlot = {false}
     headerToolbar = {
