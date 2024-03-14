@@ -17,7 +17,7 @@ function EventForm() {
     });
 
     const [selectedDays, setSelectedDays] = useState([]);
-
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const submitEvent = (e) => {
         e.preventDefault(); 
@@ -65,6 +65,7 @@ function EventForm() {
             description: ''
         });
         setSelectedDays([]);
+        setIsSubmitted(true);
     }
 
     const recordEventDetails = (e) => {
@@ -88,16 +89,37 @@ function EventForm() {
         setEvent({ ...event, daysOccuring: daysString });
         setSelectedDays(selectedOption);
     };
+
+    const handleFocus = () => {
+        setIsSubmitted(false);
+    }
     
     return (
         <div className="enforce-size bg-light p-3 border rounded collapse show"> 
-            <h4>Add Your Event <hr /> </h4> 
+            <h4>Add Your Event </h4> 
+            { isSubmitted && 
+            <div className='confirm-box p-3 border rounded'>
+                Event has been added to your schedule!
+            </div>
+            }
+            
+            <hr /> 
             <div className="d-flex flex-column align-items-center">
                 
             </div>
             <form onSubmit={submitEvent}>
                 <label htmlFor="eventName"> Event name </label> <br />
-                <input className='input' type="text" name="eventName" value={event.eventName} placeholder="Basketball" onChange={recordEventDetails} required /> <br />
+                <input 
+                    className='input' 
+                    type="text" 
+                    name="eventName" 
+                    value={event.eventName} 
+                    placeholder="Basketball" 
+                    onChange={recordEventDetails} 
+                    required 
+                    title='Enter name of event'
+                    onFocus={handleFocus}
+                /> <br />
 
                 {/* <label htmlFor="daysOccuring"> Days Occurring </label> <br />
                 <input className='input' type="text" name="daysOccuring" value={event.daysOccuring} placeholder="Monday, Friday" onChange={recordEventDetails} required /> <br /> */}
@@ -111,21 +133,52 @@ function EventForm() {
                         className='basic-multi-select'
                         classNamePrefix='select'
                         onChange = {handleDaysSelection}
+                        onFocus={handleFocus}
                         value = {selectedDays}
+                        title='Select the days of a week the event will occur'
                         required
                     />
                 </div>
 
                 <label htmlFor="description">Description</label> <br /> 
-                <input className='input' type="text" name="description" value={event.description} placeholder="Basketball practice" onChange={recordEventDetails} /> <br />
+                <input 
+                    className='input' 
+                    type="text" 
+                    name="description" 
+                    value={event.description} 
+                    placeholder="Basketball practice" 
+                    onChange={recordEventDetails} 
+                    title='(Optional) Provide a short description'
+                    onFocus={handleFocus}
+                /> <br />
                 
                 <div className='time-picker-row'>
                     <label htmlFor="startTime"> Start Time </label> 
                     <label htmlFor="endTime" > End Time </label> 
                 </div>
                 <div className='time-picker-row'>
-                    <input className='input' type="time" name="startTime" value={event.startTime} onChange={recordEventDetails} required />
-                    <input className='input' type="time" name="endTime" value={event.endTime} onChange={recordEventDetails} required />
+                    <input 
+                        className='input' 
+                        type="time" 
+                        name="startTime" 
+                        value={event.startTime} 
+                        onChange={recordEventDetails} 
+                        // placeholder='09:00 AM'
+                        title='e.g. 09:00 AM'
+                        onFocus={handleFocus}
+                        required 
+                    />
+                    <input 
+                        className='input' 
+                        type="time" 
+                        name="endTime" 
+                        value={event.endTime} 
+                        onChange={recordEventDetails} 
+                        // placeholder='04:30 PM'
+                        title='e.g. 04:30 PM'
+                        onFocus={handleFocus}
+                        required 
+                    />
                 </div>
                 
                 <br />
