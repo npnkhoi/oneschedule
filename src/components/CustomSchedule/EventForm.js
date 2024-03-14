@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import React from 'react';
 import Select from 'react-select';
+import { toggleSelection } from '../../store/selectedCoursesSlice';
+import { useDispatch } from 'react-redux';
 
 function EventForm() {
+    const dispatch = useDispatch(); 
+
     // declare event object 
     const [event, setEvent] = useState({
         eventName: '', 
@@ -50,7 +53,8 @@ function EventForm() {
 
 
         localStorage.setItem('personalPlans', JSON.stringify(allEvents));
-        console.log(localStorage.getItem('personalPlans'));
+        
+        dispatch(toggleSelection(newEvent)) // add to redux store
         
         // reset form fields
         setEvent({

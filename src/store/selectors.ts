@@ -17,7 +17,6 @@ export const selectCoursesAndPlans  = (state: RootState) => {
   const coursesThisTerm = courseData[thisTerm] 
 
   const combined = [...coursesThisTerm, ...personalPlans]
-  console.log('combined', combined)
   
   return combined 
 }

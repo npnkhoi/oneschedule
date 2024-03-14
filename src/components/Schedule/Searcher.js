@@ -5,14 +5,13 @@ import { selectCurrentTerm } from '../../store/selectors'
 import { isSelected } from '../../utils/course'
 import './Searcher.scss'
 import { selectCurrentSelectedCourseIds } from '../../store/selectors'
-
+import { Link } from 'react-router-dom'
 
 const Searcher = () => {
   const [ filter, setFilter ] = useState('')
   const [ focusItem, setFocusItem ] = useState(0)
   const dispatch = useDispatch()
 
-  // const selectedCourses = useSelector(state => state.selectedCourses.value)
   const selectedCourses = useSelector(selectCurrentSelectedCourseIds)
 
   const courses = useSelector(selectCurrentTerm) // AMOGUS
@@ -85,7 +84,13 @@ const Searcher = () => {
     )
 
     if (matchedCourses.length === 0) {
-      return (<button className="list-group-item">No courses matched.</button>)
+      return (
+      <button className="list-group-item">
+        No courses or plans matched. <br /> 
+          <Link to="/custom-schedule" >
+            Create a new plan.
+          </Link>
+      </button>)
     } else {
       nVisibleCourses = Math.min(5, matchedCourses.length)
       return matchedCourses

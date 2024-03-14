@@ -10,16 +10,13 @@ export const MAJORS = [
   {value: 'CS', label: 'Computer Science'},
   {value: 'ECON', label: 'Economics'},
   {value: 'ENG', label: 'Engineering'},
-  {value: 'FRE', label: 'French'},
   {value: 'HIS', label: 'History'},
   {value: 'IS', label: 'Integrated Science'},
   {value: 'LIT', label: 'Literature'},
   {value: 'MATH', label: 'Mathematics'},
   {value: 'PSY', label: 'Psychology'},
   {value: 'SOCI', label: 'Social Sciences'},
-  {value: 'VS', label: 'Vietnamese Studies'},
-  {value: 'PE', label: 'Physical Education'},
-  {value: 'CLB', label: 'Sport Clubs'},
+  {value: 'VS', label: 'Vietnamese Studies'}
 ]
 
 export const CATEGORIES = ['Core', 'E1', 'E2', 'E3', 'E4', 'C1', 'C2', 'C3', 'C4', 'Seminar', 'EL', 'Personal']
