@@ -6,6 +6,7 @@ import About from '../About';
 import Contribute from '../Contribute';
 import './Main.scss'
 import Rooms from '../Rooms/index';
+import CustomSchedule from '../CustomSchedule';
 
 const Main = () => {
   return (
@@ -27,6 +28,11 @@ const Main = () => {
           <Route path='/rooms'>
             <Rooms />
           </Route>
+          
+          <Route path='/custom-schedule'>
+            <CustomSchedule />
+          </Route>
+
           <Route path='/'>
             <Schedule />
           </Route>

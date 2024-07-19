@@ -1,0 +1,42 @@
+@import "../Offerings/index.scss";
+
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    width: 260px;
+}
+
+.time-picker-row {
+    display: flex; 
+    justify-content: space-between;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.enforce-size {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.multi-input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 8px auto;
+    box-sizing: border-box;
+    width: 260px;
+    display: block;
+}
+
+.confirm-box {
+    // light green fill, green border, 
+    background-color: #aaf397;
+    border: 1px solid #224216;
+    color: #376126;
+    max-width: 350px;
+    margin: auto
+}
