@@ -131,6 +131,11 @@
                 "day": "Thursday",
                 "start_time": "9:45:00",
                 "end_time": "11:15:00"
+            }, 
+            {
+                "day": "Tuesday", 
+                "start_time": "11:30:00", 
+                "end_time": "12:30:00"
             }
         ],
         "location": "Classroom 7 (BW)"
@@ -602,13 +607,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             },
             {
                 "day": "Thursday",
-                "start_time": "15:00:00",
-                "end_time": "16:30:00"
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
             }
         ],
         "location": "Classroom 6 (BW)"
@@ -691,9 +696,9 @@
         "categories": [],
         "schedule": [
             {
-                "day": "Wednesday",
-                "start_time": "13:15:00",
-                "end_time": "16:15:00"
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "18:00:00"
             }
         ],
         "location": "Classroom 8 (BW)"
@@ -923,13 +928,13 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "9:45:00",
-                "end_time": "11:15:00"
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
             },
             {
                 "day": "Wednesday",
-                "start_time": "9:45:00",
-                "end_time": "11:15:00"
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
             }
         ],
         "location": "Ideation Hub (old Science Lab)"
@@ -1414,9 +1419,9 @@
         ],
         "schedule": [
             {
-                "day": "Monday",
-                "start_time": "15:00:00",
-                "end_time": "18:00:00"
+                "day": "Friday",
+                "start_time": "09:00:00",
+                "end_time": "12:00:00"
             }
         ],
         "location": "Ting Foundation"
@@ -1783,13 +1788,13 @@
         "schedule": [
             {
                 "day": "Monday",
-                "start_time": "11:30:00",
-                "end_time": "13:00:00"
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             },
             {
                 "day": "Wednesday",
-                "start_time": "11:30:00",
-                "end_time": "13:00:00"
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             }
         ],
         "location": "Classroom 502"
@@ -1805,13 +1810,13 @@
         "schedule": [
             {
                 "day": "Tuesday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             },
             {
                 "day": "Thursday",
-                "start_time": "13:15:00",
-                "end_time": "14:45:00"
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
             }
         ],
         "location": "Classroom 8 (BW)"
@@ -2196,6 +2201,11 @@
                 "day": "Thursday",
                 "start_time": "13:15:00",
                 "end_time": "14:45:00"
+            }, 
+            {
+                "day": "Thursday", 
+                "start_time": "15:00:00", 
+                "end_time": "16:00:00"
             }
         ],
         "location": "Ideation Hub (old Science Lab)"
