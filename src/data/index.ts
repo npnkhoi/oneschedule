@@ -8,6 +8,7 @@ import Summer2023 from './2022-2023 Summer Term.json'
 import Fall2023 from './2023-2024 Fall 2023 Term.json'
 import Spring2024 from './2023-2024 Spring 2024 Term.json'
 import Fall2024 from './2024-2025 Fall 2024 Term.json'
+import Spring2025 from './2024-2025 Spring 2025 Term.json'
 
 export interface Course {
     title: string;
@@ -25,7 +26,7 @@ export interface Course {
     location?: string;
 }
 
-const courseData: {[key: string]: Course[]} = {Fall2021, Spring2022, Summer2022, Fall2022, Spring2023, Summer2023, Fall2023, Spring2024, Fall2024}
-const availableTerms: string[] = ['Fall2021', 'Spring2022', 'Summer2022', 'Fall2022', 'Spring2023', 'Summer2023', 'Fall2023', 'Spring2024', 'Fall2024']
+const courseData: {[key: string]: Course[]} = {Fall2021, Spring2022, Summer2022, Fall2022, Spring2023, Summer2023, Fall2023, Spring2024, Fall2024, Spring2025}
+const availableTerms: string[] = ['Fall2021', 'Spring2022', 'Summer2022', 'Fall2022', 'Spring2023', 'Summer2023', 'Fall2023', 'Spring2024', 'Fall2024', 'Spring2025']
 
 export {COLORS, courseData, availableTerms}

@@ -1,0 +1,2335 @@
+[
+    {
+        "title": "Introduction to Visual Studies",
+        "id": "ARTS101_Fall2024_7a64b6e2",
+        "credits": "4",
+        "instructor": "Trinh Dinh Le Minh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Introduction to Video and Film Production",
+        "id": "ARTS104_Fall2024_e04879b2",
+        "credits": "4",
+        "instructor": "Dr. Mauricio Osaki",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "8:00:00",
+                "end_time": "11:00:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Introduction to Film History and Theory",
+        "id": "ARTS105_Fall2024_17f231f2",
+        "credits": "4",
+        "instructor": "Dr. Linda Zhang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "14:45:00",
+                "end_time": "16:45:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Dance and Performance Production",
+        "id": "ARTS106_Fall2024_2dbb8d3a",
+        "credits": "4",
+        "instructor": "Alex Tu Nguyen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "2D/3D Foundations",
+        "id": "ARTS107_Fall2024_295f5daf",
+        "credits": "4",
+        "instructor": "Richard Streitmatter-Tran",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "15:00:00",
+                "end_time": "18:00:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Digital Media Arts",
+        "id": "ARTS210_Fall2024_938388f1",
+        "credits": "4",
+        "instructor": "Vu Dieu Huong",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "9:45:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Alien, Uncanny, Strange: Themes in East Asian Film and Media",
+        "id": "ARTS211_Fall2024_8b781e26",
+        "credits": "4",
+        "instructor": "Dr. Linda Zhang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "18:00:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "16:30:00",
+                "end_time": "18:30:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Interdisciplinary Drawing",
+        "id": "ARTS212_Fall2024_01d51127",
+        "credits": "4",
+        "instructor": "Richard Streitmatter-Tran",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "15:00:00",
+                "end_time": "18:00:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Theater Writing",
+        "id": "ARTS216_Fall2024_eb3c5ad6",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Bich Tra",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "11:30:00",
+                "end_time": "14:30:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Sound Art",
+        "id": "ARTS303_Fall2024_5880f765",
+        "credits": "4",
+        "instructor": "Dr. Pamela Corey",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Thursday",
+                "start_time": "11:30:00",
+                "end_time": "14:30:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Advanced Narrative Film Production",
+        "id": "ARTS309_Fall2024_ac9b877a",
+        "credits": "4",
+        "instructor": "Trinh Dinh Le Minh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Ideation Hub (old Science Lab)"
+    },
+    {
+        "title": "Aesthetics and Violence",
+        "id": "ARTS313_Fall2024_0487e089",
+        "credits": "4",
+        "instructor": "Dr. Luong Ngoc Tram",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "16:15:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Programming for Data Science and Visualization",
+        "id": "CS103/CORE108_Fall2024_aca117a0",
+        "credits": "4",
+        "instructor": "Dr. Huynh The Dang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "9:45:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Computer Science II",
+        "id": "CS201_Fall2024_9c9d2c0e",
+        "credits": "4",
+        "instructor": "Dr. Huynh Viet Linh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Introduction to Artificial Intelligence",
+        "id": "CS204_Fall2024_71ca0d26",
+        "credits": "4",
+        "instructor": "Dr. Tung Nguyen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Co-Design Studio (old Maker Space)"
+    },
+    {
+        "title": "Computational Social Media",
+        "id": "CS205_Fall2024_f2403146",
+        "credits": "4",
+        "instructor": "Dr. Phan Thanh Trung",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Programming Language Paradigms",
+        "id": "CS212_Fall2024_9edb6f89",
+        "credits": "4",
+        "instructor": "Dr. Huynh Viet Linh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Ideation Hub (old Science Lab)"
+    },
+    {
+        "title": "Foundations of Software Engineering",
+        "id": "CS301_Fall2024_69e90637",
+        "credits": "4",
+        "instructor": "Dr. Tung Nguyen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Natural Language Processing",
+        "id": "CS312_Fall2024_48ca2c9d",
+        "credits": "4",
+        "instructor": "Dr. Huynh Viet Linh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "18:00:00"
+            }
+        ],
+        "location": "Ideation Hub (old Science Lab)"
+    },
+    {
+        "title": "Advanced Deep Learning",
+        "id": "CS311_Fall2024_a060b4e8",
+        "credits": "4",
+        "instructor": "Dr. Huynh The Dang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Principles of Economics 1",
+        "id": "ECON101_Fall2024_6eabb239",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thi Hoang Lan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Economic Methods",
+        "id": "ECON102_Fall2024_84b3f043",
+        "credits": "4",
+        "instructor": "Dr. Khieu Van Hoang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Principles of Economics 2",
+        "id": "ECON103_Fall2024_f36cdb08",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Tra My",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Microeconomics Analysis",
+        "id": "ECON201_Fall2024_7d9deab1",
+        "credits": "4",
+        "instructor": "Dr. Duong Le",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Microeconomics Analysis",
+        "id": "ECON201_Fall2024_3e32ac67",
+        "credits": "4",
+        "instructor": "Dr. Duong Le",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Macroeconomics Analysis",
+        "id": "ECON203_Fall2024_5951987f",
+        "credits": "4",
+        "instructor": "Dr. Xavier Bautista",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Econometrics",
+        "id": "ECON209_Fall2024_10a36d32",
+        "credits": "4",
+        "instructor": "Dr. Phan Tuan Ngoc",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "9:45:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Financial Management",
+        "id": "ECON213_Fall2024_5dec890d",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Tra My",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Political Economy",
+        "id": "ECON214_Fall2024_4c49e786",
+        "credits": "4",
+        "instructor": "Dr. Phan Tuan Ngoc",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Economics of Inequality",
+        "id": "ECON302_Fall2024_f5212ee3",
+        "credits": "4",
+        "instructor": "Dr. Khieu Van Hoang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Behavioural and Experimental Economics",
+        "id": "ECON305_Fall2024_38baea53",
+        "credits": "4",
+        "instructor": "Dr. Graeme Walker",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Industrial Organization",
+        "id": "ECON314_Fall2024_1f8a8d1f",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thi Hoang Lan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Ideation Hub (old Science Lab)"
+    },
+    {
+        "title": "Sense, Think, Act: Principle of Smart Systems",
+        "id": "ENG105_Fall2024_db5c98c9",
+        "credits": "4",
+        "instructor": "Dr. Phung Manh Duong",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E3 – Sciences and Engineering, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Mechanical Design",
+        "id": "ENG207_Fall2024_864bc4aa",
+        "credits": "4",
+        "instructor": "Dr. Doan Nhat Minh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E3 – Sciences and Engineering, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Ideation Hub (old Science Lab)"
+    },
+    {
+        "title": "Fundamental of Data Communication",
+        "id": "ENG210_Fall2024_341a9d99",
+        "credits": "4",
+        "instructor": "Dr. Quan Le",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E3 – Sciences and Engineering, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Computer Vision",
+        "id": "ENG301_Fall2024_7f1bf8ae",
+        "credits": "4",
+        "instructor": "Dr. Phung Manh Duong",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Ideation Hub (old Science Lab)"
+    },
+    {
+        "title": "Project Management",
+        "id": "ENG311_Fall2024_b84c7301",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Hop Minh & Dr. Le Quan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Atlantic World",
+        "id": "HIS102_Fall2024_8093fe1d",
+        "credits": "4",
+        "instructor": "Dr. Elsa Costa",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities",
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Modern East Asia",
+        "id": "HIS104_Fall2024_d2fdfe6c",
+        "credits": "4",
+        "instructor": "Dr. Mark Frank",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities",
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Hands-On History",
+        "id": "HIS200_Fall2024_b58b5a1e",
+        "credits": "4",
+        "instructor": "Dr. Elsa Costa",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities",
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "History of International Communism",
+        "id": "HIS301_Fall2024_5879ce13",
+        "credits": "4",
+        "instructor": "Dr. Vu Minh Hoang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "History for the Future: New Methods, Platforms, and Technologies",
+        "id": "HIS216_Fall2024_ceb54ca4",
+        "credits": "4",
+        "instructor": "Dr. Mark Frank",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities",
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Thursday",
+                "start_time": "18:30:00",
+                "end_time": "21:30:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Gender and Ethnicity in Modern China",
+        "id": "HIS311_Fall2024_a2d8e808",
+        "credits": "4",
+        "instructor": "Dr. Mark Frank",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Organic Chemistry",
+        "id": "IS205_Fall2024_0d61c0d1",
+        "credits": "4",
+        "instructor": "Dr. Trang Nguyen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E3 – Sciences and Engineering, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Cell Biology",
+        "id": "IS212_Fall2024_41aad5f7",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thi Hong Dung",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E3 – Sciences and Engineering, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Music/Dance Room (BW)"
+    },
+    {
+        "title": "Human Physiology",
+        "id": "IS306_Fall2024_83e4e5e2",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thi Hong Dung",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Music/Dance Room (BW)"
+    },
+    {
+        "title": "Biometry",
+        "id": "IS312_Fall2024_a77c7ebd",
+        "credits": "4",
+        "instructor": "Dr. Jesse Hollister",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 2"
+    },
+    {
+        "title": "Life Cycle Assessment",
+        "id": "IS313_Fall2024_cacc185d",
+        "credits": "4",
+        "instructor": "Dr. Trang Nguyen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Music/Dance Room (BW)"
+    },
+    {
+        "title": "Introduction to Creative Writing",
+        "id": "LIT299_Fall2024_5dc28b0c",
+        "credits": "4",
+        "instructor": "Dr. Jasmine An",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 2"
+    },
+    {
+        "title": "Introduction to Literary Studies: Writing the Self",
+        "id": "LIT107_Fall2024_8056ee32",
+        "credits": "4",
+        "instructor": "Dr. Vu Ngoc Bao Yen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Critical Methods in Literary Studies",
+        "id": "LIT201_Fall2024_8cdbe566",
+        "credits": "4",
+        "instructor": "Dr. Jasmine An",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 2"
+    },
+    {
+        "title": "Myths, Archetypes, and Origin Stories",
+        "id": "LIT213_Fall2024_35cb1723",
+        "credits": "4",
+        "instructor": "Dr. Elizabeth (Izzy) Liendo",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Advanced Critical Methods: Theory on the Edge",
+        "id": "LIT314_Fall2024_6cd278a7",
+        "credits": "4",
+        "instructor": "Dr. Elizabeth (Izzy) Liendo",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Women’s Labor: Wage, Domestic, and Childbirth Work in Nineteenth-Century France",
+        "id": "LIT315_Fall2024_4612bd23",
+        "credits": "4",
+        "instructor": "Dr. Magdala Jeudy",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "13:15:00",
+                "end_time": "16:15:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Research and Writing Seminar",
+        "id": "MATH311_Fall2024_d69fa31c",
+        "credits": "4",
+        "instructor": "Dr. Van Phung Truong Son & Other Math faculty",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "9:45:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Linear Algebra",
+        "id": "MATH103_Fall2024_e70fcc32",
+        "credits": "4",
+        "instructor": "Dr. Tran Vinh Linh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Multivariable Calculus",
+        "id": "MATH104_Fall2024_28bed507",
+        "credits": "4",
+        "instructor": "Dr. Van Phung Truong Son",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Introduction to Statistics",
+        "id": "MATH105/CORE107_Fall2024_b5f0bebd",
+        "credits": "4",
+        "instructor": "Dr. Le Nhat Tan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Differential Equations",
+        "id": "MATH201_Fall2024_41e6f661",
+        "credits": "4",
+        "instructor": "Dr. Hongliang Xu",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:30:00",
+                "end_time": "14:30:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Discrete Mathematics",
+        "id": "MATH202_Fall2024_240ea64d",
+        "credits": "4",
+        "instructor": "Dr. Tran Vinh Linh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E4 – Mathematics and Computing, STEM"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Stochastic Calculus",
+        "id": "MATH305_Fall2024_c7757b22",
+        "credits": "4",
+        "instructor": "Dr. Le Nhat Tan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Topology and Measure Theory",
+        "id": "MATH312_Fall2024_978c0e1f",
+        "credits": "4",
+        "instructor": "Dr. Van Phung Truong Son",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Operations Research",
+        "id": "MATH303_Fall2024_cc9e002d",
+        "credits": "4",
+        "instructor": "Dr. Hongliang Xu",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Introduction to Psychology",
+        "id": "PSY101_Fall2024_6f19f1e9",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thi Lan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "The Art & Science of Wellbeing",
+        "id": "PSY209_Fall2024_a205359b",
+        "credits": "4",
+        "instructor": "Dr. Gareth Davey",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Family Psychology",
+        "id": "PSY214_Fall2024_e8535b01",
+        "credits": "4",
+        "instructor": "Dr. Hoang Minh To Nga",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "8:00:00",
+                "end_time": "11:00:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Applied Social Psychology",
+        "id": "PSY301_Fall2024_6f3090da",
+        "credits": "4",
+        "instructor": "Dr. Matthew McDonald",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Counseling Psychology",
+        "id": "PSY302_Fall2024_62a3ee47",
+        "credits": "4",
+        "instructor": "Dr. Hoang Minh To Nga",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "8:00:00",
+                "end_time": "11:00:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Cross Cultural Leadership & Management",
+        "id": "PSY305_Fall2024_ad346817",
+        "credits": "4",
+        "instructor": "Dr. Matthew McDonald",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Cognitive Behavioural Therapy",
+        "id": "PSY307_Fall2024_1b29f336",
+        "credits": "4",
+        "instructor": "Dr. Hoang Minh To Nga",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "8:00:00",
+                "end_time": "11:00:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Health Psychology",
+        "id": "PSY309_Fall2024_9469a472",
+        "credits": "4",
+        "instructor": "Dr. Gareth Davey",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "16:15:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Environmental Psychology",
+        "id": "PSY310_Fall2024_f4bdc0ba",
+        "credits": "4",
+        "instructor": "Dr. Nathan Gehlert",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Social Inquiry and the Social Sciences",
+        "id": "SOCI102_Fall2024_76c33028",
+        "credits": "4",
+        "instructor": "Dr. Ian Kalman",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Social Science Research Methods",
+        "id": "SOCI105_Fall2024_eb273725",
+        "credits": "4",
+        "instructor": "Dr. Ethan Brown",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Digital Anthropology",
+        "id": "SOCI202_Fall2024_498f56b0",
+        "credits": "4",
+        "instructor": "Dr. Ian Kalman",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Business Communication",
+        "id": "SOCI220_Fall2024_cb268271",
+        "credits": "4",
+        "instructor": "Dr. Janny Fritzen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Communication and Social Change",
+        "id": "SOCI319_Fall2024_36d14ec1",
+        "credits": "4",
+        "instructor": "Dr. Janny Fritzen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Introduction to Business, Policy and Society",
+        "id": "SOCI111_Fall2024_8eb2a522",
+        "credits": "4",
+        "instructor": "Dr. Tobias Burgers",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Love and Sex",
+        "id": "SOCI219_Fall2024_d58d9608",
+        "credits": "4",
+        "instructor": "Dr. Elizabeth (Liz) Miles",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Quantitative Social Science",
+        "id": "SOCI222_Fall2024_e1744375",
+        "credits": "4",
+        "instructor": "Dr. Ethan Brown",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "16:15:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Risk and risk governance in Asia",
+        "id": "SOCI320_Fall2024_28519e3d",
+        "credits": "4",
+        "instructor": "Dr. Tobias Burgers",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Culture & Society of Postwar Japan",
+        "id": "SOCI317_Fall2024_b2d891c9",
+        "credits": "4",
+        "instructor": "Dr. Elizabeth (Liz) Miles",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "9:45:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Theory & Method in Vietnam Studies",
+        "id": "VS205_Fall2024_6a604cec",
+        "credits": "4",
+        "instructor": "Dr. Nicolas Weber",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Cultural and Intellectual Foundation of Vietnamese Literary Chinese II",
+        "id": "VS206_Fall2024_efbb5472",
+        "credits": "4",
+        "instructor": "Dr. Phan Thu Van",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities",
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Modern Vietnamese Culture and Society",
+        "id": "CORE102_Fall2024_083d9d05",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thanh Trung",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "11:30:00",
+                "end_time": "13:00:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Modern Vietnamese Culture and Society",
+        "id": "CORE102_Fall2024_242c02a9",
+        "credits": "4",
+        "instructor": "Dr. Nicolas Weber",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Modern Vietnamese Culture and Society",
+        "id": "CORE102_Fall2024_5174d732",
+        "credits": "4",
+        "instructor": "Dr. Vu Minh Hoang",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Modern Vietnamese Culture and Society",
+        "id": "CORE102_Fall2024_c3b25fe1",
+        "credits": "4",
+        "instructor": "Dr. Pamela Corey",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "8:00:00",
+                "end_time": "9:30:00"
+            }
+        ],
+        "location": "Classroom 8 (BW)"
+    },
+    {
+        "title": "Modern Vietnamese Culture and Society",
+        "id": "CORE102_Fall2024_d84d8190",
+        "credits": "4",
+        "instructor": "Dr. Luong Ngoc Tram",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "16:30:00",
+                "end_time": "18:00:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:30:00",
+                "end_time": "18:00:00"
+            }
+        ],
+        "location": "Classroom 6 (BW)"
+    },
+    {
+        "title": "Modern Vietnamese Culture and Society",
+        "id": "CORE102_Fall2024_b3799402",
+        "credits": "4",
+        "instructor": "Dr. Vu Ngoc Bao Yen",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Modern Vietnamese Culture and Society",
+        "id": "CORE102_Fall2024_ce233721",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thi Lan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "Scientific Inquiry",
+        "id": "CORE104_Fall2024_1e642cad",
+        "credits": "4",
+        "instructor": "Dr. Jesse Hollister",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "Quantitative Reasoning for a Digital Age",
+        "id": "CORE103_Fall2024_fd7c1a97",
+        "credits": "4",
+        "instructor": "Dr. Phan Thanh Trung",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "11:15:00",
+                "end_time": "12:45:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "11:15:00",
+                "end_time": "12:45:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Understanding International Political Economy: A Vietnamese Approach",
+        "id": "VS220_Fall2024_cdfa7e1b",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thanh Trung",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities",
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 7 (BW)"
+    },
+    {
+        "title": "Transnational Buddhist Mindfulness: Vietnamese Buddhist Traditions and Global Contexts",
+        "id": "VS307_Fall2024_156fd9ad",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Nam",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "8:00:00",
+                "end_time": "11:00:00"
+            }
+        ],
+        "location": "Classroom 1"
+    },
+    {
+        "title": "University Choir",
+        "id": "MUSC103_Fall2024_37883677",
+        "credits": "4",
+        "instructor": "Zorana Ignjatovic",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Introduction to Music Production",
+        "id": "MUSC104_Fall2024_b9be4800",
+        "credits": "4",
+        "instructor": "Dana Difilippantonio",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities"
+        ],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Classroom 502"
+    },
+    {
+        "title": "Performance Evaluation In Built Environment",
+        "id": "ENG310_Fall2024_8d06eb87",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Hop Minh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Ideation Hub (old Science Lab)"
+    },
+    {
+        "title": "Gender in the Media in Vietnam",
+        "id": "VS213_Fall2024_cdb9bb3c",
+        "credits": "4",
+        "instructor": "Dr. Le Phuong Linh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [
+            "E1 - Arts and Humanities",
+            "E2 - Social Sciences"
+        ],
+        "schedule": [
+            {
+                "day": "Friday",
+                "start_time": "8:00:00",
+                "end_time": "11:00:00"
+            }
+        ],
+        "location": "Fine Art (BW)"
+    },
+    {
+        "title": "Design and Systems Thinking",
+        "id": "CORE105_Fall2024_b814ff0b",
+        "credits": "4",
+        "instructor": "Dr. Truong Trung Kien",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Design and Systems Thinking",
+        "id": "CORE105_Fall2024_932bb236",
+        "credits": "4",
+        "instructor": "Dr. Doan Nhat Minh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Monday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            },
+            {
+                "day": "Wednesday",
+                "start_time": "15:00:00",
+                "end_time": "16:30:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Design and Systems Thinking",
+        "id": "CORE105_Fall2024_3119686b",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Hop Minh & Dr. Le Quan",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "9:45:00",
+                "end_time": "11:15:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Design and Systems Thinking",
+        "id": "CORE105_Fall2024_d59fbc76",
+        "credits": "4",
+        "instructor": "Dr. Truong Trung Kien",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Wednesday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            },
+            {
+                "day": "Friday",
+                "start_time": "13:15:00",
+                "end_time": "14:45:00"
+            }
+        ],
+        "location": "Co-Design Studio"
+    },
+    {
+        "title": "Dynamic Macroeconomics",
+        "id": "ECON310_Fall2024_93dca8c8",
+        "credits": "4",
+        "instructor": "Dr. Xavier Bautista",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [
+            {
+                "day": "Tuesday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            },
+            {
+                "day": "Thursday",
+                "start_time": "16:45:00",
+                "end_time": "18:15:00"
+            }
+        ],
+        "location": "Classroom 4"
+    },
+    {
+        "title": "[Independent Study] Educational Psychology",
+        "id": "PSY397_Fall2024_97ecb928",
+        "credits": "4",
+        "instructor": "Dr. Ethan Brown",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [],
+        "location": ""
+    },
+    {
+        "title": "[Independent Study] International Relations Research and Analysis",
+        "id": "VS397_Fall2024_16398d70",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Thanh Trung",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [],
+        "location": ""
+    },
+    {
+        "title": "[Independent Study] Laboratory Study of Material Properties: From ASTM Standard to Tensile Machine",
+        "id": "ENG297_Fall2024_fffe07fa",
+        "credits": "4",
+        "instructor": "Dr. Nguyen Hop Minh",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [],
+        "location": ""
+    },
+    {
+        "title": "[Independent Study] Advanced Macroeconomics",
+        "id": "ECON397_Fall2024_91dc203a",
+        "credits": "4",
+        "instructor": "Dr. Xavier Bautista",
+        "url": "example.com",
+        "description": "Please see OneStop for course information.",
+        "categories": [],
+        "schedule": [],
+        "location": ""
+    }
+]
